@@ -1,0 +1,29 @@
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+
+# --- OS / editor ---
+.DS_Store
+.idea/
+.vscode/
+
+# --- Secrets: TUYET DOI khong commit (file mau .env.example thi duoc) ---
+.env
+**/.env
+**/.env.*
+!**/.env.example
+
+# --- SSH keys thuc te trong thu muc authorized_keys (giu lai .gitkeep) ---
+tailscale/linux/authorized_keys/*
+!tailscale/linux/authorized_keys/.gitkeep
+tailscale/linux/authorized_keys/*/*
+!tailscale/linux/authorized_keys/*/.gitkeep
+
+# --- Du lieu PSI tho 2.6GB tai tu NASA: qua lon cho git ---
+# Chi giu metadata nho: data/profiles.json + data/psi/README.md
+data/*
+!data/profiles.json
+!data/psi/
+data/psi/*
+!data/psi/README.md

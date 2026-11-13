@@ -1,0 +1,352 @@
+{
+  "PSI-10": {
+    "name": "ACME Flame Design",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Combustion Integrated Rack (ACME)",
+    "blurb": "Gaseous ethylene flames in the ACME hardware, used to study normal and inverse flame structure rather than a spacecraft material.",
+    "scores": {"iss": 42, "moon": 48, "suit": 36, "earth": 20},
+    "relevance": {
+      "iss": "Maps how a gaseous flame sits in the CIR, which is context for material tests but not a flammability limit for cabin fabrics.",
+      "moon": "Inverse flames change where the oxygen is, a useful bound when habitat oxygen is enriched, but the fuel is ethylene gas.",
+      "suit": "Not a spacesuit-atmosphere materials test. Oxygen in these runs is a flame-structure variable.",
+      "earth": "Fundamental gaseous-flame structure, weak link to terrestrial firefighting gear."
+    }
+  },
+  "PSI-20": {
+    "name": "ACME Burning Rate Emulator",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Combustion Integrated Rack (ACME)",
+    "blurb": "Burning Rate Emulator studied material flammability in a still atmosphere by matching the burning rate of a solid with a gaseous burner.",
+    "scores": {"iss": 74, "moon": 90, "suit": 84, "earth": 36},
+    "relevance": {
+      "iss": "Still-atmosphere flammability is the no-ventilation limit inside a rack or a closed volume on station.",
+      "moon": "Oxygen was varied from about 21 percent up through the mid-30s and 40 percent, the range expected in a lunar habitat.",
+      "suit": "The high-oxygen BRE points are the closest still-air screen to a suit atmosphere short of the CFI-G burner.",
+      "earth": "A method for screening materials without a large fire, not a detector or turnout-gear result."
+    }
+  },
+  "PSI-21": {
+    "name": "ACME Coflow Laminar Diffusion Flame",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Combustion Integrated Rack (ACME)",
+    "blurb": "Coflow laminar diffusion flames of gaseous fuel in ACME. Supporting combustion science, not a solid-material flammability test.",
+    "scores": {"iss": 30, "moon": 28, "suit": 18, "earth": 16},
+    "relevance": {
+      "iss": "Shows how a laminar jet flame behaves without buoyancy. Indirect for cabin material selection.",
+      "moon": "Coflow speed is a stand-in for ventilation, but the fuel is gas, not habitat plastic or fabric.",
+      "suit": "Does not address 100 percent oxygen at suit pressure.",
+      "earth": "Laboratory flame structure, not firefighter equipment."
+    }
+  },
+  "PSI-22": {
+    "name": "ACME E-FIELD Flames",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Combustion Integrated Rack (ACME)",
+    "blurb": "Electric-field effects on laminar diffusion flames. PSI has no partial-gravity combustion data yet; this experiment used the electric field on flame ions to mimic a body force.",
+    "scores": {"iss": 40, "moon": 72, "suit": 34, "earth": 18},
+    "relevance": {
+      "iss": "A gaseous-flame body-force study. Secondary to BASS and SAME for station operations.",
+      "moon": "The Moon is partial gravity. Until LUCI and FM2 fly, E-FIELD is the PSI stand-in that puts a force on the flame.",
+      "suit": "Does not reproduce suit oxygen concentration.",
+      "earth": "Ion-driven flow is a research tool, not a fire-service product."
+    }
+  },
+  "PSI-23": {
+    "name": "ACME s-Flame",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Combustion Integrated Rack (ACME)",
+    "blurb": "Structure and response of spherical diffusion flames in ACME. The microgravity flame shape (a sphere fed by diffusion) is the basic picture behind freefall fire.",
+    "scores": {"iss": 46, "moon": 40, "suit": 30, "earth": 14},
+    "relevance": {
+      "iss": "Explains why a station flame is spherical and diffusion-limited once buoyancy is gone.",
+      "moon": "Spherical flames are the zero-g end of the bound. Lunar gravity sits between this and a normal flame.",
+      "suit": "Shape study, not a suit-material limit.",
+      "earth": "The contrast with a teardrop flame is teaching material, not a product."
+    }
+  },
+  "PSI-25": {
+    "name": "BASS-II",
+    "role": "prevention",
+    "roles": ["prevention", "suppression"],
+    "hardware": "Microgravity Science Glovebox flow duct",
+    "blurb": "Burning and Suppression of Solids II. Solid fuels in a ventilated duct on the ISS, with oxygen recorded on the test matrix.",
+    "scores": {"iss": 86, "moon": 92, "suit": 80, "earth": 44},
+    "relevance": {
+      "iss": "Directly the materials and the low-speed ventilation a crew cabin actually has.",
+      "moon": "Solid fuels (films, fabrics) plus a measured oxygen level are what a lunar habitat material screen needs.",
+      "suit": "Shows how the same solids behave as oxygen rises, which is the direction a suit prebreathe and cabin move.",
+      "earth": "Suppression and spread on thin materials informs how fabrics burn, loosely related to turnout gear."
+    }
+  },
+  "PSI-26": {
+    "name": "BASS",
+    "role": "prevention",
+    "roles": ["prevention", "suppression"],
+    "hardware": "Microgravity Science Glovebox flow duct",
+    "blurb": "Burning and Suppression of Solids. Bridged the NASA-STD-6001 ground test and real microgravity flammability, and tried a gaseous extinguisher like the ISS agent.",
+    "scores": {"iss": 88, "moon": 90, "suit": 76, "earth": 42},
+    "relevance": {
+      "iss": "SIBAL fabric and PMMA in the glovebox duct, plus a nitrogen-style extinguisher already used on station.",
+      "moon": "Thicker, realistic solids in a forced flow. Habitat oxygen will be higher than these early runs, so read them as the low-oxygen bound.",
+      "suit": "Useful geometry (fire behind an object, wake flames) but not 100 percent oxygen.",
+      "earth": "Extinguisher effectiveness on small solids. The flight hardware is not a ground extinguisher."
+    }
+  },
+  "PSI-39": {
+    "name": "Cool Flames Investigation",
+    "role": "suppression",
+    "roles": ["suppression"],
+    "hardware": "Multi-user Droplet Combustion Apparatus in the CIR",
+    "blurb": "Cool flames around liquid-fuel droplets. A flame can look out and still be burning in a cool-flame mode, which matters for declaring a fire extinguished.",
+    "scores": {"iss": 64, "moon": 58, "suit": 40, "earth": 30},
+    "relevance": {
+      "iss": "Droplet fuels in cabin atmospheres. Cool-flame survival means a visible extinction is not always the end of combustion.",
+      "moon": "Oxygen and diluent were varied. Cool flames are a suppression false-negative, not a materials limit.",
+      "suit": "Droplet chemistry, not suit fabric.",
+      "earth": "Explains reignition after an apparent extinguishment. Indirect for terrestrial nozzles."
+    }
+  },
+  "PSI-47": {
+    "name": "DAFT / DAFT-2",
+    "role": "detection",
+    "roles": ["detection"],
+    "hardware": "ISS aerosol instrument (shared with SAME)",
+    "blurb": "Dust and Aerosol Measurement Feasibility Test. The smoke instrument from SAME was pointed at dust instead of smoke.",
+    "scores": {"iss": 78, "moon": 70, "suit": 24, "earth": 88},
+    "relevance": {
+      "iss": "Nuisance dust on station is why a smoke detector false-alarms. DAFT measures that background.",
+      "moon": "Lunar dust is the same problem, sharper. A detector that cannot tell dust from smoke will alarm whenever the habitat is dirty.",
+      "suit": "Not a suit-fire experiment.",
+      "earth": "This is the flight root of the shuttle detector that separates smoke from dust, later used in mines."
+    }
+  },
+  "PSI-60": {
+    "name": "SPICE data analysis",
+    "role": "detection",
+    "roles": ["detection"],
+    "hardware": "Analysis of SPICE coflow data",
+    "blurb": "Computational analysis of the Smoke Point In Co-flow Experiment. A paper-scale study, not a new flight test.",
+    "scores": {"iss": 36, "moon": 22, "suit": 12, "earth": 20},
+    "relevance": {
+      "iss": "Soot-point models support how much smoke a detector might see. Secondary to SAME itself.",
+      "moon": "No habitat oxygen or dust measurement.",
+      "suit": "No suit condition.",
+      "earth": "Soot modeling only."
+    }
+  },
+  "PSI-62": {
+    "name": "Concurrent flame spread vs BASS",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Model compared to BASS",
+    "blurb": "Concurrent flame-spread modeling with flamelet-generated manifolds, checked against BASS. A model, not a new burn.",
+    "scores": {"iss": 58, "moon": 50, "suit": 28, "earth": 22},
+    "relevance": {
+      "iss": "A way to extrapolate BASS spread instead of burning every material on station.",
+      "moon": "The model is only as good as the BASS oxygen range it was checked against.",
+      "suit": "Not validated at suit oxygen.",
+      "earth": "Numerical method, not hardware."
+    }
+  },
+  "PSI-68": {
+    "name": "FLEX-2",
+    "role": "suppression",
+    "roles": ["suppression"],
+    "hardware": "Multi-user Droplet Combustion Apparatus in the CIR",
+    "blurb": "Second Flame Extinguishment Experiment. Liquid droplets in oxygen-nitrogen or oxygen-helium, with a small imposed flow.",
+    "scores": {"iss": 80, "moon": 62, "suit": 38, "earth": 48},
+    "relevance": {
+      "iss": "Extinction of droplet flames when oxygen, pressure, and a slow flow change. That is the suppression corner of station fire safety.",
+      "moon": "Oxygen mole fractions in the test matrix reach about 0.30, which touches the lunar-habitat band.",
+      "suit": "Droplets, not a suit liner.",
+      "earth": "Helium and nitrogen dilution is the same idea as inerting a compartment."
+    }
+  },
+  "PSI-69": {
+    "name": "FLEX",
+    "role": "suppression",
+    "roles": ["suppression"],
+    "hardware": "Multi-user Droplet Combustion Apparatus in the CIR",
+    "blurb": "Flame Extinguishment Experiment. Droplets of liquid fuel in atmospheres diluted with carbon dioxide or helium, the two suppressants studied for spacecraft.",
+    "scores": {"iss": 92, "moon": 66, "suit": 36, "earth": 80},
+    "relevance": {
+      "iss": "The suppression dataset: carbon dioxide and helium dilution, with oxygen mole fraction and droplet size for hundreds of burns.",
+      "moon": "Most runs sit near Earth oxygen. Use it for the suppressant, not for a 30 percent oxygen material limit.",
+      "suit": "Does not cover a pure-oxygen suit.",
+      "earth": "Fine water mist for the ISS came from this suppression line of work and is used on the ground. Dilution limits travel the same way."
+    }
+  },
+  "PSI-98": {
+    "name": "Saffire-I",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Cygnus vehicle after departure from the ISS",
+    "blurb": "First large-scale spacecraft fire. A cotton-fiberglass blend about a meter long, burned in Cygnus after it left the station.",
+    "scores": {"iss": 84, "moon": 86, "suit": 70, "earth": 34},
+    "relevance": {
+      "iss": "The first burn bigger than an index card in a real spacecraft volume, at cabin oxygen near 21 percent and a set airflow.",
+      "moon": "Scale is right for a habitat. Oxygen in Saffire-I is still the station value, so it is the low-oxygen large-fire bound.",
+      "suit": "Too big and too lean to be a suit fire. It bounds the vehicle the suit returns to.",
+      "earth": "Large-sample spread in a confined volume is a research result, not a ground product."
+    }
+  },
+  "PSI-99": {
+    "name": "Saffire-II",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Cygnus vehicle after departure from the ISS",
+    "blurb": "Nine materials on one card, including silicone, Nomex, and the acrylic used for spacecraft windows, burned at spacecraft scale.",
+    "scores": {"iss": 82, "moon": 85, "suit": 68, "earth": 40},
+    "relevance": {
+      "iss": "The material menu for a cabin: silicone, Nomex, PMMA, SIBAL, at about 20 cm/s and about 21 percent oxygen.",
+      "moon": "Same solids a habitat will fly. Oxygen is still near 21 percent, so treat spread rates as a lower bound.",
+      "suit": "Nomex and silicone are suit-adjacent materials, but the test atmosphere is not 100 percent oxygen at 4.3 psi.",
+      "earth": "Nomex and silicone results are the closest flight data to protective clothing."
+    }
+  },
+  "PSI-100": {
+    "name": "Saffire-III",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Cygnus vehicle after departure from the ISS",
+    "blurb": "Same cotton-fiberglass blend as Saffire-I, burned at a higher flow so ventilation can be compared at spacecraft scale.",
+    "scores": {"iss": 83, "moon": 84, "suit": 66, "earth": 30},
+    "relevance": {
+      "iss": "Raises the airflow on a meter-scale sample. Ventilation is what feeds a station fire once buoyancy is gone.",
+      "moon": "Flow comparison at large scale. Oxygen is still the station mix.",
+      "suit": "Vehicle-scale, not suit-scale.",
+      "earth": "Confined-flow spread, indirect."
+    }
+  },
+  "PSI-101": {
+    "name": "SAME-R",
+    "role": "detection",
+    "roles": ["detection"],
+    "hardware": "ISS smoke aerosol instrument",
+    "blurb": "Reflight of the Smoke Aerosol Measurement Experiment after the first unit's samples were contaminated. Sizes the liquid smoke droplets that form in low gravity.",
+    "scores": {"iss": 90, "moon": 68, "suit": 22, "earth": 74},
+    "relevance": {
+      "iss": "The detector design input: droplet size and how fast smoke moves when there is no buoyant plume.",
+      "moon": "Particle sizes still apply. Dust interference is DAFT, not SAME-R.",
+      "suit": "No suit-volume smoke test.",
+      "earth": "Low-gravity particle sizes explain why a spacecraft detector is built differently from a ceiling alarm."
+    }
+  },
+  "PSI-102": {
+    "name": "SAME",
+    "role": "detection",
+    "roles": ["detection"],
+    "hardware": "ISS smoke aerosol instrument",
+    "blurb": "Smoke Aerosol Measurement Experiment. Overheated Teflon, Kapton, silicone, lampwick, and wire, with airflow and weight-loss rate recorded.",
+    "scores": {"iss": 96, "moon": 74, "suit": 26, "earth": 90},
+    "relevance": {
+      "iss": "Primary detection dataset. Smoke in microgravity does not rise, so particle size and the forced flow set the alarm.",
+      "moon": "The materials are spacecraft materials. Pair it with DAFT before trusting an alarm in dust.",
+      "suit": "Does not size smoke inside a suit.",
+      "earth": "The shuttle detector that ignores dust grew out of this smoke-versus-nuisance work, including mining use."
+    }
+  },
+  "PSI-106": {
+    "name": "SLICE",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Microgravity Science Glovebox flow duct",
+    "blurb": "Structure and Liftoff in Combustion Experiment. Gaseous flames in the same duct family as BASS and SPICE.",
+    "scores": {"iss": 34, "moon": 26, "suit": 14, "earth": 12},
+    "relevance": {
+      "iss": "Liftoff and flame structure in the glovebox duct. Background for BASS, not the material limit.",
+      "moon": "No enriched-oxygen solid sample.",
+      "suit": "Not applicable.",
+      "earth": "Not a product path."
+    }
+  },
+  "PSI-107": {
+    "name": "SPICE",
+    "role": "detection",
+    "roles": ["detection"],
+    "hardware": "Microgravity Science Glovebox flow duct",
+    "blurb": "Smoke Point In Co-flow. The flow duct later shared with BASS and SLICE. Measures when a flame starts making soot.",
+    "scores": {"iss": 48, "moon": 30, "suit": 16, "earth": 28},
+    "relevance": {
+      "iss": "Soot onset changes what a smoke detector sees. Secondary to SAME's particle sizes.",
+      "moon": "No lunar-oxygen materials matrix.",
+      "suit": "Not a suit test.",
+      "earth": "Smoke-point data is a combustion metric, weakly tied to alarms."
+    }
+  },
+  "PSI-108": {
+    "name": "STDCE-1",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "USML-1 Spacelab",
+    "blurb": "Surface Tension Driven Convection Experiment. Liquid free-surface flow driven by temperature, not a fire-safety burn.",
+    "scores": {"iss": 12, "moon": 10, "suit": 6, "earth": 8},
+    "relevance": {
+      "iss": "Included because it is combustion-adjacent fluid physics in the archive. It does not set a flammability limit.",
+      "moon": "No oxygen or material flammability result.",
+      "suit": "No suit result.",
+      "earth": "No fire-service result."
+    }
+  },
+  "PSI-115": {
+    "name": "SAME smoke modeling",
+    "role": "detection",
+    "roles": ["detection"],
+    "hardware": "Model built on SAME",
+    "blurb": "Uses SAME measurements to model smoke generation in microgravity. The report is the NNX17AF08A final report.",
+    "scores": {"iss": 70, "moon": 48, "suit": 18, "earth": 56},
+    "relevance": {
+      "iss": "Turns SAME particle data into a smoke field a detector designer can place a sensor in.",
+      "moon": "The model inherits SAME's materials and flows, not a lunar dust case.",
+      "suit": "Not a suit volume.",
+      "earth": "Smoke-transport modeling is how a less-nuisance detector gets its thresholds."
+    }
+  },
+  "PSI-117": {
+    "name": "Cool-flame perturbation",
+    "role": "suppression",
+    "roles": ["suppression"],
+    "hardware": "Droplet cool-flame analysis",
+    "blurb": "External thermo-convective perturbation of cool flames, from the Farouk papers and a dissertation. Extinction diameters and oscillation, not a cabin test.",
+    "scores": {"iss": 44, "moon": 36, "suit": 20, "earth": 18},
+    "relevance": {
+      "iss": "Cool-flame extinction diameter is a suppression limit for small droplets after FLEX.",
+      "moon": "Pressure and fuel studies. Not a habitat material.",
+      "suit": "Not suit-scale.",
+      "earth": "Extinction-diameter correlations are research results."
+    }
+  },
+  "PSI-142": {
+    "name": "Cool-flame counterflow",
+    "role": "suppression",
+    "roles": ["suppression"],
+    "hardware": "Counterflow flames",
+    "blurb": "Quantitative studies of cool-flame transitions at radiation and stretch extinction in counterflow. A data index more than a flight matrix.",
+    "scores": {"iss": 32, "moon": 24, "suit": 14, "earth": 16},
+    "relevance": {
+      "iss": "Stretch and radiation extinction bound when a cool flame dies. Secondary to FLEX.",
+      "moon": "No habitat oxygen series in the table we hold.",
+      "suit": "Not applicable.",
+      "earth": "Counterflow extinction is a lab method."
+    }
+  },
+  "PSI-159": {
+    "name": "ACME CFI-G",
+    "role": "prevention",
+    "roles": ["prevention"],
+    "hardware": "Combustion Integrated Rack (ACME)",
+    "blurb": "Cool Flames Investigation with Gases. An oxygen-nitrogen mixture, up to about 85 percent oxygen, flows from the spherical burner into a fuel-nitrogen chamber. The highest-oxygen microgravity tests in this set.",
+    "scores": {"iss": 60, "moon": 98, "suit": 96, "earth": 22},
+    "relevance": {
+      "iss": "Most station air is 21 percent oxygen. CFI-G is the enriched-oxygen extreme, not the daily cabin.",
+      "moon": "A lunar habitat is expected at 30 percent oxygen or more, at 10.2 psi or less. CFI-G is the only PSI series that reaches well above that, up to about 85 percent.",
+      "suit": "A suit is 100 percent oxygen at 4.3 psi. CFI-G does not hit 4.3 psi, but it is the high-oxygen flame data that bounds suit fire behavior.",
+      "earth": "High-oxygen burner flames are not a ground fire-service dataset."
+    }
+  }
+}
