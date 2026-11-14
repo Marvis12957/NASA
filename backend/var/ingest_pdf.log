@@ -1,0 +1,4 @@
+investigations 24
+pdfs ok 1 fail 0
+markdown 255 images 8577
+SKIP data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Electric-Field Effects on Flames in Microgravity.pdf: unreadable fake PDF: magic not %PDF, pymupdf page_count=0, metadata format=PDF 1.7 creator=Microsoft PowerPoint 2013 title='Slide 1'; truncated (startxref beyond EOF); LibreOffice soffice failed to load as ppt/pptx/doc; no usable NTRS/repo copy; deleted empty markdown+json stub

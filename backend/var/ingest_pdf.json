@@ -1,0 +1,22 @@
+{
+  "pdfs_found": 232,
+  "pdfs_attempted": 1,
+  "pdfs_succeeded": 1,
+  "pdfs_failed": 0,
+  "investigations": 24,
+  "tesseract": null,
+  "ocr_notes": [],
+  "succeeded": [
+    {
+      "pdf": "data/psi/PSI-23_ACME-S-Flames/Reports/s_Flame_final_report_20210729.pdf",
+      "slug": "s-flame-final-report-20210729",
+      "ok": true,
+      "pages": 114,
+      "images": 28,
+      "markdown": "data/text/PSI-23/s-flame-final-report-20210729.md"
+    }
+  ],
+  "failed": [],
+  "markdown_files": 255,
+  "image_files": 8577
+}

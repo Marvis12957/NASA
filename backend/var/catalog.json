@@ -1,0 +1,2140 @@
+{
+  "scenarios": [
+    {
+      "id": "iss",
+      "label": "ISS cabin (21% O2, 14.7 psi)"
+    },
+    {
+      "id": "moon",
+      "label": "Lunar habitat (\u226530% O2, \u226410.2 psi)"
+    },
+    {
+      "id": "suit",
+      "label": "Spacesuit (100% O2, 4.3 psi)"
+    },
+    {
+      "id": "earth",
+      "label": "Earth fire safety"
+    },
+    {
+      "id": "mars",
+      "label": "Mars surface habitat (partial gravity, no PSI combustion data yet)"
+    },
+    {
+      "id": "rover",
+      "label": "Pressurized rover (\u226530% O2, \u226410.2 psi)"
+    }
+  ],
+  "investigations": [
+    {
+      "id": "PSI-10",
+      "name": "ACME Flame Design",
+      "acronym": "ACME/Flame Design",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "Advanced Combustion via Microgravity Experiments (ACME), Combustion Integrated Rack (CIR), Reconfiguration of Combustion Integrated Rack (CIR)",
+      "familyId": "cir-acme",
+      "family": "CIR + ACME, gaseous flames",
+      "summary": "The primary objectives of this flight experiment are: A. Obtain soot-inception limits of quasi-steady normal and inverse spherical diffusion flames as functions of flow rate, Zst, amount of inert (N2 or CO2), and pressure for C2H4 and CH4 flames. Identify the corresponding temperatures in hot regions. Obtain similar limits and temperatures for inverse and normal coflow flames. B. Obtain detailed measurements in quasi-steady normal and inverse spherical diffusion flames for C2H4 and CH4. Determine the effects of flow rate, Zst, amount of N2, and pressure on flame temperature, size, color, and soot volume fraction. Evaluate the possible existence of steady flames. C. Obtain extinction limits\u2026",
+      "blurb": "Gaseous ethylene flames in the ACME hardware, used to study normal and inverse flame structure rather than a spacecraft material.",
+      "fuels": [
+        "C2H4",
+        "C3H8",
+        "RAMPED",
+        "RAMP"
+      ],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": 19.8,
+      "oxygenMax": 85.0,
+      "oxygenNote": "The inverse-flame table reaches 85% oxygen. The challenge names CFI-G as the high-oxygen microgravity series. Flame Design is flame structure, not the habitat or suit screen.",
+      "flow": null,
+      "runCount": 327,
+      "measurements": [
+        "Tad (K)"
+      ],
+      "varied": [
+        {
+          "name": "XO2 (init)",
+          "distinct": 188
+        },
+        {
+          "name": "XO2 (final)",
+          "distinct": 187
+        },
+        {
+          "name": "mfuel (mg/s)",
+          "distinct": 142
+        },
+        {
+          "name": "XC2H4 initial",
+          "distinct": 120
+        },
+        {
+          "name": "XC2H4 final",
+          "distinct": 120
+        },
+        {
+          "name": "mO2 (mg/s)",
+          "distinct": 114
+        },
+        {
+          "name": "mN2 (mg/s)",
+          "distinct": 111
+        },
+        {
+          "name": "mtot (mg/s)",
+          "distinct": 111
+        },
+        {
+          "name": "mean Zst",
+          "distinct": 111
+        },
+        {
+          "name": "Tad (K)",
+          "distinct": 111
+        },
+        {
+          "name": "Xfuel",
+          "distinct": 98
+        },
+        {
+          "name": "pmean (atm)",
+          "distinct": 89
+        },
+        {
+          "name": "pfinal (atm)",
+          "distinct": 72
+        },
+        {
+          "name": "pinit (atm)",
+          "distinct": 69
+        },
+        {
+          "name": "XO2",
+          "distinct": 60
+        },
+        {
+          "name": "Fuel",
+          "distinct": 2
+        }
+      ],
+      "constant": [
+        {
+          "name": "Flame Type",
+          "value": "Inverse"
+        }
+      ],
+      "relevance": {
+        "iss": "Maps how a gaseous flame sits in the CIR, which is context for material tests but not a flammability limit for cabin fabrics.",
+        "moon": "Inverse flames change where the oxygen is, a useful bound when habitat oxygen is enriched, but the fuel is ethylene gas.",
+        "suit": "Not a spacesuit-atmosphere materials test. Oxygen in these runs is a flame-structure variable.",
+        "earth": "Fundamental gaseous-flame structure, weak link to terrestrial firefighting gear."
+      },
+      "scores": {
+        "iss": 42,
+        "moon": 48,
+        "suit": 36,
+        "earth": 20
+      },
+      "doi": "10.60555/w4zy-bt45",
+      "reports": [
+        "data/psi/PSI-10_ACME-Flame-Design/Reports/PSI-10_Reports_FinalRpt_ACMEFlameDesign.pdf",
+        "data/psi/PSI-10_ACME-Flame-Design/Reports/PSI-10_Reports_TaskbookPubsList_Feb2023.pdf",
+        "data/psi/PSI-10_ACME-Flame-Design/Reports/PSI-10_Reports_TaskbookRpts.pdf",
+        "data/psi/PSI-10_ACME-Flame-Design/Science Documents/PSI-10_Science Documents_ACME_ISRD.pdf",
+        "data/psi/PSI-10_ACME-Flame-Design/Science Documents/PSI-10_Science Documents_SRD_ACMEFlameDesign.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-10_ACME-Flame-Design/Experiment Table/PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+        "data/psi/PSI-10_ACME-Flame-Design/Experiment Table/PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+        "data/psi/PSI-10_ACME-Flame-Design/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-20",
+      "name": "ACME Burning Rate Emulator",
+      "acronym": "ACME BRE",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "Combustion Integrated Rack (CIR), ACME",
+      "familyId": "cir-acme",
+      "family": "CIR + ACME, gaseous flames",
+      "summary": "The BRE flight program seeks to establish the burning conditions in a quiescent microgravity ambient in terms of material properties. The specific flight objectives are as follows. 1. Observe burning behavior in long-duration microgravity for CH4/N2 and C2H4/N2mixtures on porous circular burners of 25 and 50 mm diameter. Consider O2/N2 ambients with various pressures and ambient O2 concentrations and pressures. NASA - considered atmosphere for human space missions will be examined: 14.7 psia, 21 % oxygen: 10.2 psia, 26.5 %; and 8.2 psia, 34 % oxygen. Emphasize fuel conditions that can be related to a diverse range of condensed fuels. 2. Consider the conditions of Objective 1 for ambients\u2026",
+      "blurb": "Burning Rate Emulator studied material flammability in a still atmosphere by matching the burning rate of a solid with a gaseous burner.",
+      "fuels": [
+        "100% C2H4",
+        "50% C2H4",
+        "100%C2H4",
+        "100% CH4"
+      ],
+      "sampleForm": "circular porous burner",
+      "sampleSize": [
+        {
+          "column": "Burner Size (mm)",
+          "min": 25.0,
+          "max": 50.0,
+          "unit": "mm"
+        }
+      ],
+      "oxygenMin": 21.0,
+      "oxygenMax": 40.0,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 18,
+      "measurements": [],
+      "varied": [
+        {
+          "name": "Flames Ignited",
+          "distinct": 12
+        },
+        {
+          "name": "Oxygen Conc (percent)",
+          "distinct": 10
+        },
+        {
+          "name": "Fuel Bottle",
+          "distinct": 4
+        },
+        {
+          "name": "Burner Size (mm)",
+          "distinct": 2
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Still-atmosphere flammability is the no-ventilation limit inside a rack or a closed volume on station.",
+        "moon": "Oxygen was varied from about 21 percent up through the mid-30s and 40 percent, the range expected in a lunar habitat.",
+        "suit": "The high-oxygen BRE points are the closest still-air screen to a suit atmosphere short of the CFI-G burner.",
+        "earth": "A method for screening materials without a large fire, not a detector or turnout-gear result."
+      },
+      "scores": {
+        "iss": 74,
+        "moon": 90,
+        "suit": 84,
+        "earth": 36
+      },
+      "doi": "10.60555/vb93-3y72",
+      "reports": [
+        "data/psi/PSI-20_ACME-BRE/Reports/BRE_final_report_20220201.pdf",
+        "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_SRD_201208.pdf",
+        "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_SRD_201306.pdf",
+        "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_data_interpretation_20220804.pdf",
+        "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_procedure_20210520.pdf",
+        "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf",
+        "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-20_ACME-BRE/Experiment Table/PSI-20_Experimental table_ACME BRE.csv",
+        "data/psi/PSI-20_ACME-BRE/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-21",
+      "name": "ACME Coflow Laminar Diffusion Flame",
+      "acronym": "ACME CLD Flame",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "Combustion Integrated Rack (CIR), ACME",
+      "familyId": "cir-acme",
+      "family": "CIR + ACME, gaseous flames",
+      "summary": "In order to provide the experimental data needed to allow rigorous testing of computational models at the extremes of the fuel dilution spectrum, we have the following objectives: A) Characterize the behavior of weak coflow diffusion flames of methane and ethylene, as a function of velocity and fuel dilution, through measurement of flame shape, lift-off heights, temperatures and extinction limits. B) Characterize the sooting tendencies of diffusion flames with long residence times, as a function of velocity and fuel dilution, through measurement of flame shape, gas temperatures in the soot-free portion of the flame, soot luminosity, soot temperatures, and soot volume fractions.",
+      "blurb": "Coflow laminar diffusion flames of gaseous fuel in ACME. Supporting combustion science, not a solid-material flammability test.",
+      "fuels": [
+        "40% CH4",
+        "100% CH4",
+        "100% C2H4",
+        "100% C2H6",
+        "50% C2H4",
+        "50% C2H6",
+        "30% C2H4"
+      ],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 32,
+      "measurements": [],
+      "varied": [
+        {
+          "name": "Fuel Bottle",
+          "distinct": 30
+        },
+        {
+          "name": "Fuel conc. Range",
+          "distinct": 18
+        },
+        {
+          "name": "Flames ignited",
+          "distinct": 15
+        },
+        {
+          "name": "N2 MFC",
+          "distinct": 4
+        },
+        {
+          "name": "Fuel MFC",
+          "distinct": 2
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Shows how a laminar jet flame behaves without buoyancy. Indirect for cabin material selection.",
+        "moon": "Coflow speed is a stand-in for ventilation, but the fuel is gas, not habitat plastic or fabric.",
+        "suit": "Does not address 100 percent oxygen at suit pressure.",
+        "earth": "Laboratory flame structure, not firefighter equipment."
+      },
+      "scores": {
+        "iss": 30,
+        "moon": 28,
+        "suit": 18,
+        "earth": 16
+      },
+      "doi": "10.60555/23e1-9950",
+      "reports": [
+        "data/psi/PSI-21_ACME-CLD-Flame/Reports/Karnani et al 2009 Exploring the effects of gravity on a coflow diffusion flame.pdf",
+        "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2015 Numerical simulation of a co-flow methane-air flame.pdf",
+        "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2016 Numerical Simulation of Flames.pdf",
+        "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2017 Numerical Simulations of a Co-Flow Methane-Air Flame.pdf",
+        "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2018 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+        "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2019 Comprehensive chemical kinetic mechanism for simple hydrocarbon fuels.pdf",
+        "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2019 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-21_ACME-CLD-Flame/Experiment Table/PSI-21_Experimental table_CLD Flame.csv",
+        "data/psi/PSI-21_ACME-CLD-Flame/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-22",
+      "name": "ACME E-FIELD Flames",
+      "acronym": "ACME E-FIELD Flames",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "Combustion Integrated Rack (CIR), ACME",
+      "familyId": "cir-acme",
+      "family": "CIR + ACME, gaseous flames",
+      "summary": "The objective of this investigation is to better understand the relationship between electric field voltage and chemi-ion current, analyze the dynamic response of flames to electric field changes, evaluate soot formation, and characterize stabilized near-limit lifted flames.",
+      "blurb": "Electric-field effects on laminar diffusion flames. PSI has no partial-gravity combustion data yet; this experiment used the electric field on flame ions to mimic a body force.",
+      "fuels": [
+        "100% CH4",
+        "40% CH4",
+        "100% C2H4",
+        "30% C2H4"
+      ],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 32,
+      "measurements": [],
+      "varied": [
+        {
+          "name": "Fuel Conc",
+          "distinct": 7
+        },
+        {
+          "name": "Flames Ignited",
+          "distinct": 7
+        },
+        {
+          "name": "Fuel Bottle",
+          "distinct": 4
+        },
+        {
+          "name": "Mesh Polarity",
+          "distinct": 2
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "A gaseous-flame body-force study. Secondary to BASS and SAME for station operations.",
+        "moon": "The Moon is partial gravity. Until LUCI and FM2 fly, E-FIELD is the PSI stand-in that puts a force on the flame.",
+        "suit": "Does not reproduce suit oxygen concentration.",
+        "earth": "Ion-driven flow is a research tool, not a fire-service product."
+      },
+      "scores": {
+        "iss": 40,
+        "moon": 72,
+        "suit": 34,
+        "earth": 18
+      },
+      "doi": "10.60555/se5a-8c73",
+      "reports": [
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Electric-Field Effects on Flames in Microgravity.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/E-FIELD Flames 30-day report Inc 55-56 20181115.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/E-FIELD Flames 30-day report Inc 57-58 20190601.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/E-FIELD Flames Final Report.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Swenson et al 2011 Electric field induced convection in microgravity combustion.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Tinajero et al 2014 Ground-Based Schlieren Experiments.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Tinajero et al 2016 characterizing i-v curves for non-premixed methane flames.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/ACME E-FIELD Flames DoD.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames data interpretation document.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_SRD_20100402.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_benefits_20200518.pdf",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_procedure_20200723.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/Experiment Table/PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+        "data/psi/PSI-22_ACME-E-FIELD-Flames/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-23",
+      "name": "ACME s-Flame",
+      "acronym": "ACME s-Flame",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "Combustion Integrated Rack (CIR), ACME",
+      "familyId": "cir-acme",
+      "family": "CIR + ACME, gaseous flames",
+      "summary": "A series of experiments is proposed with the following specific objectives, in both soot-free and sooty flames, to compare with detailed computational simulation to assess transport properties and detailed chemical kinetics (including chemiluminescence): Objective A. Measure and characterize the transient structure (such as temperature and species distribution) of diffusion flames established at initially non-steady, spherical flame structures for mixtures of different H2/CH4/diluent ratios (soot-free) and different C2H4/diluent ratios (sooty), for different flow rates. Objective B. Determine the quasi-steady convective/chemical-kinetic extinction limits (low system Damk\u00f6hler numbers) and\u2026",
+      "blurb": "Structure and response of spherical diffusion flames in ACME. The microgravity flame shape (a sphere fed by diffusion) is the basic picture behind freefall fire.",
+      "fuels": [
+        "50% C2H4 with N2",
+        "45% CH4 with N2",
+        "100% H2",
+        "44.4% H2 with CH4",
+        "66.7% H2 with CH4",
+        "25% H2, 20% CH4, with He",
+        "20% H2, 25% CH4, with He",
+        "30% H2, 15% CH4, with He",
+        "45% H2 with He",
+        "45% CH4 with He",
+        "20% C2H4 with He",
+        "25% C2H4 with He"
+      ],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 18,
+      "measurements": [],
+      "varied": [
+        {
+          "name": "Fuel Bottle",
+          "distinct": 16
+        },
+        {
+          "name": "Flames Ignited*",
+          "distinct": 12
+        },
+        {
+          "name": "Atmosphere*",
+          "distinct": 9
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Explains why a station flame is spherical and diffusion-limited once buoyancy is gone.",
+        "moon": "Spherical flames are the zero-g end of the bound. Lunar gravity sits between this and a normal flame.",
+        "suit": "Shape study, not a suit-material limit.",
+        "earth": "The contrast with a teardrop flame is teaching material, not a product."
+      },
+      "scores": {
+        "iss": 46,
+        "moon": 40,
+        "suit": 30,
+        "earth": 14
+      },
+      "doi": "10.60555/k57n-p030",
+      "reports": [
+        "data/psi/PSI-23_ACME-S-Flames/Reports/s-Flame 30-day report Inc 63 20201216.pdf",
+        "data/psi/PSI-23_ACME-S-Flames/Reports/s_Flame_final_report_20210729.pdf",
+        "data/psi/PSI-23_ACME-S-Flames/Science Documents/ACME s-Flame  DoD.pdf",
+        "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf",
+        "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame_RDR_201005.pdf",
+        "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame_SRD_20100125.pdf",
+        "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame_data_interpretation_20210920.pdf",
+        "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flames_procedure_20210408.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-23_ACME-S-Flames/Experiment Table/PSI-23_Experimental table_ACME s-Flame.csv",
+        "data/psi/PSI-23_ACME-S-Flames/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-25",
+      "name": "BASS-II",
+      "acronym": "BASS-II",
+      "role": "prevention",
+      "roles": [
+        "prevention",
+        "suppression"
+      ],
+      "hardware": "Microgravity Science Glovebox (MSG)",
+      "familyId": "msg-duct",
+      "family": "MSG glovebox, SPICE fan duct",
+      "summary": "BASS-II results contribute to the combustion computational models used in the design of fire detection and suppression systems in microgravity and on Earth. Objectives Include: 1) Study the ignition, flame growth, flame spread, and extinction limits for solid fuels burning in low-velocity forced flows in microgravity. 2) Begin to bridge the gap between the normal gravity NASA-STD-6001 Test #1 method, ground-based microgravity tests, and actual material flammability in microgravity. 3) Provide SoFIE PIs with preliminary data to refine Science Requirements. 4) Practical, realistic (thicker) fuels in typical geometries will be examined, including slabs, cylinders, and spherical sections. The\u2026",
+      "blurb": "Burning and Suppression of Solids II. Solid fuels in a ventilated duct on the ISS, with oxygen recorded on the test matrix.",
+      "fuels": [
+        "100 micron PMMA film 2 cm wide",
+        "200 micron PMMA film 2 cm wide",
+        "100 micron film 2 cm wide",
+        "300 micron PMMA film 2 cm wide",
+        "200 micron 2 cm wide",
+        "2 cm 0.1 mm PMMA film",
+        "400 micron film 2 cm wide",
+        "2 cm 0.2 mm PMMA film",
+        "1 cm 0.2 mm PMMA film",
+        "300 micron film 2 cm wide",
+        "2 cm 0.4 mm thick film",
+        "1 cm wide 200 micron thick PMMA"
+      ],
+      "sampleForm": "flat solid sample",
+      "sampleSize": [],
+      "oxygenMin": 13.6,
+      "oxygenMax": 22.2,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 129,
+      "measurements": [
+        "Radiometer gain   (1000   250   50   10)"
+      ],
+      "varied": [
+        {
+          "name": "Final CO (ppm)",
+          "distinct": 100
+        },
+        {
+          "name": "Fan display",
+          "distinct": 98
+        },
+        {
+          "name": "Air display",
+          "distinct": 87
+        },
+        {
+          "name": "Final CO2 % by vol",
+          "distinct": 81
+        },
+        {
+          "name": "Initial CO (ppm)",
+          "distinct": 67
+        },
+        {
+          "name": "Calibrated final O2 % by vol",
+          "distinct": 66
+        },
+        {
+          "name": "Initial CO2 % by vol",
+          "distinct": 53
+        },
+        {
+          "name": "Calibrated  initial O2 % by vol",
+          "distinct": 50
+        },
+        {
+          "name": "Fuel Sample Material",
+          "distinct": 49
+        },
+        {
+          "name": "Radiometer gain   (1000   250   50   10)",
+          "distinct": 12
+        },
+        {
+          "name": "Flow restrictor",
+          "distinct": 3
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Directly the materials and the low-speed ventilation a crew cabin actually has.",
+        "moon": "Solid fuels (films, fabrics) plus a measured oxygen level are what a lunar habitat material screen needs.",
+        "suit": "Shows how the same solids behave as oxygen rises, which is the direction a suit prebreathe and cabin move.",
+        "earth": "Suppression and spread on thin materials informs how fabrics burn, loosely related to turnout gear."
+      },
+      "scores": {
+        "iss": 86,
+        "moon": 92,
+        "suit": 80,
+        "earth": 44
+      },
+      "doi": "10.60555/4qc4-de67",
+      "reports": [
+        "data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf",
+        "data/psi/PSI-25_BASS-II/Science Documents/SRD_BASS-II.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-25_BASS-II/Experiment Table/PSI-25_Experimental table_BASS-II.csv",
+        "data/psi/PSI-25_BASS-II/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-26",
+      "name": "BASS",
+      "acronym": "BASS",
+      "role": "prevention",
+      "roles": [
+        "prevention",
+        "suppression"
+      ],
+      "hardware": "Microgravity Science Glovebox",
+      "familyId": "msg-duct",
+      "family": "MSG glovebox, SPICE fan duct",
+      "summary": "The two main objectives for BASS are to: 1.) Begin to bridge the gap between the normal gravity NASA-STD-6001 Test#1 method, ground-based microgravity tests, and actual material flammability in microgravity. The relation between these can be investigated by observing flames burning for the longer times available in flight. Practical, realistic (thicker) fuels in typical geometries will be examined, including wake flames which have characteristics of a fire burning behind another object (for example, a fire burning in tight area which may not be easily accessible). 2.) Assess the effectiveness of an inert, gaseous extinguishing agent (similar to that used on ISS) in putting out flames over\u2026",
+      "blurb": "Burning and Suppression of Solids. Bridged the NASA-STD-6001 ground test and real microgravity flammability, and tried a gaseous extinguisher like the ISS agent.",
+      "fuels": [
+        "SIBAL 2 cm",
+        "PMMA sphere 2 cm",
+        "PMMA sphere 1 cm",
+        "SIBAL 1 cm",
+        "Nomex blend 2 cm",
+        "PMMA 2 cm",
+        "PMMA 1 cm",
+        "2 cm sphere",
+        "1 cm sphere",
+        "Nomex III Natural",
+        "PMMA slab",
+        "ultem sheet"
+      ],
+      "sampleForm": "flat solid sample",
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 122,
+      "measurements": [],
+      "varied": [
+        {
+          "name": "Fuel Sample Material",
+          "distinct": 34
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "SIBAL fabric and PMMA in the glovebox duct, plus a nitrogen-style extinguisher already used on station.",
+        "moon": "Thicker, realistic solids in a forced flow. Habitat oxygen will be higher than these early runs, so read them as the low-oxygen bound.",
+        "suit": "Useful geometry (fire behind an object, wake flames) but not 100 percent oxygen.",
+        "earth": "Extinguisher effectiveness on small solids. The flight hardware is not a ground extinguisher."
+      },
+      "scores": {
+        "iss": 88,
+        "moon": 90,
+        "suit": 76,
+        "earth": 42
+      },
+      "doi": "10.60555/58h4-dy80",
+      "reports": [
+        "data/psi/PSI-26_BASS/Science Documents/DLD_BASS.pdf",
+        "data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf",
+        "data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf",
+        "data/psi/PSI-26_BASS/Science Documents/SRD_BASS.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-26_BASS/Experiment Table/PSI-26_Experimental table_BASS.csv",
+        "data/psi/PSI-26_BASS/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-39",
+      "name": "Cool Flames Investigation",
+      "acronym": "CFI",
+      "role": "suppression",
+      "roles": [
+        "suppression"
+      ],
+      "hardware": "Multi-User Droplet Combustion Apparatus (MDCA), Combustion Integrated Rack (CIR)",
+      "familyId": "cir-mdca",
+      "family": "CIR + MDCA, liquid droplets",
+      "summary": "The objectives of this investigation are to: 1) Examine the combustion behavior of n-dodecane and mixtures of n-dodecane/iso-dodecane at pressures ranging from 0.25 atm to 5 atm. 2) Analyze the effects of helium dilution on cool flame behavior. 3) Examine the behavior of combustion characteristics. 4) Investigate the relationship between droplet size, pressure, and flame extinction, and (5) understand the consequence of soot formation during cool flame combustion.",
+      "blurb": "Cool flames around liquid-fuel droplets. A flame can look out and still be burning in a cool-flame mode, which matters for declaring a fire extinguished.",
+      "fuels": [
+        "C12H26",
+        "[.75]/[.25] C12H26/iso-dodecane",
+        "[.60]/[.40] C12H26/iso-dodecane"
+      ],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": 17.0,
+      "oxygenMax": 21.0,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 87,
+      "measurements": [
+        "Pressure"
+      ],
+      "varied": [
+        {
+          "name": "Flex Number",
+          "distinct": 79
+        },
+        {
+          "name": "CIR",
+          "distinct": 79
+        },
+        {
+          "name": "Pressure",
+          "distinct": 7
+        },
+        {
+          "name": "Nitrogen",
+          "distinct": 5
+        },
+        {
+          "name": "Helium",
+          "distinct": 3
+        },
+        {
+          "name": "Fuel",
+          "distinct": 3
+        },
+        {
+          "name": "Oxygen",
+          "distinct": 2
+        },
+        {
+          "name": "Fiber",
+          "distinct": 2
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Droplet fuels in cabin atmospheres. Cool-flame survival means a visible extinction is not always the end of combustion.",
+        "moon": "Oxygen and diluent were varied. Cool flames are a suppression false-negative, not a materials limit.",
+        "suit": "Droplet chemistry, not suit fabric.",
+        "earth": "Explains reignition after an apparent extinguishment. Indirect for terrestrial nozzles."
+      },
+      "scores": {
+        "iss": 64,
+        "moon": 58,
+        "suit": 40,
+        "earth": 30
+      },
+      "doi": "10.60555/m6pj-a914",
+      "reports": [
+        "data/psi/PSI-39_CFI/Reports/Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf",
+        "data/psi/PSI-39_CFI/Reports/CFI Science Final Report.pdf",
+        "data/psi/PSI-39_CFI/Science Documents/CFI Operational Requirements and Protocols.pdf",
+        "data/psi/PSI-39_CFI/Science Documents/Pres_SCR_CFI.pdf",
+        "data/psi/PSI-39_CFI/Science Documents/SRD_CFI.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-39_CFI/Experiment Table/PSI-39_Experimental table_CFI.csv",
+        "data/psi/PSI-39_CFI/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-47",
+      "name": "DAFT / DAFT-2",
+      "acronym": "DAFT / DAFT-2",
+      "role": "detection",
+      "roles": [
+        "detection"
+      ],
+      "hardware": "TSI P-Trak",
+      "familyId": "aerosol",
+      "family": "ISS aerosol instrument (SAME and DAFT)",
+      "summary": "The focus of DAFT / DAFT-2 was to mitigate the risk for the Smoke Aerosol Measurement Experiment (SAME). SAME relied on a commercially available condensate nuclei counter, the TSI P-Trak, to quantify smoke aerosols in a microgravity environment, however there were concerns that th P-Trak would not be reliable in microgravity as it relies on gravity to recycle isopropyl alcohol used in the measurement process. DAFT / DAFT-2 tests that a modified P-Trak particulate counter would be accurate in microgravity. Summarized objectives include: 1) Demonstrate the Functionality of the Modified TSI P-Trak in Microgravity 2) Compare the TSI P-Trak Performance against the DustTrak control 3) Create and\u2026",
+      "blurb": "Dust and Aerosol Measurement Feasibility Test. The smoke instrument from SAME was pointed at dust instead of smoke.",
+      "fuels": [
+        "Arizona Road Dust (ARD Fine) in combination with ISS GN2 to create an aerosol for measurement purposes."
+      ],
+      "sampleForm": "dust aerosol",
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 2,
+      "measurements": [],
+      "varied": [
+        {
+          "name": "Session Name",
+          "distinct": 2
+        },
+        {
+          "name": "Hardware Description",
+          "distinct": 2
+        },
+        {
+          "name": "Sampled Location",
+          "distinct": 2
+        }
+      ],
+      "constant": [
+        {
+          "name": "Sample Material",
+          "value": "Arizona Road Dust (ARD Fine) in combination with ISS GN2 to create an aerosol\u2026"
+        }
+      ],
+      "relevance": {
+        "iss": "Nuisance dust on station is why a smoke detector false-alarms. DAFT measures that background.",
+        "moon": "Lunar dust is the same problem, sharper. A detector that cannot tell dust from smoke will alarm whenever the habitat is dirty.",
+        "suit": "Not a suit-fire experiment.",
+        "earth": "This is the flight root of the shuttle detector that separates smoke from dust, later used in mines."
+      },
+      "scores": {
+        "iss": 78,
+        "moon": 70,
+        "suit": 24,
+        "earth": 88
+      },
+      "doi": "10.60555/ztgj-d202",
+      "reports": [
+        "data/psi/PSI-47_DAFT/Reports/Exp_13_DAFT_30-Day_Postflight_Report.pdf",
+        "data/psi/PSI-47_DAFT/Reports/daft_fact_sheet_final1.pdf",
+        "data/psi/PSI-47_DAFT/Science Documents/MGUEEXPRSDAFTN010 - 2.010.pdf",
+        "data/psi/PSI-47_DAFT/Science Documents/MGUEEXPRSDAFTN011 - 2.011.pdf",
+        "data/psi/PSI-47_DAFT/Science Documents/MGUEEXPRSDAFTN012 - 2.012.pdf",
+        "data/psi/PSI-47_DAFT/Science Documents/MGUEEXPRSDAFTN013 - 2.013.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-47_DAFT/Experiment Table/PSI-47_Experimental table_DAFT.csv",
+        "data/psi/PSI-47_DAFT/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-60",
+      "name": "SPICE data analysis",
+      "acronym": "SPICE data analysis",
+      "role": "detection",
+      "roles": [
+        "detection"
+      ],
+      "hardware": "Analysis of SPICE coflow data",
+      "familyId": "analysis",
+      "family": "Analysis or model, not a new burn",
+      "summary": "This ground investigation sought to increase understanding of the issues that control the large discrepancy between soot formation in 1g and in 0g flames. The objective of this investigation was to integrate computational and experimental methods to derive temperature distributions and soot volume fractions from the Smoke Point in Coflow Experiment (SPICE) data available in PSI. By analyzing over 1600 raw DSLR images and incorporating advanced soot models, the study sought to improve understanding of soot formation, oxidation, radiative re-absorption, and aggregate growth in heavily sooting flames. The work further aimed to reconcile microgravity and normal gravity flame behavior, identify\u2026",
+      "blurb": "Computational analysis of the Smoke Point In Co-flow Experiment. A paper-scale study, not a new flight test.",
+      "fuels": [],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": null,
+      "measurements": [],
+      "varied": [],
+      "constant": [],
+      "relevance": {
+        "iss": "Soot-point models support how much smoke a detector might see. Secondary to SAME itself.",
+        "moon": "No habitat oxygen or dust measurement.",
+        "suit": "No suit condition.",
+        "earth": "Soot modeling only."
+      },
+      "scores": {
+        "iss": 36,
+        "moon": 22,
+        "suit": 12,
+        "earth": 20
+      },
+      "doi": "10.60555/mzjm-yv57",
+      "reports": [],
+      "sources": [
+        "data/psi/PSI-60_SPICE-Data-Analysis/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-62",
+      "name": "Concurrent flame spread vs BASS",
+      "acronym": "Concurrent flame spread vs BASS",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "Model compared to BASS",
+      "familyId": "analysis",
+      "family": "Analysis or model, not a new burn",
+      "summary": "The objective of this research was to develop and validate new flamelet generated manifold (FGM) modeling techniques for concurrent flame spread in microgravity. Concurrent flame spread presented one of the greatest modeling challenges in combustion science due to the intricate coupling between heat transfer, mass transport, and chemical kinetics near the solid-vapor interface. Traditional modeling strategies often relied on hybridized turbulence and chemistry models that were not fully consistent and failed to capture important intermediate reaction pathways. To overcome these shortcomings, this PSI grant advanced the use of an unsteady flamelet generated manifold (UFGM) framework that\u2026",
+      "blurb": "Concurrent flame-spread modeling with flamelet-generated manifolds, checked against BASS. A model, not a new burn.",
+      "fuels": [],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": null,
+      "measurements": [],
+      "varied": [],
+      "constant": [],
+      "relevance": {
+        "iss": "A way to extrapolate BASS spread instead of burning every material on station.",
+        "moon": "The model is only as good as the BASS oxygen range it was checked against.",
+        "suit": "Not validated at suit oxygen.",
+        "earth": "Numerical method, not hardware."
+      },
+      "scores": {
+        "iss": 58,
+        "moon": 50,
+        "suit": 28,
+        "earth": 22
+      },
+      "doi": "10.60555/e9xp-ex83",
+      "reports": [],
+      "sources": [
+        "data/psi/PSI-62_Flame-Spread-vs-BASS/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-68",
+      "name": "FLEX-2",
+      "acronym": "FLEX-2",
+      "role": "suppression",
+      "roles": [
+        "suppression"
+      ],
+      "hardware": "Combustion Integrated Rack (CIR), Multi-user Droplet Combustion Appartatus (MDCA)",
+      "familyId": "cir-mdca",
+      "family": "CIR + MDCA, liquid droplets",
+      "summary": "The primary goal of the FLEX-2 flight experiments is to extend the results of FLEX-1 to fuels and environmental conditions that mimic real combustor conditions, as well as, provide benchmark experimental data on bi-component droplet combustion over a wide range of initial conditions in order to validate numerical simulations and to develop new theoretical models. Detailed experimental objectives can be further itemized as: 1. Investigate the role of liquid-phase mixing on the burning characteristics of bi-component fuel droplets. 2. Examine the steady and unsteady liquid and gas-phase phenomena in pure fuel combustion. 3. Study flame extinction mechanisms and their boundaries. 4. Analyze\u2026",
+      "blurb": "Second Flame Extinguishment Experiment. Liquid droplets in oxygen-nitrogen or oxygen-helium, with a small imposed flow.",
+      "fuels": [
+        "IsoOctane (pure)",
+        "n-Octane (pure)",
+        "Heptane (pure)",
+        "Decane (pure)",
+        "Ethanol (pure)",
+        "Propanol (95%) Glycerol (5%) (mixture)",
+        "Heptane (50%) IsoOctane (50%) (mixture)",
+        "Propanol (80%) Glycerol (20%) (mixture)"
+      ],
+      "sampleForm": "droplet",
+      "sampleSize": [
+        {
+          "column": "Initial Droplet Diameter (mm)",
+          "min": 1.5,
+          "max": 5.0,
+          "unit": "mm"
+        }
+      ],
+      "oxygenMin": 17.0,
+      "oxygenMax": 30.0,
+      "oxygenNote": null,
+      "flow": "0.1\u20135",
+      "runCount": 8,
+      "measurements": [
+        "Initial Droplet Diameter (mm)",
+        "Ambient Pressure (atm)",
+        "Ambient Temperature (C)",
+        "Flow Velocity (cm/s)"
+      ],
+      "varied": [
+        {
+          "name": "Sample (Fuel Type)",
+          "distinct": 8
+        }
+      ],
+      "constant": [
+        {
+          "name": "Initial Droplet Diameter (mm)",
+          "value": "1.5 - 5"
+        },
+        {
+          "name": "Ambient Gas Mixture",
+          "value": "O2/N2 or O2/He"
+        },
+        {
+          "name": "Oxygen Mole Fraction",
+          "value": "0.17; 0.21;0.25; 0.3"
+        },
+        {
+          "name": "Ambient Pressure (atm)",
+          "value": "0.5; 1.0; 1.5; 2.0; or 3.0"
+        },
+        {
+          "name": "Ambient Temperature (C)",
+          "value": "25"
+        },
+        {
+          "name": "Flow Velocity (cm/s)",
+          "value": "0.1 - 5"
+        }
+      ],
+      "relevance": {
+        "iss": "Extinction of droplet flames when oxygen, pressure, and a slow flow change. That is the suppression corner of station fire safety.",
+        "moon": "Oxygen mole fractions in the test matrix reach about 0.30, which touches the lunar-habitat band.",
+        "suit": "Droplets, not a suit liner.",
+        "earth": "Helium and nitrogen dilution is the same idea as inerting a compartment."
+      },
+      "scores": {
+        "iss": 80,
+        "moon": 62,
+        "suit": 38,
+        "earth": 48
+      },
+      "doi": "10.60555/byp8-h018",
+      "reports": [
+        "data/psi/PSI-68_FLEX-2/Science Documents/FLEX-2 SRD Final _ No Hypertext .pdf",
+        "data/psi/PSI-68_FLEX-2/Science Documents/FLEX-2 SRD Final.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-68_FLEX-2/Experiment Table/PSI-68_Experimental table_Flex2.csv",
+        "data/psi/PSI-68_FLEX-2/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-69",
+      "name": "FLEX",
+      "acronym": "FLEX",
+      "role": "suppression",
+      "roles": [
+        "suppression"
+      ],
+      "hardware": "Combustion Integrated Rack (CIR)-Fluids and Combustion Facility (FCF), Multi-user Droplet Combustion Appartatus (MDCA)",
+      "familyId": "cir-mdca",
+      "family": "CIR + MDCA, liquid droplets",
+      "summary": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments, measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6, and develop reliable predictive models for combustion limits under reduced gravity conditions. The mission seeks to validate and improve simplified models by incorporating detailed chemical reactions, heat transfer, and material movement, using both space-based data and extensive ground-based tests. Key flight experiment goals include obtaining high-resolution measurements of droplet burning rates, flame extinction behavior, heat radiation, soot levels, and\u2026",
+      "blurb": "Flame Extinguishment Experiment. Droplets of liquid fuel in atmospheres diluted with carbon dioxide or helium, the two suppressants studied for spacecraft.",
+      "fuels": [
+        "Methanol",
+        "Heptane"
+      ],
+      "sampleForm": "droplet",
+      "sampleSize": [
+        {
+          "column": "Droplet initial diameter; mm",
+          "min": 1.1,
+          "max": 4.67,
+          "unit": ""
+        }
+      ],
+      "oxygenMin": 12.0,
+      "oxygenMax": 34.0,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 274,
+      "measurements": [
+        "Ambient pressure; mmHg",
+        "Droplet initial diameter; mm",
+        "Visible flame extinction diameter; mm",
+        "Burning rate; mm",
+        "Burn time; s"
+      ],
+      "varied": [
+        {
+          "name": "Ambient pressure; mmHg",
+          "distinct": 183
+        },
+        {
+          "name": "Droplet initial diameter; mm",
+          "distinct": 164
+        },
+        {
+          "name": "Visible flame extinction diameter; mm",
+          "distinct": 146
+        },
+        {
+          "name": "Burning rate; mm",
+          "distinct": 60
+        },
+        {
+          "name": "N initial ambient composition; mole fraction",
+          "distinct": 33
+        },
+        {
+          "name": "O initial ambient composition; mole fraction",
+          "distinct": 15
+        },
+        {
+          "name": "CO initial ambient composition; mole fraction",
+          "distinct": 14
+        },
+        {
+          "name": "He initial ambient composition; mole fraction",
+          "distinct": 10
+        },
+        {
+          "name": "Fuel",
+          "distinct": 2
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "The suppression dataset: carbon dioxide and helium dilution, with oxygen mole fraction and droplet size for hundreds of burns.",
+        "moon": "Most runs sit near Earth oxygen. Use it for the suppressant, not for a 30 percent oxygen material limit.",
+        "suit": "Does not cover a pure-oxygen suit.",
+        "earth": "Fine water mist for the ISS came from this suppression line of work and is used on the ground. Dilution limits travel the same way."
+      },
+      "scores": {
+        "iss": 92,
+        "moon": 66,
+        "suit": 36,
+        "earth": 80
+      },
+      "doi": "10.60555/mbq8-0451",
+      "reports": [
+        "data/psi/PSI-69_FLEX/Reports/Dynamics of Water Absorption and Evaporation During Methanol Droplet Combustion (NTRS 20130010979).pdf",
+        "data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf",
+        "data/psi/PSI-69_FLEX/Science Documents/FLEX_EIRD_v4.pdf",
+        "data/psi/PSI-69_FLEX/Science Documents/FLEX_Test_Plan.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-69_FLEX/Experiment Table/PSI-69_Experimental table_FLEX.csv",
+        "data/psi/PSI-69_FLEX/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-98",
+      "name": "Saffire-I",
+      "acronym": "SAFFIRE-I",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "Saffire 1 enclosure in Cygnus",
+      "familyId": "cygnus",
+      "family": "Cygnus vehicle after it left the ISS",
+      "summary": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA\u2019s normal gravity material flammability screening test.",
+      "blurb": "First large-scale spacecraft fire. A cotton-fiberglass blend about a meter long, burned in Cygnus after it left the station.",
+      "fuels": [
+        "SIBAL Fabric"
+      ],
+      "sampleForm": "flat solid sample",
+      "sampleSize": [
+        {
+          "column": "Sample Thickness (cm)",
+          "min": 0.37,
+          "max": 0.37,
+          "unit": "cm"
+        },
+        {
+          "column": "Sample Length (cm)",
+          "min": 40.6,
+          "max": 40.6,
+          "unit": "cm"
+        },
+        {
+          "column": "Sample Width (cm)",
+          "min": 94.0,
+          "max": 94.0,
+          "unit": "cm"
+        }
+      ],
+      "oxygenMin": 21.5,
+      "oxygenMax": 21.7,
+      "oxygenNote": null,
+      "flow": "20",
+      "runCount": 4,
+      "measurements": [
+        "Ignition Power (W)",
+        "Burn Time (s)",
+        "Camera 1",
+        "Camera 2"
+      ],
+      "varied": [
+        {
+          "name": "Material",
+          "distinct": 3
+        },
+        {
+          "name": "Percent O2",
+          "distinct": 2
+        },
+        {
+          "name": "Flow Direction",
+          "distinct": 2
+        },
+        {
+          "name": "Camera 1",
+          "distinct": 2
+        },
+        {
+          "name": "Camera 2",
+          "distinct": 2
+        }
+      ],
+      "constant": [
+        {
+          "name": "Sample Thickness (cm)",
+          "value": "0.37"
+        },
+        {
+          "name": "Sample Length (cm)",
+          "value": "40.6"
+        },
+        {
+          "name": "Sample Width (cm)",
+          "value": "94"
+        },
+        {
+          "name": "Air Flow (cm/s)",
+          "value": "20"
+        },
+        {
+          "name": "Ignition Power (W)",
+          "value": "182"
+        }
+      ],
+      "relevance": {
+        "iss": "The first burn bigger than an index card in a real spacecraft volume, at cabin oxygen near 21 percent and a set airflow.",
+        "moon": "Scale is right for a habitat. Oxygen in Saffire-I is still the station value, so it is the low-oxygen large-fire bound.",
+        "suit": "Too big and too lean to be a suit fire. It bounds the vehicle the suit returns to.",
+        "earth": "Large-sample spread in a confined volume is a research result, not a ground product."
+      },
+      "scores": {
+        "iss": 84,
+        "moon": 86,
+        "suit": 70,
+        "earth": 34
+      },
+      "doi": "10.60555/0t15-1z43",
+      "reports": [
+        "data/psi/PSI-98_SAFFIRE-I/Science Documents/SAFFIRE-I Image Directory Nomenclature.pdf",
+        "data/psi/PSI-98_SAFFIRE-I/Science Documents/SAFFIRE-I Operations.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-98_SAFFIRE-I/Experiment Table/PSI-98_Experimental table_SAFFIRE-1.csv",
+        "data/psi/PSI-98_SAFFIRE-I/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-99",
+      "name": "Saffire-II",
+      "acronym": "SAFFIRE-II",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "Cygnus Pressurized Cargo Module, SAFFIRE",
+      "familyId": "cygnus",
+      "family": "Cygnus vehicle after it left the ISS",
+      "summary": "The objectives of SAFFIRE-II are to determine how rapidly a large scale fire grows in low-gravity and to investigate the low-g flammability limits compared to those obtained in NASA\u2019s normal gravity material flammability screening test.",
+      "blurb": "Nine materials on one card, including silicone, Nomex, and the acrylic used for spacecraft windows, burned at spacecraft scale.",
+      "fuels": [
+        "Silicone",
+        "Cotton-Fiberglass (SIBAL)",
+        "PMMA & Nomex",
+        "PMMA"
+      ],
+      "sampleForm": "flat solid sample",
+      "sampleSize": [
+        {
+          "column": "Samle Thickness",
+          "min": 0.27,
+          "max": 37.0,
+          "unit": ""
+        },
+        {
+          "column": "Sample Length",
+          "min": 5.0,
+          "max": 29.0,
+          "unit": ""
+        },
+        {
+          "column": "Sample Width (cm)",
+          "min": 5.0,
+          "max": 5.0,
+          "unit": "cm"
+        }
+      ],
+      "oxygenMin": 21.5,
+      "oxygenMax": 22.1,
+      "oxygenNote": null,
+      "flow": "20",
+      "runCount": 15,
+      "measurements": [
+        "Ignition Power (W)",
+        "Burn Time (s)",
+        "Camera 1",
+        "Camera 2"
+      ],
+      "varied": [
+        {
+          "name": "Camera 1",
+          "distinct": 8
+        },
+        {
+          "name": "Samle Thickness",
+          "distinct": 7
+        },
+        {
+          "name": "Camera 2",
+          "distinct": 7
+        },
+        {
+          "name": "Material",
+          "distinct": 6
+        },
+        {
+          "name": "?-g Burn Length",
+          "distinct": 5
+        },
+        {
+          "name": "?-g Spread Length",
+          "distinct": 5
+        },
+        {
+          "name": "1-g Spread Rate",
+          "distinct": 5
+        },
+        {
+          "name": "Percent O2 (Note 1)",
+          "distinct": 4
+        },
+        {
+          "name": "1-g Burn Length",
+          "distinct": 4
+        },
+        {
+          "name": "Sample Length",
+          "distinct": 2
+        },
+        {
+          "name": "Ignition Power (W)",
+          "distinct": 2
+        },
+        {
+          "name": "Flow Direction",
+          "distinct": 2
+        }
+      ],
+      "constant": [
+        {
+          "name": "Sample Width (cm)",
+          "value": "5 cm"
+        },
+        {
+          "name": "Air Flow (cm/s)",
+          "value": "20 cm/s"
+        }
+      ],
+      "relevance": {
+        "iss": "The material menu for a cabin: silicone, Nomex, PMMA, SIBAL, at about 20 cm/s and about 21 percent oxygen.",
+        "moon": "Same solids a habitat will fly. Oxygen is still near 21 percent, so treat spread rates as a lower bound.",
+        "suit": "Nomex and silicone are suit-adjacent materials, but the test atmosphere is not 100 percent oxygen at 4.3 psi.",
+        "earth": "Nomex and silicone results are the closest flight data to protective clothing."
+      },
+      "scores": {
+        "iss": 82,
+        "moon": 85,
+        "suit": 68,
+        "earth": 40
+      },
+      "doi": "10.60555/2chp-m469",
+      "reports": [
+        "data/psi/PSI-99_SAFFIRE-II/Science Documents/SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-99_SAFFIRE-II/Experiment Table/PSI-99_Experimental table_SAFFIRE-2.csv",
+        "data/psi/PSI-99_SAFFIRE-II/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-100",
+      "name": "Saffire-III",
+      "acronym": "SAFFIRE-III",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "Saffire III enclosure in Cygnus",
+      "familyId": "cygnus",
+      "family": "Cygnus vehicle after it left the ISS",
+      "summary": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA\u2019s normal gravity material flammability screening test.",
+      "blurb": "Same cotton-fiberglass blend as Saffire-I, burned at a higher flow so ventilation can be compared at spacecraft scale.",
+      "fuels": [
+        "SIBAL Fabric"
+      ],
+      "sampleForm": "flat solid sample",
+      "sampleSize": [
+        {
+          "column": "Sample Thickness",
+          "min": 33.0,
+          "max": 33.0,
+          "unit": ""
+        },
+        {
+          "column": "Sample Length",
+          "min": 94.0,
+          "max": 94.0,
+          "unit": ""
+        },
+        {
+          "column": "Sample Width",
+          "min": 40.6,
+          "max": 40.6,
+          "unit": ""
+        }
+      ],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": "30",
+      "runCount": 2,
+      "measurements": [
+        "Camera 1",
+        "Camera 2"
+      ],
+      "varied": [
+        {
+          "name": "Direction",
+          "distinct": 2
+        },
+        {
+          "name": "Camera 1",
+          "distinct": 2
+        },
+        {
+          "name": "Camera 2",
+          "distinct": 2
+        }
+      ],
+      "constant": [
+        {
+          "name": "Material",
+          "value": "SIBAL Fabric"
+        },
+        {
+          "name": "Sample Thickness",
+          "value": ".33 cm"
+        },
+        {
+          "name": "Sample Length",
+          "value": "94 cm"
+        },
+        {
+          "name": "Sample Width",
+          "value": "40.6 cm"
+        },
+        {
+          "name": "Air Flow",
+          "value": "30 cm/s"
+        }
+      ],
+      "relevance": {
+        "iss": "Raises the airflow on a meter-scale sample. Ventilation is what feeds a station fire once buoyancy is gone.",
+        "moon": "Flow comparison at large scale. Oxygen is still the station mix.",
+        "suit": "Vehicle-scale, not suit-scale.",
+        "earth": "Confined-flow spread, indirect."
+      },
+      "scores": {
+        "iss": 83,
+        "moon": 84,
+        "suit": 66,
+        "earth": 30
+      },
+      "doi": "10.60555/040q-4h36",
+      "reports": [
+        "data/psi/PSI-100_SAFFIRE-III/Science Documents/SAFFIRE-III Image Directory Nomenclature_v3.0.pdf",
+        "data/psi/PSI-100_SAFFIRE-III/Science Documents/SAFFIRE-III Operations.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-100_SAFFIRE-III/Experiment Table/PSI-100_Experimental table_SAFFIRE-3.csv",
+        "data/psi/PSI-100_SAFFIRE-III/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-101",
+      "name": "SAME-R",
+      "acronym": "SAME-R",
+      "role": "detection",
+      "roles": [
+        "detection"
+      ],
+      "hardware": "ISS smoke aerosol instrument",
+      "familyId": "aerosol",
+      "family": "ISS aerosol instrument (SAME and DAFT)",
+      "summary": "Reflight of the Smoke Aerosol Measurement Experiment after the first unit's samples were contaminated. Sizes the liquid smoke droplets that form in low gravity.",
+      "blurb": "Reflight of the Smoke Aerosol Measurement Experiment after the first unit's samples were contaminated. Sizes the liquid smoke droplets that form in low gravity.",
+      "fuels": [],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": null,
+      "measurements": [],
+      "varied": [],
+      "constant": [],
+      "relevance": {
+        "iss": "The detector design input: droplet size and how fast smoke moves when there is no buoyant plume.",
+        "moon": "Particle sizes still apply. Dust interference is DAFT, not SAME-R.",
+        "suit": "No suit-volume smoke test.",
+        "earth": "Low-gravity particle sizes explain why a spacecraft detector is built differently from a ceiling alarm."
+      },
+      "scores": {
+        "iss": 90,
+        "moon": 68,
+        "suit": 22,
+        "earth": 74
+      },
+      "doi": "",
+      "reports": [
+        "data/psi/PSI-101_SAME-R/Reports/SAMER_Final 0602 2014.pdf"
+      ],
+      "sources": []
+    },
+    {
+      "id": "PSI-102",
+      "name": "SAME",
+      "acronym": "SAME",
+      "role": "detection",
+      "roles": [
+        "detection"
+      ],
+      "hardware": "Comparitive Soot Diagnostic Hardware",
+      "familyId": "aerosol",
+      "family": "ISS aerosol instrument (SAME and DAFT)",
+      "summary": "One of the major goals of this investigation was to quantify the sizes that the liquid smoke particulate achieves in low gravity and to relate the droplet size distribution to the smoke generation and smoke transport conditions in the experiment. A numerical code was to be developed to predict the smoke droplet growth as a function of the fuel pyrolysis rate, the thermodynamic properties of the pyrolysis vapor, and the flow environment.",
+      "blurb": "Smoke Aerosol Measurement Experiment. Overheated Teflon, Kapton, silicone, lampwick, and wire, with airflow and weight-loss rate recorded.",
+      "fuels": [
+        "Teflon",
+        "Kapton",
+        "Silicone Rubber",
+        "Lampwick",
+        "Dibutyl Phthalate"
+      ],
+      "sampleForm": "flat solid sample",
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": "5\u201310",
+      "runCount": 8,
+      "measurements": [
+        "Weight loss rate (mg/min)"
+      ],
+      "varied": [
+        {
+          "name": "Sample Material",
+          "distinct": 5
+        },
+        {
+          "name": "Air Flow (cm/s)",
+          "distinct": 2
+        },
+        {
+          "name": "Weight loss rate (mg/min)",
+          "distinct": 2
+        },
+        {
+          "name": "Aging Duration (minutes)",
+          "distinct": 2
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Primary detection dataset. Smoke in microgravity does not rise, so particle size and the forced flow set the alarm.",
+        "moon": "The materials are spacecraft materials. Pair it with DAFT before trusting an alarm in dust.",
+        "suit": "Does not size smoke inside a suit.",
+        "earth": "The shuttle detector that ignores dust grew out of this smoke-versus-nuisance work, including mining use."
+      },
+      "scores": {
+        "iss": 96,
+        "moon": 74,
+        "suit": 26,
+        "earth": 90
+      },
+      "doi": "10.60555/gd4k-8h62",
+      "reports": [
+        "data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf",
+        "data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf",
+        "data/psi/PSI-102_SAME/Science Documents/SAME EIRD Rev 2.00 02-25-05 HIgh Q.pdf",
+        "data/psi/PSI-102_SAME/Science Documents/SAME_Baseline Concept Description Document_001 Rev A.pdf",
+        "data/psi/PSI-102_SAME/Science Documents/SAME_Crew Interface Description_008 Rev A.pdf",
+        "data/psi/PSI-102_SAME/Science Documents/SAME_Operations Manual_007.pdf",
+        "data/psi/PSI-102_SAME/Science Documents/SAME_Software Description Document_003 Rev A.pdf",
+        "data/psi/PSI-102_SAME/Science Documents/SAME_Software Requirement Document_004 Rev D.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-102_SAME/Experiment Table/PSI-102_Experimental table_SAME.csv",
+        "data/psi/PSI-102_SAME/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-106",
+      "name": "SLICE",
+      "acronym": "SLICE",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "Microgravity Science Glovebox flow duct",
+      "familyId": "msg-duct",
+      "family": "MSG glovebox, SPICE fan duct",
+      "summary": "Objective: The objective of this investigation is to better understand the structure and stability of laminar diffusion flames in microgravity. Specific objectives of this investigation were: 1. To investigate the structure of laminar diffusion flames in microgravity to understand the stabilizing mechanisms at the flames base. 2. Determine the liftoff velocity limits for different fuels and burner diameters. 3. Evaluate the impact of fuel dilution with nitrogen on soot formation and flame stability. 4. Quantify the effects of microgravity on flame length and radiative heat loss compared to normal gravity conditions. 5. Validate numerical models for flame dynamics, soot production, and\u2026",
+      "blurb": "Structure and Liftoff in Combustion Experiment. Gaseous flames in the same duct family as BASS and SPICE.",
+      "fuels": [
+        "100% CH4",
+        "40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations",
+        "70% CH4 (balance N2) including 1 pyrometry calibration test",
+        "20% C2H4 (balance N2)",
+        "40% CH4 (balance N2)",
+        "70% CH4 (balance N2) where the fuel bottle was not emptied (in contrast to most days)",
+        "100% C2H6",
+        "70% CH4 (balance N2) including 1 pyrometry calibration test and 2 fan calibrations",
+        "100% C2H4"
+      ],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 12,
+      "measurements": [],
+      "varied": [
+        {
+          "name": "Fuel Type",
+          "distinct": 9
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Liftoff and flame structure in the glovebox duct. Background for BASS, not the material limit.",
+        "moon": "No enriched-oxygen solid sample.",
+        "suit": "Not applicable.",
+        "earth": "Not a product path."
+      },
+      "scores": {
+        "iss": 34,
+        "moon": 26,
+        "suit": 14,
+        "earth": 12
+      },
+      "doi": "10.60555/pm12-rg61",
+      "reports": [
+        "data/psi/PSI-106_SLICE/Science Documents/SLICE 4.001 SPICE Video Overlay Reset-MGUEMSGSLCEC001.pdf",
+        "data/psi/PSI-106_SLICE/Science Documents/SLICE IP-A SRDR.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-106_SLICE/Experiment Table/PSI-106_Experimental table_Slice.csv",
+        "data/psi/PSI-106_SLICE/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-107",
+      "name": "SPICE",
+      "acronym": "SPICE",
+      "role": "detection",
+      "roles": [
+        "detection"
+      ],
+      "hardware": "Microgravity Science Glovebox (MSG)",
+      "familyId": "msg-duct",
+      "family": "MSG glovebox, SPICE fan duct",
+      "summary": "The objective of SPICE is to better understand the complex process of combustion by observing flames in a microgravity environment aboard the International Space Station (ISS) and analogous ground experiments. Specific objectives were: (1) Identify the laminar smoke-point properties of non-buoyant jet diffusion flames under various co-flow conditions in microgravity. (2) Determine the effects of burner diameter and co-flow velocity on the luminous flame lengths and smoke points. (3) Quantify the sooting propensity of different fuels, such as ethylene, propane, and propylene mixtures. (4) Validate the correlation between luminous flame shape and residence time under microgravity conditions.\u2026",
+      "blurb": "Smoke Point In Co-flow. The flow duct later shared with BASS and SLICE. Measures when a flame starts making soot.",
+      "fuels": [
+        "Ethylene",
+        "Propane",
+        "75% Propylene",
+        "75 % Propylene",
+        "50 % Propylene",
+        "Propylene",
+        "Methane"
+      ],
+      "sampleForm": "nozzle in a coflow duct",
+      "sampleSize": [
+        {
+          "column": "Nozzle (mm)",
+          "min": 0.4064,
+          "max": 1.6002,
+          "unit": "mm"
+        }
+      ],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": "0.28\u201385.28",
+      "runCount": 469,
+      "measurements": [],
+      "varied": [
+        {
+          "name": "Fuel Rate (sccm)",
+          "distinct": 284
+        },
+        {
+          "name": "Fuel Rate (mg/s)",
+          "distinct": 275
+        },
+        {
+          "name": "HC Fuel Rate (mg/s)",
+          "distinct": 269
+        },
+        {
+          "name": "Air Rate (cm/s)",
+          "distinct": 62
+        },
+        {
+          "name": "Fuel",
+          "distinct": 7
+        },
+        {
+          "name": "Nozzle (mm)",
+          "distinct": 3
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Soot onset changes what a smoke detector sees. Secondary to SAME's particle sizes.",
+        "moon": "No lunar-oxygen materials matrix.",
+        "suit": "Not a suit test.",
+        "earth": "Smoke-point data is a combustion metric, weakly tied to alarms."
+      },
+      "scores": {
+        "iss": 48,
+        "moon": 30,
+        "suit": 16,
+        "earth": 28
+      },
+      "doi": "10.60555/9kbh-e962",
+      "reports": [
+        "data/psi/PSI-107_SPICE/Reports/Dotson Smoke Point Normal Gravity Coflow Flames.pdf",
+        "data/psi/PSI-107_SPICE/Reports/Exp_19-20_SPICE_30-Day_PostFlight_Report.pdf",
+        "data/psi/PSI-107_SPICE/Reports/SPICE AIAA 1-6 2010 0106.pdf",
+        "data/psi/PSI-107_SPICE/Reports/SPICE Final Report 12_2_2012.pdf",
+        "data/psi/PSI-107_SPICE/Reports/SPICE RPT-002 Science Verif Report_May 2007.pdf",
+        "data/psi/PSI-107_SPICE/Science Documents/SPICE Phase III Flight Safety Data Package_May 2008.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-107_SPICE/Experiment Table/PSI-107_Experimental table_Spice.csv",
+        "data/psi/PSI-107_SPICE/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-108",
+      "name": "STDCE-1",
+      "acronym": "STDCE-1",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "STDCE Hardware",
+      "familyId": "stdce",
+      "family": "USML-1 Spacelab, not a fire test",
+      "summary": "The main objectives of STDCE-1 are to investigate: -The extent and nature of thermocapillary flows in transient periods as well as under steady conditions. -Temperature distributions along the free surface and in the bulk fluid. -The effect of the heating mode and the heating level on the flows. -The effect of the liquid free surface on the flows -The onset conditions and nature of oscillatory flows",
+      "blurb": "Surface Tension Driven Convection Experiment. Liquid free-surface flow driven by temperature, not a fire-safety burn.",
+      "fuels": [],
+      "sampleForm": null,
+      "sampleSize": [
+        {
+          "column": "Laser Diameter (cm)",
+          "min": 1.0,
+          "max": 31.6,
+          "unit": "cm"
+        }
+      ],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 38,
+      "measurements": [
+        "Power (W)",
+        "Laser Diameter (cm)"
+      ],
+      "varied": [
+        {
+          "name": "Power (W)",
+          "distinct": 19
+        },
+        {
+          "name": "Free Surface Shape",
+          "distinct": 11
+        },
+        {
+          "name": "Laser Diameter (cm)",
+          "distinct": 11
+        },
+        {
+          "name": "Key Observations & References",
+          "distinct": 9
+        },
+        {
+          "name": "Results",
+          "distinct": 4
+        },
+        {
+          "name": "Configuration",
+          "distinct": 2
+        },
+        {
+          "name": "Heating Mode",
+          "distinct": 2
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Included because it is combustion-adjacent fluid physics in the archive. It does not set a flammability limit.",
+        "moon": "No oxygen or material flammability result.",
+        "suit": "No suit result.",
+        "earth": "No fire-service result."
+      },
+      "scores": {
+        "iss": 12,
+        "moon": 10,
+        "suit": 6,
+        "earth": 8
+      },
+      "doi": "10.60555/j1z3-bw42",
+      "reports": [
+        "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 - Joint L+1 Science Review for USML-1 and USMP-1 with Microtravity Measurement Group.pdf",
+        "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 - The Solid Surface Combustion Experiment Aboard USML-1 Mission.pdf",
+        "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf",
+        "data/psi/PSI-108_STDCE-1/Reports/STDCE-1_NASA TM 101314 - Containment of a Silicone Fluid Free Surface in Reduced Gravity Using Barrier Coatings.pdf",
+        "data/psi/PSI-108_STDCE-1/Reports/STDCE-1_NASA TM 101353 - Infrared Surface Temperature Measurements for the Surface Tension Driven Convection Experiment.pdf",
+        "data/psi/PSI-108_STDCE-1/Reports/STDCE-1_NASA TM 101479 - Development of an Infrared Imaging System for the Surface Tension Driven Convection Experiment.pdf",
+        "data/psi/PSI-108_STDCE-1/Reports/STDCE-1_NASA TM 104482 - Particle Image Velocimetry for the Sufrace Tension Driven Convection Experiment Using a Particle Displacement Tracking Technique.pdf",
+        "data/psi/PSI-108_STDCE-1/Science Documents/SRD_STDCE.pdf",
+        "data/psi/PSI-108_STDCE-1/Science Documents/STDCE-1 Data Management Plan.pdf",
+        "data/psi/PSI-108_STDCE-1/Science Documents/STDCE-1_SO.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-108_STDCE-1/Experiment Table/PSI-108_Experimental table_STDCE-1.csv",
+        "data/psi/PSI-108_STDCE-1/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-115",
+      "name": "SAME smoke modeling",
+      "acronym": "SAME smoke modeling",
+      "role": "detection",
+      "roles": [
+        "detection"
+      ],
+      "hardware": "Model built on SAME",
+      "familyId": "analysis",
+      "family": "Analysis or model, not a new burn",
+      "summary": "The objective of this investigation was to use numerical simulation to explore the influence of gravity on pyrolysis smoke growth from a fundamental perspective. The intention of this effort is to quantify the differences between microgravity and Earth gravity smoke, and to identify the fluid dynamic mechanisms that cause the differences.",
+      "blurb": "Uses SAME measurements to model smoke generation in microgravity. The report is the NNX17AF08A final report.",
+      "fuels": [],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": null,
+      "measurements": [],
+      "varied": [],
+      "constant": [],
+      "relevance": {
+        "iss": "Turns SAME particle data into a smoke field a detector designer can place a sensor in.",
+        "moon": "The model inherits SAME's materials and flows, not a lunar dust case.",
+        "suit": "Not a suit volume.",
+        "earth": "Smoke-transport modeling is how a less-nuisance detector gets its thresholds."
+      },
+      "scores": {
+        "iss": 70,
+        "moon": 48,
+        "suit": 18,
+        "earth": 56
+      },
+      "doi": "10.60555/q0v5-1v28",
+      "reports": [
+        "data/psi/PSI-115_SAME-Smoke-Modeling/Reports/NNX17AF08A Utilization of SAME Data Final Report.pdf",
+        "data/psi/PSI-115_SAME-Smoke-Modeling/Science Documents/Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity DoD.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-115_SAME-Smoke-Modeling/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-117",
+      "name": "Cool-flame perturbation",
+      "acronym": "Cool-flame perturbation",
+      "role": "suppression",
+      "roles": [
+        "suppression"
+      ],
+      "hardware": "Droplet cool-flame analysis",
+      "familyId": "analysis",
+      "family": "Analysis or model, not a new burn",
+      "summary": "The objective of this ground investigation was to use flight data obtained from PSI through NASA\u2019s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced\u2026",
+      "blurb": "External thermo-convective perturbation of cool flames, from the Farouk papers and a dissertation. Extinction diameters and oscillation, not a cabin test.",
+      "fuels": [],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": null,
+      "measurements": [],
+      "varied": [],
+      "constant": [],
+      "relevance": {
+        "iss": "Cool-flame extinction diameter is a suppression limit for small droplets after FLEX.",
+        "moon": "Pressure and fuel studies. Not a habitat material.",
+        "suit": "Not suit-scale.",
+        "earth": "Extinction-diameter correlations are research results."
+      },
+      "scores": {
+        "iss": 44,
+        "moon": 36,
+        "suit": 20,
+        "earth": 18
+      },
+      "doi": "10.60555/gz0q-b577",
+      "reports": [
+        "data/psi/PSI-117_Cool-Flame-Perturbation/Reports/Dissertation-PD-revised_.pdf",
+        "data/psi/PSI-117_Cool-Flame-Perturbation/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-117_Cool-Flame-Perturbation/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-142",
+      "name": "Cool-flame counterflow",
+      "acronym": "Cool-flame counterflow",
+      "role": "suppression",
+      "roles": [
+        "suppression"
+      ],
+      "hardware": "Principal Investigator Laboratory Hardware",
+      "familyId": "analysis",
+      "family": "Analysis or model, not a new burn",
+      "summary": "By using the Flame Extinguishment (FLEX) experimental data from the Physical Sciences Informatics (PSI) system of combustion science, the purpose of this grant was to conduct new simulations and ground-based experiments using ozone-sensitized counterflow flames to: 1) Develop a new diagram of the flammability limits of diffusional cool flames affected by radiation, diffusion, and convection. 2) Bridge the knowledge gap between the flammability limits and extinction limits of hot flames and cool flames. 3) Verify the phenomena observed on the ISS flame extinguishment experiments. 4) Obtain new, quantitative data of extinction limit, flame temperature, and species distribution for the\u2026",
+      "blurb": "Quantitative studies of cool-flame transitions at radiation and stretch extinction in counterflow. A data index more than a flight matrix.",
+      "fuels": [],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": null,
+      "oxygenMax": null,
+      "oxygenNote": null,
+      "flow": null,
+      "runCount": 8,
+      "measurements": [],
+      "varied": [
+        {
+          "name": "Data ID",
+          "distinct": 8
+        },
+        {
+          "name": "Data Description",
+          "distinct": 8
+        },
+        {
+          "name": "Reference Publication Link",
+          "distinct": 6
+        },
+        {
+          "name": "Figure ID in Reference",
+          "distinct": 6
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Stretch and radiation extinction bound when a cool flame dies. Secondary to FLEX.",
+        "moon": "No habitat oxygen series in the table we hold.",
+        "suit": "Not applicable.",
+        "earth": "Counterflow extinction is a lab method."
+      },
+      "scores": {
+        "iss": 32,
+        "moon": 24,
+        "suit": 14,
+        "earth": 16
+      },
+      "doi": "10.60555/80qf-vj95",
+      "reports": [],
+      "sources": [
+        "data/psi/PSI-142_Cool-Flame-Counterflow/Experiment Table/PSI-142_Experimental table_Data Summary Table.csv",
+        "data/psi/PSI-142_Cool-Flame-Counterflow/metadata/i_Investigation.txt"
+      ]
+    },
+    {
+      "id": "PSI-159",
+      "name": "ACME CFI-G",
+      "acronym": "ACME CFI-G",
+      "role": "prevention",
+      "roles": [
+        "prevention"
+      ],
+      "hardware": "ACME, Combustion Integrated Rack (CIR)",
+      "familyId": "cir-acme",
+      "family": "CIR + ACME, gaseous flames",
+      "summary": "1. Plan and support flight testing on the International Space Station (ISS). 2. Determine the conditions for which cool diffusion flames occur for propane, n-butane, and n-pentane; normal and inverse flames; and a broad range of Zst, Tad, and fluent flow rate. 3. Support the flight tests with advanced CFD simulations. 4. Identify or develop a chemical kinetics mechanism that yields good agreement between the CFD predictions and the ISS measurements. 5. Disseminate the results as widely as possible.",
+      "blurb": "Cool Flames Investigation with Gases. An oxygen-nitrogen mixture, up to about 85 percent oxygen, flows from the spherical burner into a fuel-nitrogen chamber. The highest-oxygen microgravity tests in this set.",
+      "fuels": [
+        "ethane",
+        "propane",
+        "butane",
+        "50% butane",
+        "30% butane",
+        "30% propane",
+        "30% ethane"
+      ],
+      "sampleForm": null,
+      "sampleSize": [],
+      "oxygenMin": 12.0,
+      "oxygenMax": 85.0,
+      "oxygenNote": "CFI-G flows an oxygen-nitrogen mixture from a spherical burner into a fuel-nitrogen chamber, an inside-out flame, up to about 85% oxygen.",
+      "flow": null,
+      "runCount": 333,
+      "measurements": [
+        "Tad (K)",
+        "burn time (sec)",
+        "Peak burner Temp (C)",
+        "Peak burner temp (K)"
+      ],
+      "varied": [
+        {
+          "name": "Tad (K)",
+          "distinct": 145
+        },
+        {
+          "name": "Zst",
+          "distinct": 145
+        },
+        {
+          "name": "Peak burner temp (K)",
+          "distinct": 143
+        },
+        {
+          "name": "Peak burner Temp (C)",
+          "distinct": 142
+        },
+        {
+          "name": "Peak burner T (C )",
+          "distinct": 130
+        },
+        {
+          "name": "O2 flow rate (mg/s)",
+          "distinct": 30
+        },
+        {
+          "name": "mHC (mg/s)",
+          "distinct": 25
+        },
+        {
+          "name": "HC burnrate (mg/s)",
+          "distinct": 17
+        },
+        {
+          "name": "Xf",
+          "distinct": 14
+        },
+        {
+          "name": "XO2",
+          "distinct": 12
+        },
+        {
+          "name": "Color",
+          "distinct": 8
+        },
+        {
+          "name": "Cool flame?",
+          "distinct": 8
+        },
+        {
+          "name": "approx p (bar)",
+          "distinct": 6
+        },
+        {
+          "name": "Hot ignition",
+          "distinct": 5
+        },
+        {
+          "name": "Fuel",
+          "distinct": 3
+        },
+        {
+          "name": "Self -ext or flow term",
+          "distinct": 3
+        }
+      ],
+      "constant": [],
+      "relevance": {
+        "iss": "Most station air is 21 percent oxygen. CFI-G is the enriched-oxygen extreme, not the daily cabin.",
+        "moon": "A lunar habitat is expected at 30 percent oxygen or more, at 10.2 psi or less. CFI-G is the only PSI series that reaches well above that, up to about 85 percent.",
+        "suit": "A suit is 100 percent oxygen at 4.3 psi. CFI-G does not hit 4.3 psi, but it is the high-oxygen flame data that bounds suit fire behavior.",
+        "earth": "High-oxygen burner flames are not a ground fire-service dataset."
+      },
+      "scores": {
+        "iss": 60,
+        "moon": 98,
+        "suit": 96,
+        "earth": 22
+      },
+      "doi": "10.60555/cyt1-kh64",
+      "reports": [
+        "data/psi/PSI-159_ACME-CFI-G/Reports/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf"
+      ],
+      "sources": [
+        "data/psi/PSI-159_ACME-CFI-G/Experiment Table/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+        "data/psi/PSI-159_ACME-CFI-G/Experiment Table/PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+        "data/psi/PSI-159_ACME-CFI-G/metadata/i_Investigation.txt"
+      ]
+    }
+  ],
+  "context": [
+    {
+      "id": "ctx:apollo1",
+      "label": "Apollo 1",
+      "summary": "In 1967 a fire in a pure-oxygen cabin during a pre-launch test killed the Apollo 1 crew.",
+      "url": "https://sma.nasa.gov/sma-disciplines/accllp/apollo-1",
+      "scenarios": [
+        "suit",
+        "moon"
+      ]
+    },
+    {
+      "id": "ctx:apollo13",
+      "label": "Apollo 13",
+      "summary": "An oxygen-tank explosion on the way to the Moon disabled the service module.",
+      "url": "https://sma.nasa.gov/sma-disciplines/accllp/apollo-13",
+      "scenarios": [
+        "iss",
+        "moon"
+      ]
+    },
+    {
+      "id": "ctx:mir",
+      "label": "Mir oxygen-generator fire",
+      "summary": "In 1997 an oxygen-generator failure started a fire aboard Mir during joint operations.",
+      "url": "https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/",
+      "scenarios": [
+        "iss",
+        "moon"
+      ]
+    },
+    {
+      "id": "ctx:air-tanks",
+      "label": "Firefighter air tanks",
+      "summary": "1970s spacesuit breathing technology was adapted for firefighter air tanks.",
+      "url": "https://spinoff.nasa.gov/node/9582",
+      "scenarios": [
+        "earth",
+        "suit"
+      ]
+    },
+    {
+      "id": "ctx:detector",
+      "label": "Shuttle smoke detector",
+      "summary": "A shuttle detector that separates smoke from dust, later used where dust causes nuisance alarms, including mines.",
+      "url": "https://spinoff.nasa.gov/node/9407",
+      "scenarios": [
+        "earth",
+        "iss"
+      ]
+    },
+    {
+      "id": "ctx:attire",
+      "label": "Firefighter clothing",
+      "summary": "1980s spacesuit materials were applied to firefighter protective clothing.",
+      "url": "https://spinoff.nasa.gov/node/9918",
+      "scenarios": [
+        "earth"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "when": "2026-11-14T10:48:55",
+  "source": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Electric-Field Effects on Flames in Microgravity.pdf",
+  "reason": "unreadable fake PDF: magic not %PDF, pymupdf page_count=0, metadata format=PDF 1.7 creator=Microsoft PowerPoint 2013 title='Slide 1'; truncated (startxref beyond EOF); LibreOffice soffice failed to load as ppt/pptx/doc; no usable NTRS/repo copy; deleted empty markdown+json stub",
+  "deleted": [
+    "data/text/PSI-22/chien-et-al-2018-electric-field-effects-on-flame.md",
+    "data/text/PSI-22/chien-et-al-2018-electric-field-effects-on-flame.json"
+  ],
+  "original_kept": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Electric-Field Effects on Flames in Microgravity.pdf",
+  "size_bytes": 1674645,
+  "magic": "83827d80addb2b3b",
+  "flex_unreadable_no_stub": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1248_Summary.pdf"
+}

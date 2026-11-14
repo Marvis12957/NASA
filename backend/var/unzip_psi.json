@@ -1,0 +1,336 @@
+{
+  "when": "2026-11-14T10:48:12",
+  "extracted": [
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_QDs_&_hoses.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 7,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_analog_camera.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 7,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_avionics_package.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 20,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_burners.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 62,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_common_electrical.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 24,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_data_camera.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 24,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_diagnostic_system.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 34,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_expt_mounting_structure.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 7,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_gas_supply.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 22,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_ground_equipment.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 26,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_igniter.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 14,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_measurement_system.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 31,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_shipping_containers.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 17,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Engineering Documents/ACME_drawings_trainer.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Engineering Documents",
+      "files": 10,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Science Documents/ACME Data interpretation.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Science Documents",
+      "files": 2,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Science Documents/ACME Gas flow.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Science Documents",
+      "files": 7,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Science Documents/ACME Imaging.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Science Documents",
+      "files": 4,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/ACME_common/Science Documents/ACME Instruments.zip",
+      "kind": "document",
+      "dest": "data/psi/ACME_common/Science Documents",
+      "files": 5,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/PSI-101_SAME-R/Other/SAME-R Flight Ops photos.zip",
+      "kind": "photo",
+      "dest": "data/psi/PSI-101_SAME-R/Other/SAME-R Flight Ops photos",
+      "files": 38,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/PSI-102_SAME/Science Documents/SAME OPS images.zip",
+      "kind": "photo",
+      "dest": "data/psi/PSI-102_SAME/Science Documents/SAME OPS images",
+      "files": 16,
+      "flattened": true
+    },
+    {
+      "zip": "data/psi/PSI-22_ACME-E-FIELD-Flames/Engineering Documents/ACME_drawings_e-field_system.zip",
+      "kind": "document",
+      "dest": "data/psi/PSI-22_ACME-E-FIELD-Flames/Engineering Documents",
+      "files": 24,
+      "flattened": true
+    }
+  ],
+  "left": [
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/19254Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/19254Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/19256Fiber1.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/19256Fiber2.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/19304Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/19304Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/19308Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/19308Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/19352Fiber1_Images.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/19352Fiber2_Images.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20006Fiber1_Images.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20006Fiber2_Images.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20013Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20013Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20024Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20024Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20029Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20029Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20132Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20132Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/201356Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20136Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20142Fiber10_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20142Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20142Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20142Fiber3_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20142Fiber4_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20142Fiber5_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20142Fiber6_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20142Fiber7_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20142Fiber8_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20142Fiber9_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20155Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20155Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20160Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20160Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20164Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20164Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20170Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20170Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20176Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20176Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20190Fiber1_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    },
+    {
+      "zip": "data/psi/PSI-20_ACME-BRE/Analyzed Data/20190Fiber2_ACME.zip",
+      "reason": "Analyzed Data raw .hobj/.next ACME zip"
+    }
+  ],
+  "errors": [],
+  "counts": {
+    "extracted": 21,
+    "left": 44,
+    "errors": 0
+  }
+}
