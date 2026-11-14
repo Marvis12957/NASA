@@ -33,3 +33,4 @@ logs/
 workspaces/
 .agentctl.lock
 KANBAN.md.tmp.*
+logs
