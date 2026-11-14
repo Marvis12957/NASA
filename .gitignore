@@ -27,3 +27,9 @@ data/*
 !data/psi/
 data/psi/*
 !data/psi/README.md
+
+# --- agent-platform (added 2026-11-14): runtime state, never commit ---
+logs/
+workspaces/
+.agentctl.lock
+KANBAN.md.tmp.*

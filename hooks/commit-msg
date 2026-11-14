@@ -1,0 +1,14 @@
+#!/bin/sh
+# commit-msg: every commit must reference its task id (TASK-xxx).
+# Install: cp hooks/commit-msg .git/hooks/ && chmod +x .git/hooks/commit-msg
+MSG_FILE="$1"
+if [ -z "$MSG_FILE" ]; then
+    echo "commit-msg: no message file given" >&2
+    exit 1
+fi
+if grep -Eq 'TASK-[0-9]+' "$MSG_FILE"; then
+    exit 0
+fi
+echo "commit-msg: REJECTED — commit message must reference a task id (TASK-xxx)." >&2
+echo "  Example: 'TASK-001: add FlameAtlas evidence view'" >&2
+exit 1

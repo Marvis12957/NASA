@@ -1,0 +1,28 @@
+#!/bin/sh
+# pre-commit: never commit directly on main/master; if on a task branch,
+# verify (when board + agentctl are discoverable) that the branch owner
+# matches the agent recorded for the task. Skips gracefully when the board
+# is absent (e.g. unrelated repos).
+# Install: cp hooks/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit
+BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+if [ -f "$(git rev-parse --git-dir 2>/dev/null)/MERGE_HEAD" ]; then exit 0; fi
+if [ "$BRANCH" = "main" ] || [ "$BRANCH" = "master" ]; then
+    echo "pre-commit: REJECTED — never commit directly on $BRANCH." >&2
+    echo "  Work in a task worktree (branch task/TASK-xxx) instead." >&2
+    exit 1
+fi
+case "$BRANCH" in
+    task/TASK-*)
+        TASK=$(echo "$BRANCH" | sed 's|^task/||')
+        # Board check only when the coordination files exist.
+        if [ -f KANBAN.md ] && [ -x tools/agentctl ]; then
+            OWNER=$(tools/agentctl tasks 2>/dev/null | grep "^$TASK " | sed 's/.*owner=\([^ ]*\).*/\1/')
+            AGENT_ID=${AGENT_ID:-}
+            if [ -n "$OWNER" ] && [ "$OWNER" != "null" ] && [ -n "$AGENT_ID" ] && [ "$OWNER" != "$AGENT_ID" ]; then
+                echo "pre-commit: REJECTED — $TASK is owned by $OWNER, not $AGENT_ID." >&2
+                exit 1
+            fi
+        fi
+        ;;
+esac
+exit 0

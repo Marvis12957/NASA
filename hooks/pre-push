@@ -1,0 +1,22 @@
+#!/bin/sh
+# pre-push: block pushes to main/master and block force pushes.
+# Install: cp hooks/pre-push .git/hooks/ && chmod +x .git/hooks/pre-push
+# $1 = remote name, $2 = remote URL; pushed refs arrive on stdin.
+while read -r local_ref local_sha remote_ref remote_sha; do
+    case "$remote_ref" in
+        refs/heads/main|refs/heads/master)
+            echo "pre-push: REJECTED — never push directly to ${remote_ref#refs/heads/}." >&2
+            echo "  Integrate via PRs instead." >&2
+            exit 1
+            ;;
+    esac
+    # Force push detection: remote sha is not an ancestor of local sha.
+    if [ "$remote_sha" != "0000000000000000000000000000000000000000" ]; then
+        if ! git merge-base --is-ancestor "$remote_sha" "$local_sha" 2>/dev/null; then
+            echo "pre-push: REJECTED — force push detected for $remote_ref." >&2
+            echo "  Never force-push another agent's branch." >&2
+            exit 1
+        fi
+    fi
+done
+exit 0

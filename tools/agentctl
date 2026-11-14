@@ -1,0 +1,812 @@
+#!/usr/bin/env python3
+"""agentctl — CLI for the Multi-Agent Hackathon Coordination System.
+
+Single source of truth: KANBAN.md (Markdown board with one fenced JSON block
+per task). All board mutations go through this tool under an exclusive flock
+on a stable lock file, with atomic board rewrites and append-only JSONL
+event logs. Python stdlib only.
+
+Usage (defaults: --board ./KANBAN.md, --lock ./.agentctl.lock,
+--events ./logs, --repo .):
+    agentctl claim --next [--agent ID]
+    agentctl claim TASK-001 [--agent ID]
+    agentctl status | tasks [--status S] | board | agents | conflicts
+    agentctl task add --title T [--priority P1] [--scopes a,b] [--deps TASK-002]
+    agentctl task ready TASK-001
+    agentctl heartbeat TASK-001 --agent ID --epoch N
+    agentctl progress TASK-001 --agent ID --epoch N --summary TEXT
+    agentctl block TASK-001 --agent ID --epoch N --reason TEXT
+    agentctl submit TASK-001 --agent ID --epoch N [--commit REF] [--pr REF]
+    agentctl release TASK-001 --agent ID --epoch N
+    agentctl recover TASK-001 [--agent ID] [--force-revoke]
+    agentctl history [TASK-001]
+    agentctl audit [--user U] [--task TASK-001] [--session S]
+"""
+import argparse
+import fcntl
+import json
+import os
+import re
+import subprocess
+import sys
+import uuid
+from contextlib import contextmanager
+from datetime import datetime, timezone
+
+VERSION = "1.0.0"
+HEARTBEAT_INTERVAL = 15          # seconds (spec §5)
+LEASE_TIMEOUT = 90               # seconds (spec §5)
+COLUMNS = ["BACKLOG", "READY", "CLAIMED", "IN_PROGRESS", "BLOCKED",
+           "REVIEW", "DONE", "RECOVERY"]
+ACTIVE_STATUSES = {"CLAIMED", "IN_PROGRESS"}
+PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
+EVENT_FILES = {
+    "agent": "agent-events.jsonl",
+    "task": "task-events.jsonl",
+    "git": "git-events.jsonl",
+    "recovery": "recovery-events.jsonl",
+}
+# ssh-events.jsonl is reserved for the host-level collector; agents must
+# never write it (see docs/SSH_AUDIT.md).
+REQUIRED_EVENT_FIELDS = ["timestamp", "event_id", "event_type", "user_id",
+                         "ssh_session_id", "agent_run_id", "task_id",
+                         "lease_epoch", "trace_id", "command_id", "result",
+                         "metadata"]
+
+TASK_TEMPLATE = {
+    "id": None, "title": "", "description": "", "priority": "P2",
+    "acceptance_criteria": [], "owner": None, "status": "BACKLOG",
+    "resource_scopes": [], "dependencies": [], "branch": None,
+    "worktree": None, "lease_epoch": 0, "last_heartbeat": None,
+    "progress_summary": "", "updated_at": None, "pr_ref": None,
+    "commit_ref": None,
+}
+
+
+def now_iso():
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+
+def parse_iso(s):
+    if not s:
+        return None
+    return datetime.fromisoformat(s.replace("Z", "+00:00"))
+
+
+def lease_timeout():
+    try:
+        return int(os.environ.get("AGENTCTL_LEASE_TIMEOUT", LEASE_TIMEOUT))
+    except ValueError:
+        return LEASE_TIMEOUT
+
+
+class BoardError(Exception):
+    pass
+
+
+class OwnershipError(Exception):
+    pass
+
+
+# ---------------------------------------------------------------- board I/O
+
+def load_board(path):
+    """Parse KANBAN.md. Returns (header_text, tasks dict, line map).
+
+    Raises BoardError naming the task/line on malformed content.
+    """
+    if not os.path.exists(path):
+        raise BoardError(f"board not found: {path}")
+    with open(path, encoding="utf-8") as fh:
+        lines = fh.read().splitlines()
+    tasks = {}
+    header = []
+    i = 0
+    # Header = everything before the first '## ' column heading.
+    while i < len(lines) and not re.match(r"^## (BACKLOG|READY|CLAIMED|IN_PROGRESS|BLOCKED|REVIEW|DONE|RECOVERY)\s*$", lines[i]):
+        header.append(lines[i])
+        i += 1
+    while i < len(lines):
+        m = re.match(r"^### (TASK-\d+)\s*$", lines[i])
+        if m:
+            task_id = m.group(1)
+            start_line = i + 1
+            i += 1
+            # Find the ```json fence.
+            while i < len(lines) and not lines[i].strip().startswith("```json"):
+                i += 1
+            if i >= len(lines):
+                raise BoardError(f"{task_id}: missing ```json block (near line {start_line})")
+            i += 1
+            buf = []
+            while i < len(lines) and lines[i].strip() != "```":
+                buf.append(lines[i])
+                i += 1
+            if i >= len(lines):
+                raise BoardError(f"{task_id}: unterminated ```json block (near line {start_line})")
+            try:
+                raw = json.loads("\n".join(buf))
+            except json.JSONDecodeError as e:
+                raise BoardError(f"{task_id}: invalid JSON near line {start_line}: {e}")
+            task = validate_task(raw, task_id, start_line)
+            if task_id in tasks:
+                raise BoardError(f"{task_id}: duplicate task id (line {start_line})")
+            tasks[task_id] = task
+            i += 1  # skip closing fence
+        else:
+            i += 1
+    return "\n".join(header).strip(), tasks
+
+
+def validate_task(raw, task_id, line):
+    if not isinstance(raw, dict):
+        raise BoardError(f"{task_id}: task block is not a JSON object (line {line})")
+    if raw.get("id") != task_id:
+        raise BoardError(f"{task_id}: id field {raw.get('id')!r} != heading (line {line})")
+    task = dict(TASK_TEMPLATE)
+    task.update(raw)
+    if not isinstance(task["title"], str) or not task["title"].strip():
+        raise BoardError(f"{task_id}: missing/empty title (line {line})")
+    if task["status"] not in COLUMNS:
+        raise BoardError(f"{task_id}: invalid status {task['status']!r} (line {line})")
+    if task["priority"] not in PRIORITY_ORDER:
+        raise BoardError(f"{task_id}: invalid priority {task['priority']!r} (line {line})")
+    for field in ("resource_scopes", "dependencies", "acceptance_criteria"):
+        if not isinstance(task[field], list):
+            raise BoardError(f"{task_id}: {field} must be a list (line {line})")
+    if not isinstance(task["lease_epoch"], int):
+        raise BoardError(f"{task_id}: lease_epoch must be an integer (line {line})")
+    return task
+
+
+def render_board(header, tasks):
+    out = [header, ""]
+    for col in COLUMNS:
+        out.append(f"## {col}")
+        out.append("")
+        col_tasks = sorted((t for t in tasks.values() if t["status"] == col),
+                           key=lambda t: t["id"])
+        for t in col_tasks:
+            out.append(f"### {t['id']}")
+            out.append("")
+            out.append("```json")
+            out.append(json.dumps(t, indent=2, sort_keys=True))
+            out.append("```")
+            out.append("")
+    return "\n".join(out).rstrip() + "\n"
+
+
+def save_board_atomic(path, header, tasks):
+    """Atomic board write: temp file on the same filesystem, fsync, replace."""
+    data = render_board(header, tasks)
+    tmp = f"{path}.tmp.{os.getpid()}"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        fh.write(data)
+        fh.flush()
+        os.fsync(fh.fileno())
+    os.replace(tmp, path)
+
+
+@contextmanager
+def board_lock(lock_path):
+    """Exclusive flock on a stable lock file that is never replaced."""
+    fd = os.open(lock_path, os.O_CREAT | os.O_RDWR, 0o600)
+    try:
+        fcntl.flock(fd, fcntl.LOCK_EX)
+        yield
+    finally:
+        fcntl.flock(fd, fcntl.LOCK_UN)
+        os.close(fd)
+
+
+# ---------------------------------------------------------------- events
+
+class EventLog:
+    def __init__(self, events_dir, trace_id):
+        self.dir = events_dir
+        self.trace_id = trace_id
+        os.makedirs(events_dir, exist_ok=True)
+
+    def append(self, category, event_type, *, task_id=None, user_id=None,
+               agent_run_id=None, lease_epoch=None, result="ok",
+               command_id=None, metadata=None):
+        ev = {
+            "timestamp": now_iso(),
+            "event_id": str(uuid.uuid4()),
+            "event_type": event_type,
+            "user_id": user_id,
+            "ssh_session_id": os.environ.get("SSH_SESSION_ID")
+                               or _ssh_connection_id(),
+            "agent_run_id": agent_run_id,
+            "task_id": task_id,
+            "lease_epoch": lease_epoch,
+            "trace_id": self.trace_id,
+            "command_id": command_id or event_type,
+            "result": result,
+            "metadata": metadata or {},
+        }
+        path = os.path.join(self.dir, EVENT_FILES[category])
+        with open(path, "a", encoding="utf-8") as fh:
+            fh.write(json.dumps(ev) + "\n")
+            fh.flush()
+            os.fsync(fh.fileno())
+        return ev
+
+    def read_all(self):
+        events = []
+        for fname in EVENT_FILES.values():
+            path = os.path.join(self.dir, fname)
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8") as fh:
+                for line in fh:
+                    line = line.strip()
+                    if line:
+                        events.append(json.loads(line))
+        events.sort(key=lambda e: e["timestamp"])
+        return events
+
+
+def _ssh_connection_id():
+    # Derive a stable session-ish id from the SSH connection tuple when the
+    # host collector did not set SSH_SESSION_ID. Never fabricate identity.
+    conn = os.environ.get("SSH_CONNECTION")
+    if conn:
+        parts = conn.split()
+        if len(parts) >= 4:
+            return f"ssh:{parts[0]}:{parts[2]}"
+    return None
+
+
+# ---------------------------------------------------------------- git
+
+def is_git_repo(repo):
+    return os.path.isdir(os.path.join(repo, ".git"))
+
+
+def git(repo, *args, check=True):
+    return subprocess.run(["git", "-C", repo, *args],
+                          capture_output=True, text=True, check=check)
+
+
+def git_status_short(repo, path=None):
+    r = git(repo, "status", "--porcelain", path or ".", check=False)
+    return r.stdout if r.returncode == 0 else ""
+
+
+def provision_worktree(repo, task, events):
+    """Create branch task/<ID> + worktree workspaces/<ID> (idempotent).
+
+    Returns the worktree path, or None when --repo is not a git repo.
+    Raises BoardError if the path is already owned by another task.
+    """
+    if not is_git_repo(repo):
+        return None
+    wt_rel = f"workspaces/{task['id']}"
+    wt_abs = os.path.join(repo, wt_rel)
+    branch = f"task/{task['id']}"
+    if os.path.exists(wt_abs):
+        # Verify it belongs to this task (same branch checked out).
+        r = git(repo, "worktree", "list", "--porcelain", check=False)
+        for block in r.stdout.split("\n\n"):
+            if wt_abs in block and f"branch refs/heads/{branch}" in block:
+                return wt_rel
+        raise BoardError(f"worktree {wt_rel} exists but is not branch {branch}")
+    r = git(repo, "worktree", "add", wt_abs, "-b", branch, check=False)
+    if r.returncode != 0:
+        raise BoardError(f"failed to create worktree {wt_rel}: {r.stderr.strip()}")
+    events.append("git", "worktree_created", task_id=task["id"],
+                  lease_epoch=task["lease_epoch"],
+                  metadata={"worktree": wt_rel, "branch": branch})
+    return wt_rel
+
+
+# ---------------------------------------------------------------- helpers
+
+def check_ownership(task, agent, epoch):
+    if task["owner"] != agent:
+        raise OwnershipError(
+            f"{task['id']} is owned by {task['owner']!r}, not {agent!r}")
+    if epoch is None:
+        raise OwnershipError(f"{task['id']}: --epoch is required")
+    if task["lease_epoch"] != epoch:
+        raise OwnershipError(
+            f"{task['id']}: stale lease epoch {epoch} "
+            f"(current is {task['lease_epoch']}); your lease expired or was revoked")
+
+
+def lease_expired(task):
+    hb = parse_iso(task.get("last_heartbeat"))
+    if hb is None:
+        return True
+    return (datetime.now(timezone.utc) - hb).total_seconds() > lease_timeout()
+
+
+def next_task_id(tasks):
+    nums = [int(t["id"][5:]) for t in tasks.values()
+            if re.match(r"^TASK-\d+$", t["id"])]
+    return f"TASK-{max(nums, default=0) + 1:03d}"
+
+
+def claimable(task, tasks, for_next):
+    """Return (ok, reason) for claiming this task right now."""
+    want = {"READY"} if for_next else {"READY", "RECOVERY"}
+    if task["status"] not in want:
+        return False, f"status is {task['status']}, not in {sorted(want)}"
+    if task["owner"] is not None:
+        return False, f"already owned by {task['owner']}"
+    for dep in task["dependencies"]:
+        d = tasks.get(dep)
+        if d is None:
+            return False, f"dependency {dep} does not exist"
+        if d["status"] != "DONE":
+            return False, f"dependency {dep} is {d['status']}, not DONE"
+    active = [t for t in tasks.values() if t["status"] in ACTIVE_STATUSES]
+    overlap = set(task["resource_scopes"]) & set().union(
+        *(set(t["resource_scopes"]) for t in active)) if active else set()
+    if overlap:
+        owners = [t["id"] for t in active
+                  if set(t["resource_scopes"]) & overlap]
+        return False, (f"resource scope overlap {sorted(overlap)} "
+                       f"with active task(s) {owners}")
+    return True, ""
+
+
+# ---------------------------------------------------------------- commands
+
+class Ctx:
+    def __init__(self, args):
+        self.args = args
+        self.trace_id = str(uuid.uuid4())
+        self.events = EventLog(args.events, self.trace_id)
+
+    def agent_id(self):
+        return self.args.agent or os.environ.get("AGENT_ID") or "agent-default"
+
+
+def cmd_claim(ctx):
+    a = ctx.args
+    agent = ctx.agent_id()
+    with board_lock(a.lock):
+        header, tasks = load_board(a.board)
+        if a.next:
+            cands = [t for t in tasks.values()
+                     if claimable(t, tasks, for_next=True)[0]]
+            cands.sort(key=lambda t: (PRIORITY_ORDER[t["priority"]], t["id"]))
+            task = cands[0] if cands else None
+            if task is None:
+                reasons = {tid: claimable(t, tasks, True)[1]
+                           for tid, t in tasks.items()
+                           if t["status"] in ("READY", "RECOVERY")}
+                print("no task claimable: "
+                      + (json.dumps(reasons) if reasons else "no READY tasks"))
+                return 1
+        else:
+            task = tasks.get(a.task)
+            if task is None:
+                print(f"unknown task: {a.task}")
+                return 1
+            ok, reason = claimable(task, tasks, for_next=False)
+            if not ok:
+                print(f"cannot claim {a.task}: {reason}")
+                return 1
+        task["owner"] = agent
+        task["status"] = "CLAIMED"
+        task["lease_epoch"] += 1
+        task["last_heartbeat"] = now_iso()
+        task["updated_at"] = now_iso()
+        task["branch"] = f"task/{task['id']}"
+        if task.get("agent_run_id") is None:
+            task["agent_run_id"] = f"run-{uuid.uuid4().hex[:12]}"
+        try:
+            wt = provision_worktree(a.repo, task, ctx.events)
+        except BoardError as e:
+            print(f"claim aborted: {e}")
+            return 1
+        task["worktree"] = wt
+        save_board_atomic(a.board, header, tasks)
+        ctx.events.append("task", "task_claimed", task_id=task["id"],
+                          user_id=agent, agent_run_id=task["agent_run_id"],
+                          lease_epoch=task["lease_epoch"], command_id="claim",
+                          metadata={"branch": task["branch"],
+                                    "worktree": task["worktree"]})
+    print(f"claimed {task['id']} owner={agent} epoch={task['lease_epoch']} "
+          f"branch={task['branch']} worktree={task['worktree']}")
+    return 0
+
+
+def _mutate(ctx, task_id, fn, event_type, category="task"):
+    """Load board under lock, check ownership, apply fn(task), save, log."""
+    a = ctx.args
+    agent = ctx.agent_id()
+    with board_lock(a.lock):
+        header, tasks = load_board(a.board)
+        task = tasks.get(task_id)
+        if task is None:
+            print(f"unknown task: {task_id}")
+            return 1
+        try:
+            check_ownership(task, agent, a.epoch)
+        except OwnershipError as e:
+            ctx.events.append(category, f"{event_type}_rejected",
+                              task_id=task_id, user_id=agent,
+                              lease_epoch=a.epoch, result="rejected",
+                              command_id=event_type,
+                              metadata={"reason": str(e)})
+            print(f"rejected: {e}")
+            return 1
+        fn(task)
+        task["updated_at"] = now_iso()
+        save_board_atomic(a.board, header, tasks)
+        ctx.events.append(category, event_type, task_id=task_id,
+                          user_id=agent, agent_run_id=task.get("agent_run_id"),
+                          lease_epoch=task["lease_epoch"],
+                          command_id=event_type,
+                          metadata={"status": task["status"]})
+    print(f"{task_id}: {event_type} ok (epoch {task['lease_epoch']})")
+    return 0
+
+
+def cmd_heartbeat(ctx):
+    def fn(task):
+        task["last_heartbeat"] = now_iso()
+    return _mutate(ctx, ctx.args.task, fn, "heartbeat", category="agent")
+
+
+def cmd_progress(ctx):
+    summary = ctx.args.summary
+    def fn(task):
+        task["progress_summary"] = summary
+        if task["status"] == "CLAIMED":
+            task["status"] = "IN_PROGRESS"
+    return _mutate(ctx, ctx.args.task, fn, "progress")
+
+
+def cmd_block(ctx):
+    reason = ctx.args.reason
+    def fn(task):
+        task["status"] = "BLOCKED"
+        task["progress_summary"] = f"BLOCKED: {reason}"
+    return _mutate(ctx, ctx.args.task, fn, "task_blocked")
+
+
+def cmd_submit(ctx):
+    a = ctx.args
+    def fn(task):
+        task["status"] = "REVIEW"
+        if a.commit:
+            task["commit_ref"] = a.commit
+        if a.pr:
+            task["pr_ref"] = a.pr
+    return _mutate(ctx, a.task, fn, "task_submitted", category="git")
+
+
+def cmd_release(ctx):
+    def fn(task):
+        task["status"] = "READY"
+        task["owner"] = None
+        task["lease_epoch"] += 1
+        task["last_heartbeat"] = None
+    return _mutate(ctx, ctx.args.task, fn, "task_released")
+
+
+def cmd_recover(ctx):
+    a = ctx.args
+    agent = ctx.agent_id()
+    with board_lock(a.lock):
+        header, tasks = load_board(a.board)
+        task = tasks.get(a.task)
+        if task is None:
+            print(f"unknown task: {a.task}")
+            return 1
+        if task["status"] not in ACTIVE_STATUSES and task["status"] != "BLOCKED":
+            print(f"cannot recover {a.task}: status is {task['status']}")
+            return 1
+        if not a.force_revoke and not lease_expired(task):
+            print(f"cannot recover {a.task}: lease still valid "
+                  f"(last heartbeat {task['last_heartbeat']}); "
+                  f"use --force-revoke to override")
+            return 1
+        meta = {"previous_owner": task["owner"],
+                "previous_epoch": task["lease_epoch"],
+                "forced": bool(a.force_revoke)}
+        if task.get("worktree") and is_git_repo(a.repo):
+            wt = os.path.join(a.repo, task["worktree"])
+            meta["git_status"] = git_status_short(a.repo, task["worktree"])
+            r = git(a.repo, "diff", "--stat", "HEAD", "--", task["worktree"],
+                    check=False)
+            meta["git_diff_stat"] = r.stdout if r.returncode == 0 else ""
+        task["status"] = "RECOVERY"
+        task["owner"] = None
+        task["lease_epoch"] += 1
+        task["last_heartbeat"] = None
+        task["updated_at"] = now_iso()
+        save_board_atomic(a.board, header, tasks)
+        ctx.events.append("recovery", "task_recovered", task_id=task["id"],
+                          user_id=agent, lease_epoch=task["lease_epoch"],
+                          command_id="recover", metadata=meta)
+    print(f"{a.task}: recovered (epoch {task['lease_epoch']}); "
+          f"worktree preserved at {task['worktree']}")
+    return 0
+
+
+def cmd_task_add(ctx):
+    a = ctx.args
+    with board_lock(a.lock):
+        header, tasks = load_board(a.board)
+        tid = a.id or next_task_id(tasks)
+        if tid in tasks:
+            print(f"task already exists: {tid}")
+            return 1
+        task = dict(TASK_TEMPLATE)
+        task.update({
+            "id": tid, "title": a.title, "description": a.description or "",
+            "priority": a.priority,
+            "acceptance_criteria": a.criteria or [],
+            "resource_scopes": a.scopes or [],
+            "dependencies": a.deps or [],
+            "updated_at": now_iso(),
+        })
+        tasks[tid] = task
+        save_board_atomic(a.board, header, tasks)
+        ctx.events.append("task", "task_created", task_id=tid,
+                          user_id=ctx.agent_id(),
+                          command_id="task_add",
+                          metadata={"title": a.title})
+    print(f"created {tid} in BACKLOG")
+    return 0
+
+
+def cmd_task_ready(ctx):
+    a = ctx.args
+    with board_lock(a.lock):
+        header, tasks = load_board(a.board)
+        task = tasks.get(a.task)
+        if task is None:
+            print(f"unknown task: {a.task}")
+            return 1
+        if task["status"] not in ("BACKLOG", "BLOCKED"):
+            print(f"cannot ready {a.task}: status is {task['status']}")
+            return 1
+        task["status"] = "READY"
+        task["updated_at"] = now_iso()
+        save_board_atomic(a.board, header, tasks)
+        ctx.events.append("task", "task_readied", task_id=task["id"],
+                          user_id=ctx.agent_id(), command_id="task_ready")
+    print(f"{a.task}: READY")
+    return 0
+
+
+def cmd_task_done(ctx):
+    a = ctx.args
+    with board_lock(a.lock):
+        header, tasks = load_board(a.board)
+        task = tasks.get(a.task)
+        if task is None:
+            print(f"unknown task: {a.task}")
+            return 1
+        if task["status"] != "REVIEW":
+            print(f"cannot mark DONE {a.task}: status is {task['status']} "
+                  f"(expected REVIEW)")
+            return 1
+        task["status"] = "DONE"
+        task["owner"] = None
+        task["lease_epoch"] += 1
+        task["last_heartbeat"] = None
+        task["updated_at"] = now_iso()
+        save_board_atomic(a.board, header, tasks)
+        ctx.events.append("task", "task_completed", task_id=task["id"],
+                          user_id=ctx.agent_id(), command_id="task_done",
+                          metadata={"commit_ref": task.get("commit_ref"),
+                                    "pr_ref": task.get("pr_ref")})
+    print(f"{a.task}: DONE")
+    return 0
+
+
+def cmd_status(ctx):
+    _, tasks = load_board(ctx.args.board)
+    counts = {c: 0 for c in COLUMNS}
+    for t in tasks.values():
+        counts[t["status"]] += 1
+    print(f"tasks: {len(tasks)}")
+    for c in COLUMNS:
+        print(f"  {c}: {counts[c]}")
+    for t in sorted(tasks.values(), key=lambda x: x["id"]):
+        if t["status"] in ACTIVE_STATUSES:
+            exp = "EXPIRED" if lease_expired(t) else "alive"
+            print(f"  {t['id']} {t['status']} owner={t['owner']} "
+                  f"epoch={t['lease_epoch']} lease={exp}")
+    return 0
+
+
+def cmd_tasks(ctx):
+    _, tasks = load_board(ctx.args.board)
+    rows = sorted(tasks.values(), key=lambda t: t["id"])
+    if ctx.args.status:
+        rows = [t for t in rows if t["status"] == ctx.args.status]
+    for t in rows:
+        print(f"{t['id']} [{t['status']}] {t['priority']} owner={t['owner']} "
+              f"epoch={t['lease_epoch']} scopes={','.join(t['resource_scopes'])} "
+              f"deps={','.join(t['dependencies'])} — {t['title']}")
+    return 0
+
+
+def cmd_board(ctx):
+    with open(ctx.args.board, encoding="utf-8") as fh:
+        print(fh.read(), end="")
+    return 0
+
+
+def cmd_agents(ctx):
+    _, tasks = load_board(ctx.args.board)
+    owners = {}
+    for t in tasks.values():
+        if t["owner"]:
+            owners.setdefault(t["owner"], []).append(t)
+    if not owners:
+        print("no active agents")
+        return 0
+    for owner, ts in sorted(owners.items()):
+        print(f"{owner}: " + ", ".join(
+            f"{t['id']}({t['status']},epoch {t['lease_epoch']})" for t in ts))
+    return 0
+
+
+def cmd_conflicts(ctx):
+    _, tasks = load_board(ctx.args.board)
+    problems = []
+    active = [t for t in tasks.values() if t["status"] in ACTIVE_STATUSES]
+    seen_owner = {}
+    for t in active:
+        if t["owner"] in seen_owner:
+            problems.append(f"duplicate owner {t['owner']}: "
+                            f"{seen_owner[t['owner']]} and {t['id']}")
+        seen_owner[t["owner"]] = t["id"]
+    for i, x in enumerate(active):
+        for y in active[i + 1:]:
+            ov = set(x["resource_scopes"]) & set(y["resource_scopes"])
+            if ov:
+                problems.append(f"scope overlap {sorted(ov)}: "
+                                f"{x['id']} vs {y['id']}")
+        if lease_expired(x):
+            problems.append(f"expired lease: {x['id']} owner={x['owner']} "
+                            f"last heartbeat {x['last_heartbeat']}")
+    wt_owner = {}
+    for t in tasks.values():
+        if t.get("worktree"):
+            if t["worktree"] in wt_owner:
+                problems.append(f"worktree collision {t['worktree']}: "
+                                f"{wt_owner[t['worktree']]} and {t['id']}")
+            wt_owner[t["worktree"]] = t["id"]
+    if not problems:
+        print("no conflicts")
+    else:
+        for p in problems:
+            print(f"CONFLICT: {p}")
+    return 1 if problems else 0
+
+
+def cmd_history(ctx):
+    events = ctx.events.read_all()
+    if ctx.args.task:
+        events = [e for e in events if e.get("task_id") == ctx.args.task]
+    for e in events:
+        print(f"{e['timestamp']} {e['event_type']:16s} task={e.get('task_id')} "
+              f"user={e.get('user_id')} epoch={e.get('lease_epoch')} "
+              f"result={e['result']}")
+    return 0
+
+
+def cmd_audit(ctx):
+    a = ctx.args
+    events = ctx.events.read_all()
+    if a.user:
+        events = [e for e in events if e.get("user_id") == a.user]
+    if a.task:
+        events = [e for e in events if e.get("task_id") == a.task]
+    if a.session:
+        events = [e for e in events if e.get("ssh_session_id") == a.session]
+    for e in events:
+        print(json.dumps(e, sort_keys=True))
+    if not events:
+        print("no matching audit events")
+    return 0
+
+
+# ---------------------------------------------------------------- main
+
+def build_parser():
+    p = argparse.ArgumentParser(prog="agentctl",
+                                description="Multi-agent hackathon coordination CLI")
+    p.add_argument("--board", default="./KANBAN.md")
+    p.add_argument("--lock", default="./.agentctl.lock")
+    p.add_argument("--events", default="./logs")
+    p.add_argument("--repo", default=".")
+    p.add_argument("--version", action="version", version=f"agentctl {VERSION}")
+    sub = p.add_subparsers(dest="cmd", required=True)
+
+    c = sub.add_parser("claim", help="claim a task")
+    c.add_argument("task", nargs="?", help="task id (omit with --next)")
+    c.add_argument("--next", action="store_true")
+    c.add_argument("--agent")
+    c.set_defaults(fn=cmd_claim)
+
+    for name, help_text in [
+            ("status", "board summary"), ("tasks", "list tasks"),
+            ("board", "print the raw board"),
+            ("agents", "list agents with active tasks"),
+            ("conflicts", "detect conflicts")]:
+        s = sub.add_parser(name, help=help_text)
+        if name == "tasks":
+            s.add_argument("--status", choices=COLUMNS)
+        s.set_defaults(fn=globals()[f"cmd_{name}"])
+
+    t = sub.add_parser("task", help="human task management")
+    ts = t.add_subparsers(dest="task_cmd", required=True)
+    ta = ts.add_parser("add", help="create a task in BACKLOG")
+    ta.add_argument("--title", required=True)
+    ta.add_argument("--description", default="")
+    ta.add_argument("--priority", default="P2", choices=list(PRIORITY_ORDER))
+    ta.add_argument("--id")
+    ta.add_argument("--scopes", nargs="*", default=[])
+    ta.add_argument("--deps", nargs="*", default=[])
+    ta.add_argument("--criteria", nargs="*", default=[])
+    ta.add_argument("--agent")
+    ta.set_defaults(fn=cmd_task_add)
+    tr = ts.add_parser("ready", help="move a task BACKLOG/BLOCKED -> READY")
+    tr.add_argument("task")
+    tr.add_argument("--agent")
+    tr.set_defaults(fn=cmd_task_ready)
+    td = ts.add_parser("done", help="human approval: REVIEW -> DONE")
+    td.add_argument("task")
+    td.add_argument("--agent")
+    td.set_defaults(fn=cmd_task_done)
+
+    for name, fn, extra in [
+            ("heartbeat", cmd_heartbeat, []),
+            ("progress", cmd_progress, [("--summary", True)]),
+            ("block", cmd_block, [("--reason", True)]),
+            ("submit", cmd_submit, []),
+            ("release", cmd_release, []),
+            ("recover", cmd_recover, []),
+            ("history", cmd_history, []),
+            ("audit", cmd_audit, []),
+            ]:
+        s = sub.add_parser(name)
+        if name in ("heartbeat", "progress", "block", "submit", "release",
+                    "recover", "history"):
+            s.add_argument("task", nargs="?" if name == "history" else None)
+        if name in ("heartbeat", "progress", "block", "submit", "release"):
+            s.add_argument("--agent")
+            s.add_argument("--epoch", type=int)
+        if name == "recover":
+            s.add_argument("--agent")
+            s.add_argument("--force-revoke", action="store_true")
+        for flag, required in extra:
+            s.add_argument(flag, required=required)
+        if name == "submit":
+            s.add_argument("--commit")
+            s.add_argument("--pr")
+        if name == "audit":
+            s.add_argument("--user")
+            s.add_argument("--task")
+            s.add_argument("--session")
+        s.set_defaults(fn=fn)
+    return p
+
+
+def main(argv=None):
+    args = build_parser().parse_args(argv)
+    ctx = Ctx(args)
+    try:
+        return args.fn(ctx)
+    except BoardError as e:
+        print(f"board error: {e}", file=sys.stderr)
+        return 2
+    except OwnershipError as e:
+        print(f"ownership error: {e}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())
