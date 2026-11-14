@@ -72,36 +72,6 @@ Each task is a `### TASK-xxx` heading followed by one fenced JSON block.
 }
 ```
 
-### TASK-003
-
-```json
-{
-  "acceptance_criteria": [
-    "test suite green on server",
-    "claim/heartbeat/submit/done lifecycle verified in a worktree",
-    "ssh session collector writes ssh-events.jsonl"
-  ],
-  "branch": null,
-  "commit_ref": null,
-  "dependencies": [],
-  "description": "Bootstrap task for the coordination platform itself: KANBAN board, agentctl, git hooks, CI, event logs, SSH audit collector v1.",
-  "id": "TASK-003",
-  "last_heartbeat": null,
-  "lease_epoch": 0,
-  "owner": null,
-  "pr_ref": null,
-  "priority": "P0",
-  "progress_summary": "",
-  "resource_scopes": [
-    "agent-platform"
-  ],
-  "status": "BACKLOG",
-  "title": "Setup multi-agent hackathon coordination platform",
-  "updated_at": "2026-11-14T05:40:16.449718Z",
-  "worktree": null
-}
-```
-
 ## READY
 
 ## CLAIMED
@@ -113,5 +83,36 @@ Each task is a `### TASK-xxx` heading followed by one fenced JSON block.
 ## REVIEW
 
 ## DONE
+
+### TASK-003
+
+```json
+{
+  "acceptance_criteria": [
+    "test suite green on server",
+    "claim/heartbeat/submit/done lifecycle verified in a worktree",
+    "ssh session collector writes ssh-events.jsonl"
+  ],
+  "agent_run_id": "run-6493c4a64c5f",
+  "branch": "task/TASK-003",
+  "commit_ref": "fc370cd",
+  "dependencies": [],
+  "description": "Bootstrap task for the coordination platform itself: KANBAN board, agentctl, git hooks, CI, event logs, SSH audit collector v1.",
+  "id": "TASK-003",
+  "last_heartbeat": null,
+  "lease_epoch": 2,
+  "owner": null,
+  "pr_ref": null,
+  "priority": "P0",
+  "progress_summary": "Platform deployed to /workspace; server tests 11/11; hooks verified 3/3; bootstrap commit 0e7f84f",
+  "resource_scopes": [
+    "agent-platform"
+  ],
+  "status": "DONE",
+  "title": "Setup multi-agent hackathon coordination platform",
+  "updated_at": "2026-11-14T05:41:22.380129Z",
+  "worktree": "workspaces/TASK-003"
+}
+```
 
 ## RECOVERY
