@@ -1,0 +1,146 @@
+[
+ {
+  "q": "So sánh ngọn lửa ở Trái Đất và trong vi trọng lực",
+  "expect_any": [
+   "PSI-10",
+   "PSI-117",
+   "PSI-159",
+   "PSI-20",
+   "PSI-21",
+   "PSI-22",
+   "PSI-23",
+   "PSI-25",
+   "PSI-26"
+  ],
+  "lang": "vi",
+  "retrieval": "strong"
+ },
+ {
+  "q": "How does a flame in microgravity differ from a flame on Earth?",
+  "expect_any": [
+   "PSI-10",
+   "PSI-117",
+   "PSI-159",
+   "PSI-20",
+   "PSI-21",
+   "PSI-22",
+   "PSI-23",
+   "PSI-25",
+   "PSI-26"
+  ],
+  "lang": "en",
+  "retrieval": "strong"
+ },
+ {
+  "q": "tại sao bầu trời có màu xanh",
+  "off_topic": true,
+  "lang": "vi"
+ },
+ {
+  "q": "What is the weather in Hanoi tomorrow?",
+  "off_topic": true,
+  "lang": "en"
+ },
+ {
+  "q": "Thí nghiệm nào quan trọng nhất cho an toàn cháy trên ISS?",
+  "expect_top": "PSI-102",
+  "lang": "vi"
+ },
+ {
+  "q": "Which investigations matter most for a lunar habitat?",
+  "expect_top": "PSI-159",
+  "lang": "en"
+ },
+ {
+  "q": "What did FLEX measure on the ISS?",
+  "expect_all": [
+   "PSI-69"
+  ],
+  "lang": "en",
+  "retrieval": "strong"
+ },
+ {
+  "q": "So sánh FLEX và FLEX-2",
+  "expect_all": [
+   "PSI-69",
+   "PSI-68"
+  ],
+  "lang": "vi"
+ },
+ {
+  "q": "BASS II nghiên cứu gì?",
+  "expect_all": [
+   "PSI-25"
+  ],
+  "not_named": [
+   "PSI-26"
+  ],
+  "lang": "vi"
+ },
+ {
+  "q": "Fire risk in a spacesuit at 4.3 psi and 100% oxygen",
+  "expect_any": [
+   "PSI-159"
+  ],
+  "not_named": [
+   "PSI-100"
+  ],
+  "lang": "en"
+ },
+ {
+  "q": "Kích thước hạt khói trong vi trọng lực lớn hơn hay nhỏ hơn?",
+  "expect_any": [
+   "PSI-102",
+   "PSI-101",
+   "PSI-47"
+  ],
+  "lang": "vi",
+  "retrieval": "strong"
+ },
+ {
+  "q": "soot particle size in microgravity smoke",
+  "expect_any": [
+   "PSI-102",
+   "PSI-101",
+   "PSI-47"
+  ],
+  "lang": "en",
+  "retrieval": "strong"
+ },
+ {
+  "q": "Cool flame của giọt heptane là gì?",
+  "expect_any": [
+   "PSI-117",
+   "PSI-39",
+   "PSI-68",
+   "PSI-69"
+  ],
+  "lang": "vi",
+  "retrieval": "strong"
+ },
+ {
+  "q": "Saffire nghiên cứu lan truyền lửa quy mô lớn thế nào?",
+  "expect_any": [
+   "PSI-98",
+   "PSI-99",
+   "PSI-100"
+  ],
+  "lang": "vi"
+ },
+ {
+  "q": "What does an electric field do to a flame?",
+  "expect_any": [
+   "PSI-22"
+  ],
+  "lang": "en",
+  "retrieval": "strong"
+ },
+ {
+  "q": "Tell me about SAME",
+  "expect_all": [
+   "PSI-102"
+  ],
+  "lang": "en",
+  "retrieval": "strong"
+ }
+]

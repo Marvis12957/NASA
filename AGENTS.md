@@ -56,3 +56,12 @@ hooks, not merely by prompting.
   deleted.
 - On any conflict, stop the affected publication/merge, run
   `agentctl conflicts`, and report to a human.
+
+## GraphRAG extract identity and communities
+
+LLM-extracted nodes use `{type}:{slug(name)}@{psi}` so identical labels stay
+distinct (`fuel:pmma@PSI-25` vs `fuel:pmma@PSI-99`; `sensor:cir@PSI-69` vs
+`hardware:cir@PSI-69`). Catalog Investigation/Scenario/Role ids stay global
+(`inv:PSI-69`). Optional `canonical` on scoped fuels points at the catalog
+fuel id. `--with-communities` writes hierarchical C0/C1/(C2) Community
+nodes after extract. Checkpoint: `backend/var/graphrag_extract.jsonl`.

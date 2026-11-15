@@ -1,8 +1,20 @@
 #!/bin/sh
 # pre-push: block pushes to main/master and block force pushes.
+# LOGGING (added 2026-11-14): every pushed ref is logged FIRST to
+# /var/log/agent-platform/code-changes.jsonl (event=push), so even a
+# rejected push attempt leaves a trace.
 # Install: cp hooks/pre-push .git/hooks/ && chmod +x .git/hooks/pre-push
 # $1 = remote name, $2 = remote URL; pushed refs arrive on stdin.
+REPO=$(git rev-parse --show-toplevel 2>/dev/null)
+log_push() {
+    if [ -n "$REPO" ] && [ -f "$REPO/tools/code_log.py" ]; then
+        python3 "$REPO/tools/code_log.py" push "$1" "$2" "$3" "$4" "$5" >/dev/null 2>&1 || true
+    elif [ -f /workspace/tools/code_log.py ]; then
+        python3 /workspace/tools/code_log.py push "$1" "$2" "$3" "$4" "$5" >/dev/null 2>&1 || true
+    fi
+}
 while read -r local_ref local_sha remote_ref remote_sha; do
+    log_push "$local_ref" "$local_sha" "$remote_ref" "$remote_sha" "$1"
     case "$remote_ref" in
         refs/heads/main|refs/heads/master)
             echo "pre-push: REJECTED — never push directly to ${remote_ref#refs/heads/}." >&2

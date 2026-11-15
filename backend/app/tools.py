@@ -1,0 +1,258 @@
+"""Tools each specialist may call. Rank/search walk Aura; oxygen comes from Investigation."""
+
+from __future__ import annotations
+
+from typing import Any, Callable
+
+from app.evidence_filter import filter_hits
+from app import intent as question_intent
+from app.graph import GraphStore
+from app.knowledge import SCENARIOS, mentioned_ids, resolve_psi_id
+
+ToolFn = Callable[[dict[str, Any], GraphStore], dict[str, Any]]
+
+
+def fail(summary: str) -> dict[str, Any]:
+    return {"ok": False, "summary": summary, "data": None}
+
+
+def ok(summary: str, data: Any) -> dict[str, Any]:
+    return {"ok": True, "summary": summary, "data": data}
+
+
+def as_scenario(value: Any) -> str | None:
+    if isinstance(value, str) and value in SCENARIOS:
+        return value
+    return None
+
+
+def lookup_id(store: GraphStore, value: Any) -> str | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    return resolve_psi_id(value, store.investigation_names())
+
+
+SPECS = [
+    {
+        "name": "rank_investigations",
+        "description": (
+            "Rank PSI combustion investigations for a habitable environment. "
+            "Scores are RELEVANT_TO fire-safety relevance, not oxygen percentage."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "scenario": {"type": "string", "enum": list(SCENARIOS)},
+                "role": {"type": "string", "enum": ["prevention", "detection", "suppression"]},
+                "limit": {"type": "number"},
+            },
+            "required": ["scenario"],
+        },
+    },
+    {
+        "name": "get_investigation",
+        "description": "Read one investigation: objective, fuels, oxygen, airflow, runs, hardware family.",
+        "parameters": {
+            "type": "object",
+            "properties": {"id": {"type": "string"}},
+            "required": ["id"],
+        },
+    },
+    {
+        "name": "search_investigations",
+        "description": (
+            "Vector-search Chunk.chunk_embedding with a MiniLM query embedding. "
+            "Returns supporting quotes. Oxygen and fuels come from Investigation properties."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {"query": {"type": "string"}, "limit": {"type": "number"}},
+            "required": ["query"],
+        },
+    },
+    {
+        "name": "compare_investigations",
+        "description": "Compare two to four investigations on oxygen, flow, fuel, role, and hardware family.",
+        "parameters": {
+            "type": "object",
+            "properties": {"ids": {"type": "array", "items": {"type": "string"}}},
+            "required": ["ids"],
+        },
+    },
+    {
+        "name": "graph_neighbors",
+        "description": "Walk the knowledge graph around one investigation (not document chunks).",
+        "parameters": {
+            "type": "object",
+            "properties": {"id": {"type": "string"}},
+            "required": ["id"],
+        },
+    },
+    {
+        "name": "scenario_context",
+        "description": "History linked to a scenario, plus the gravity or atmosphere bound.",
+        "parameters": {
+            "type": "object",
+            "properties": {"scenario": {"type": "string", "enum": list(SCENARIOS)}},
+            "required": ["scenario"],
+        },
+    },
+    {
+        "name": "local_search",
+        "description": (
+            "GraphRAG local search: MiniLM cosine plus BM25 fused with RRF, then rerank, plus one-hop neighbors "
+            "(MENTIONS, STUDIED, MEASURED_WITH, USED_IN, RELATED_TO). "
+            "Oxygen and fuels come from Investigation properties, not from summaries."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {"query": {"type": "string"}, "limit": {"type": "number"}},
+            "required": ["query"],
+        },
+    },
+    {
+        "name": "global_search",
+        "description": (
+            "GraphRAG global search over Community summaries (fire-safety themes and PSI ids). "
+            "Do not read oxygen percentages from the community paragraph."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {"query": {"type": "string"}, "limit": {"type": "number"}},
+            "required": ["query"],
+        },
+    },
+]
+
+
+def rank_investigations(args: dict, store: GraphStore) -> dict:
+    scenario = as_scenario(args.get("scenario"))
+    if not scenario:
+        return fail("scenario must be iss, moon, mars, rover, suit, or earth")
+    role = args.get("role") if isinstance(args.get("role"), str) else None
+    limit = min(8, max(1, int(args.get("limit") or 5)))
+    data = store.rank_investigations(scenario, role, limit)
+    ranked = data["ranked"]
+    spec = data["scenario"]
+    role_text = f", filtered to {role}" if role else ""
+    summary = f"{spec['label']}{role_text}: " + ", ".join(
+        f"{row['id']} ({row['score']})" for row in ranked
+    )
+    return ok(summary, data)
+
+
+def get_investigation(args: dict, store: GraphStore) -> dict:
+    psi_id = lookup_id(store, args.get("id"))
+    if not psi_id:
+        return fail(f"No investigation matches {args.get('id')}")
+    card = store.get_investigation(psi_id)
+    if not card:
+        return fail(f"No investigation matches {args.get('id')}")
+    runs = card["runCount"] if card["runCount"] is not None else "no"
+    return ok(f"{card['id']} {card['name']}: {card['oxygen']}, {card['flow']}, {runs} runs", card)
+
+
+def search_investigations(args: dict, store: GraphStore) -> dict:
+    query = args.get("query") if isinstance(args.get("query"), str) else ""
+    if not query.strip():
+        return fail("Give a search query")
+    limit = min(8, max(1, int(args.get("limit") or 5)))
+    data = store.search_investigations(query.strip(), limit)
+    data["hits"] = filter_hits(data.get("hits"))
+    hits = data["hits"]
+    ids = [hit["chunkId"] for hit in hits if hit.get("chunkId")]
+    summary = ", ".join(ids) if ids else "No chunk matched"
+    return ok(summary, data)
+
+
+def compare_investigations(args: dict, store: GraphStore) -> dict:
+    raw = args.get("ids") if isinstance(args.get("ids"), list) else []
+    names = store.investigation_names()
+    ids = []
+    for value in raw:
+        psi_id = resolve_psi_id(str(value), names) if value else None
+        if psi_id and psi_id not in ids:
+            ids.append(psi_id)
+    data = store.compare_investigations(ids)
+    if not data:
+        return fail("Name at least two investigations to compare")
+    summary = "Compared " + " and ".join(row["id"] for row in data["rows"])
+    return ok(summary, data)
+
+
+def graph_neighbors(args: dict, store: GraphStore) -> dict:
+    psi_id = lookup_id(store, args.get("id"))
+    if not psi_id:
+        return fail(f"No investigation matches {args.get('id')}")
+    data = store.graph_neighbors(psi_id)
+    if not data:
+        return fail(f"No investigation matches {args.get('id')}")
+    return ok(f"{data['id']} links to {len(data['links'])} graph nodes, family {data['family']}", data)
+
+
+def local_search(args: dict, store: GraphStore) -> dict:
+    query = args.get("query") if isinstance(args.get("query"), str) else ""
+    if not query.strip():
+        return fail("Give a search query")
+    limit = min(8, max(1, int(args.get("limit") or 5)))
+    data = store.local_search(query.strip(), limit)
+    method = data.get("rerank") or "none"
+    # How well the best passage matched, measured before unrelated passages are dropped.
+    data["retrieval"] = question_intent.retrieval_status(data.get("hits") or [], method)
+    data["hits"] = question_intent.relevant_hits(filter_hits(data.get("hits")), method)
+    hits = data["hits"]
+    ids = [hit["chunkId"] for hit in hits if hit.get("chunkId")]
+    summary = (", ".join(ids) if ids else "No chunk matched") + f" (rerank {method})"
+    return ok(summary, data)
+
+
+def global_search(args: dict, store: GraphStore) -> dict:
+    query = args.get("query") if isinstance(args.get("query"), str) else ""
+    if not query.strip():
+        return fail("Give a search query")
+    limit = min(8, max(1, int(args.get("limit") or 5)))
+    data = store.global_search(query.strip(), limit)
+    communities = data.get("communities") or []
+    if data.get("degraded") and not communities:
+        return ok("No community summaries in the graph yet", data)
+    if data.get("degraded"):
+        return ok("Community titles only; summaries still being written", data)
+    labels = [str(item.get("title") or item.get("id")) for item in communities]
+    method = data.get("rerank") or "none"
+    return ok("Communities: " + ", ".join(labels) + f" (rerank {method})", data)
+
+
+def scenario_context(args: dict, store: GraphStore) -> dict:
+    scenario = as_scenario(args.get("scenario"))
+    if not scenario:
+        return fail("scenario must be iss, moon, mars, rover, suit, or earth")
+    data = store.scenario_context(scenario)
+    spec = data["scenario"]
+    notes = data["notes"]
+    labels = ", ".join(note["label"] for note in notes) or "no linked history"
+    return ok(f"{spec['label']}: {labels}", data)
+
+
+IMPLEMENTATIONS: dict[str, ToolFn] = {
+    "rank_investigations": rank_investigations,
+    "get_investigation": get_investigation,
+    "search_investigations": search_investigations,
+    "compare_investigations": compare_investigations,
+    "graph_neighbors": graph_neighbors,
+    "scenario_context": scenario_context,
+    "local_search": local_search,
+    "global_search": global_search,
+}
+
+SPEC_MAP = {item["name"]: item for item in SPECS}
+
+
+def execute(name: str, args: dict, store: GraphStore) -> dict:
+    fn = IMPLEMENTATIONS.get(name)
+    if not fn:
+        return fail(f"Unknown tool {name}")
+    return fn(args, store)
+
+
+def mentioned_from_question(store: GraphStore, question: str) -> list[str]:
+    return mentioned_ids(question, store.investigation_names())

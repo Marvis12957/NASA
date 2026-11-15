@@ -1,0 +1,9 @@
+{
+  "api": "anthropic/claude-opus-5-5",
+  "eligible": 4888,
+  "entities_added": 4412,
+  "rels_added": 5811,
+  "extracted_chunks": 655,
+  "skipped_no_llm": false,
+  "checkpoint": "/Users/Marvis/Projects/NASA/backend/var/graphrag_extract.jsonl"
+}

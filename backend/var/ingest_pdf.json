@@ -1,22 +1,2289 @@
 {
-  "pdfs_found": 232,
-  "pdfs_attempted": 1,
-  "pdfs_succeeded": 1,
-  "pdfs_failed": 0,
+  "pdfs_found": 246,
+  "pdfs_attempted": 246,
+  "pdfs_succeeded": 245,
+  "pdfs_failed": 1,
   "investigations": 24,
   "tesseract": null,
-  "ocr_notes": [],
+  "ocr_notes": [
+    "data/psi/ACME_common/Engineering Documents/Short Nozzle MFA10771.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf page 2: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf page 3: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf page 4: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf page 5: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Engineering Documents/s1101mfa1800_B.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Presentations/PS-01374 ACME posterFinal.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Reports/ISS Researchers Guide - Combustion In Reduced Gravity.pdf page 4: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Reports/PS-03403_ACME_on_the_ISS.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 2: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 3: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 4: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 5: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 6: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Science Documents/ACME-DOC-010_D Software Interface Design Description.pdf page 95: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Science Documents/ACME-DOC-010_D.pdf page 95: tesseract not installed; skipped OCR",
+    "data/psi/ACME_common/Science Documents/ACME_Integrated_Science_Requirements_RevB.pdf page 3: tesseract not installed; skipped OCR",
+    "data/psi/PSI-101_SAME-R/Reports/SAMER_Final 0602 2014.pdf page 50: tesseract not installed; skipped OCR",
+    "data/psi/PSI-101_SAME-R/Reports/SAMER_Final 0602 2014.pdf page 85: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA150-B Aging Chamber Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA151-B Same Aging Chamber.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA151_B.PDF page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA410-A Teflon Sample Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA411 Teflon Ignitor Wire Coil Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA414-A Lampwick Sample Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA415 Ignitor Wire Coil Assembly (for 0 .250 OD samples).pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA416-A Silicone Sample Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA417-B Kapton Sample Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA419 Silicone Ignitor Wire Coil Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA432-A Kapton Ignitor Wire Coil Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHD126-B Smoke Generation Tube.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHD413 Teflon Sample Part.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHD509 P-Trak Condenser Tube Modification.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHP000-C SAME Fluids System Schematic.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/60089MFHP0001-C Same Fluids System Schematic.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/80089MFHP000-E SAME Fluids System Schematic.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/80089MFHP000-E SAME Fluids System Schematic.pdf page 2: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Engineering Documents/S1171MFHA401 Pyrell Sample Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 2: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 6: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 10: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 32: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 34: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 42: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 50: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 68: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 4: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 5: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 28: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 29: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 30: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 32: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 33: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Science Documents/SAME_Baseline Concept Description Document_001 Rev A.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Science Documents/SAME_Operations Manual_007.pdf page 22: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Science Documents/SAME_Operations Manual_007.pdf page 24: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Science Documents/SAME_Operations Manual_007.pdf page 29: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Science Documents/SAME_Operations Manual_007.pdf page 30: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Science Documents/SAME_Software Description Document_003 Rev A.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-102_SAME/Science Documents/SAME_Software Requirement Document_004 Rev D.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-106_SLICE/Presentations/SLICE IP-C crew training 2010.pdf page 18: tesseract not installed; skipped OCR",
+    "data/psi/PSI-106_SLICE/Presentations/SLICE IP-D crew training 2011.pdf page 18: tesseract not installed; skipped OCR",
+    "data/psi/PSI-106_SLICE/Science Documents/SLICE IP-A SRDR.pdf page 3: tesseract not installed; skipped OCR",
+    "data/psi/PSI-106_SLICE/Science Documents/SLICE IP-A SRDR.pdf page 6: tesseract not installed; skipped OCR",
+    "data/psi/PSI-107_SPICE/Engineering Documents/60054MAFH000-C SPICE Experiment Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-107_SPICE/Engineering Documents/60054MAFH000-C SPICE Experiment Assembly.pdf page 2: tesseract not installed; skipped OCR",
+    "data/psi/PSI-107_SPICE/Engineering Documents/SPICE-front-window.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-107_SPICE/Reports/Dotson Smoke Point Normal Gravity Coflow Flames.pdf page 3: tesseract not installed; skipped OCR",
+    "data/psi/PSI-107_SPICE/Reports/SPICE AIAA 1-6 2010 0106.pdf page 9: tesseract not installed; skipped OCR",
+    "data/psi/PSI-107_SPICE/Reports/SPICE AIAA 1-6 2010 0106.pdf page 10: tesseract not installed; skipped OCR",
+    "data/psi/PSI-107_SPICE/Reports/SPICE Final Report 12_2_2012.pdf page 27: tesseract not installed; skipped OCR",
+    "data/psi/PSI-107_SPICE/Reports/SPICE Final Report 12_2_2012.pdf page 28: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 1 Details.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 2 Details.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 3 Details.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 4 and 5 Details.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 - The Solid Surface Combustion Experiment Aboard USML-1 Mission.pdf page 20: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 - The Solid Surface Combustion Experiment Aboard USML-1 Mission.pdf page 33: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 - The Solid Surface Combustion Experiment Aboard USML-1 Mission.pdf page 46: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 7: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 49: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 50: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 51: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 66: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 67: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 71: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 73: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 80: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 81: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 86: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 92: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 97: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 103: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 109: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 115: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 121: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 127: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 133: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 139: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 141: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 142: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 143: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 147: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 152: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 157: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 162: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 167: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 172: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 174: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 175: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 180: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 186: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 192: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 198: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 204: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 210: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 216: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 222: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 224: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 225: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 227: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 228: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 229: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 233: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 238: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 243: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 248: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 253: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 258: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 262: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 263: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 268: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 272: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 273: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 278: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 283: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Reports/STDCE-1_NASA TM 104482 - Particle Image Velocimetry for the Sufrace Tension Driven Convection Experiment Using a Particle Displacement Tracking Technique.pdf page 2: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Science Documents/SRD_STDCE.pdf page 85: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Science Documents/STDCE-1_SO.pdf page 5: tesseract not installed; skipped OCR",
+    "data/psi/PSI-108_STDCE-1/Science Documents/STDCE-1_SO.pdf page 7: tesseract not installed; skipped OCR",
+    "data/psi/PSI-10_ACME-Flame-Design/Science Documents/PSI-10_Science Documents_ACME_ISRD.pdf page 3: tesseract not installed; skipped OCR",
+    "data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf page 25: tesseract not installed; skipped OCR",
+    "data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf page 33: tesseract not installed; skipped OCR",
+    "data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf page 34: tesseract not installed; skipped OCR",
+    "data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf page 36: tesseract not installed; skipped OCR",
+    "data/psi/PSI-117_Cool-Flame-Perturbation/Reports/Dissertation-PD-revised_.pdf page 4: tesseract not installed; skipped OCR",
+    "data/psi/PSI-117_Cool-Flame-Perturbation/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf page 22: tesseract not installed; skipped OCR",
+    "data/psi/PSI-117_Cool-Flame-Perturbation/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf page 218: tesseract not installed; skipped OCR",
+    "data/psi/PSI-117_Cool-Flame-Perturbation/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf page 225: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFA1000_A.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFA1020.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFA1065.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1021_A.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1022.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1026_A.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1041.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1085-Spherical sample final.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1090-Cylindrical Samples.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1110-flat.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1111-flat.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1086_REV-.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1091_REV-.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 10: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 13: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 14: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 20: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 21: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 27: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 31: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 32: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 34: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 47: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 52: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 53: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 61: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 67: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 70: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 73: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 3: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 16: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 22: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 27: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 48: tesseract not installed; skipped OCR",
+    "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 56: tesseract not installed; skipped OCR",
+    "data/psi/PSI-21_ACME-CLD-Flame/Engineering Documents/ACME CLD burner hot wire anemometry measurements.pdf page 12: tesseract not installed; skipped OCR",
+    "data/psi/PSI-21_ACME-CLD-Flame/Reports/Karnani et al 2009 Exploring the effects of gravity on a coflow diffusion flame.pdf page 15: tesseract not installed; skipped OCR",
+    "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2018 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf page 12: tesseract not installed; skipped OCR",
+    "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2019 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf page 16: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 8: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 9: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 10: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 11: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 12: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 13: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 14: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 22: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 10: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 11: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 12: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 13: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 14: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 15: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 16: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 17: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 23: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 15: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 16: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 18: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 19: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 20: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 25: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 26: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Tinajero et al 2016 characterizing i-v curves for non-premixed methane flames.pdf page 17: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf page 13: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf page 16: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf page 26: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf page 34: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf page 35: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 9: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 19: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 37: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 44: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 46: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 47: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 48: tesseract not installed; skipped OCR",
+    "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_SRD_20100402.pdf page 5: tesseract not installed; skipped OCR",
+    "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 4: tesseract not installed; skipped OCR",
+    "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 29: tesseract not installed; skipped OCR",
+    "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 38: tesseract not installed; skipped OCR",
+    "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 55: tesseract not installed; skipped OCR",
+    "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 74: tesseract not installed; skipped OCR",
+    "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 76: tesseract not installed; skipped OCR",
+    "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 80: tesseract not installed; skipped OCR",
+    "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 83: tesseract not installed; skipped OCR",
+    "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 96: tesseract not installed; skipped OCR",
+    "data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 8: tesseract not installed; skipped OCR",
+    "data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 110: tesseract not installed; skipped OCR",
+    "data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 122: tesseract not installed; skipped OCR",
+    "data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 126: tesseract not installed; skipped OCR",
+    "data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 142: tesseract not installed; skipped OCR",
+    "data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 143: tesseract not installed; skipped OCR",
+    "data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 144: tesseract not installed; skipped OCR",
+    "data/psi/PSI-25_BASS-II/Science Documents/SRD_BASS-II.pdf page 7: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 6: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 12: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 13: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 14: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 19: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 24: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 28: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 36: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 39: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 6: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 12: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 13: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 14: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 19: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 25: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 29: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 5: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 13: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 14: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 15: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 27: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 29: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 33: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 35: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 52: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 53: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 55: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 58: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 7: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 8: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 11: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 17: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 35: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 36: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 40: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 47: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 7: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 8: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 11: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 13: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 26: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 28: tesseract not installed; skipped OCR",
+    "data/psi/PSI-26_BASS/Science Documents/SRD_BASS.pdf page 2: tesseract not installed; skipped OCR",
+    "data/psi/PSI-39_CFI/Reports/Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf page 7: tesseract not installed; skipped OCR",
+    "data/psi/PSI-39_CFI/Reports/Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf page 20: tesseract not installed; skipped OCR",
+    "data/psi/PSI-39_CFI/Science Documents/Pres_SCR_CFI.pdf page 2: tesseract not installed; skipped OCR",
+    "data/psi/PSI-47_DAFT/Engineering Documents/60054MAFH000_C.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-47_DAFT/Engineering Documents/60054MAFH000_C.pdf page 2: tesseract not installed; skipped OCR",
+    "data/psi/PSI-47_DAFT/Engineering Documents/60054mdfh001.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-47_DAFT/Engineering Documents/60054mdfh002.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-68_FLEX-2/Engineering Documents/67212MFAN11000-4 FLEX-2 Package Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFAC13500 FLEX-2 Fuel Reservoir Sub-Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFAC17143-2 FLEX-2 Fiber Arm Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFAC17146 FLEX-2 Replaceable Fiber Arm Assembly.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFDC17150 FLEX-2 Fiber Cover.pdf page 1: tesseract not installed; skipped OCR",
+    "data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 24: tesseract not installed; skipped OCR",
+    "data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 25: tesseract not installed; skipped OCR",
+    "data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 26: tesseract not installed; skipped OCR",
+    "data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 27: tesseract not installed; skipped OCR",
+    "data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 37: tesseract not installed; skipped OCR",
+    "data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 40: tesseract not installed; skipped OCR",
+    "data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 44: tesseract not installed; skipped OCR",
+    "data/psi/PSI-99_SAFFIRE-II/Engineering Documents/PMMA sheet MFD1066.pdf page 1: tesseract not installed; skipped OCR"
+  ],
   "succeeded": [
+    {
+      "pdf": "data/psi/ACME_common/Engineering Documents/ACME - Engineering Requirements Doc Rev K.pdf",
+      "slug": "acme-engineering-requirements-doc-rev-k",
+      "ok": true,
+      "pages": 124,
+      "images": 7,
+      "markdown": "data/text/ACME_common/Engineering Documents/acme-engineering-requirements-doc-rev-k.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Engineering Documents/ACME Engineering Implementation Rpt.pdf",
+      "slug": "acme-engineering-implementation-rpt",
+      "ok": true,
+      "pages": 102,
+      "images": 50,
+      "markdown": "data/text/ACME_common/Engineering Documents/acme-engineering-implementation-rpt.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Engineering Documents/ACME_engineering_20210328.pdf",
+      "slug": "acme-engineering-20210328",
+      "ok": true,
+      "pages": 95,
+      "images": 46,
+      "markdown": "data/text/ACME_common/Engineering Documents/acme-engineering-20210328.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Engineering Documents/S1101MFB0001_-ACME_Drawing_Tree.pdf",
+      "slug": "s1101mfb0001-acme-drawing-tree",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/ACME_common/Engineering Documents/s1101mfb0001-acme-drawing-tree.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Engineering Documents/S1101MFS0004_rev_A.pdf",
+      "slug": "s1101mfs0004-rev-a",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/ACME_common/Engineering Documents/s1101mfs0004-rev-a.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Engineering Documents/Short Nozzle MFA10771.pdf",
+      "slug": "short-nozzle-mfa10771",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/ACME_common/Engineering Documents/short-nozzle-mfa10771.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf",
+      "slug": "s1101mfa0100-c",
+      "ok": true,
+      "pages": 5,
+      "images": 0,
+      "markdown": "data/text/ACME_common/Engineering Documents/s1101mfa0100-c.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Engineering Documents/s1101mfa1800_B.pdf",
+      "slug": "s1101mfa1800-b",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/ACME_common/Engineering Documents/s1101mfa1800-b.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Presentations/ACME CDR_Presentation_Package.pdf",
+      "slug": "acme-cdr-presentation-package",
+      "ok": true,
+      "pages": 240,
+      "images": 1136,
+      "markdown": "data/text/ACME_common/Presentations/acme-cdr-presentation-package.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Presentations/ACME CSSCI 20220509.pdf",
+      "slug": "acme-cssci-20220509",
+      "ok": true,
+      "pages": 12,
+      "images": 8,
+      "markdown": "data/text/ACME_common/Presentations/acme-cssci-20220509.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Presentations/ACME CSSCI paper 20220402.pdf",
+      "slug": "acme-cssci-paper-20220402",
+      "ok": true,
+      "pages": 10,
+      "images": 8,
+      "markdown": "data/text/ACME_common/Presentations/acme-cssci-paper-20220402.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Presentations/ACME_ASGSR_20121127.pdf",
+      "slug": "acme-asgsr-20121127",
+      "ok": true,
+      "pages": 28,
+      "images": 130,
+      "markdown": "data/text/ACME_common/Presentations/acme-asgsr-20121127.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Presentations/ACME_ASGSR_20131107.pdf",
+      "slug": "acme-asgsr-20131107",
+      "ok": true,
+      "pages": 28,
+      "images": 131,
+      "markdown": "data/text/ACME_common/Presentations/acme-asgsr-20131107.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Presentations/ACME_CSSCI_2014.pdf",
+      "slug": "acme-cssci-2014",
+      "ok": true,
+      "pages": 13,
+      "images": 4,
+      "markdown": "data/text/ACME_common/Presentations/acme-cssci-2014.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Presentations/ACME_CSSCI_20140317.pdf",
+      "slug": "acme-cssci-20140317",
+      "ok": true,
+      "pages": 30,
+      "images": 129,
+      "markdown": "data/text/ACME_common/Presentations/acme-cssci-20140317.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Presentations/ACME_pictorial_overview_slides_20170601.pdf",
+      "slug": "acme-pictorial-overview-slides-20170601",
+      "ok": true,
+      "pages": 12,
+      "images": 36,
+      "markdown": "data/text/ACME_common/Presentations/acme-pictorial-overview-slides-20170601.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Presentations/AIAA presentation - ACME on the ISS Jan2012.pdf",
+      "slug": "aiaa-presentation-acme-on-the-iss-jan2012",
+      "ok": true,
+      "pages": 32,
+      "images": 194,
+      "markdown": "data/text/ACME_common/Presentations/aiaa-presentation-acme-on-the-iss-jan2012.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Presentations/PS-01374 ACME posterFinal.pdf",
+      "slug": "ps-01374-acme-posterfinal",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/ACME_common/Presentations/ps-01374-acme-posterfinal.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/1G17-070HE-0166.pdf",
+      "slug": "1g17-070he-0166",
+      "ok": true,
+      "pages": 13,
+      "images": 12,
+      "markdown": "data/text/ACME_common/Reports/1g17-070he-0166.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/2G11-070HE-0310.pdf",
+      "slug": "2g11-070he-0310",
+      "ok": true,
+      "pages": 10,
+      "images": 18,
+      "markdown": "data/text/ACME_common/Reports/2g11-070he-0310.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/ACME fact sheet 20180820.pdf",
+      "slug": "acme-fact-sheet-20180820",
+      "ok": true,
+      "pages": 2,
+      "images": 4,
+      "markdown": "data/text/ACME_common/Reports/acme-fact-sheet-20180820.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/ACME_fact_sheet_20180519.pdf",
+      "slug": "acme-fact-sheet-20180519",
+      "ok": true,
+      "pages": 1,
+      "images": 4,
+      "markdown": "data/text/ACME_common/Reports/acme-fact-sheet-20180519.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/CIR Paper 59th IAC 2008.pdf",
+      "slug": "cir-paper-59th-iac-2008",
+      "ok": true,
+      "pages": 11,
+      "images": 4,
+      "markdown": "data/text/ACME_common/Reports/cir-paper-59th-iac-2008.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/Gaseous Non-Premixed Flame Research Planned for the International Space Station.pdf",
+      "slug": "gaseous-non-premixed-flame-research-planned-for-",
+      "ok": true,
+      "pages": 30,
+      "images": 129,
+      "markdown": "data/text/ACME_common/Reports/gaseous-non-premixed-flame-research-planned-for-.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/ISS Researchers Guide - Combustion In Reduced Gravity.pdf",
+      "slug": "iss-researchers-guide-combustion-in-reduced-grav",
+      "ok": true,
+      "pages": 56,
+      "images": 34,
+      "markdown": "data/text/ACME_common/Reports/iss-researchers-guide-combustion-in-reduced-grav.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/PS-01548 ACME info sheet.pdf",
+      "slug": "ps-01548-acme-info-sheet",
+      "ok": true,
+      "pages": 2,
+      "images": 9,
+      "markdown": "data/text/ACME_common/Reports/ps-01548-acme-info-sheet.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/PS-02788_ACME_info_sheet.pdf",
+      "slug": "ps-02788-acme-info-sheet",
+      "ok": true,
+      "pages": 2,
+      "images": 12,
+      "markdown": "data/text/ACME_common/Reports/ps-02788-acme-info-sheet.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/PS-03055 ACME info sheet.pdf",
+      "slug": "ps-03055-acme-info-sheet",
+      "ok": true,
+      "pages": 2,
+      "images": 11,
+      "markdown": "data/text/ACME_common/Reports/ps-03055-acme-info-sheet.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/PS-03403_ACME_on_the_ISS.pdf",
+      "slug": "ps-03403-acme-on-the-iss",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/ACME_common/Reports/ps-03403-acme-on-the-iss.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Reports/PS_00538__Unlocking_Mysteries.pdf",
+      "slug": "ps-00538-unlocking-mysteries",
+      "ok": true,
+      "pages": 4,
+      "images": 5,
+      "markdown": "data/text/ACME_common/Reports/ps-00538-unlocking-mysteries.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME Integrated Science Requirements Definition Review 20100505.pdf",
+      "slug": "acme-integrated-science-requirements-definition-",
+      "ok": true,
+      "pages": 40,
+      "images": 42,
+      "markdown": "data/text/ACME_common/Science Documents/acme-integrated-science-requirements-definition-.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf",
+      "slug": "acme-radiometer-layouts-from-proe",
+      "ok": true,
+      "pages": 6,
+      "images": 6,
+      "markdown": "data/text/ACME_common/Science Documents/acme-radiometer-layouts-from-proe.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME flow conversion 20200601.pdf",
+      "slug": "acme-flow-conversion-20200601",
+      "ok": true,
+      "pages": 4,
+      "images": 5,
+      "markdown": "data/text/ACME_common/Science Documents/acme-flow-conversion-20200601.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME insert and optical layout 20160922.pdf",
+      "slug": "acme-insert-and-optical-layout-20160922",
+      "ok": true,
+      "pages": 11,
+      "images": 14,
+      "markdown": "data/text/ACME_common/Science Documents/acme-insert-and-optical-layout-20160922.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME non-imaging data file description 20170217.pdf",
+      "slug": "acme-non-imaging-data-file-description-20170217",
+      "ok": true,
+      "pages": 18,
+      "images": 0,
+      "markdown": "data/text/ACME_common/Science Documents/acme-non-imaging-data-file-description-20170217.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME-DOC-010_D Software Interface Design Description.pdf",
+      "slug": "acme-doc-010-d-software-interface-design-descrip",
+      "ok": true,
+      "pages": 144,
+      "images": 7,
+      "markdown": "data/text/ACME_common/Science Documents/acme-doc-010-d-software-interface-design-descrip.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME-DOC-010_D.pdf",
+      "slug": "acme-doc-010-d",
+      "ok": true,
+      "pages": 144,
+      "images": 7,
+      "markdown": "data/text/ACME_common/Science Documents/acme-doc-010-d.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME-RPT-010_A.pdf",
+      "slug": "acme-rpt-010-a",
+      "ok": true,
+      "pages": 58,
+      "images": 45,
+      "markdown": "data/text/ACME_common/Science Documents/acme-rpt-010-a.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME-RPT-011_-.pdf",
+      "slug": "acme-rpt-011",
+      "ok": true,
+      "pages": 49,
+      "images": 24,
+      "markdown": "data/text/ACME_common/Science Documents/acme-rpt-011.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME-RPT-012_-.pdf",
+      "slug": "acme-rpt-012",
+      "ok": true,
+      "pages": 35,
+      "images": 18,
+      "markdown": "data/text/ACME_common/Science Documents/acme-rpt-012.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME-RPT-013_-.pdf",
+      "slug": "acme-rpt-013",
+      "ok": true,
+      "pages": 37,
+      "images": 28,
+      "markdown": "data/text/ACME_common/Science Documents/acme-rpt-013.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME_Integrated_Science_Requirements_RevB.pdf",
+      "slug": "acme-integrated-science-requirements-revb",
+      "ok": true,
+      "pages": 110,
+      "images": 22,
+      "markdown": "data/text/ACME_common/Science Documents/acme-integrated-science-requirements-revb.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME_Science_Operation_Requirements_revA_20111018.pdf",
+      "slug": "acme-science-operation-requirements-reva-2011101",
+      "ok": true,
+      "pages": 45,
+      "images": 5,
+      "markdown": "data/text/ACME_common/Science Documents/acme-science-operation-requirements-reva-2011101.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/ACME_non-imaging_data_file_description.pdf",
+      "slug": "acme-non-imaging-data-file-description",
+      "ok": true,
+      "pages": 18,
+      "images": 0,
+      "markdown": "data/text/ACME_common/Science Documents/acme-non-imaging-data-file-description.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/CFI Intensified Camera Characterization Report.pdf",
+      "slug": "cfi-intensified-camera-characterization-report",
+      "ok": true,
+      "pages": 44,
+      "images": 26,
+      "markdown": "data/text/ACME_common/Science Documents/cfi-intensified-camera-characterization-report.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/Hastings_HFC-D-302_manual.pdf",
+      "slug": "hastings-hfc-d-302-manual",
+      "ok": true,
+      "pages": 43,
+      "images": 11,
+      "markdown": "data/text/ACME_common/Science Documents/hastings-hfc-d-302-manual.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/Layouts - ACME Major Rearrange - Final.pdf",
+      "slug": "layouts-acme-major-rearrange-final",
+      "ok": true,
+      "pages": 3,
+      "images": 5,
+      "markdown": "data/text/ACME_common/Science Documents/layouts-acme-major-rearrange-final.md"
+    },
+    {
+      "pdf": "data/psi/ACME_common/Science Documents/TC rake dimensions 20190827.pdf",
+      "slug": "tc-rake-dimensions-20190827",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/ACME_common/Science Documents/tc-rake-dimensions-20190827.md"
+    },
+    {
+      "pdf": "data/psi/PSI-100_SAFFIRE-III/Science Documents/SAFFIRE-III Image Directory Nomenclature_v3.0.pdf",
+      "slug": "saffire-iii-image-directory-nomenclature-v3-0",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-100_SAFFIRE-III/Science Documents/saffire-iii-image-directory-nomenclature-v3-0.md"
+    },
+    {
+      "pdf": "data/psi/PSI-100_SAFFIRE-III/Science Documents/SAFFIRE-III Operations.pdf",
+      "slug": "saffire-iii-operations",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-100_SAFFIRE-III/Science Documents/saffire-iii-operations.md"
+    },
+    {
+      "pdf": "data/psi/PSI-101_SAME-R/Reports/SAMER_Final 0602 2014.pdf",
+      "slug": "samer-final-0602-2014",
+      "ok": true,
+      "pages": 89,
+      "images": 128,
+      "markdown": "data/text/PSI-101_SAME-R/Reports/samer-final-0602-2014.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA150-B Aging Chamber Assembly.pdf",
+      "slug": "60089mfha150-b-aging-chamber-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha150-b-aging-chamber-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA151-B Same Aging Chamber.pdf",
+      "slug": "60089mfha151-b-same-aging-chamber",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha151-b-same-aging-chamber.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA151_B.PDF",
+      "slug": "60089mfha151-b",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha151-b.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA410-A Teflon Sample Assembly.pdf",
+      "slug": "60089mfha410-a-teflon-sample-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha410-a-teflon-sample-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA411 Teflon Ignitor Wire Coil Assembly.pdf",
+      "slug": "60089mfha411-teflon-ignitor-wire-coil-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha411-teflon-ignitor-wire-coil-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA414-A Lampwick Sample Assembly.pdf",
+      "slug": "60089mfha414-a-lampwick-sample-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha414-a-lampwick-sample-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA415 Ignitor Wire Coil Assembly (for 0 .250 OD samples).pdf",
+      "slug": "60089mfha415-ignitor-wire-coil-assembly-for-0-25",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha415-ignitor-wire-coil-assembly-for-0-25.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA416-A Silicone Sample Assembly.pdf",
+      "slug": "60089mfha416-a-silicone-sample-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha416-a-silicone-sample-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA417-B Kapton Sample Assembly.pdf",
+      "slug": "60089mfha417-b-kapton-sample-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha417-b-kapton-sample-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA419 Silicone Ignitor Wire Coil Assembly.pdf",
+      "slug": "60089mfha419-silicone-ignitor-wire-coil-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha419-silicone-ignitor-wire-coil-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHA432-A Kapton Ignitor Wire Coil Assembly.pdf",
+      "slug": "60089mfha432-a-kapton-ignitor-wire-coil-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfha432-a-kapton-ignitor-wire-coil-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHD126-B Smoke Generation Tube.pdf",
+      "slug": "60089mfhd126-b-smoke-generation-tube",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfhd126-b-smoke-generation-tube.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHD413 Teflon Sample Part.pdf",
+      "slug": "60089mfhd413-teflon-sample-part",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfhd413-teflon-sample-part.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHD509 P-Trak Condenser Tube Modification.pdf",
+      "slug": "60089mfhd509-p-trak-condenser-tube-modification",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfhd509-p-trak-condenser-tube-modification.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHP000-C SAME Fluids System Schematic.pdf",
+      "slug": "60089mfhp000-c-same-fluids-system-schematic",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfhp000-c-same-fluids-system-schematic.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/60089MFHP0001-C Same Fluids System Schematic.pdf",
+      "slug": "60089mfhp0001-c-same-fluids-system-schematic",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/60089mfhp0001-c-same-fluids-system-schematic.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/80089MFHP000-E SAME Fluids System Schematic.pdf",
+      "slug": "80089mfhp000-e-same-fluids-system-schematic",
+      "ok": true,
+      "pages": 2,
+      "images": 2,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/80089mfhp000-e-same-fluids-system-schematic.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/S1171MFHA401 Pyrell Sample Assembly.pdf",
+      "slug": "s1171mfha401-pyrell-sample-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/s1171mfha401-pyrell-sample-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Engineering Documents/SAME Verification Plan and Engineering Requirements Document (VPRED)_January 2007.pdf",
+      "slug": "same-verification-plan-and-engineering-requireme",
+      "ok": true,
+      "pages": 107,
+      "images": 2,
+      "markdown": "data/text/PSI-102_SAME/Engineering Documents/same-verification-plan-and-engineering-requireme.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf",
+      "slug": "same-final-science-report-03-18-10-with-papers-a",
+      "ok": true,
+      "pages": 68,
+      "images": 29,
+      "markdown": "data/text/PSI-102_SAME/Reports/same-final-science-report-03-18-10-with-papers-a.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf",
+      "slug": "same-wire-report",
+      "ok": true,
+      "pages": 34,
+      "images": 4,
+      "markdown": "data/text/PSI-102_SAME/Reports/same-wire-report.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Science Documents/SAME EIRD Rev 2.00 02-25-05 HIgh Q.pdf",
+      "slug": "same-eird-rev-2-00-02-25-05-high-q",
+      "ok": true,
+      "pages": 72,
+      "images": 35,
+      "markdown": "data/text/PSI-102_SAME/Science Documents/same-eird-rev-2-00-02-25-05-high-q.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Science Documents/SAME_Baseline Concept Description Document_001 Rev A.pdf",
+      "slug": "same-baseline-concept-description-document-001-r",
+      "ok": true,
+      "pages": 15,
+      "images": 1,
+      "markdown": "data/text/PSI-102_SAME/Science Documents/same-baseline-concept-description-document-001-r.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Science Documents/SAME_Crew Interface Description_008 Rev A.pdf",
+      "slug": "same-crew-interface-description-008-rev-a",
+      "ok": true,
+      "pages": 24,
+      "images": 16,
+      "markdown": "data/text/PSI-102_SAME/Science Documents/same-crew-interface-description-008-rev-a.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Science Documents/SAME_Operations Manual_007.pdf",
+      "slug": "same-operations-manual-007",
+      "ok": true,
+      "pages": 33,
+      "images": 77,
+      "markdown": "data/text/PSI-102_SAME/Science Documents/same-operations-manual-007.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Science Documents/SAME_Software Description Document_003 Rev A.pdf",
+      "slug": "same-software-description-document-003-rev-a",
+      "ok": true,
+      "pages": 23,
+      "images": 1,
+      "markdown": "data/text/PSI-102_SAME/Science Documents/same-software-description-document-003-rev-a.md"
+    },
+    {
+      "pdf": "data/psi/PSI-102_SAME/Science Documents/SAME_Software Requirement Document_004 Rev D.pdf",
+      "slug": "same-software-requirement-document-004-rev-d",
+      "ok": true,
+      "pages": 29,
+      "images": 3,
+      "markdown": "data/text/PSI-102_SAME/Science Documents/same-software-requirement-document-004-rev-d.md"
+    },
+    {
+      "pdf": "data/psi/PSI-106_SLICE/Presentations/SLICE IP-C crew training 2010.pdf",
+      "slug": "slice-ip-c-crew-training-2010",
+      "ok": true,
+      "pages": 27,
+      "images": 29,
+      "markdown": "data/text/PSI-106_SLICE/Presentations/slice-ip-c-crew-training-2010.md"
+    },
+    {
+      "pdf": "data/psi/PSI-106_SLICE/Presentations/SLICE IP-D crew training 2011.pdf",
+      "slug": "slice-ip-d-crew-training-2011",
+      "ok": true,
+      "pages": 26,
+      "images": 29,
+      "markdown": "data/text/PSI-106_SLICE/Presentations/slice-ip-d-crew-training-2011.md"
+    },
+    {
+      "pdf": "data/psi/PSI-106_SLICE/Science Documents/SLICE 4.001 SPICE Video Overlay Reset-MGUEMSGSLCEC001.pdf",
+      "slug": "slice-4-001-spice-video-overlay-reset-mguemsgslc",
+      "ok": true,
+      "pages": 13,
+      "images": 7,
+      "markdown": "data/text/PSI-106_SLICE/Science Documents/slice-4-001-spice-video-overlay-reset-mguemsgslc.md"
+    },
+    {
+      "pdf": "data/psi/PSI-106_SLICE/Science Documents/SLICE IP-A SRDR.pdf",
+      "slug": "slice-ip-a-srdr",
+      "ok": true,
+      "pages": 20,
+      "images": 24,
+      "markdown": "data/text/PSI-106_SLICE/Science Documents/slice-ip-a-srdr.md"
+    },
+    {
+      "pdf": "data/psi/PSI-107_SPICE/Engineering Documents/60054MAFH000-C SPICE Experiment Assembly.pdf",
+      "slug": "60054mafh000-c-spice-experiment-assembly",
+      "ok": true,
+      "pages": 2,
+      "images": 0,
+      "markdown": "data/text/PSI-107_SPICE/Engineering Documents/60054mafh000-c-spice-experiment-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-107_SPICE/Engineering Documents/SPICE-MEM-010 Flow Duct Velocity Measurements.pdf",
+      "slug": "spice-mem-010-flow-duct-velocity-measurements",
+      "ok": true,
+      "pages": 2,
+      "images": 2,
+      "markdown": "data/text/PSI-107_SPICE/Engineering Documents/spice-mem-010-flow-duct-velocity-measurements.md"
+    },
+    {
+      "pdf": "data/psi/PSI-107_SPICE/Engineering Documents/SPICE-front-window.pdf",
+      "slug": "spice-front-window",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-107_SPICE/Engineering Documents/spice-front-window.md"
+    },
+    {
+      "pdf": "data/psi/PSI-107_SPICE/Reports/Dotson Smoke Point Normal Gravity Coflow Flames.pdf",
+      "slug": "dotson-smoke-point-normal-gravity-coflow-flames",
+      "ok": true,
+      "pages": 92,
+      "images": 42,
+      "markdown": "data/text/PSI-107_SPICE/Reports/dotson-smoke-point-normal-gravity-coflow-flames.md"
+    },
+    {
+      "pdf": "data/psi/PSI-107_SPICE/Reports/Exp_19-20_SPICE_30-Day_PostFlight_Report.pdf",
+      "slug": "exp-19-20-spice-30-day-postflight-report",
+      "ok": true,
+      "pages": 9,
+      "images": 3,
+      "markdown": "data/text/PSI-107_SPICE/Reports/exp-19-20-spice-30-day-postflight-report.md"
+    },
+    {
+      "pdf": "data/psi/PSI-107_SPICE/Reports/SPICE AIAA 1-6 2010 0106.pdf",
+      "slug": "spice-aiaa-1-6-2010-0106",
+      "ok": true,
+      "pages": 25,
+      "images": 65,
+      "markdown": "data/text/PSI-107_SPICE/Reports/spice-aiaa-1-6-2010-0106.md"
+    },
+    {
+      "pdf": "data/psi/PSI-107_SPICE/Reports/SPICE Final Report 12_2_2012.pdf",
+      "slug": "spice-final-report-12-2-2012",
+      "ok": true,
+      "pages": 28,
+      "images": 20,
+      "markdown": "data/text/PSI-107_SPICE/Reports/spice-final-report-12-2-2012.md"
+    },
+    {
+      "pdf": "data/psi/PSI-107_SPICE/Reports/SPICE RPT-002 Science Verif Report_May 2007.pdf",
+      "slug": "spice-rpt-002-science-verif-report-may-2007",
+      "ok": true,
+      "pages": 24,
+      "images": 1,
+      "markdown": "data/text/PSI-107_SPICE/Reports/spice-rpt-002-science-verif-report-may-2007.md"
+    },
+    {
+      "pdf": "data/psi/PSI-107_SPICE/Science Documents/SPICE Phase III Flight Safety Data Package_May 2008.pdf",
+      "slug": "spice-phase-iii-flight-safety-data-package-may-2",
+      "ok": true,
+      "pages": 120,
+      "images": 65,
+      "markdown": "data/text/PSI-107_SPICE/Science Documents/spice-phase-iii-flight-safety-data-package-may-2.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE Completed.pdf",
+      "slug": "stdce-completed",
+      "ok": true,
+      "pages": 3,
+      "images": 2,
+      "markdown": "data/text/PSI-108_STDCE-1/Analyzed Data/stdce-completed.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 1 Details.pdf",
+      "slug": "stdce-1-run-1-details",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/PSI-108_STDCE-1/Analyzed Data/stdce-1-run-1-details.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 2 Details.pdf",
+      "slug": "stdce-1-run-2-details",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/PSI-108_STDCE-1/Analyzed Data/stdce-1-run-2-details.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 3 Details.pdf",
+      "slug": "stdce-1-run-3-details",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/PSI-108_STDCE-1/Analyzed Data/stdce-1-run-3-details.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 4 and 5 Details.pdf",
+      "slug": "stdce-1-run-4-and-5-details",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/PSI-108_STDCE-1/Analyzed Data/stdce-1-run-4-and-5-details.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 - Joint L+1 Science Review for USML-1 and USMP-1 with Microtravity Measurement Group.pdf",
+      "slug": "stdce-1-joint-l-1-science-review-for-usml-1-and-",
+      "ok": true,
+      "pages": 30,
+      "images": 13,
+      "markdown": "data/text/PSI-108_STDCE-1/Reports/stdce-1-joint-l-1-science-review-for-usml-1-and-.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 - The Solid Surface Combustion Experiment Aboard USML-1 Mission.pdf",
+      "slug": "stdce-1-the-solid-surface-combustion-experiment-",
+      "ok": true,
+      "pages": 46,
+      "images": 24,
+      "markdown": "data/text/PSI-108_STDCE-1/Reports/stdce-1-the-solid-surface-combustion-experiment-.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf",
+      "slug": "stdce-1-nasa-contractor-report-jun-1996",
+      "ok": true,
+      "pages": 285,
+      "images": 247,
+      "markdown": "data/text/PSI-108_STDCE-1/Reports/stdce-1-nasa-contractor-report-jun-1996.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Reports/STDCE-1_NASA TM 101314 - Containment of a Silicone Fluid Free Surface in Reduced Gravity Using Barrier Coatings.pdf",
+      "slug": "stdce-1-nasa-tm-101314-containment-of-a-silicone",
+      "ok": true,
+      "pages": 16,
+      "images": 3,
+      "markdown": "data/text/PSI-108_STDCE-1/Reports/stdce-1-nasa-tm-101314-containment-of-a-silicone.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Reports/STDCE-1_NASA TM 101353 - Infrared Surface Temperature Measurements for the Surface Tension Driven Convection Experiment.pdf",
+      "slug": "stdce-1-nasa-tm-101353-infrared-surface-temperat",
+      "ok": true,
+      "pages": 28,
+      "images": 4,
+      "markdown": "data/text/PSI-108_STDCE-1/Reports/stdce-1-nasa-tm-101353-infrared-surface-temperat.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Reports/STDCE-1_NASA TM 101479 - Development of an Infrared Imaging System for the Surface Tension Driven Convection Experiment.pdf",
+      "slug": "stdce-1-nasa-tm-101479-development-of-an-infrare",
+      "ok": true,
+      "pages": 10,
+      "images": 0,
+      "markdown": "data/text/PSI-108_STDCE-1/Reports/stdce-1-nasa-tm-101479-development-of-an-infrare.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Reports/STDCE-1_NASA TM 104482 - Particle Image Velocimetry for the Sufrace Tension Driven Convection Experiment Using a Particle Displacement Tracking Technique.pdf",
+      "slug": "stdce-1-nasa-tm-104482-particle-image-velocimetr",
+      "ok": true,
+      "pages": 16,
+      "images": 1,
+      "markdown": "data/text/PSI-108_STDCE-1/Reports/stdce-1-nasa-tm-104482-particle-image-velocimetr.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Science Documents/SRD_STDCE.pdf",
+      "slug": "srd-stdce",
+      "ok": true,
+      "pages": 85,
+      "images": 10,
+      "markdown": "data/text/PSI-108_STDCE-1/Science Documents/srd-stdce.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Science Documents/STDCE-1 Data Management Plan.pdf",
+      "slug": "stdce-1-data-management-plan",
+      "ok": true,
+      "pages": 19,
+      "images": 0,
+      "markdown": "data/text/PSI-108_STDCE-1/Science Documents/stdce-1-data-management-plan.md"
+    },
+    {
+      "pdf": "data/psi/PSI-108_STDCE-1/Science Documents/STDCE-1_SO.pdf",
+      "slug": "stdce-1-so",
+      "ok": true,
+      "pages": 9,
+      "images": 2,
+      "markdown": "data/text/PSI-108_STDCE-1/Science Documents/stdce-1-so.md"
+    },
+    {
+      "pdf": "data/psi/PSI-10_ACME-Flame-Design/Reports/PSI-10_Reports_FinalRpt_ACMEFlameDesign.pdf",
+      "slug": "reports-finalrpt-acmeflamedesign",
+      "ok": true,
+      "pages": 109,
+      "images": 33,
+      "markdown": "data/text/PSI-10_ACME-Flame-Design/Reports/reports-finalrpt-acmeflamedesign.md"
+    },
+    {
+      "pdf": "data/psi/PSI-10_ACME-Flame-Design/Reports/PSI-10_Reports_TaskbookPubsList_Feb2023.pdf",
+      "slug": "reports-taskbookpubslist-feb2023",
+      "ok": true,
+      "pages": 3,
+      "images": 0,
+      "markdown": "data/text/PSI-10_ACME-Flame-Design/Reports/reports-taskbookpubslist-feb2023.md"
+    },
+    {
+      "pdf": "data/psi/PSI-10_ACME-Flame-Design/Reports/PSI-10_Reports_TaskbookRpts.pdf",
+      "slug": "reports-taskbookrpts",
+      "ok": true,
+      "pages": 45,
+      "images": 0,
+      "markdown": "data/text/PSI-10_ACME-Flame-Design/Reports/reports-taskbookrpts.md"
+    },
+    {
+      "pdf": "data/psi/PSI-10_ACME-Flame-Design/Science Documents/PSI-10_Science Documents_ACME_ISRD.pdf",
+      "slug": "science-documents-acme-isrd",
+      "ok": true,
+      "pages": 110,
+      "images": 22,
+      "markdown": "data/text/PSI-10_ACME-Flame-Design/Science Documents/science-documents-acme-isrd.md"
+    },
+    {
+      "pdf": "data/psi/PSI-10_ACME-Flame-Design/Science Documents/PSI-10_Science Documents_SRD_ACMEFlameDesign.pdf",
+      "slug": "science-documents-srd-acmeflamedesign",
+      "ok": true,
+      "pages": 39,
+      "images": 17,
+      "markdown": "data/text/PSI-10_ACME-Flame-Design/Science Documents/science-documents-srd-acmeflamedesign.md"
+    },
+    {
+      "pdf": "data/psi/PSI-115_SAME-Smoke-Modeling/Reports/NNX17AF08A Utilization of SAME Data Final Report.pdf",
+      "slug": "nnx17af08a-utilization-of-same-data-final-report",
+      "ok": true,
+      "pages": 25,
+      "images": 24,
+      "markdown": "data/text/PSI-115_SAME-Smoke-Modeling/Reports/nnx17af08a-utilization-of-same-data-final-report.md"
+    },
+    {
+      "pdf": "data/psi/PSI-115_SAME-Smoke-Modeling/Science Documents/Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity DoD.pdf",
+      "slug": "utilization-of-the-smoke-aerosol-measurement-exp",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/PSI-115_SAME-Smoke-Modeling/Science Documents/utilization-of-the-smoke-aerosol-measurement-exp.md"
+    },
+    {
+      "pdf": "data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+      "slug": "presentations-extinction-characteristics-tfarouk",
+      "ok": true,
+      "pages": 18,
+      "images": 33,
+      "markdown": "data/text/PSI-117_Cool-Flame-Perturbation/Presentations/presentations-extinction-characteristics-tfarouk.md"
+    },
+    {
+      "pdf": "data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+      "slug": "presentations-oscillatory-cool-flame-tfarouk",
+      "ok": true,
+      "pages": 19,
+      "images": 106,
+      "markdown": "data/text/PSI-117_Cool-Flame-Perturbation/Presentations/presentations-oscillatory-cool-flame-tfarouk.md"
+    },
+    {
+      "pdf": "data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+      "slug": "presentations-psi-users-group-cool-flames-in-spa",
+      "ok": true,
+      "pages": 36,
+      "images": 65,
+      "markdown": "data/text/PSI-117_Cool-Flame-Perturbation/Presentations/presentations-psi-users-group-cool-flames-in-spa.md"
+    },
+    {
+      "pdf": "data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+      "slug": "presentations-three-stage-cool-flame-tfarouk",
+      "ok": true,
+      "pages": 22,
+      "images": 40,
+      "markdown": "data/text/PSI-117_Cool-Flame-Perturbation/Presentations/presentations-three-stage-cool-flame-tfarouk.md"
+    },
+    {
+      "pdf": "data/psi/PSI-117_Cool-Flame-Perturbation/Reports/Dissertation-PD-revised_.pdf",
+      "slug": "dissertation-pd-revised",
+      "ok": true,
+      "pages": 171,
+      "images": 39,
+      "markdown": "data/text/PSI-117_Cool-Flame-Perturbation/Reports/dissertation-pd-revised.md"
+    },
+    {
+      "pdf": "data/psi/PSI-117_Cool-Flame-Perturbation/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+      "slug": "reports-dissertation-combustion-behavior-of-sub-",
+      "ok": true,
+      "pages": 227,
+      "images": 70,
+      "markdown": "data/text/PSI-117_Cool-Flame-Perturbation/Reports/reports-dissertation-combustion-behavior-of-sub-.md"
+    },
+    {
+      "pdf": "data/psi/PSI-159_ACME-CFI-G/Reports/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
+      "slug": "reports-finalrpt-acme-cfi-g",
+      "ok": true,
+      "pages": 93,
+      "images": 38,
+      "markdown": "data/text/PSI-159_ACME-CFI-G/Reports/reports-finalrpt-acme-cfi-g.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFA1000_A.pdf",
+      "slug": "s1183mfa1000-a",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1000-a.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFA1020.pdf",
+      "slug": "s1183mfa1020",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1020.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFA1065.pdf",
+      "slug": "s1183mfa1065",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1065.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1021_A.pdf",
+      "slug": "s1183mfd1021-a",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1021-a.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1022.pdf",
+      "slug": "s1183mfd1022",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1022.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1026_A.pdf",
+      "slug": "s1183mfd1026-a",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1026-a.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1041.pdf",
+      "slug": "s1183mfd1041",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1041.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1085-Spherical sample final.pdf",
+      "slug": "s1183mfa1085-spherical-sample-final",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1085-spherical-sample-final.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1090-Cylindrical Samples.pdf",
+      "slug": "s1183mfa1090-cylindrical-samples",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1090-cylindrical-samples.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1110-flat.pdf",
+      "slug": "s1183mfa1110-flat",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1110-flat.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1111-flat.pdf",
+      "slug": "s1183mfa1111-flat",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1111-flat.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1086_REV-.pdf",
+      "slug": "s1183mfd1086-rev",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1086-rev.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1091_REV-.pdf",
+      "slug": "s1183mfd1091-rev",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1091-rev.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1116_REV-.pdf",
+      "slug": "s1183mfd1116-rev",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1116-rev.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Reports/BRE_final_report_20220201.pdf",
+      "slug": "bre-final-report-20220201",
+      "ok": true,
+      "pages": 181,
+      "images": 113,
+      "markdown": "data/text/PSI-20_ACME-BRE/Reports/bre-final-report-20220201.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_SRD_201208.pdf",
+      "slug": "bre-srd-201208",
+      "ok": true,
+      "pages": 27,
+      "images": 17,
+      "markdown": "data/text/PSI-20_ACME-BRE/Science Documents/bre-srd-201208.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_SRD_201306.pdf",
+      "slug": "bre-srd-201306",
+      "ok": true,
+      "pages": 63,
+      "images": 58,
+      "markdown": "data/text/PSI-20_ACME-BRE/Science Documents/bre-srd-201306.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_data_interpretation_20220804.pdf",
+      "slug": "bre-data-interpretation-20220804",
+      "ok": true,
+      "pages": 33,
+      "images": 3,
+      "markdown": "data/text/PSI-20_ACME-BRE/Science Documents/bre-data-interpretation-20220804.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_procedure_20210520.pdf",
+      "slug": "bre-procedure-20210520",
+      "ok": true,
+      "pages": 40,
+      "images": 5,
+      "markdown": "data/text/PSI-20_ACME-BRE/Science Documents/bre-procedure-20210520.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf",
+      "slug": "bre-science-concept-rdr-201306",
+      "ok": true,
+      "pages": 80,
+      "images": 122,
+      "markdown": "data/text/PSI-20_ACME-BRE/Science Documents/bre-science-concept-rdr-201306.md"
+    },
+    {
+      "pdf": "data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf",
+      "slug": "bre-science-concept-scr-201208",
+      "ok": true,
+      "pages": 72,
+      "images": 130,
+      "markdown": "data/text/PSI-20_ACME-BRE/Science Documents/bre-science-concept-scr-201208.md"
+    },
+    {
+      "pdf": "data/psi/PSI-21_ACME-CLD-Flame/Engineering Documents/ACME CLD burner hot wire anemometry measurements.pdf",
+      "slug": "acme-cld-burner-hot-wire-anemometry-measurements",
+      "ok": true,
+      "pages": 13,
+      "images": 1,
+      "markdown": "data/text/PSI-21_ACME-CLD-Flame/Engineering Documents/acme-cld-burner-hot-wire-anemometry-measurements.md"
+    },
+    {
+      "pdf": "data/psi/PSI-21_ACME-CLD-Flame/Reports/Karnani et al 2009 Exploring the effects of gravity on a coflow diffusion flame.pdf",
+      "slug": "karnani-et-al-2009-exploring-the-effects-of-grav",
+      "ok": true,
+      "pages": 15,
+      "images": 32,
+      "markdown": "data/text/PSI-21_ACME-CLD-Flame/Reports/karnani-et-al-2009-exploring-the-effects-of-grav.md"
+    },
+    {
+      "pdf": "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2015 Numerical simulation of a co-flow methane-air flame.pdf",
+      "slug": "lopez-camara-et-al-2015-numerical-simulation-of-",
+      "ok": true,
+      "pages": 18,
+      "images": 32,
+      "markdown": "data/text/PSI-21_ACME-CLD-Flame/Reports/lopez-camara-et-al-2015-numerical-simulation-of-.md"
+    },
+    {
+      "pdf": "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2016 Numerical Simulation of Flames.pdf",
+      "slug": "lopez-camara-et-al-2016-numerical-simulation-of-",
+      "ok": true,
+      "pages": 20,
+      "images": 14,
+      "markdown": "data/text/PSI-21_ACME-CLD-Flame/Reports/lopez-camara-et-al-2016-numerical-simulation-of-.md"
+    },
+    {
+      "pdf": "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2017 Numerical Simulations of a Co-Flow Methane-Air Flame.pdf",
+      "slug": "lopez-camara-et-al-2017-numerical-simulations-of",
+      "ok": true,
+      "pages": 21,
+      "images": 34,
+      "markdown": "data/text/PSI-21_ACME-CLD-Flame/Reports/lopez-camara-et-al-2017-numerical-simulations-of.md"
+    },
+    {
+      "pdf": "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2018 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+      "slug": "lopez-camara-et-al-2018-numerical-simulations-of",
+      "ok": true,
+      "pages": 12,
+      "images": 19,
+      "markdown": "data/text/PSI-21_ACME-CLD-Flame/Reports/lopez-camara-et-al-2018-numerical-simulations-of.md"
+    },
+    {
+      "pdf": "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2019 Comprehensive chemical kinetic mechanism for simple hydrocarbon fuels.pdf",
+      "slug": "lopez-camara-et-al-2019-comprehensive-chemical-k",
+      "ok": true,
+      "pages": 16,
+      "images": 37,
+      "markdown": "data/text/PSI-21_ACME-CLD-Flame/Reports/lopez-camara-et-al-2019-comprehensive-chemical-k.md"
+    },
+    {
+      "pdf": "data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2019 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+      "slug": "lopez-camara-et-al-2019-numerical-simulations-of",
+      "ok": true,
+      "pages": 16,
+      "images": 37,
+      "markdown": "data/text/PSI-21_ACME-CLD-Flame/Reports/lopez-camara-et-al-2019-numerical-simulations-of.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Electric-Field Effects on Flames in Microgravity.pdf",
+      "slug": "chien-et-al-2018-electric-field-effects-on-flame",
+      "ok": true,
+      "pages": 0,
+      "images": 0,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Reports/chien-et-al-2018-electric-field-effects-on-flame.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf",
+      "slug": "chien-et-al-2018-microgravity-experiments-of-ele",
+      "ok": true,
+      "pages": 22,
+      "images": 43,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Reports/chien-et-al-2018-microgravity-experiments-of-ele.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf",
+      "slug": "chien-et-al-2019-ion-current-and-flame-changes-w",
+      "ok": true,
+      "pages": 23,
+      "images": 47,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Reports/chien-et-al-2019-ion-current-and-flame-changes-w.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf",
+      "slug": "chien-et-al-2019-microgravity-experiments-examin",
+      "ok": true,
+      "pages": 26,
+      "images": 51,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Reports/chien-et-al-2019-microgravity-experiments-examin.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/E-FIELD Flames 30-day report Inc 55-56 20181115.pdf",
+      "slug": "e-field-flames-30-day-report-inc-55-56-20181115",
+      "ok": true,
+      "pages": 15,
+      "images": 12,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Reports/e-field-flames-30-day-report-inc-55-56-20181115.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/E-FIELD Flames 30-day report Inc 57-58 20190601.pdf",
+      "slug": "e-field-flames-30-day-report-inc-57-58-20190601",
+      "ok": true,
+      "pages": 16,
+      "images": 8,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Reports/e-field-flames-30-day-report-inc-57-58-20190601.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/E-FIELD Flames Final Report.pdf",
+      "slug": "e-field-flames-final-report",
+      "ok": true,
+      "pages": 109,
+      "images": 72,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Reports/e-field-flames-final-report.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Swenson et al 2011 Electric field induced convection in microgravity combustion.pdf",
+      "slug": "swenson-et-al-2011-electric-field-induced-convec",
+      "ok": true,
+      "pages": 8,
+      "images": 6,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Reports/swenson-et-al-2011-electric-field-induced-convec.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Tinajero et al 2014 Ground-Based Schlieren Experiments.pdf",
+      "slug": "tinajero-et-al-2014-ground-based-schlieren-exper",
+      "ok": true,
+      "pages": 20,
+      "images": 7,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Reports/tinajero-et-al-2014-ground-based-schlieren-exper.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Tinajero et al 2016 characterizing i-v curves for non-premixed methane flames.pdf",
+      "slug": "tinajero-et-al-2016-characterizing-i-v-curves-fo",
+      "ok": true,
+      "pages": 18,
+      "images": 15,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Reports/tinajero-et-al-2016-characterizing-i-v-curves-fo.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/ACME E-FIELD Flames DoD.pdf",
+      "slug": "acme-e-field-flames-dod",
+      "ok": true,
+      "pages": 2,
+      "images": 1,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Science Documents/acme-e-field-flames-dod.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf",
+      "slug": "e-field-flames-scr-200802",
+      "ok": true,
+      "pages": 59,
+      "images": 56,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Science Documents/e-field-flames-scr-200802.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames data interpretation document.pdf",
+      "slug": "e-field-flames-data-interpretation-document",
+      "ok": true,
+      "pages": 39,
+      "images": 5,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Science Documents/e-field-flames-data-interpretation-document.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf",
+      "slug": "e-field-flames-rdr-201005",
+      "ok": true,
+      "pages": 50,
+      "images": 66,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Science Documents/e-field-flames-rdr-201005.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_SRD_20100402.pdf",
+      "slug": "e-field-flames-srd-20100402",
+      "ok": true,
+      "pages": 55,
+      "images": 28,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Science Documents/e-field-flames-srd-20100402.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_benefits_20200518.pdf",
+      "slug": "e-field-flames-benefits-20200518",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Science Documents/e-field-flames-benefits-20200518.md"
+    },
+    {
+      "pdf": "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_procedure_20200723.pdf",
+      "slug": "e-field-flames-procedure-20200723",
+      "ok": true,
+      "pages": 43,
+      "images": 10,
+      "markdown": "data/text/PSI-22_ACME-E-FIELD-Flames/Science Documents/e-field-flames-procedure-20200723.md"
+    },
+    {
+      "pdf": "data/psi/PSI-23_ACME-S-Flames/Reports/s-Flame 30-day report Inc 63 20201216.pdf",
+      "slug": "s-flame-30-day-report-inc-63-20201216",
+      "ok": true,
+      "pages": 15,
+      "images": 0,
+      "markdown": "data/text/PSI-23_ACME-S-Flames/Reports/s-flame-30-day-report-inc-63-20201216.md"
+    },
     {
       "pdf": "data/psi/PSI-23_ACME-S-Flames/Reports/s_Flame_final_report_20210729.pdf",
       "slug": "s-flame-final-report-20210729",
       "ok": true,
       "pages": 114,
       "images": 28,
-      "markdown": "data/text/PSI-23/s-flame-final-report-20210729.md"
+      "markdown": "data/text/PSI-23_ACME-S-Flames/Reports/s-flame-final-report-20210729.md"
+    },
+    {
+      "pdf": "data/psi/PSI-23_ACME-S-Flames/Science Documents/ACME s-Flame  DoD.pdf",
+      "slug": "acme-s-flame-dod",
+      "ok": true,
+      "pages": 2,
+      "images": 2,
+      "markdown": "data/text/PSI-23_ACME-S-Flames/Science Documents/acme-s-flame-dod.md"
+    },
+    {
+      "pdf": "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf",
+      "slug": "s-flame-scr-200802",
+      "ok": true,
+      "pages": 99,
+      "images": 165,
+      "markdown": "data/text/PSI-23_ACME-S-Flames/Science Documents/s-flame-scr-200802.md"
+    },
+    {
+      "pdf": "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame_RDR_201005.pdf",
+      "slug": "s-flame-rdr-201005",
+      "ok": true,
+      "pages": 48,
+      "images": 73,
+      "markdown": "data/text/PSI-23_ACME-S-Flames/Science Documents/s-flame-rdr-201005.md"
+    },
+    {
+      "pdf": "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame_SRD_20100125.pdf",
+      "slug": "s-flame-srd-20100125",
+      "ok": true,
+      "pages": 65,
+      "images": 59,
+      "markdown": "data/text/PSI-23_ACME-S-Flames/Science Documents/s-flame-srd-20100125.md"
+    },
+    {
+      "pdf": "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame_data_interpretation_20210920.pdf",
+      "slug": "s-flame-data-interpretation-20210920",
+      "ok": true,
+      "pages": 33,
+      "images": 3,
+      "markdown": "data/text/PSI-23_ACME-S-Flames/Science Documents/s-flame-data-interpretation-20210920.md"
+    },
+    {
+      "pdf": "data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flames_procedure_20210408.pdf",
+      "slug": "s-flames-procedure-20210408",
+      "ok": true,
+      "pages": 40,
+      "images": 8,
+      "markdown": "data/text/PSI-23_ACME-S-Flames/Science Documents/s-flames-procedure-20210408.md"
+    },
+    {
+      "pdf": "data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf",
+      "slug": "bass-ii-summary-report",
+      "ok": true,
+      "pages": 144,
+      "images": 84,
+      "markdown": "data/text/PSI-25_BASS-II/Reports/bass-ii-summary-report.md"
+    },
+    {
+      "pdf": "data/psi/PSI-25_BASS-II/Science Documents/SRD_BASS-II.pdf",
+      "slug": "srd-bass-ii",
+      "ok": true,
+      "pages": 16,
+      "images": 24,
+      "markdown": "data/text/PSI-25_BASS-II/Science Documents/srd-bass-ii.md"
+    },
+    {
+      "pdf": "data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf",
+      "slug": "asgsr-bass-sibal-talk-final",
+      "ok": true,
+      "pages": 39,
+      "images": 53,
+      "markdown": "data/text/PSI-26_BASS/Presentations/asgsr-bass-sibal-talk-final.md"
+    },
+    {
+      "pdf": "data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf",
+      "slug": "ci-us-national-meeting-bass-sibal-talk",
+      "ok": true,
+      "pages": 39,
+      "images": 52,
+      "markdown": "data/text/PSI-26_BASS/Presentations/ci-us-national-meeting-bass-sibal-talk.md"
+    },
+    {
+      "pdf": "data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf",
+      "slug": "iss-denver-2013-bass",
+      "ok": true,
+      "pages": 63,
+      "images": 85,
+      "markdown": "data/text/PSI-26_BASS/Presentations/iss-denver-2013-bass.md"
+    },
+    {
+      "pdf": "data/psi/PSI-26_BASS/Science Documents/DLD_BASS.pdf",
+      "slug": "dld-bass",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-26_BASS/Science Documents/dld-bass.md"
+    },
+    {
+      "pdf": "data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf",
+      "slug": "slice-ed-04-slice-bass-sar-1-final",
+      "ok": true,
+      "pages": 58,
+      "images": 38,
+      "markdown": "data/text/PSI-26_BASS/Science Documents/slice-ed-04-slice-bass-sar-1-final.md"
+    },
+    {
+      "pdf": "data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf",
+      "slug": "slice-ed-05-slice-bass-sar-2-final",
+      "ok": true,
+      "pages": 43,
+      "images": 116,
+      "markdown": "data/text/PSI-26_BASS/Science Documents/slice-ed-05-slice-bass-sar-2-final.md"
+    },
+    {
+      "pdf": "data/psi/PSI-26_BASS/Science Documents/SRD_BASS.pdf",
+      "slug": "srd-bass",
+      "ok": true,
+      "pages": 11,
+      "images": 8,
+      "markdown": "data/text/PSI-26_BASS/Science Documents/srd-bass.md"
+    },
+    {
+      "pdf": "data/psi/PSI-39_CFI/Analyzed Data/PSI-39_Analyzed Data_FLEX-1393_Summary.pdf",
+      "slug": "analyzed-data-flex-1393-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-39_CFI/Analyzed Data/analyzed-data-flex-1393-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-39_CFI/Reports/Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf",
+      "slug": "aspects-of-cool-flame-supported-droplet-combusti",
+      "ok": true,
+      "pages": 20,
+      "images": 52,
+      "markdown": "data/text/PSI-39_CFI/Reports/aspects-of-cool-flame-supported-droplet-combusti.md"
+    },
+    {
+      "pdf": "data/psi/PSI-39_CFI/Reports/CFI Science Final Report.pdf",
+      "slug": "cfi-science-final-report",
+      "ok": true,
+      "pages": 13,
+      "images": 9,
+      "markdown": "data/text/PSI-39_CFI/Reports/cfi-science-final-report.md"
+    },
+    {
+      "pdf": "data/psi/PSI-39_CFI/Science Documents/CFI Operational Requirements and Protocols.pdf",
+      "slug": "cfi-operational-requirements-and-protocols",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-39_CFI/Science Documents/cfi-operational-requirements-and-protocols.md"
+    },
+    {
+      "pdf": "data/psi/PSI-39_CFI/Science Documents/Pres_SCR_CFI.pdf",
+      "slug": "pres-scr-cfi",
+      "ok": true,
+      "pages": 17,
+      "images": 36,
+      "markdown": "data/text/PSI-39_CFI/Science Documents/pres-scr-cfi.md"
+    },
+    {
+      "pdf": "data/psi/PSI-39_CFI/Science Documents/SRD_CFI.pdf",
+      "slug": "srd-cfi",
+      "ok": true,
+      "pages": 54,
+      "images": 22,
+      "markdown": "data/text/PSI-39_CFI/Science Documents/srd-cfi.md"
+    },
+    {
+      "pdf": "data/psi/PSI-47_DAFT/Engineering Documents/60054MAFH000_C.pdf",
+      "slug": "60054mafh000-c",
+      "ok": true,
+      "pages": 2,
+      "images": 0,
+      "markdown": "data/text/PSI-47_DAFT/Engineering Documents/60054mafh000-c.md"
+    },
+    {
+      "pdf": "data/psi/PSI-47_DAFT/Engineering Documents/60054mdfh001.pdf",
+      "slug": "60054mdfh001",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-47_DAFT/Engineering Documents/60054mdfh001.md"
+    },
+    {
+      "pdf": "data/psi/PSI-47_DAFT/Engineering Documents/60054mdfh002.pdf",
+      "slug": "60054mdfh002",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-47_DAFT/Engineering Documents/60054mdfh002.md"
+    },
+    {
+      "pdf": "data/psi/PSI-47_DAFT/Reports/Exp_13_DAFT_30-Day_Postflight_Report.pdf",
+      "slug": "exp-13-daft-30-day-postflight-report",
+      "ok": true,
+      "pages": 14,
+      "images": 0,
+      "markdown": "data/text/PSI-47_DAFT/Reports/exp-13-daft-30-day-postflight-report.md"
+    },
+    {
+      "pdf": "data/psi/PSI-47_DAFT/Reports/daft_fact_sheet_final1.pdf",
+      "slug": "daft-fact-sheet-final1",
+      "ok": true,
+      "pages": 2,
+      "images": 5,
+      "markdown": "data/text/PSI-47_DAFT/Reports/daft-fact-sheet-final1.md"
+    },
+    {
+      "pdf": "data/psi/PSI-47_DAFT/Science Documents/MGUEEXPRSDAFTN010 - 2.010.pdf",
+      "slug": "mgueexprsdaftn010-2-010",
+      "ok": true,
+      "pages": 4,
+      "images": 0,
+      "markdown": "data/text/PSI-47_DAFT/Science Documents/mgueexprsdaftn010-2-010.md"
+    },
+    {
+      "pdf": "data/psi/PSI-47_DAFT/Science Documents/MGUEEXPRSDAFTN011 - 2.011.pdf",
+      "slug": "mgueexprsdaftn011-2-011",
+      "ok": true,
+      "pages": 7,
+      "images": 0,
+      "markdown": "data/text/PSI-47_DAFT/Science Documents/mgueexprsdaftn011-2-011.md"
+    },
+    {
+      "pdf": "data/psi/PSI-47_DAFT/Science Documents/MGUEEXPRSDAFTN012 - 2.012.pdf",
+      "slug": "mgueexprsdaftn012-2-012",
+      "ok": true,
+      "pages": 7,
+      "images": 0,
+      "markdown": "data/text/PSI-47_DAFT/Science Documents/mgueexprsdaftn012-2-012.md"
+    },
+    {
+      "pdf": "data/psi/PSI-47_DAFT/Science Documents/MGUEEXPRSDAFTN013 - 2.013.pdf",
+      "slug": "mgueexprsdaftn013-2-013",
+      "ok": true,
+      "pages": 5,
+      "images": 0,
+      "markdown": "data/text/PSI-47_DAFT/Science Documents/mgueexprsdaftn013-2-013.md"
+    },
+    {
+      "pdf": "data/psi/PSI-68_FLEX-2/Engineering Documents/67212MFAN11000-4 FLEX-2 Package Assembly.pdf",
+      "slug": "67212mfan11000-4-flex-2-package-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/PSI-68_FLEX-2/Engineering Documents/67212mfan11000-4-flex-2-package-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFAC13500 FLEX-2 Fuel Reservoir Sub-Assembly.pdf",
+      "slug": "67235mfac13500-flex-2-fuel-reservoir-sub-assembl",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/PSI-68_FLEX-2/Engineering Documents/67235mfac13500-flex-2-fuel-reservoir-sub-assembl.md"
+    },
+    {
+      "pdf": "data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFAC17143-2 FLEX-2 Fiber Arm Assembly.pdf",
+      "slug": "67235mfac17143-2-flex-2-fiber-arm-assembly",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-68_FLEX-2/Engineering Documents/67235mfac17143-2-flex-2-fiber-arm-assembly.md"
+    },
+    {
+      "pdf": "data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFAC17146 FLEX-2 Replaceable Fiber Arm Assembly.pdf",
+      "slug": "67235mfac17146-flex-2-replaceable-fiber-arm-asse",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/PSI-68_FLEX-2/Engineering Documents/67235mfac17146-flex-2-replaceable-fiber-arm-asse.md"
+    },
+    {
+      "pdf": "data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFDC17150 FLEX-2 Fiber Cover.pdf",
+      "slug": "67235mfdc17150-flex-2-fiber-cover",
+      "ok": true,
+      "pages": 1,
+      "images": 1,
+      "markdown": "data/text/PSI-68_FLEX-2/Engineering Documents/67235mfdc17150-flex-2-fiber-cover.md"
+    },
+    {
+      "pdf": "data/psi/PSI-68_FLEX-2/Engineering Documents/FLEX-2 Engineering Requirments Document.pdf",
+      "slug": "flex-2-engineering-requirments-document",
+      "ok": true,
+      "pages": 37,
+      "images": 1,
+      "markdown": "data/text/PSI-68_FLEX-2/Engineering Documents/flex-2-engineering-requirments-document.md"
+    },
+    {
+      "pdf": "data/psi/PSI-68_FLEX-2/Science Documents/FLEX-2 SRD Final _ No Hypertext .pdf",
+      "slug": "flex-2-srd-final-no-hypertext",
+      "ok": true,
+      "pages": 68,
+      "images": 8,
+      "markdown": "data/text/PSI-68_FLEX-2/Science Documents/flex-2-srd-final-no-hypertext.md"
+    },
+    {
+      "pdf": "data/psi/PSI-68_FLEX-2/Science Documents/FLEX-2 SRD Final.pdf",
+      "slug": "flex-2-srd-final",
+      "ok": true,
+      "pages": 68,
+      "images": 8,
+      "markdown": "data/text/PSI-68_FLEX-2/Science Documents/flex-2-srd-final.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX Overall Ext File-2.pdf",
+      "slug": "flex-overall-ext-file-2",
+      "ok": true,
+      "pages": 30,
+      "images": 23,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-overall-ext-file-2.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1206_Summary-prelim.pdf",
+      "slug": "flex-1206-summary-prelim",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1206-summary-prelim.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1206_Summary.pdf",
+      "slug": "flex-1206-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1206-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1207_Summary.pdf",
+      "slug": "flex-1207-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1207-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1208_Summary.pdf",
+      "slug": "flex-1208-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1208-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1209_Summary.pdf",
+      "slug": "flex-1209-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1209-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1210_Summary.pdf",
+      "slug": "flex-1210-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1210-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1211_PrelimSummary.pdf",
+      "slug": "flex-1211-prelimsummary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1211-prelimsummary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1211_PrelimSummary_1.pdf",
+      "slug": "flex-1211-prelimsummary-1",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1211-prelimsummary-1.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1211_Summary.pdf",
+      "slug": "flex-1211-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1211-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1213_Summary.pdf",
+      "slug": "flex-1213-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1213-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1215_Summary.pdf",
+      "slug": "flex-1215-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1215-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1218_Summary.pdf",
+      "slug": "flex-1218-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1218-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1221_Summary.pdf",
+      "slug": "flex-1221-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1221-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1223_Summary.pdf",
+      "slug": "flex-1223-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1223-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1226_Summary.pdf",
+      "slug": "flex-1226-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1226-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1227_Summary.pdf",
+      "slug": "flex-1227-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1227-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1231_Summary.pdf",
+      "slug": "flex-1231-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1231-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1231_Summary_1.pdf",
+      "slug": "flex-1231-summary-1",
+      "ok": true,
+      "pages": 2,
+      "images": 2,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1231-summary-1.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1232_Summary.pdf",
+      "slug": "flex-1232-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1232-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1238_Summary.pdf",
+      "slug": "flex-1238-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1238-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1239_Summary.pdf",
+      "slug": "flex-1239-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1239-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1239_Summary_v2.pdf",
+      "slug": "flex-1239-summary-v2",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1239-summary-v2.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1240_Summary.pdf",
+      "slug": "flex-1240-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1240-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1249_Summary.pdf",
+      "slug": "flex-1249-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1249-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1250_Summary.pdf",
+      "slug": "flex-1250-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1250-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1253_Summary.pdf",
+      "slug": "flex-1253-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1253-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1261_Summary.pdf",
+      "slug": "flex-1261-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1261-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1261_Summary_prelim.pdf",
+      "slug": "flex-1261-summary-prelim",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1261-summary-prelim.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1264_Summary.pdf",
+      "slug": "flex-1264-summary",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Analyzed Data/flex-1264-summary.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Engineering Documents/FLEX Engineering Requirements Document.pdf",
+      "slug": "flex-engineering-requirements-document",
+      "ok": true,
+      "pages": 37,
+      "images": 1,
+      "markdown": "data/text/PSI-69_FLEX/Engineering Documents/flex-engineering-requirements-document.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Reports/Dynamics of Water Absorption and Evaporation During Methanol Droplet Combustion (NTRS 20130010979).pdf",
+      "slug": "dynamics-of-water-absorption-and-evaporation-dur",
+      "ok": true,
+      "pages": 15,
+      "images": 53,
+      "markdown": "data/text/PSI-69_FLEX/Reports/dynamics-of-water-absorption-and-evaporation-dur.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf",
+      "slug": "flex-a-decisive-step-forward-in-nasas-combustion",
+      "ok": true,
+      "pages": 44,
+      "images": 247,
+      "markdown": "data/text/PSI-69_FLEX/Reports/flex-a-decisive-step-forward-in-nasas-combustion.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Science Documents/FLEX_EIRD_v4.pdf",
+      "slug": "flex-eird-v4",
+      "ok": true,
+      "pages": 81,
+      "images": 10,
+      "markdown": "data/text/PSI-69_FLEX/Science Documents/flex-eird-v4.md"
+    },
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Science Documents/FLEX_Test_Plan.pdf",
+      "slug": "flex-test-plan",
+      "ok": true,
+      "pages": 15,
+      "images": 0,
+      "markdown": "data/text/PSI-69_FLEX/Science Documents/flex-test-plan.md"
+    },
+    {
+      "pdf": "data/psi/PSI-98_SAFFIRE-I/Science Documents/SAFFIRE-I Image Directory Nomenclature.pdf",
+      "slug": "saffire-i-image-directory-nomenclature",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-98_SAFFIRE-I/Science Documents/saffire-i-image-directory-nomenclature.md"
+    },
+    {
+      "pdf": "data/psi/PSI-98_SAFFIRE-I/Science Documents/SAFFIRE-I Operations.pdf",
+      "slug": "saffire-i-operations",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-98_SAFFIRE-I/Science Documents/saffire-i-operations.md"
+    },
+    {
+      "pdf": "data/psi/PSI-99_SAFFIRE-II/Engineering Documents/PMMA sheet MFD1066.pdf",
+      "slug": "pmma-sheet-mfd1066",
+      "ok": true,
+      "pages": 1,
+      "images": 0,
+      "markdown": "data/text/PSI-99_SAFFIRE-II/Engineering Documents/pmma-sheet-mfd1066.md"
+    },
+    {
+      "pdf": "data/psi/PSI-99_SAFFIRE-II/Science Documents/SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf",
+      "slug": "saffire-ii-image-directory-nomenclature-v3-0",
+      "ok": true,
+      "pages": 2,
+      "images": 0,
+      "markdown": "data/text/PSI-99_SAFFIRE-II/Science Documents/saffire-ii-image-directory-nomenclature-v3-0.md"
     }
   ],
-  "failed": [],
-  "markdown_files": 255,
-  "image_files": 8577
+  "failed": [
+    {
+      "pdf": "data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1248_Summary.pdf",
+      "error": "Failed to open file '/Users/Marvis/Projects/NASA/data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1248_Summary.pdf' as type pdf.",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/Marvis/Projects/NASA/.venv/lib/python3.15/site-packages/pymupdf/__init__.py\", line 3013, in __init__\n    doc = mupdf.fz_open_document_with_stream_and_dir(suffix, fz_stream, archive.this)\n  File \"/Users/Marvis/Projects/NASA/.venv/lib/python3.15/site-packages/pymupdf/mupdf.py\", line 53426, in fz_open_document_with_stream_and_dir\n    return _mupdf.fz_open_document_with_stream_and_dir(magic, stream, dir)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\npymupdf.mupdf.FzErrorFormat: code=7: no objects found\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/Marvis/Projects/NASA/backend/scripts/ingest_pdf.py\", line 1549, in main\n    result = convert_pdf(path, psi_id, slug, ocr_log)\n  File \"/Users/Marvis/Projects/NASA/backend/scripts/ingest_pdf.py\", line 1042, in convert_pdf\n    doc = pymupdf.open(path)\n  File \"/Users/Marvis/Projects/NASA/.venv/lib/python3.15/site-packages/pymupdf/__init__.py\", line 3016, in __init__\n    raise FileDataError(f'Failed to open file {filename!r} as type {suffix}.') from e\npymupdf.FileDataError: Failed to open file '/Users/Marvis/Projects/NASA/data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1248_Summary.pdf' as type pdf.\n"
+    }
+  ],
+  "markdown_files": 785,
+  "image_files": 14805
 }

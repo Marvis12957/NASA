@@ -1,0 +1,491 @@
+{
+ "generatedAt": "2026-11-15T13:06:15Z",
+ "method": "Same rules as app/catalog.py stats_from_tables: oxygen columns are picked by is_oxygen_column, cell numbers are read by numbers_in and turned into percent by as_percent, min/max are rounded to 0.1. Rows are data rows (header excluded, blank rows skipped).",
+ "investigations": {
+  "PSI-10": {
+   "oxygenMin": 19.8,
+   "oxygenMax": 85.0,
+   "runCount": 327,
+   "tables": [
+    {
+     "file": "data/psi/PSI-10_ACME-Flame-Design/Experiment Table/PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+     "rows": 120,
+     "oxygenColumns": [
+      {
+       "column": "XO2",
+       "min": 21.2,
+       "max": 85.0,
+       "values": 109,
+       "minRow": {
+        "row": 3,
+        "cell": "0.212319452",
+        "id": "1",
+        "idColumn": "Day"
+       },
+       "maxRow": {
+        "row": 4,
+        "cell": "0.849977932",
+        "id": "1",
+        "idColumn": "Day"
+       }
+      }
+     ]
+    },
+    {
+     "file": "data/psi/PSI-10_ACME-Flame-Design/Experiment Table/PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+     "rows": 207,
+     "oxygenColumns": [
+      {
+       "column": "XO2 (init)",
+       "min": 19.8,
+       "max": 40.0,
+       "values": 207,
+       "minRow": {
+        "row": 187,
+        "cell": "0.198048193",
+        "id": "12",
+        "idColumn": "Day"
+       },
+       "maxRow": {
+        "row": 188,
+        "cell": "0.4",
+        "id": "13",
+        "idColumn": "Day"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "PSI-20": {
+   "oxygenMin": 21.0,
+   "oxygenMax": 40.0,
+   "runCount": 18,
+   "tables": [
+    {
+     "file": "data/psi/PSI-20_ACME-BRE/Experiment Table/PSI-20_Experimental table_ACME BRE.csv",
+     "rows": 18,
+     "oxygenColumns": [
+      {
+       "column": "Oxygen Conc (percent)",
+       "min": 21.0,
+       "max": 40.0,
+       "values": 41,
+       "minRow": {
+        "row": 1,
+        "cell": "21; 26.5; 40",
+        "id": "2019",
+        "idColumn": "Year"
+       },
+       "maxRow": {
+        "row": 1,
+        "cell": "21; 26.5; 40",
+        "id": "2019",
+        "idColumn": "Year"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "PSI-21": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 32,
+   "tables": [
+    {
+     "file": "data/psi/PSI-21_ACME-CLD-Flame/Experiment Table/PSI-21_Experimental table_CLD Flame.csv",
+     "rows": 32,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-22": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 32,
+   "tables": [
+    {
+     "file": "data/psi/PSI-22_ACME-E-FIELD-Flames/Experiment Table/PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+     "rows": 32,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-23": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 18,
+   "tables": [
+    {
+     "file": "data/psi/PSI-23_ACME-S-Flames/Experiment Table/PSI-23_Experimental table_ACME s-Flame.csv",
+     "rows": 18,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-25": {
+   "oxygenMin": 13.6,
+   "oxygenMax": 22.2,
+   "runCount": 129,
+   "tables": [
+    {
+     "file": "data/psi/PSI-25_BASS-II/Experiment Table/PSI-25_Experimental table_BASS-II.csv",
+     "rows": 129,
+     "oxygenColumns": [
+      {
+       "column": "Calibrated  initial O2 % by vol",
+       "min": 13.6,
+       "max": 22.2,
+       "values": 129,
+       "minRow": {
+        "row": 61,
+        "cell": "13.6",
+        "id": "Olson",
+        "idColumn": "PI"
+       },
+       "maxRow": {
+        "row": 1,
+        "cell": "22.2",
+        "id": "Bhattacharjee",
+        "idColumn": "PI"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "PSI-26": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 122,
+   "tables": [
+    {
+     "file": "data/psi/PSI-26_BASS/Experiment Table/PSI-26_Experimental table_BASS.csv",
+     "rows": 122,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-39": {
+   "oxygenMin": 17.0,
+   "oxygenMax": 21.0,
+   "runCount": 87,
+   "tables": [
+    {
+     "file": "data/psi/PSI-39_CFI/Experiment Table/PSI-39_Experimental table_CFI.csv",
+     "rows": 87,
+     "oxygenColumns": [
+      {
+       "column": "Oxygen",
+       "min": 17.0,
+       "max": 21.0,
+       "values": 87,
+       "minRow": {
+        "row": 7,
+        "cell": "0.17",
+        "id": "27-Mar-17",
+        "idColumn": "Test Date"
+       },
+       "maxRow": {
+        "row": 1,
+        "cell": "0.21",
+        "id": "9-Mar-17",
+        "idColumn": "Test Date"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "PSI-47": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 2,
+   "tables": [
+    {
+     "file": "data/psi/PSI-47_DAFT/Experiment Table/PSI-47_Experimental table_DAFT.csv",
+     "rows": 2,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-60": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": null,
+   "tables": []
+  },
+  "PSI-62": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": null,
+   "tables": []
+  },
+  "PSI-68": {
+   "oxygenMin": 17.0,
+   "oxygenMax": 30.0,
+   "runCount": 8,
+   "tables": [
+    {
+     "file": "data/psi/PSI-68_FLEX-2/Experiment Table/PSI-68_Experimental table_Flex2.csv",
+     "rows": 8,
+     "oxygenColumns": [
+      {
+       "column": "Oxygen Mole Fraction",
+       "min": 17.0,
+       "max": 30.0,
+       "values": 32,
+       "minRow": {
+        "row": 1,
+        "cell": "0.17; 0.21;0.25; 0.3"
+       },
+       "maxRow": {
+        "row": 1,
+        "cell": "0.17; 0.21;0.25; 0.3"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "PSI-69": {
+   "oxygenMin": 12.0,
+   "oxygenMax": 34.0,
+   "runCount": 274,
+   "tables": [
+    {
+     "file": "data/psi/PSI-69_FLEX/Experiment Table/PSI-69_Experimental table_FLEX.csv",
+     "rows": 274,
+     "oxygenColumns": [
+      {
+       "column": "O initial ambient composition; mole fraction",
+       "min": 12.0,
+       "max": 34.0,
+       "values": 274,
+       "minRow": {
+        "row": 83,
+        "cell": "0.12",
+        "id": "83",
+        "idColumn": "FLEX Test #"
+       },
+       "maxRow": {
+        "row": 19,
+        "cell": "0.34",
+        "id": "19",
+        "idColumn": "FLEX Test #"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "PSI-98": {
+   "oxygenMin": 21.5,
+   "oxygenMax": 21.7,
+   "runCount": 4,
+   "tables": [
+    {
+     "file": "data/psi/PSI-98_SAFFIRE-I/Experiment Table/PSI-98_Experimental table_SAFFIRE-1.csv",
+     "rows": 4,
+     "oxygenColumns": [
+      {
+       "column": "Percent O2",
+       "min": 21.5,
+       "max": 21.7,
+       "values": 3,
+       "minRow": {
+        "row": 1,
+        "cell": "21.5 - 21.7",
+        "id": "S1",
+        "idColumn": "Sample Number"
+       },
+       "maxRow": {
+        "row": 1,
+        "cell": "21.5 - 21.7",
+        "id": "S1",
+        "idColumn": "Sample Number"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "PSI-99": {
+   "oxygenMin": 21.5,
+   "oxygenMax": 22.1,
+   "runCount": 15,
+   "tables": [
+    {
+     "file": "data/psi/PSI-99_SAFFIRE-II/Experiment Table/PSI-99_Experimental table_SAFFIRE-2.csv",
+     "rows": 15,
+     "oxygenColumns": [
+      {
+       "column": "Percent O2 (Note 1)",
+       "min": 21.5,
+       "max": 22.1,
+       "values": 11,
+       "minRow": {
+        "row": 1,
+        "cell": "~ 21.5",
+        "id": "2-1",
+        "idColumn": "Sample Number"
+       },
+       "maxRow": {
+        "row": 2,
+        "cell": "~ 22.1",
+        "id": "2-2",
+        "idColumn": "Sample Number"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "PSI-100": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 2,
+   "tables": [
+    {
+     "file": "data/psi/PSI-100_SAFFIRE-III/Experiment Table/PSI-100_Experimental table_SAFFIRE-3.csv",
+     "rows": 2,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-101": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": null,
+   "tables": []
+  },
+  "PSI-102": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 8,
+   "tables": [
+    {
+     "file": "data/psi/PSI-102_SAME/Experiment Table/PSI-102_Experimental table_SAME.csv",
+     "rows": 8,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-106": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 12,
+   "tables": [
+    {
+     "file": "data/psi/PSI-106_SLICE/Experiment Table/PSI-106_Experimental table_Slice.csv",
+     "rows": 12,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-107": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 469,
+   "tables": [
+    {
+     "file": "data/psi/PSI-107_SPICE/Experiment Table/PSI-107_Experimental table_Spice.csv",
+     "rows": 469,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-108": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 38,
+   "tables": [
+    {
+     "file": "data/psi/PSI-108_STDCE-1/Experiment Table/PSI-108_Experimental table_STDCE-1.csv",
+     "rows": 38,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-115": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": null,
+   "tables": []
+  },
+  "PSI-117": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": null,
+   "tables": []
+  },
+  "PSI-142": {
+   "oxygenMin": null,
+   "oxygenMax": null,
+   "runCount": 8,
+   "tables": [
+    {
+     "file": "data/psi/PSI-142_Cool-Flame-Counterflow/Experiment Table/PSI-142_Experimental table_Data Summary Table.csv",
+     "rows": 8,
+     "oxygenColumns": []
+    }
+   ]
+  },
+  "PSI-159": {
+   "oxygenMin": 12.0,
+   "oxygenMax": 85.0,
+   "runCount": 333,
+   "tables": [
+    {
+     "file": "data/psi/PSI-159_ACME-CFI-G/Experiment Table/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+     "rows": 154,
+     "oxygenColumns": [
+      {
+       "column": "XO2",
+       "min": 12.0,
+       "max": 85.0,
+       "values": 154,
+       "minRow": {
+        "row": 4,
+        "cell": "0.12",
+        "id": "1",
+        "idColumn": "Day"
+       },
+       "maxRow": {
+        "row": 17,
+        "cell": "0.85",
+        "id": "2",
+        "idColumn": "Day"
+       }
+      }
+     ]
+    },
+    {
+     "file": "data/psi/PSI-159_ACME-CFI-G/Experiment Table/PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+     "rows": 179,
+     "oxygenColumns": [
+      {
+       "column": "XO2 before test",
+       "min": 18.0,
+       "max": 40.0,
+       "values": 179,
+       "minRow": {
+        "row": 13,
+        "cell": "0.1802",
+        "id": "1",
+        "idColumn": "Day"
+       },
+       "maxRow": {
+        "row": 113,
+        "cell": "0.3996",
+        "id": "7",
+        "idColumn": "Day"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

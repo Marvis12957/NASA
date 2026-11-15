@@ -31,6 +31,9 @@ from ingest_pdf import (  # noqa: E402
     SKIP_DIR_NAMES,
     TEXT_ROOT,
     convert_pdf,
+    caption_tag,
+    document_dir,
+    drop_flat_copy,
     psi_id_from_path,
     sanitize,
     source_rel,
@@ -45,6 +48,7 @@ PREVIEW_COLS = 12
 CELL_CHARS = 80
 DOC_EXTS = {".pdf", ".ppt", ".pptx", ".doc", ".docx"}
 OFFICE_EXTS = {".ppt", ".pptx", ".doc", ".docx"}
+PHOTO_EXTS = {".jpg", ".jpeg", ".jpe", ".png"}
 SKIP_MEMBER_PREFIX = ("__macosx",)
 BINARY_ZIP_EXTS = {".hobj", ".mdipsug", ".next", ".jpg", ".jpe", ".jpeg", ".png", ".db"}
 SKIP_LOOSE_EXTS = {".dat", ".pxp", ".csv"}
@@ -94,7 +98,7 @@ def load_existing() -> tuple[dict[str, Path], set[str]]:
         if src:
             sources.add(src)
         md = sidecar.with_suffix(".md")
-        psi_id = sidecar.parent.name
+        psi_id = str(data.get("psi") or sidecar.parent.name)
         used[f"{psi_id}/{sidecar.stem}"] = md if md.exists() else sidecar
     return used, sources
 
@@ -183,9 +187,14 @@ def finish_markdown(
     lines: list[str],
     image_count: int,
 ) -> dict:
-    out_dir = TEXT_ROOT / psi_id
+    src_path = Path(source)
+    if not src_path.is_absolute():
+        src_path = ROOT / src_path
+    dest_dir = document_dir(src_path)
+    out_dir = TEXT_ROOT / dest_dir
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"{slug}.md"
+    drop_flat_copy(psi_id, slug, dest_dir)
     md_rel = str(out_path.relative_to(ROOT))
     out_path.write_text(sanitize("\n".join(lines).rstrip() + "\n"), encoding="utf-8")
     write_text_sidecar(
@@ -200,6 +209,83 @@ def finish_markdown(
     return {"ok": True, "pages": pages, "images": image_count, "markdown": md_rel}
 
 
+def ingest_loose_photos(used_slugs: dict[str, Path], existing_sources: set[str]) -> list[dict]:
+    """Copy standalone experiment photos into the same section folder as the originals."""
+    groups: dict[Path, list[Path]] = {}
+    for path in walk_files(PSI):
+        if path.suffix.lower() not in PHOTO_EXTS:
+            continue
+        groups.setdefault(path.parent, []).append(path)
+    saved: list[dict] = []
+    for folder, photos in sorted(groups.items()):
+        rel_dir = source_rel(folder)
+        if rel_dir in existing_sources:
+            print(f"skip {rel_dir}: already converted", flush=True)
+            continue
+        photos = sorted(photos, key=lambda item: item.name.lower())
+        psi_id = psi_id_from_path(folder)
+        slug = unique_slug(psi_id, folder, used_slugs)
+        src_path = folder if folder.is_absolute() else ROOT / folder
+        image_dir = IMAGE_ROOT / document_dir(src_path) / slug
+        if image_dir.exists():
+            shutil.rmtree(image_dir)
+        image_dir.mkdir(parents=True, exist_ok=True)
+        lines = [
+            "---",
+            f"psi: {psi_id}",
+            f"source: {yaml_escape(rel_dir)}",
+            "pages: 1",
+            "---",
+            "",
+            "[page: 1]",
+            "[ocr: false]",
+            "",
+        ]
+        figure = 0
+        for photo in photos:
+            figure += 1
+            stem = f"p01-f{figure:02d}"
+            dest = image_dir / f"{stem}.png"
+            size = blob_to_png(photo.read_bytes(), dest)
+            if not size:
+                figure -= 1
+                continue
+            rel = str(dest.relative_to(ROOT))
+            sidecar = {
+                "psi": psi_id,
+                "source": source_rel(photo),
+                "page": 1,
+                "figure": figure,
+                "file": rel,
+                "width": size[0],
+                "height": size[1],
+                "ocr": False,
+                "cropped": False,
+                "caption": photo.stem,
+                "caption_position": "filename",
+            }
+            (image_dir / f"{stem}.json").write_text(json.dumps(sidecar, indent=2) + "\n", encoding="utf-8")
+            lines.append(f"[figure: {figure} | page: 1 | file: {rel}]")
+            lines.append(caption_tag(photo.stem))
+            lines.append("")
+        if figure == 0:
+            shutil.rmtree(image_dir, ignore_errors=True)
+            continue
+        result = finish_markdown(
+            psi_id=psi_id,
+            source=rel_dir,
+            slug=slug,
+            pages=1,
+            lines=lines,
+            image_count=figure,
+        )
+        existing_sources.add(rel_dir)
+        result.update({"kind": "photos", "source": rel_dir, "slug": slug})
+        saved.append(result)
+        print(f"ok  {rel_dir} -> {result['markdown']} (1p, {figure} img)", flush=True)
+    return saved
+
+
 def convert_pptx_native(path: Path, psi_id: str, slug: str, source: str) -> dict:
     from pptx import Presentation
     from pptx.enum.shapes import MSO_SHAPE_TYPE
@@ -211,7 +297,8 @@ def convert_pptx_native(path: Path, psi_id: str, slug: str, source: str) -> dict
                 yield from iter_shapes(shape.shapes)
 
     prs = Presentation(str(path))
-    image_dir = IMAGE_ROOT / psi_id / slug
+    src_path = Path(source) if Path(source).is_absolute() else ROOT / source
+    image_dir = IMAGE_ROOT / document_dir(src_path) / slug
     if image_dir.exists():
         shutil.rmtree(image_dir)
     lines = [
@@ -288,7 +375,8 @@ def convert_docx_native(path: Path, psi_id: str, slug: str, source: str) -> dict
         if blob not in blobs:
             blobs.append(blob)
 
-    image_dir = IMAGE_ROOT / psi_id / slug
+    src_path = Path(source) if Path(source).is_absolute() else ROOT / source
+    image_dir = IMAGE_ROOT / document_dir(src_path) / slug
     figures = write_page_images(
         blobs=blobs,
         image_dir=image_dir,
@@ -590,6 +678,11 @@ def convert_one(
 def main() -> int:
     parser = argparse.ArgumentParser(description="Ingest remaining PSI office/zip documents.")
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument(
+        "--photos-only",
+        action="store_true",
+        help="Ingest standalone JPG/PNG experiment photos and stop.",
+    )
     args = parser.parse_args()
 
     TEXT_ROOT.mkdir(parents=True, exist_ok=True)
@@ -618,6 +711,12 @@ def main() -> int:
 
     def maybe_stop() -> bool:
         return bool(args.limit) and (len(succeeded) + len(failed)) >= args.limit
+
+    for result in ingest_loose_photos(used_slugs, existing_sources):
+        succeeded.append(result)
+    if args.photos_only:
+        print(f"photos {len(succeeded)}", flush=True)
+        return 0
 
     # Loose leftover PDFs and office files.
     for path in walk_files(PSI):

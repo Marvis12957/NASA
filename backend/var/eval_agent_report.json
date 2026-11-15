@@ -1,0 +1,244 @@
+[
+ {
+  "question": "So sánh ngọn lửa ở Trái Đất và trong vi trọng lực",
+  "pass": false,
+  "problems": [
+   "retrieval weak < strong"
+  ],
+  "seconds": 40.9,
+  "mode": "global",
+  "retrieval": {
+   "status": "weak",
+   "topScore": 1.98
+  },
+  "searchQuery": "Compare flames on Earth and in microgravity, including shape, color, temperature, soot production, burning rate, and oxygen and fuel transport",
+  "ranked": [],
+  "answer": "## So sánh ngọn lửa trên Trái Đất và trong vi trọng lực\n\n**Kết luận chính:** Thư viện đã tìm thấy các tài liệu thảo luận về hành vi ngọn lửa trong vi trọng lực (PSI-10, PSI-20, PSI-22, PSI-159), nhưng **không có tài liệu nào trong bằng chứng này trình bày một bảng so sánh trực tiếp Trái Đất ↔ vi trọng lực.** Vì vậy, tôi không thể xây dựng so sánh đầy đủ như câu hỏi yêu cầu.\n\n---\n\n### Những gì bằng chứng *có* nêu (chỉ trong bối cảnh vi trọng lực)\n\n| PSI id | Nội dung liên quan | Nguồn (chunk) |\n|---|---|---|\n| **PSI-10** (19.8–85.0% oxygen) | Các thử nghiệm vi trọng lực trên mặt đất (ground-bas"
+ },
+ {
+  "question": "How does a flame in microgravity differ from a flame on Earth?",
+  "pass": false,
+  "problems": [
+   "none of ['PSI-10', 'PSI-20', 'PSI-21', 'PSI-22', 'PSI-23', 'PSI-159'] found"
+  ],
+  "seconds": 18.9,
+  "mode": "global",
+  "retrieval": {
+   "status": "strong",
+   "topScore": 3.78
+  },
+  "searchQuery": "microgravity flame differences from Earth flame NASA PSI combustion flame shape burning rate oxygen transport gravity spacecraft fire safety",
+  "ranked": [],
+  "answer": "ACME_common/iss-researchers-guide-combustion-in-reduced-grav/p022: \"22 The fuel is ignited and the airflow speed is the main variable. After some time, a nitrogen gas suppressant was applied to selected flames. There are important differences in the suppression of fires in space compared to on Earth. On Earth it is understood that the best results are generally obtained when the extin…\"\nPSI-26/srd-bass/p001-003: \"February 2010 1 Science Requirements for Burning and Suppression of Solids “BASS” (Material Flammability in Low-Speed Air Flow at Microgravity Including an Assessment of Inert-Gas Ext"
+ },
+ {
+  "question": "tại sao bầu trời có màu xanh",
+  "pass": true,
+  "problems": [],
+  "seconds": 1.6,
+  "mode": "offtopic",
+  "retrieval": null,
+  "searchQuery": "why is the sky blue",
+  "ranked": [],
+  "answer": "Câu hỏi này nằm ngoài phạm vi của trợ lý. Mình chỉ trả lời về cháy và an toàn cháy trong vi trọng lực, dựa trên kho dữ liệu NASA PSI.\n\nBạn có thể hỏi ví dụ:\n- Ngọn lửa trong vi trọng lực khác ngọn lửa trên Trái Đất thế nào?\n- Thí nghiệm nào quan trọng nhất cho phát hiện khói trên ISS?\n- So sánh FLEX và FLEX-2."
+ },
+ {
+  "question": "What is the weather in Hanoi tomorrow?",
+  "pass": true,
+  "problems": [],
+  "seconds": 2.9,
+  "mode": "offtopic",
+  "retrieval": null,
+  "searchQuery": "What is the weather in Hanoi tomorrow?",
+  "ranked": [],
+  "answer": "This question is outside what this assistant covers. It answers questions about fire and fire safety in microgravity, using the NASA PSI data library.\n\nYou could ask, for example:\n- How does a flame in microgravity differ from a flame on Earth?\n- Which investigation matters most for smoke detection on the ISS?\n- Compare FLEX and FLEX-2."
+ },
+ {
+  "question": "Thí nghiệm nào quan trọng nhất cho an toàn cháy trên ISS?",
+  "pass": true,
+  "problems": [],
+  "seconds": 55.7,
+  "mode": "rank",
+  "retrieval": {
+   "status": "strong",
+   "topScore": 4.44
+  },
+  "searchQuery": "Which NASA PSI microgravity combustion investigation is most important for fire safety on the ISS, comparing Saffire (Spacecraft Fire Safety Experiment), SAME (Smoke Aerosol Measurement Experiment), FLEX / FLEX-2 (Flame Extinguishment Experiment), BASS / BASS-II (Burning and Suppression of Solids), ",
+  "ranked": [
+   "PSI-102",
+   "PSI-69",
+   "PSI-101",
+   "PSI-26",
+   "PSI-25"
+  ],
+  "answer": "**Thí nghiệm quan trọng nhất là SAME (PSI-102)**, với điểm liên quan an toàn cháy **96**, cao nhất trong bảng xếp hạng catalog.\n\n- **PSI-102 — SAME:** hạng 1, relevance 96; nghiên cứu Teflon, Kapton, Silicone Rubber, Lampwick và Dibutyl Phthalate.\n- **PSI-69 — FLEX:** relevance 92.\n- **PSI-101 — SAME-R:** relevance 90.\n- **PSI-26 — BASS:** relevance 88.\n- **PSI-25 — BASS-II:** relevance 86.\n\nĐiểm **relevance** là mức liên quan đến an toàn cháy, **không phải nồng độ oxy**. Với bối cảnh **ISS cabin (21% O2, 14.7 psi)**, catalog vẫn xếp **SAME (PSI-102)** là investigation quan trọng nhất."
+ },
+ {
+  "question": "Which investigations matter most for a lunar habitat?",
+  "pass": true,
+  "problems": [],
+  "seconds": 48.2,
+  "mode": "rank",
+  "retrieval": {
+   "status": "weak",
+   "topScore": 1.06
+  },
+  "searchQuery": "Which NASA PSI investigations matter most for lunar habitat fire safety: SAME (Smoke Aerosol Measurement Experiment), FLEX / FLEX-2 (Flame Extinguishment Experiment, fuel droplets), BASS / BASS-II (Burning and Suppression of Solids), Saffire (Spacecraft Fire Safety Experiment), ACME, CFI-G (Cool Fla",
+  "ranked": [
+   "PSI-159",
+   "PSI-25",
+   "PSI-20",
+   "PSI-26",
+   "PSI-98"
+  ],
+  "answer": "## Most relevant investigations for a lunar habitat (≥30 % O₂, ≤10.2 psi)\n\nThe catalog assigns these five investigations in the following fire-safety-relevance order (relevance score is a relevance rank, **not** an oxygen figure):\n\n| Rank | Investigation | Relevance | Oxygen range (catalog) | Fuels / materials |\n|------|--------------|-----------|------------------------|-------------------|\n| 1 | **ACME CFI-G** (PSI-159) | 98 | 12.0 – 85.0 % | ethane, propane, butane, 50 % butane, 30 % butane, 30 % propane |\n| 2 | **BASS-II** (PSI-25) | 92 | 13.6 – 22.2 % | 100 µm, 200 µm, 300 µm PMMA films, "
+ },
+ {
+  "question": "What did FLEX measure on the ISS?",
+  "pass": true,
+  "problems": [],
+  "seconds": 13.5,
+  "mode": "read",
+  "retrieval": {
+   "status": "strong",
+   "topScore": 6.75
+  },
+  "searchQuery": "FLEX Flame Extinguishment Experiment measured fuel droplets flame extinguishment ISS microgravity",
+  "ranked": [],
+  "answer": "PSI-68/flex-2-dod/p001: \"FLEX-2 (The Flame Extinguishment - 2) experiment is the second experiment to fly on the ISS which uses small droplets of fuel to study the special spherical characteristics of burning fuel droplets in space. The investigation has 40 Experiment Data records which are based on the Test Matrix (Binary Array, Condensed Ph…\"\nPSI-69/investigation/all: \"# Flame Extinguishment Experiment **Acronym:** FLEX **Hardware:** Combustion Integrated Rack (CIR)-Fluids and Combustion Facility (FCF), Multi-user Droplet Combustion Appartatus (MDCA) **DOI:** 10.60555/mbq8-0451 ## Objective "
+ },
+ {
+  "question": "So sánh FLEX và FLEX-2",
+  "pass": true,
+  "problems": [],
+  "seconds": 23.8,
+  "mode": "compare",
+  "retrieval": null,
+  "searchQuery": "Compare FLEX / FLEX-2 (Flame Extinguishment Experiment, fuel droplets), including objectives, fuels, combustion behavior, flame extinction limits, and spacecraft fire-safety findings",
+  "ranked": [
+   "PSI-69",
+   "PSI-68"
+  ],
+  "answer": "## So sánh FLEX (PSI-69) và FLEX-2 (PSI-68)\n\n| Đặc điểm | FLEX (PSI-69) | FLEX-2 (PSI-68) |\n|---|---|---|\n| **Phần cứng** | CIR + MDCA, giọt chất lỏng | CIR + MDCA, giọt chất lỏng |\n| **Vai trò an toàn** | Dập cháy (suppression) | Dập cháy (suppression) |\n| **Khoảng oxygen** | 12.0–34.0% oxygen | 17.0–30.0% oxygen |\n| **Nhiên liệu** | Methanol, Heptane | IsoOctane (pure), n-Octane (pure), Heptane (pure), Decane (pure), Ethanol (pure), Propanol (95%) Glycerol (5%) (mixture) |\n| **Airflow** | Không có dữ liệu airflow trong các bảng hiện có | 0.1–5 cm/s |\n| **Số lần chạy (runs)** | 274 | 8 |\n\n###"
+ },
+ {
+  "question": "BASS II nghiên cứu gì?",
+  "pass": true,
+  "problems": [],
+  "seconds": 26.0,
+  "mode": "read",
+  "retrieval": {
+   "status": "strong",
+   "topScore": 8.93
+  },
+  "searchQuery": "BASS-II (Burning and Suppression of Solids) study objectives",
+  "ranked": [],
+  "answer": "**BASS-II (PSI-25)** nghiên cứu **quá trình cháy và dập cháy của vật liệu rắn trong điều kiện vi trọng lực**, gồm sự **mồi cháy, phát triển ngọn lửa, lan truyền ngọn lửa và giới hạn tắt cháy**. Kết quả nhằm hỗ trợ các mô hình tính toán cháy phục vụ thiết kế hệ thống phát hiện và dập cháy trong vi trọng lực và trên Trái Đất. [PSI-25/investigation/all]\n\nThí nghiệm sử dụng **màng PMMA** trong khoảng **13.6–22.2% oxygen**, với các kích thước và bề rộng khác nhau được liệt kê trong catalog của **PSI-25**. [PSI-25]"
+ },
+ {
+  "question": "Fire risk in a spacesuit at 4.3 psi and 100% oxygen",
+  "pass": true,
+  "problems": [],
+  "seconds": 56.0,
+  "mode": "rank",
+  "retrieval": {
+   "status": "weak",
+   "topScore": 0.49
+  },
+  "searchQuery": "spacesuit fire risk 4.3 psi 100% oxygen flammability",
+  "ranked": [
+   "PSI-159",
+   "PSI-20",
+   "PSI-25",
+   "PSI-26",
+   "PSI-98"
+  ],
+  "answer": "## Conclusão\n\nOs registros disponíveis **não permitem quantificar o risco de incêndio** para a condição exata de uma roupa espacial a **100% O₂ e 4,3 psi**. Não há, nos documentos recuperados, um valor de limiar de ignição, taxa de propagação, liberação de calor ou tempo até a ocorrência de perigo para esse cenário.\n\nO registro mais próximo é **ACME CFI-G (PSI-159)**, mas seu catálogo cobre apenas **12,0–85,0% de oxigênio** e indica que a série **não reproduz 4,3 psi**[1]. Portanto, seus resultados não podem ser aplicados diretamente à condição da roupa.\n\n### Registros relacionados, em ordem d"
+ },
+ {
+  "question": "Kích thước hạt khói trong vi trọng lực lớn hơn hay nhỏ hơn?",
+  "pass": true,
+  "problems": [],
+  "seconds": 24.5,
+  "mode": "global",
+  "retrieval": {
+   "status": "strong",
+   "topScore": 5.2
+  },
+  "searchQuery": "smoke particle size in microgravity larger or smaller SAME (Smoke Aerosol Measurement Experiment) aerosol diameter",
+  "ranked": [],
+  "answer": "**Chưa thể kết luận** kích thước hạt khói trong vi trọng lực **lớn hơn hay nhỏ hơn** từ các đoạn trích hiện có.\n\nCác tài liệu có bàn về phân bố và kích thước hạt khói, cũng như so sánh kết quả bay với thử nghiệm mặt đất, nhưng những đoạn được cung cấp **không nêu chiều hướng lớn hơn hoặc nhỏ hơn**:\n\n- **PSI-101**: nghiên cứu hình thái và kích thước hạt trong SAME-2/SAMER[1][2]\n- **PSI-102**: thảo luận kích thước hạt khói trong tàu vũ trụ và dữ liệu thí nghiệm SAME[3][4]\n- Kết quả bay được phân tích cùng kết quả thử nghiệm mặt đất, nhưng đoạn trích không cho biết kích thước hạt bên nào lớn hơn["
+ },
+ {
+  "question": "soot particle size in microgravity smoke",
+  "pass": true,
+  "problems": [],
+  "seconds": 16.4,
+  "mode": "global",
+  "retrieval": {
+   "status": "strong",
+   "topScore": 5.67
+  },
+  "searchQuery": "soot particle size distribution in microgravity smoke",
+  "ranked": [],
+  "answer": "PSI-102/ices-paper-2005-01-2930-rev/p001: \"2005-01-2930 Detection of Smoke from Microgravity Fires David Urban, DeVon Griffin, Gary Ruff NASA Glenn Research Center Thomas Cleary, Jiann Yang, George Mulholland National Institute of Standards and Technology Zeng-guang Yuan National Center for Microgravity Research Copyright © 2005 SAE International ABSTRACT The…\"\nPSI-102/urban-ices-talk/p002: \"2 Background: Spacecraft Fire Detection • Fire detection strategies for spacecraft have largely been based upon 1-g understanding. • Soot particle size distributions are larger in μ-g flames. (work of Ku, "
+ },
+ {
+  "question": "Cool flame của giọt heptane là gì?",
+  "pass": false,
+  "problems": [
+   "none of ['PSI-39', 'PSI-68', 'PSI-69'] found"
+  ],
+  "seconds": 33.4,
+  "mode": "global",
+  "retrieval": {
+   "status": "strong",
+   "topScore": 7.1
+  },
+  "searchQuery": "cool flame heptane droplet combustion",
+  "ranked": [],
+  "answer": "**Cool flame của giọt heptane** là một dạng cháy ở nhiệt độ tương đối thấp của **giọt n-heptane (n-C₇H₁₆) cô lập, kích thước dưới milimét**. Hiện tượng này gồm quá trình **khởi phát và duy trì ngọn lửa mát** quanh giọt; PSI-117 nghiên cứu nó bằng mô hình cháy giọt đối xứng cầu, một chiều và biến thiên theo thời gian, trong điều kiện áp suất khí quyển và áp suất cao hơn, cùng các mức ozone khác nhau trong môi trường [1][2].\n\nTài liệu cũng nêu rằng **tổn thất nhiệt do bức xạ hoặc các cơ chế làm tăng tổn thất nhiệt** có thể kích hoạt hiện tượng “cool flame” [3].\n\nCác tài liệu được cung cấp **khôn"
+ },
+ {
+  "question": "Saffire nghiên cứu lan truyền lửa quy mô lớn thế nào?",
+  "pass": true,
+  "problems": [],
+  "seconds": 31.1,
+  "mode": "global",
+  "retrieval": {
+   "status": "strong",
+   "topScore": 6.87
+  },
+  "searchQuery": "Saffire (Spacecraft Fire Safety Experiment) large-scale fire propagation",
+  "ranked": [],
+  "answer": "Saffire nghiên cứu **sự phát triển và lan truyền của đám cháy quy mô lớn trong điều kiện vi trọng lực**, thay vì chỉ thử nghiệm các đám cháy nhỏ trên trạm vũ trụ. Mục tiêu chính là:\n\n- Đo **tốc độ phát triển của đám cháy lớn trong vi trọng lực**.\n- Xác định **giới hạn bắt cháy của vật liệu trong vi trọng lực**, rồi so sánh với kết quả thử nghiệm vật liệu ở trọng lực bình thường. [PSI-98/investigation/all] [PSI-100/saffire-i-and-saffire-iii-dod/p001]\n- Thực hiện trong phần cứng của **Cygnus**: Saffire-I dùng enclosure trong Cygnus, còn Saffire-II dùng khoang hàng có áp suất của Cygnus. [PSI-98/"
+ },
+ {
+  "question": "What does an electric field do to a flame?",
+  "pass": true,
+  "problems": [],
+  "seconds": 12.5,
+  "mode": "global",
+  "retrieval": {
+   "status": "strong",
+   "topScore": 7.76
+  },
+  "searchQuery": "electric field effect on flame E-FIELD Flames microgravity combustion",
+  "ranked": [],
+  "answer": "PSI-22/e-field-flames-benefits-20200518/p001: \"18 May 2020 Advanced Combustion via Microgravity Experiments (ACME) Electric-Field Effects on Laminar Diffusion Flames (E-FIELD Flames) ACME/E-FIELD Flames - Impacts, Benefits, and Products Prepared by Dennis Stocker, ACME Project Scientist, dennis.p.stocker@nasa.gov, 216-433-2166 Impacts, Benefits, and Products This…\"\nPSI-22/e-field-flames-30-day-report-inc-55-56-20181115/p001: \"ACME/E-FIELD Flames – 30-Day Operation Accomplishments Report for ISS Increments 55 and 56 1 15 Nov. 2018 30-day Operational Accomplishments Report … for the Internationa"
+ },
+ {
+  "question": "Tell me about SAME",
+  "pass": true,
+  "problems": [],
+  "seconds": 11.4,
+  "mode": "read",
+  "retrieval": {
+   "status": "strong",
+   "topScore": 8.56
+  },
+  "searchQuery": "SAME Smoke Aerosol Measurement Experiment",
+  "ranked": [],
+  "answer": "PSI-101/samer-final-0602-2014/p002: \"Smoke Aerosol Measurement Experiment Re-flight (SAMER) Abstract Smoke Aerosol Measurement Experiment Re-flight (SAMER) is an extension or continuation of Smoke Aerosol Measurement Experiment (SAME), conducted in space from September 9 to October 5, 2007. On the success of SAME, SAMER included the following modificatio…\"\nPSI-102/investigation/all: \"# Smoke and Aerosol Measurement Experiment **Acronym:** SAME **Hardware:** Comparitive Soot Diagnostic Hardware **DOI:** 10.60555/gd4k-8h62 ## Objective One of the major goals of this investigation was to quantify"
+ }
+]

@@ -1,0 +1,5556 @@
+{
+  "liệt kê investigation": {
+    "version": "1.0",
+    "intent": "explore",
+    "title": "Khám phá investigation",
+    "filters": [],
+    "blocks": [
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "Hồ sơ",
+          "value": 25,
+          "tone": "blue"
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Investigation"
+          }
+        ]
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "Số family",
+          "value": 7
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Family"
+          }
+        ]
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "Số tài liệu",
+          "value": 450
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Document"
+          }
+        ]
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "Số chunk",
+          "value": 6060
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Chunk"
+          }
+        ]
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-10",
+          "name": "ACME Flame Design",
+          "acronym": "ACME/Flame Design",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "C2H4",
+            "C3H8",
+            "RAMPED",
+            "RAMP"
+          ],
+          "runCount": 327,
+          "doi": "10.60555/w4zy-bt45"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-100",
+          "name": "Saffire-III",
+          "acronym": "SAFFIRE-III",
+          "family": "Cygnus vehicle after it left the ISS",
+          "relevance": null,
+          "fuels": [
+            "SIBAL Fabric"
+          ],
+          "runCount": 2,
+          "doi": "10.60555/040q-4h36"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-101",
+          "name": "SAME-R",
+          "acronym": "SAME-R",
+          "family": "ISS aerosol instrument (SAME and DAFT)",
+          "relevance": null,
+          "fuels": [],
+          "runCount": null,
+          "doi": null
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-102",
+          "name": "SAME",
+          "acronym": "SAME",
+          "family": "ISS aerosol instrument (SAME and DAFT)",
+          "relevance": null,
+          "fuels": [
+            "Teflon",
+            "Kapton",
+            "Silicone Rubber",
+            "Lampwick",
+            "Dibutyl Phthalate"
+          ],
+          "runCount": 8,
+          "doi": "10.60555/gd4k-8h62"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-106",
+          "name": "SLICE",
+          "acronym": "SLICE",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": null,
+          "fuels": [
+            "100% CH4",
+            "40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations",
+            "70% CH4 (balance N2) including 1 pyrometry calibration test",
+            "20% C2H4 (balance N2)",
+            "40% CH4 (balance N2)",
+            "70% CH4 (balance N2) where the fuel bottle was not emptied (in contrast to most days)",
+            "100% C2H6",
+            "70% CH4 (balance N2) including 1 pyrometry calibration test and 2 fan calibrations",
+            "100% C2H4"
+          ],
+          "runCount": 12,
+          "doi": "10.60555/pm12-rg61"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-107",
+          "name": "SPICE",
+          "acronym": "SPICE",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": null,
+          "fuels": [
+            "Ethylene",
+            "Propane",
+            "75% Propylene",
+            "75 % Propylene",
+            "50 % Propylene",
+            "Propylene",
+            "Methane"
+          ],
+          "runCount": 469,
+          "doi": "10.60555/9kbh-e962"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-108",
+          "name": "STDCE-1",
+          "acronym": "STDCE-1",
+          "family": "USML-1 Spacelab, not a fire test",
+          "relevance": null,
+          "fuels": [],
+          "runCount": 38,
+          "doi": "10.60555/j1z3-bw42"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-115",
+          "name": "SAME smoke modeling",
+          "acronym": "SAME smoke modeling",
+          "family": "Analysis or model, not a new burn",
+          "relevance": null,
+          "fuels": [],
+          "runCount": null,
+          "doi": "10.60555/q0v5-1v28"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-117",
+          "name": "Cool-flame perturbation",
+          "acronym": "Cool-flame perturbation",
+          "family": "Analysis or model, not a new burn",
+          "relevance": null,
+          "fuels": [],
+          "runCount": null,
+          "doi": "10.60555/gz0q-b577"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-142",
+          "name": "Cool-flame counterflow",
+          "acronym": "Cool-flame counterflow",
+          "family": "Analysis or model, not a new burn",
+          "relevance": null,
+          "fuels": [],
+          "runCount": 8,
+          "doi": "10.60555/80qf-vj95"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-159",
+          "name": "ACME CFI-G",
+          "acronym": "ACME CFI-G",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "ethane",
+            "propane",
+            "butane",
+            "50% butane",
+            "30% butane",
+            "30% propane",
+            "30% ethane"
+          ],
+          "runCount": 333,
+          "doi": "10.60555/cyt1-kh64"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-20",
+          "name": "ACME Burning Rate Emulator",
+          "acronym": "ACME BRE",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "100% C2H4",
+            "50% C2H4",
+            "100%C2H4",
+            "100% CH4"
+          ],
+          "runCount": 18,
+          "doi": "10.60555/vb93-3y72"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-21",
+          "name": "ACME Coflow Laminar Diffusion Flame",
+          "acronym": "ACME CLD Flame",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "40% CH4",
+            "100% CH4",
+            "100% C2H4",
+            "100% C2H6",
+            "50% C2H4",
+            "50% C2H6",
+            "30% C2H4"
+          ],
+          "runCount": 32,
+          "doi": "10.60555/23e1-9950"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-22",
+          "name": "ACME E-FIELD Flames",
+          "acronym": "ACME E-FIELD Flames",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "100% CH4",
+            "40% CH4",
+            "100% C2H4",
+            "30% C2H4"
+          ],
+          "runCount": 32,
+          "doi": "10.60555/se5a-8c73"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-23",
+          "name": "ACME s-Flame",
+          "acronym": "ACME s-Flame",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "50% C2H4 with N2",
+            "45% CH4 with N2",
+            "100% H2",
+            "44.4% H2 with CH4",
+            "66.7% H2 with CH4",
+            "25% H2, 20% CH4, with He",
+            "20% H2, 25% CH4, with He",
+            "30% H2, 15% CH4, with He",
+            "45% H2 with He",
+            "45% CH4 with He",
+            "20% C2H4 with He",
+            "25% C2H4 with He"
+          ],
+          "runCount": 18,
+          "doi": "10.60555/k57n-p030"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-25",
+          "name": "BASS-II",
+          "acronym": "BASS-II",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": null,
+          "fuels": [
+            "100 micron PMMA film 2 cm wide",
+            "200 micron PMMA film 2 cm wide",
+            "100 micron film 2 cm wide",
+            "300 micron PMMA film 2 cm wide",
+            "200 micron 2 cm wide",
+            "2 cm 0.1 mm PMMA film",
+            "400 micron film 2 cm wide",
+            "2 cm 0.2 mm PMMA film",
+            "1 cm 0.2 mm PMMA film",
+            "300 micron film 2 cm wide",
+            "2 cm 0.4 mm thick film",
+            "1 cm wide 200 micron thick PMMA"
+          ],
+          "runCount": 129,
+          "doi": "10.60555/4qc4-de67"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-26",
+          "name": "BASS",
+          "acronym": "BASS",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": null,
+          "fuels": [
+            "SIBAL 2 cm",
+            "PMMA sphere 2 cm",
+            "PMMA sphere 1 cm",
+            "SIBAL 1 cm",
+            "Nomex blend 2 cm",
+            "PMMA 2 cm",
+            "PMMA 1 cm",
+            "2 cm sphere",
+            "1 cm sphere",
+            "Nomex III Natural",
+            "PMMA slab",
+            "ultem sheet"
+          ],
+          "runCount": 122,
+          "doi": "10.60555/58h4-dy80"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-39",
+          "name": "Cool Flames Investigation",
+          "acronym": "CFI",
+          "family": "CIR + MDCA, liquid droplets",
+          "relevance": null,
+          "fuels": [
+            "C12H26",
+            "[.75]/[.25] C12H26/iso-dodecane",
+            "[.60]/[.40] C12H26/iso-dodecane"
+          ],
+          "runCount": 87,
+          "doi": "10.60555/m6pj-a914"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-47",
+          "name": "DAFT / DAFT-2",
+          "acronym": "DAFT / DAFT-2",
+          "family": "ISS aerosol instrument (SAME and DAFT)",
+          "relevance": null,
+          "fuels": [
+            "Arizona Road Dust (ARD Fine) in combination with ISS GN2 to create an aerosol for measurement purposes."
+          ],
+          "runCount": 2,
+          "doi": "10.60555/ztgj-d202"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-60",
+          "name": "SPICE data analysis",
+          "acronym": "SPICE data analysis",
+          "family": "Analysis or model, not a new burn",
+          "relevance": null,
+          "fuels": [],
+          "runCount": null,
+          "doi": "10.60555/mzjm-yv57"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-62",
+          "name": "Concurrent flame spread vs BASS",
+          "acronym": "Concurrent flame spread vs BASS",
+          "family": "Analysis or model, not a new burn",
+          "relevance": null,
+          "fuels": [],
+          "runCount": null,
+          "doi": "10.60555/e9xp-ex83"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-68",
+          "name": "FLEX-2",
+          "acronym": "FLEX-2",
+          "family": "CIR + MDCA, liquid droplets",
+          "relevance": null,
+          "fuels": [
+            "IsoOctane (pure)",
+            "n-Octane (pure)",
+            "Heptane (pure)",
+            "Decane (pure)",
+            "Ethanol (pure)",
+            "Propanol (95%) Glycerol (5%) (mixture)",
+            "Heptane (50%) IsoOctane (50%) (mixture)",
+            "Propanol (80%) Glycerol (20%) (mixture)"
+          ],
+          "runCount": 8,
+          "doi": "10.60555/byp8-h018"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-69",
+          "name": "FLEX",
+          "acronym": "FLEX",
+          "family": "CIR + MDCA, liquid droplets",
+          "relevance": null,
+          "fuels": [
+            "Methanol",
+            "Heptane"
+          ],
+          "runCount": 274,
+          "doi": "10.60555/mbq8-0451"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-98",
+          "name": "Saffire-I",
+          "acronym": "SAFFIRE-I",
+          "family": "Cygnus vehicle after it left the ISS",
+          "relevance": null,
+          "fuels": [
+            "SIBAL Fabric"
+          ],
+          "runCount": 4,
+          "doi": "10.60555/0t15-1z43"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-99",
+          "name": "Saffire-II",
+          "acronym": "SAFFIRE-II",
+          "family": "Cygnus vehicle after it left the ISS",
+          "relevance": null,
+          "fuels": [
+            "Silicone",
+            "Cotton-Fiberglass (SIBAL)",
+            "PMMA & Nomex",
+            "PMMA"
+          ],
+          "runCount": 15,
+          "doi": "10.60555/2chp-m469"
+        }
+      }
+    ],
+    "followups": [
+      "Briefing cho ISS",
+      "Hồ sơ SAME (PSI-102)",
+      "Đồ thị quanh PSI-159"
+    ]
+  },
+  "cho xem hồ sơ psi-99": {
+    "version": "1.0",
+    "intent": "profile",
+    "title": "Hồ sơ thí nghiệm — Saffire-II (PSI-99)",
+    "filters": [
+      {
+        "kind": "investigation",
+        "id": "PSI-99",
+        "label": "Saffire-II"
+      }
+    ],
+    "blocks": [
+      {
+        "component": "ProfileHeader",
+        "data": {
+          "id": "PSI-99",
+          "name": "Saffire-II",
+          "acronym": "SAFFIRE-II",
+          "summary": "The objectives of SAFFIRE-II are to determine how rapidly a large scale fire grows in low-gravity and to investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+          "family": "Cygnus vehicle after it left the ISS",
+          "doi": "10.60555/2chp-m469",
+          "sources": [
+            "data/psi/PSI-99_SAFFIRE-II/Experiment Table/PSI-99_Experimental table_SAFFIRE-2.csv",
+            "data/psi/PSI-99_SAFFIRE-II/metadata/i_Investigation.txt"
+          ]
+        }
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "Số lần chạy",
+          "value": 15
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Investigation.runCount"
+          }
+        ]
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "Số tài liệu",
+          "value": 5
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "IN_DOCUMENT"
+          }
+        ]
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "Số chunk",
+          "value": 5
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Chunk"
+          }
+        ]
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "DOI",
+          "value": "10.60555/2chp-m469"
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Investigation.doi"
+          }
+        ]
+      },
+      {
+        "component": "GaugeO2",
+        "data": {
+          "min": 21.5,
+          "max": 22.1,
+          "note": null,
+          "missing": false
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Investigation.oxygenMin"
+          }
+        ]
+      },
+      {
+        "component": "ChipList",
+        "data": {
+          "title": "Nhiên liệu / vật liệu",
+          "items": [
+            {
+              "label": "Silicone"
+            },
+            {
+              "label": "Cotton-Fiberglass (SIBAL)"
+            },
+            {
+              "label": "PMMA & Nomex"
+            },
+            {
+              "label": "PMMA"
+            }
+          ]
+        }
+      },
+      {
+        "component": "FlowSteps",
+        "data": {
+          "steps": [
+            {
+              "title": "Dòng khí",
+              "text": "20 cm/s"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Investigation.flow"
+          }
+        ]
+      },
+      {
+        "component": "ChipList",
+        "data": {
+          "title": "Thiết bị",
+          "items": [
+            {
+              "label": "Cygnus Pressurized Cargo Module, SAFFIRE"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "hw:cygnus-pressurized-cargo-module-saffire",
+            "kind": "graph",
+            "ref": "USED_HARDWARE"
+          }
+        ]
+      },
+      {
+        "component": "ChipList",
+        "data": {
+          "title": "Hiện tượng",
+          "items": [
+            {
+              "label": "phenomenon:fire-growth@PSI-99"
+            },
+            {
+              "label": "phenomenon:flame-spread@PSI-99"
+            },
+            {
+              "label": "phenomenon:flammability-limits@PSI-99"
+            },
+            {
+              "label": "phenomenon:flammability@PSI-99"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "phenomenon:phenomenon-fire-growth-psi-99@PSI-99",
+            "kind": "graph",
+            "ref": "STUDIED"
+          },
+          {
+            "id": "phenomenon:phenomenon-flame-spread-psi-99@PSI-99",
+            "kind": "graph",
+            "ref": "STUDIED"
+          },
+          {
+            "id": "phenomenon:phenomenon-flammability-limits-psi-99@PSI-99",
+            "kind": "graph",
+            "ref": "STUDIED"
+          },
+          {
+            "id": "phenomenon:phenomenon-flammability-psi-99@PSI-99",
+            "kind": "graph",
+            "ref": "STUDIED"
+          }
+        ]
+      },
+      {
+        "component": "EvidencePanel",
+        "data": {
+          "chunks": [
+            {
+              "id": "PSI-99/saffire-ii-dod/p001",
+              "text": "[ocr: false] The objectives of the SAFFIRE (Spacecraft Fire Experiment) experiments are to (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test. The specific objective of SAFFIRE-II tests is to quantify that affect in long-duration low-gravity using samples of the…",
+              "page": 1,
+              "documentTitle": "SAFFIRE II DoD",
+              "source": "data/psi/PSI-99_SAFFIRE-II/Science Documents/SAFFIRE-II DoD.docx",
+              "figures": [],
+              "pages_span": [
+                1,
+                1
+              ]
+            },
+            {
+              "id": "PSI-100/saffire-i-and-saffire-iii-dod/p001",
+              "text": "[ocr: false] The objectives of the SAFFIRE (Spacecraft Fire Experiment) experiments are to (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test. The specific objective of SAFFIRE-I and SAFFIRE-III tests is to determine how rapidly a large-scale fire grows in…",
+              "page": 1,
+              "documentTitle": "SAFFIRE I and SAFFIRE III DoD",
+              "source": "data/psi/PSI-100_SAFFIRE-III/Science Documents/SAFFIRE-I and SAFFIRE-III DoD.docx",
+              "figures": [],
+              "pages_span": [
+                1,
+                1
+              ]
+            },
+            {
+              "id": "PSI-99/investigation/all",
+              "text": "# Spacecraft Fire Experiment-II **Acronym:** SAFFIRE-II **Hardware:** Cygnus Pressurized Cargo Module, SAFFIRE **DOI:** 10.60555/2chp-m469 ## Objective The objectives of SAFFIRE-II are to determine how rapidly a large scale fire grows in low-gravity and to investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test. ## Approach The Saffire-II…",
+              "page": null,
+              "documentTitle": "Spacecraft Fire Experiment-II",
+              "source": "data/psi/PSI-99_SAFFIRE-II/metadata/i_Investigation.txt",
+              "figures": []
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "kind": "chunk",
+            "ref": "PSI-99/saffire-ii-dod/p001",
+            "chunkId": "PSI-99/saffire-ii-dod/p001"
+          },
+          {
+            "kind": "chunk",
+            "ref": "PSI-100/saffire-i-and-saffire-iii-dod/p001",
+            "chunkId": "PSI-100/saffire-i-and-saffire-iii-dod/p001"
+          },
+          {
+            "kind": "chunk",
+            "ref": "PSI-99/investigation/all",
+            "chunkId": "PSI-99/investigation/all"
+          }
+        ]
+      }
+    ],
+    "followups": [
+      "Đồ thị quan hệ của PSI-99",
+      "So sánh với FLEX (PSI-69)",
+      "Trang nào nói về oxy?"
+    ]
+  },
+  "so sánh same và bass-ii": {
+    "version": "1.0",
+    "intent": "compare",
+    "title": "So sánh PSI-102 và PSI-25",
+    "filters": [],
+    "blocks": [
+      {
+        "component": "CompareTable",
+        "data": {
+          "columns": [
+            "PSI-102",
+            "PSI-25"
+          ],
+          "rows": [
+            {
+              "field": "family",
+              "values": [
+                "ISS aerosol instrument (SAME and DAFT)",
+                "MSG glovebox, SPICE fan duct"
+              ],
+              "missing": [
+                false,
+                false
+              ],
+              "highlightDiff": true
+            },
+            {
+              "field": "fuels",
+              "values": [
+                "Teflon, Kapton, Silicone Rubber, Lampwick, Dibutyl Phthalate",
+                "100 micron PMMA film 2 cm wide, 200 micron PMMA film 2 cm wide, 100 micron film 2 cm wide, 300 micron PMMA film 2 cm wide, 200 micron 2 cm wide, 2 cm 0.1 mm PMMA film, 400 micron film 2 cm wide, 2 cm 0.2 mm PMMA film, 1 cm 0.2 mm PMMA film, 300 micron film 2 cm wide, 2 cm 0.4 mm thick film, 1 cm wide 200 micron thick PMMA"
+              ],
+              "missing": [
+                false,
+                false
+              ],
+              "highlightDiff": true
+            },
+            {
+              "field": "oxygen",
+              "values": [
+                "—",
+                "13.6–22.2% oxygen"
+              ],
+              "missing": [
+                true,
+                false
+              ],
+              "highlightDiff": true
+            },
+            {
+              "field": "runCount",
+              "values": [
+                8,
+                129
+              ],
+              "missing": [
+                false,
+                false
+              ],
+              "highlightDiff": true
+            },
+            {
+              "field": "hardware",
+              "values": [
+                "Comparitive Soot Diagnostic Hardware",
+                "Microgravity Science Glovebox (MSG)"
+              ],
+              "missing": [
+                false,
+                false
+              ],
+              "highlightDiff": true,
+              "evidence": [
+                {
+                  "id": "hw:comparitive-soot-diagnostic-hardware",
+                  "kind": "graph",
+                  "ref": "USED_HARDWARE"
+                },
+                {
+                  "id": "hw:microgravity-science-glovebox-msg",
+                  "kind": "graph",
+                  "ref": "USED_HARDWARE"
+                }
+              ]
+            },
+            {
+              "field": "phenomenon",
+              "values": [
+                "Particle size distribution@PSI-102, Phenomenon:ash@PSI-102, Phenomenon:fire@PSI-102, Phenomenon:pyrolysis-products@PSI-102, Phenomenon:radiant-emission@PSI-102, Phenomenon:solid-particulate@PSI-102, Phenomenon:unburned-fuel-particles@PSI-102",
+                "Burning, CO-to-CO2-ratio, Soot"
+              ],
+              "missing": [
+                false,
+                false
+              ],
+              "highlightDiff": true,
+              "evidence": [
+                {
+                  "id": "phenomenon:particle-size-distribution-psi-102@PSI-102",
+                  "kind": "graph",
+                  "ref": "STUDIED"
+                },
+                {
+                  "id": "phenomenon:phenomenon-ash-psi-102@PSI-102",
+                  "kind": "graph",
+                  "ref": "STUDIED"
+                },
+                {
+                  "id": "phenomenon:phenomenon-fire-psi-102@PSI-102",
+                  "kind": "graph",
+                  "ref": "STUDIED"
+                },
+                {
+                  "id": "phenomenon:phenomenon-pyrolysis-products-psi-102@PSI-102",
+                  "kind": "graph",
+                  "ref": "STUDIED"
+                },
+                {
+                  "id": "phenomenon:phenomenon-radiant-emission-psi-102@PSI-102",
+                  "kind": "graph",
+                  "ref": "STUDIED"
+                },
+                {
+                  "id": "phenomenon:phenomenon-solid-particulate-psi-102@PSI-102",
+                  "kind": "graph",
+                  "ref": "STUDIED"
+                },
+                {
+                  "id": "phenomenon:phenomenon-unburned-fuel-particles-psi-102@PSI-102",
+                  "kind": "graph",
+                  "ref": "STUDIED"
+                },
+                {
+                  "id": "phenomenon:burning@PSI-25",
+                  "kind": "graph",
+                  "ref": "STUDIED"
+                },
+                {
+                  "id": "phenomenon:co-to-co2-ratio@web:bass",
+                  "kind": "graph",
+                  "ref": "STUDIED"
+                },
+                {
+                  "id": "phenomenon:soot@PSI-25",
+                  "kind": "graph",
+                  "ref": "STUDIED"
+                }
+              ]
+            },
+            {
+              "field": "chunkCount",
+              "values": [
+                610,
+                132
+              ],
+              "missing": [
+                false,
+                false
+              ],
+              "highlightDiff": true,
+              "evidence": [
+                {
+                  "kind": "field",
+                  "ref": "Chunk"
+                },
+                {
+                  "kind": "field",
+                  "ref": "Chunk"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "followups": [
+      "Hồ sơ PSI-102",
+      "Đồ thị quanh PSI-25"
+    ]
+  },
+  "thiết bị nào dùng trong psi-102": {
+    "version": "1.0",
+    "intent": "graph",
+    "title": "Đồ thị quanh SAME (PSI-102)",
+    "filters": [
+      {
+        "kind": "investigation",
+        "id": "PSI-102",
+        "label": "SAME"
+      }
+    ],
+    "blocks": [
+      {
+        "component": "NodeGraph",
+        "data": {
+          "nodes": [
+            {
+              "id": "PSI-102",
+              "label": "SAME",
+              "type": "investigation",
+              "weight": 1
+            },
+            {
+              "id": "sensor:0-010-w26rh-psi-102@PSI-102",
+              "label": "0.010 W26Rh",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:0-010-w5rh-psi-102@PSI-102",
+              "label": "0.010 W5Rh",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:co-sensor-psi-102@PSI-102",
+              "label": "CO sensor",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:co2-sensor-psi-102@PSI-102",
+              "label": "CO2 sensor",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:e-nose-psi-102@PSI-102",
+              "label": "E nose",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:p-trak@PSI-102",
+              "label": "P-Trak",
+              "type": "sensor",
+              "weight": 9
+            },
+            {
+              "id": "sensor:smoke-detector-psi-102@PSI-102",
+              "label": "Smoke detector",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:teom@PSI-102",
+              "label": "TEOM",
+              "type": "sensor",
+              "weight": 3
+            },
+            {
+              "id": "sensor:condensation-nuclei-counter-psi-102@PSI-102",
+              "label": "condensation_nuclei_counter",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:condensation-particle-counter-psi-102@PSI-102",
+              "label": "condensation_particle_counter",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:dust-trak-a-psi-102@PSI-102",
+              "label": "dust_trak_a",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:dust-trak-b-psi-102@PSI-102",
+              "label": "dust_trak_b",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:dusttrak@PSI-102",
+              "label": "dusttrak",
+              "type": "sensor",
+              "weight": 18
+            },
+            {
+              "id": "sensor:dusttrak-psi-102@PSI-102",
+              "label": "dusttrak",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:elpi@PSI-102",
+              "label": "elpi",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:hot-wire-anemometer@PSI-102",
+              "label": "hot-wire-anemometer",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:ion-detector-b-psi-102@PSI-102",
+              "label": "ion_detector_b",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:ionization-chamber@PSI-102",
+              "label": "ionization chamber",
+              "type": "sensor",
+              "weight": 4
+            },
+            {
+              "id": "sensor:ionization-detector-psi-102@PSI-102",
+              "label": "ionization_detector",
+              "type": "sensor",
+              "weight": 4
+            },
+            {
+              "id": "sensor:ir-laser-diode-forward-scattering-detector-psi-102@PSI-102",
+              "label": "ir laser diode forward scattering detector",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:iss-detector-psi-102@PSI-102",
+              "label": "iss_detector",
+              "type": "sensor",
+              "weight": 3
+            },
+            {
+              "id": "sensor:iss-detector-scatter-psi-102@PSI-102",
+              "label": "iss_detector_scatter",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:p-trak-psi-102@PSI-102",
+              "label": "p trak",
+              "type": "sensor",
+              "weight": 3
+            },
+            {
+              "id": "sensor:pressure-transducer@PSI-102",
+              "label": "pressure transducer",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:ptrak-psi-102@PSI-102",
+              "label": "ptrak",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:sen-thermal-sensor-psi-102@PSI-102",
+              "label": "thermal_sensor",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-aerosol-particle-counter-psi-102@PSI-102",
+              "label": "aerosol_particle_counter",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-ammeter-psi-102@PSI-102",
+              "label": "ammeter",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-condensation-nuclei-counter-psi-102@PSI-102",
+              "label": "condensation_nuclei_counter",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:sensor-csd-psi-102@PSI-102",
+              "label": "csd",
+              "type": "sensor",
+              "weight": 3
+            },
+            {
+              "id": "sensor:sensor-detector-psi-102@PSI-102",
+              "label": "detector",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-diagnostic-systems-psi-102@PSI-102",
+              "label": "diagnostic_systems",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-dust-trak-psi-102@PSI-102",
+              "label": "dust trak",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:sensor-dusttrak-psi-102@PSI-102",
+              "label": "dusttrak",
+              "type": "sensor",
+              "weight": 4
+            },
+            {
+              "id": "sensor:sensor-dusttrak-a-psi-102@PSI-102",
+              "label": "dusttrak_a",
+              "type": "sensor",
+              "weight": 5
+            },
+            {
+              "id": "sensor:sensor-dusttrak-b-psi-102@PSI-102",
+              "label": "dusttrak_b",
+              "type": "sensor",
+              "weight": 5
+            },
+            {
+              "id": "sensor:sensor-ead-psi-102@PSI-102",
+              "label": "ead",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-elpi-psi-102@PSI-102",
+              "label": "elpi",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-fire-detector-psi-102@PSI-102",
+              "label": "fire detector",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-first-alert-smoke-detector-psi-102@PSI-102",
+              "label": "first_alert_smoke_detector",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:sensor-gas-plume-temperature-sensor-psi-102@PSI-102",
+              "label": "gas_plume_temperature_sensor",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-gas-sensors-psi-102@PSI-102",
+              "label": "gas_sensors",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-ion-chamber-psi-102@PSI-102",
+              "label": "ion chamber",
+              "type": "sensor",
+              "weight": 4
+            },
+            {
+              "id": "sensor:sensor-ion-detector-a-psi-102@PSI-102",
+              "label": "ion_detector_a",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-ion-detector-b-psi-102@PSI-102",
+              "label": "ion_detector_b",
+              "type": "sensor",
+              "weight": 5
+            },
+            {
+              "id": "sensor:sensor-iss-smoke-detector-psi-102@PSI-102",
+              "label": "iss smoke detector",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:sensor-iss-detector-psi-102@PSI-102",
+              "label": "iss_detector",
+              "type": "sensor",
+              "weight": 5
+            },
+            {
+              "id": "sensor:sensor-iss-obstruction-detector-psi-102@PSI-102",
+              "label": "iss_obstruction_detector",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-iss-scatter-detector-psi-102@PSI-102",
+              "label": "iss_scatter_detector",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:sensor-p-trak-psi-102@PSI-102",
+              "label": "p_trak",
+              "type": "sensor",
+              "weight": 4
+            },
+            {
+              "id": "sensor:sensor-proximity-sensors-psi-102@PSI-102",
+              "label": "proximity sensors",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-ptrak-psi-102@PSI-102",
+              "label": "ptrak",
+              "type": "sensor",
+              "weight": 7
+            },
+            {
+              "id": "sensor:sensor-pttrak-psi-102@PSI-102",
+              "label": "pttrak",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-r-2-psi-102@PSI-102",
+              "label": "r 2",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-resistance-measurement-psi-102@PSI-102",
+              "label": "resistance measurement",
+              "type": "sensor",
+              "weight": 2
+            },
+            {
+              "id": "sensor:sensor-s-2-psi-102@PSI-102",
+              "label": "s 2",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-sample-temperature-sensor-psi-102@PSI-102",
+              "label": "sample_temperature_sensor",
+              "type": "sensor",
+              "weight": 1
+            },
+            {
+              "id": "sensor:sensor-smoke-detector-psi-102@PSI-102",
+              "label": "smoke detector",
+              "type": "sensor",
+              "weight": 5
+            },
+            {
+              "id": "sensor:sensor-std-detector-psi-102@PSI-102",
+              "label": "std_detector",
+              "type": "sensor",
+              "weight": 1
+            }
+          ],
+          "edges": [
+            {
+              "from": "PSI-102",
+              "to": "sensor:0-010-w26rh-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — 0.010 W26Rh."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:0-010-w5rh-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — 0.010 W5Rh."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:co-sensor-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — CO sensor."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:co2-sensor-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — CO2 sensor."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:e-nose-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — E nose."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:p-trak@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — P-Trak."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:smoke-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — Smoke detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:teom@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — TEOM."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:condensation-nuclei-counter-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — condensation_nuclei_counter."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:condensation-particle-counter-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — condensation_particle_counter."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:dust-trak-a-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — dust_trak_a."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:dust-trak-b-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — dust_trak_b."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:dusttrak@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — dusttrak."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:dusttrak-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — dusttrak."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:elpi@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — elpi."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:hot-wire-anemometer@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — hot-wire-anemometer."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:ion-detector-b-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ion_detector_b."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:ionization-chamber@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ionization chamber."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:ionization-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ionization_detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:ir-laser-diode-forward-scattering-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ir laser diode forward scattering detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:iss-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — iss_detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:iss-detector-scatter-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — iss_detector_scatter."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:p-trak-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — p trak."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:pressure-transducer@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — pressure transducer."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:ptrak-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ptrak."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sen-thermal-sensor-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — thermal_sensor."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-aerosol-particle-counter-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — aerosol_particle_counter."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-ammeter-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ammeter."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-condensation-nuclei-counter-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — condensation_nuclei_counter."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-csd-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — csd."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-diagnostic-systems-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — diagnostic_systems."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-dust-trak-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — dust trak."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-dusttrak-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — dusttrak."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-dusttrak-a-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — dusttrak_a."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-dusttrak-b-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — dusttrak_b."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-ead-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ead."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-elpi-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — elpi."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-fire-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — fire detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-first-alert-smoke-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — first_alert_smoke_detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-gas-plume-temperature-sensor-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — gas_plume_temperature_sensor."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-gas-sensors-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — gas_sensors."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-ion-chamber-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ion chamber."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-ion-detector-a-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ion_detector_a."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-ion-detector-b-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ion_detector_b."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-iss-smoke-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — iss smoke detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-iss-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — iss_detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-iss-obstruction-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — iss_obstruction_detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-iss-scatter-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — iss_scatter_detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-p-trak-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — p_trak."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-proximity-sensors-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — proximity sensors."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-ptrak-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — ptrak."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-pttrak-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — pttrak."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-r-2-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — r 2."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-resistance-measurement-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — resistance measurement."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-s-2-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — s 2."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-sample-temperature-sensor-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — sample_temperature_sensor."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-smoke-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — smoke detector."
+            },
+            {
+              "from": "PSI-102",
+              "to": "sensor:sensor-std-detector-psi-102@PSI-102",
+              "type": "MEASURED_WITH",
+              "explanation": "Quan hệ MEASURED_WITH: SAME — std_detector."
+            }
+          ]
+        }
+      }
+    ],
+    "followups": [
+      "Hồ sơ PSI-102",
+      "Xem bằng chứng",
+      "Briefing cho ISS"
+    ]
+  },
+  "tổng quan chủ đề cháy trên iss": {
+    "version": "1.0",
+    "intent": "topic",
+    "title": "Bản đồ chủ đề",
+    "filters": [],
+    "blocks": [
+      {
+        "component": "TopicDrilldown",
+        "data": {
+          "levels": [
+            0,
+            1,
+            2
+          ],
+          "communities": [
+            {
+              "id": "community:L2:0",
+              "title": "ACME Burning Rate Emulator, ACME CFI-G, ACME Coflow Laminar Diffusion Flame, ACME E-FIELD Flames",
+              "summary": "**Combustion and flame-behavior hardware/theme family:** PSI-10, PSI-101, PSI-102, PSI-106, PSI-107, PSI-115, PSI-117, PSI-142, PSI-159, PSI-20, PSI-21, PSI-22, PSI-23, PSI-25, PSI-26, PSI-39, PSI-47, PSI-60, PSI-62, PSI-68, PSI-69.",
+              "level": 2,
+              "parent": null,
+              "size": 8819,
+              "psiIds": [
+                "PSI-10",
+                "PSI-101",
+                "PSI-102",
+                "PSI-106",
+                "PSI-107",
+                "PSI-115",
+                "PSI-117",
+                "PSI-142",
+                "PSI-159",
+                "PSI-20",
+                "PSI-21",
+                "PSI-22",
+                "PSI-23",
+                "PSI-25",
+                "PSI-26",
+                "PSI-39",
+                "PSI-47",
+                "PSI-60",
+                "PSI-62",
+                "PSI-68",
+                "PSI-69"
+              ]
+            },
+            {
+              "id": "community:L2:74",
+              "title": "STDCE-1, USML-1 Spacelab, not a fire test, capillary-wave stability, convection",
+              "summary": "**Theme: hardware family and fluid/flame behavior**—including STDCE-1 and USML-1 Spacelab, capillary-wave stability, convection, diffusocapillary flow, external heating, flame spread, fluid loss, and free-surface deformation. **PSI-108**",
+              "level": 2,
+              "parent": null,
+              "size": 392,
+              "psiIds": [
+                "PSI-108"
+              ]
+            },
+            {
+              "id": "community:L2:172",
+              "title": "Burning rate, Cool Flame, Droplet combustion, OH emission",
+              "summary": "This level-2 hardware/theme family covers **combustion and flame behavior**, including burning rate, cool flames, droplet combustion, OH emission, radiative extinction, soot formation, diffusive heat loss, dual-stage combustion, jet flames, and partial burning. **PSI ids: none.** It contains 70 nodes.",
+              "level": 2,
+              "parent": null,
+              "size": 70
+            },
+            {
+              "id": "community:L2:16",
+              "title": "droplet combustion, soot, Air thermal control, Avionics Subsystem",
+              "summary": "**Hardware family / droplet-combustion theme:** This 60-node level-2 family covers droplet combustion, soot, air thermal control, avionics, the Combustion Integrated Rack (CIR), CIR combustion-chamber components and inserts, the CIR ISPR, DCM, and droplet dispensing. **PSI ids:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 60
+            },
+            {
+              "id": "community:L2:28",
+              "title": "Saffire-I, Saffire-II, Saffire-III, Cygnus vehicle after it left the ISS",
+              "summary": "**Theme: Saffire fire growth, flame spread, and flammability in the Cygnus vehicle after ISS departure (hardware/theme family, level 2).** PSI identifiers: **PSI-100, PSI-98, PSI-99**.",
+              "level": 2,
+              "parent": null,
+              "size": 58,
+              "psiIds": [
+                "PSI-100",
+                "PSI-98",
+                "PSI-99"
+              ]
+            },
+            {
+              "id": "community:L2:37",
+              "title": "AVP, CIA, ConnectTech serial card, DNx-AO-333",
+              "summary": "**Hardware family:** This level-2 family groups AVP, CIA, ConnectTech serial card, DNx-AO-333, IPSU-G, Lippert SBC, MFCA1, MFCA2, MFCA3, Solenoid Valve A1, Solenoid Valve A2, and Solenoid Valve A3. **PSI identifiers:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 32
+            },
+            {
+              "id": "community:L2:38",
+              "title": "PC board, bleed screw, capillary tube, current loop transmitter",
+              "summary": "Hardware family: PC board, bleed screw, capillary tube, current loop transmitter, diaphragm, flow meter, flow meter (HFC-D-302), laminar flow element, low DP spring, orifice, power supply, and printed circuit board. PSI ids: none.",
+              "level": 2,
+              "parent": null,
+              "size": 19
+            },
+            {
+              "id": "community:L2:39",
+              "title": "DNx-AI-225 Board, DRC XP-0055, DRC XP-0156, DRC XP-0249",
+              "summary": "**Hardware family:** Broad level-2 family containing DNx-AI-225 Board, DRC XP-0055, DRC XP-0156, DRC XP-0249, Medtherm 8-2.688-10SB-0-0-36-21427KSA, TI LM20, 200mm Thermocouple A/B, and BRE thermocouple nodes; **PSI ids: none** (19 nodes).",
+              "level": 2,
+              "parent": null,
+              "size": 19
+            },
+            {
+              "id": "community:L2:40",
+              "title": "boiling heat transfer, condensation, evaporation, liquid-vapor interface",
+              "summary": "**Theme: Fluids and Multiphase Flow Hardware/Experiments** — a level-2 family covering boiling heat transfer, condensation, evaporation, liquid–vapor interfaces, multiphase flow, and related hardware and investigations, including ACE-M-1, APEX-07, CVB, FIR, LMM, Packed Bed Reactor Experiment, and ZBOT. **PSI ids: none.** (16 nodes)",
+              "level": 2,
+              "parent": null,
+              "size": 16
+            },
+            {
+              "id": "community:L2:41",
+              "title": "1/4\" Swagelok, Digital Metaline, HFC-D-302, HFM-D-300",
+              "summary": "**Hardware family:** This level-2 family includes 1/4-inch Swagelok components, Digital Metaline, HFC-D-302, HFM-D-300, I/O and main boards, VCO-4, VCR-4, analog 300-series components, flow shunt, meter card, and valve. **PSI ids:** none. **Size:** 13 nodes.",
+              "level": 2,
+              "parent": null,
+              "size": 13
+            },
+            {
+              "id": "community:L2:42",
+              "title": "BRE 50mm Baffle, BRE 50mm Base Assembly, BRE 50mm Burner Assembly, BRE 50mm Burner Outlet",
+              "summary": "**Hardware family — BRE 50 mm burner and enclosure components:** This level-2 family covers the BRE burner assembly, baffle, base, outlet, flow-management parts, housing, sensor and thermocouple plugs, mounting plate, and burner lower foam. **PSI ids:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 13
+            },
+            {
+              "id": "community:L2:43",
+              "title": "ACME, coflow burner, gas-jet spaceflight burner, porous sphere",
+              "summary": "**Hardware family:** A level-2 broad family comprising ACME, coflow burner, gas-jet spaceflight burner, porous sphere, spherical burner, thermocouple rake, CIR, PMT, offset radiometer, and standard radiometer array. No PSI identifiers are provided.",
+              "level": 2,
+              "parent": null,
+              "size": 10
+            },
+            {
+              "id": "community:L2:44",
+              "title": "BRE 25mm Baffle, BRE 25mm Base Assembly, BRE 25mm Bottom Housing, BRE 25mm Burner Assembly",
+              "summary": "**Hardware family — BRE 25 mm components:** This level-2 family groups the BRE 25 mm baffle, base assembly, bottom housing, burner assembly, burner outlet, flow screen, flow straightener, sensor gasket, sensor mounting plate, and top housing. **PSI identifiers:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 10
+            },
+            {
+              "id": "community:L2:46",
+              "title": "phenomenon:flame, phenomenon:flame-spread, phenomenon:soot, hardware:cir",
+              "summary": "**Theme: hardware/phenomenon—combustion and flame systems (level 2).** This broad family contains 9 nodes spanning flame, flame spread, soot, CIR, combustion chambers, igniters, fuel, Destiny, and ISS. **PSI IDs:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 9
+            },
+            {
+              "id": "community:L2:47",
+              "title": "120-ohm termination resistor, HFC-D-302, HFM-D-300, I/O board",
+              "summary": "**Hardware family: sensor and instrumentation electronics**—a level-2 family comprising termination, controller, I/O, RS485, rotary-encoder, sensor, and sensor-tube components. **PSI identifiers:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 9
+            },
+            {
+              "id": "community:L2:48",
+              "title": "burner@p028, flow@p028, ethane@p028, ethylene@p028",
+              "summary": "**Gaseous-fuel burner and flow hardware family:** This level-2 family includes burner, flow, ethane, ethylene, hydrogen, methane, propane, and propylene nodes. **PSI ids:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 8
+            },
+            {
+              "id": "community:L2:49",
+              "title": "Connecttech Serial, Crucial SSD, Lippert SBC, PMD Motion Controller",
+              "summary": "**Hardware family:** Connecttech Serial, Crucial SSD, Lippert SBC, PMD Motion Controller, PMD board, RTD Dual GigE, RTD Power, and Indiana University Cyclotron facility. **PSI ids:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 8
+            },
+            {
+              "id": "community:L2:50",
+              "title": "Cube Assembly, DX-0869, Dexter Research Center DX-0869, E-Field Power Supply to Relay Board and Burner Harness Assembly",
+              "summary": "**Hardware family:** E-Field power supply and burner-harness assembly, including the Cube Assembly, DX-0869/Dexter Research Center DX-0869, upstream and downstream relay boards, E-Field supply, and RadiometerOffset; 8 nodes, with no PSI identifiers provided.",
+              "level": 2,
+              "parent": null,
+              "size": 8
+            },
+            {
+              "id": "community:L2:51",
+              "title": "coil, orifice, plunger assembly, pole piece",
+              "summary": "**Hardware family—solenoid valve and actuator components:** this seven-node family includes coil, orifice, plunger assembly, pole piece, 316 stainless steel, Hi-perm 49, and magnet wire. **PSI IDs:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 7
+            },
+            {
+              "id": "community:L2:52",
+              "title": "cool_flame@CIR, hot_flame@CIR, usaf_target@CIR, ch@CIR",
+              "summary": "**Hardware family:** This level-2 family groups cool-flame, hot-flame, USAF-target, CH, formaldehyde, CFI-radiometer, and intensified-camera records from CIR; PSI identifiers: none.",
+              "level": 2,
+              "parent": null,
+              "size": 7
+            },
+            {
+              "id": "community:L2:53",
+              "title": "elektron_oxygen_generator, sfog, space_shuttle, lithium_perchlorate",
+              "summary": "**Hardware family:** spacecraft oxygen-generation and related flight hardware, spanning Elektron oxygen generators, SFOG, lithium perchlorate, the Space Shuttle, ISS, and Mir. **PSI ids:** none. **Size:** 6 nodes.",
+              "level": 2,
+              "parent": null,
+              "size": 6
+            },
+            {
+              "id": "community:L2:54",
+              "title": "Accumulator Assembly, Burner Connector Bracket Assembly, Experiment Mounting Structure Assembly, Fuel Hose Assembly",
+              "summary": "**Hardware family:** This level-2 family contains six nodes: Accumulator Assembly, Burner Connector Bracket Assembly, Experiment Mounting Structure Assembly, Fuel Hose Assembly, GN2 Relief Valve Assembly, and Radiometer Bracket Assembly. **PSI ids:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 6
+            },
+            {
+              "id": "community:L2:55",
+              "title": "acme_chamber_insert@ACME_common, burner@ACME_common, cir@ACME_common, hot_wire_igniter@ACME_common",
+              "summary": "**Hardware family:** acme_chamber_insert@ACME_common, burner@ACME_common, cir@ACME_common, hot_wire_igniter@ACME_common, mass_flow_controller@ACME_common, iss@ACME_common. **PSI ids:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 6
+            },
+            {
+              "id": "community:L2:57",
+              "title": "force-of-unknown-origin@PSI-108, cas@PSI-108, cgv@PSI-108, hirap@PSI-108",
+              "summary": "**Hardware family (level 2):** force-of-unknown-origin@PSI-108, cas@PSI-108, cgv@PSI-108, hirap@PSI-108, imu@PSI-108, and oare@PSI-108. **PSI IDs:** none.",
+              "level": 2,
+              "parent": null,
+              "size": 6
+            }
+          ],
+          "breadcrumb": [
+            {
+              "id": null,
+              "title": "Cấp 2",
+              "level": 2
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "kind": "community",
+            "ref": "Community"
+          }
+        ]
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-10",
+          "name": "ACME Flame Design",
+          "acronym": "ACME/Flame Design",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "C2H4",
+            "C3H8",
+            "RAMPED",
+            "RAMP"
+          ],
+          "runCount": 327,
+          "doi": "10.60555/w4zy-bt45"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-101",
+          "name": "SAME-R",
+          "acronym": "SAME-R",
+          "family": "ISS aerosol instrument (SAME and DAFT)",
+          "relevance": null,
+          "fuels": [],
+          "runCount": null,
+          "doi": null
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-102",
+          "name": "SAME",
+          "acronym": "SAME",
+          "family": "ISS aerosol instrument (SAME and DAFT)",
+          "relevance": null,
+          "fuels": [
+            "Teflon",
+            "Kapton",
+            "Silicone Rubber",
+            "Lampwick",
+            "Dibutyl Phthalate"
+          ],
+          "runCount": 8,
+          "doi": "10.60555/gd4k-8h62"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-106",
+          "name": "SLICE",
+          "acronym": "SLICE",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": null,
+          "fuels": [
+            "100% CH4",
+            "40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations",
+            "70% CH4 (balance N2) including 1 pyrometry calibration test",
+            "20% C2H4 (balance N2)",
+            "40% CH4 (balance N2)",
+            "70% CH4 (balance N2) where the fuel bottle was not emptied (in contrast to most days)",
+            "100% C2H6",
+            "70% CH4 (balance N2) including 1 pyrometry calibration test and 2 fan calibrations",
+            "100% C2H4"
+          ],
+          "runCount": 12,
+          "doi": "10.60555/pm12-rg61"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-107",
+          "name": "SPICE",
+          "acronym": "SPICE",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": null,
+          "fuels": [
+            "Ethylene",
+            "Propane",
+            "75% Propylene",
+            "75 % Propylene",
+            "50 % Propylene",
+            "Propylene",
+            "Methane"
+          ],
+          "runCount": 469,
+          "doi": "10.60555/9kbh-e962"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-115",
+          "name": "SAME smoke modeling",
+          "acronym": "SAME smoke modeling",
+          "family": "Analysis or model, not a new burn",
+          "relevance": null,
+          "fuels": [],
+          "runCount": null,
+          "doi": "10.60555/q0v5-1v28"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-117",
+          "name": "Cool-flame perturbation",
+          "acronym": "Cool-flame perturbation",
+          "family": "Analysis or model, not a new burn",
+          "relevance": null,
+          "fuels": [],
+          "runCount": null,
+          "doi": "10.60555/gz0q-b577"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-142",
+          "name": "Cool-flame counterflow",
+          "acronym": "Cool-flame counterflow",
+          "family": "Analysis or model, not a new burn",
+          "relevance": null,
+          "fuels": [],
+          "runCount": 8,
+          "doi": "10.60555/80qf-vj95"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-159",
+          "name": "ACME CFI-G",
+          "acronym": "ACME CFI-G",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "ethane",
+            "propane",
+            "butane",
+            "50% butane",
+            "30% butane",
+            "30% propane",
+            "30% ethane"
+          ],
+          "runCount": 333,
+          "doi": "10.60555/cyt1-kh64"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-20",
+          "name": "ACME Burning Rate Emulator",
+          "acronym": "ACME BRE",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "100% C2H4",
+            "50% C2H4",
+            "100%C2H4",
+            "100% CH4"
+          ],
+          "runCount": 18,
+          "doi": "10.60555/vb93-3y72"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-21",
+          "name": "ACME Coflow Laminar Diffusion Flame",
+          "acronym": "ACME CLD Flame",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "40% CH4",
+            "100% CH4",
+            "100% C2H4",
+            "100% C2H6",
+            "50% C2H4",
+            "50% C2H6",
+            "30% C2H4"
+          ],
+          "runCount": 32,
+          "doi": "10.60555/23e1-9950"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-22",
+          "name": "ACME E-FIELD Flames",
+          "acronym": "ACME E-FIELD Flames",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "100% CH4",
+            "40% CH4",
+            "100% C2H4",
+            "30% C2H4"
+          ],
+          "runCount": 32,
+          "doi": "10.60555/se5a-8c73"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-23",
+          "name": "ACME s-Flame",
+          "acronym": "ACME s-Flame",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": null,
+          "fuels": [
+            "50% C2H4 with N2",
+            "45% CH4 with N2",
+            "100% H2",
+            "44.4% H2 with CH4",
+            "66.7% H2 with CH4",
+            "25% H2, 20% CH4, with He",
+            "20% H2, 25% CH4, with He",
+            "30% H2, 15% CH4, with He",
+            "45% H2 with He",
+            "45% CH4 with He",
+            "20% C2H4 with He",
+            "25% C2H4 with He"
+          ],
+          "runCount": 18,
+          "doi": "10.60555/k57n-p030"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-25",
+          "name": "BASS-II",
+          "acronym": "BASS-II",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": null,
+          "fuels": [
+            "100 micron PMMA film 2 cm wide",
+            "200 micron PMMA film 2 cm wide",
+            "100 micron film 2 cm wide",
+            "300 micron PMMA film 2 cm wide",
+            "200 micron 2 cm wide",
+            "2 cm 0.1 mm PMMA film",
+            "400 micron film 2 cm wide",
+            "2 cm 0.2 mm PMMA film",
+            "1 cm 0.2 mm PMMA film",
+            "300 micron film 2 cm wide",
+            "2 cm 0.4 mm thick film",
+            "1 cm wide 200 micron thick PMMA"
+          ],
+          "runCount": 129,
+          "doi": "10.60555/4qc4-de67"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-26",
+          "name": "BASS",
+          "acronym": "BASS",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": null,
+          "fuels": [
+            "SIBAL 2 cm",
+            "PMMA sphere 2 cm",
+            "PMMA sphere 1 cm",
+            "SIBAL 1 cm",
+            "Nomex blend 2 cm",
+            "PMMA 2 cm",
+            "PMMA 1 cm",
+            "2 cm sphere",
+            "1 cm sphere",
+            "Nomex III Natural",
+            "PMMA slab",
+            "ultem sheet"
+          ],
+          "runCount": 122,
+          "doi": "10.60555/58h4-dy80"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-39",
+          "name": "Cool Flames Investigation",
+          "acronym": "CFI",
+          "family": "CIR + MDCA, liquid droplets",
+          "relevance": null,
+          "fuels": [
+            "C12H26",
+            "[.75]/[.25] C12H26/iso-dodecane",
+            "[.60]/[.40] C12H26/iso-dodecane"
+          ],
+          "runCount": 87,
+          "doi": "10.60555/m6pj-a914"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-47",
+          "name": "DAFT / DAFT-2",
+          "acronym": "DAFT / DAFT-2",
+          "family": "ISS aerosol instrument (SAME and DAFT)",
+          "relevance": null,
+          "fuels": [
+            "Arizona Road Dust (ARD Fine) in combination with ISS GN2 to create an aerosol for measurement purposes."
+          ],
+          "runCount": 2,
+          "doi": "10.60555/ztgj-d202"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-60",
+          "name": "SPICE data analysis",
+          "acronym": "SPICE data analysis",
+          "family": "Analysis or model, not a new burn",
+          "relevance": null,
+          "fuels": [],
+          "runCount": null,
+          "doi": "10.60555/mzjm-yv57"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-62",
+          "name": "Concurrent flame spread vs BASS",
+          "acronym": "Concurrent flame spread vs BASS",
+          "family": "Analysis or model, not a new burn",
+          "relevance": null,
+          "fuels": [],
+          "runCount": null,
+          "doi": "10.60555/e9xp-ex83"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-68",
+          "name": "FLEX-2",
+          "acronym": "FLEX-2",
+          "family": "CIR + MDCA, liquid droplets",
+          "relevance": null,
+          "fuels": [
+            "IsoOctane (pure)",
+            "n-Octane (pure)",
+            "Heptane (pure)",
+            "Decane (pure)",
+            "Ethanol (pure)",
+            "Propanol (95%) Glycerol (5%) (mixture)",
+            "Heptane (50%) IsoOctane (50%) (mixture)",
+            "Propanol (80%) Glycerol (20%) (mixture)"
+          ],
+          "runCount": 8,
+          "doi": "10.60555/byp8-h018"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-69",
+          "name": "FLEX",
+          "acronym": "FLEX",
+          "family": "CIR + MDCA, liquid droplets",
+          "relevance": null,
+          "fuels": [
+            "Methanol",
+            "Heptane"
+          ],
+          "runCount": 274,
+          "doi": "10.60555/mbq8-0451"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-108",
+          "name": "STDCE-1",
+          "acronym": "STDCE-1",
+          "family": "USML-1 Spacelab, not a fire test",
+          "relevance": null,
+          "fuels": [],
+          "runCount": 38,
+          "doi": "10.60555/j1z3-bw42"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-100",
+          "name": "Saffire-III",
+          "acronym": "SAFFIRE-III",
+          "family": "Cygnus vehicle after it left the ISS",
+          "relevance": null,
+          "fuels": [
+            "SIBAL Fabric"
+          ],
+          "runCount": 2,
+          "doi": "10.60555/040q-4h36"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-98",
+          "name": "Saffire-I",
+          "acronym": "SAFFIRE-I",
+          "family": "Cygnus vehicle after it left the ISS",
+          "relevance": null,
+          "fuels": [
+            "SIBAL Fabric"
+          ],
+          "runCount": 4,
+          "doi": "10.60555/0t15-1z43"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-99",
+          "name": "Saffire-II",
+          "acronym": "SAFFIRE-II",
+          "family": "Cygnus vehicle after it left the ISS",
+          "relevance": null,
+          "fuels": [
+            "Silicone",
+            "Cotton-Fiberglass (SIBAL)",
+            "PMMA & Nomex",
+            "PMMA"
+          ],
+          "runCount": 15,
+          "doi": "10.60555/2chp-m469"
+        }
+      }
+    ],
+    "followups": [
+      "Độ phủ dữ liệu",
+      "Liệt kê investigation",
+      "Xuất bảng dữ liệu"
+    ]
+  },
+  "dữ liệu phủ tới đâu": {
+    "version": "1.0",
+    "intent": "coverage",
+    "title": "Độ phủ dữ liệu",
+    "filters": [],
+    "blocks": [
+      {
+        "component": "BarChart",
+        "data": {
+          "series": [
+            {
+              "label": "ACME_common",
+              "value": 1251
+            },
+            {
+              "label": "PSI-102",
+              "value": 610
+            },
+            {
+              "label": "web:flex",
+              "value": 504
+            },
+            {
+              "label": "PSI-117",
+              "value": 368
+            },
+            {
+              "label": "PSI-20",
+              "value": 353
+            },
+            {
+              "label": "PSI-22",
+              "value": 340
+            },
+            {
+              "label": "PSI-108",
+              "value": 303
+            },
+            {
+              "label": "PSI-23",
+              "value": 287
+            },
+            {
+              "label": "PSI-10",
+              "value": 274
+            },
+            {
+              "label": "web:bass",
+              "value": 224
+            },
+            {
+              "label": "PSI-107",
+              "value": 220
+            },
+            {
+              "label": "PSI-69",
+              "value": 196
+            },
+            {
+              "label": "PSI-68",
+              "value": 164
+            },
+            {
+              "label": "PSI-25",
+              "value": 132
+            },
+            {
+              "label": "PSI-47",
+              "value": 110
+            },
+            {
+              "label": "web:program",
+              "value": 93
+            },
+            {
+              "label": "PSI-101",
+              "value": 85
+            },
+            {
+              "label": "PSI-159",
+              "value": 82
+            },
+            {
+              "label": "PSI-26",
+              "value": 81
+            },
+            {
+              "label": "PSI-39",
+              "value": 79
+            },
+            {
+              "label": "web:luci",
+              "value": 46
+            },
+            {
+              "label": "PSI-21",
+              "value": 43
+            },
+            {
+              "label": "PSI-106",
+              "value": 38
+            },
+            {
+              "label": "web:incidents",
+              "value": 31
+            },
+            {
+              "label": "web:mdca",
+              "value": 29
+            },
+            {
+              "label": "web:acme",
+              "value": 23
+            },
+            {
+              "label": "PSI-115",
+              "value": 20
+            },
+            {
+              "label": "web:cir",
+              "value": 16
+            },
+            {
+              "label": "web:sofie",
+              "value": 11
+            },
+            {
+              "label": "web:spinoff",
+              "value": 10
+            },
+            {
+              "label": "PSI-100",
+              "value": 6
+            },
+            {
+              "label": "PSI-99",
+              "value": 5
+            },
+            {
+              "label": "web:same",
+              "value": 5
+            },
+            {
+              "label": "PSI-98",
+              "value": 4
+            },
+            {
+              "label": "web:fm2",
+              "value": 4
+            },
+            {
+              "label": "web:daft",
+              "value": 2
+            },
+            {
+              "label": "web:flare",
+              "value": 2
+            },
+            {
+              "label": "web:saffire",
+              "value": 2
+            },
+            {
+              "label": "web:slice",
+              "value": 2
+            },
+            {
+              "label": "web:spice",
+              "value": 2
+            },
+            {
+              "label": "PSI-142",
+              "value": 1
+            },
+            {
+              "label": "PSI-60",
+              "value": 1
+            },
+            {
+              "label": "PSI-62",
+              "value": 1
+            }
+          ],
+          "unit": "chunk",
+          "caption": "Số chunk theo nguồn là số đếm thô, không phải điểm mô hình. HeatMap Fuel × Phenomenon là tỉ lệ theo nguồn, không phải số đếm thô. Bảng trường đếm có mặt hay thiếu trên Investigation (summary, acronym, blurb, relevance, scores, aliases, doi, sources, runCount, fuels, measurements, sampleForm, oxygenMin, oxygenMax, oxygenNote), không phải nồng độ oxy."
+        },
+        "evidence": [
+          {
+            "kind": "graph",
+            "ref": "Chunk.psi"
+          }
+        ]
+      },
+      {
+        "component": "HeatMap",
+        "data": {
+          "x": [
+            "cool flame",
+            "extinction@ACME-SRD-001-B",
+            "Soot",
+            "smoke",
+            "flame spread"
+          ],
+          "y": [
+            "Heptane",
+            "Ethylene",
+            "Methane",
+            "Methanol",
+            "PMMA",
+            "Propane",
+            "Teflon",
+            "Kapton",
+            "Silicone",
+            "SIBAL Fabric"
+          ],
+          "cells": [
+            {
+              "x": "Soot",
+              "y": "Ethylene",
+              "v": 0.1268
+            },
+            {
+              "x": "extinction@ACME-SRD-001-B",
+              "y": "Ethylene",
+              "v": 0.0922
+            },
+            {
+              "x": "smoke",
+              "y": "Ethylene",
+              "v": 0.0033
+            },
+            {
+              "x": "cool flame",
+              "y": "Heptane",
+              "v": 0.2658
+            },
+            {
+              "x": "extinction@ACME-SRD-001-B",
+              "y": "Heptane",
+              "v": 0.0105
+            },
+            {
+              "x": "smoke",
+              "y": "Kapton",
+              "v": 0.027
+            },
+            {
+              "x": "Soot",
+              "y": "Methane",
+              "v": 0.0421
+            },
+            {
+              "x": "extinction@ACME-SRD-001-B",
+              "y": "Methane",
+              "v": 0.1131
+            },
+            {
+              "x": "cool flame",
+              "y": "Methanol",
+              "v": 0.0506
+            },
+            {
+              "x": "extinction@ACME-SRD-001-B",
+              "y": "Methanol",
+              "v": 0.0035
+            },
+            {
+              "x": "Soot",
+              "y": "PMMA",
+              "v": 0.0008
+            },
+            {
+              "x": "flame spread",
+              "y": "PMMA",
+              "v": 0.0446
+            },
+            {
+              "x": "Soot",
+              "y": "Propane",
+              "v": 0.0117
+            },
+            {
+              "x": "cool flame",
+              "y": "Propane",
+              "v": 0.0253
+            },
+            {
+              "x": "smoke",
+              "y": "Propane",
+              "v": 0.0033
+            },
+            {
+              "x": "flame spread",
+              "y": "SIBAL Fabric",
+              "v": 0.0089
+            },
+            {
+              "x": "smoke",
+              "y": "Silicone",
+              "v": 0.009
+            },
+            {
+              "x": "smoke",
+              "y": "Teflon",
+              "v": 0.0352
+            }
+          ],
+          "caption": "Mỗi ô cộng, theo từng nguồn, số chunk nhắc đồng thời nhiên liệu và hiện tượng chia cho số chunk của nguồn đó. Trục lấy tối đa 12 nhiên liệu và 8 hiện tượng theo tổng tỉ lệ đã chuẩn hoá theo nguồn, không theo tổng MENTIONS thô, để một nguồn lớn không tự chọn trục. Nhãn gộp biến thể hoa/thường, alias khi node có aliases, và bỏ tiền tố loại cùng hậu tố @PSI; id gốc nằm ở evidence. Nguồn không có số chunk thì không được cộng vào ô."
+        },
+        "evidence": [
+          {
+            "id": "fuel:heptane",
+            "rawIds": [
+              "fuel:heptane"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "fuel:ethylene",
+            "rawIds": [
+              "fuel:ethylene"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "fuel:methane",
+            "rawIds": [
+              "fuel:methane"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "fuel:methanol",
+            "rawIds": [
+              "fuel:methanol"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "fuel:pmma",
+            "rawIds": [
+              "fuel:pmma"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "fuel:propane",
+            "rawIds": [
+              "fuel:propane"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "fuel:teflon",
+            "rawIds": [
+              "fuel:teflon"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "fuel:kapton",
+            "rawIds": [
+              "fuel:kapton"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "fuel:silicone",
+            "rawIds": [
+              "fuel:silicone"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "fuel:sibal-fabric",
+            "rawIds": [
+              "fuel:sibal-fabric"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "phenomenon:cool-flame@PSI-39",
+            "rawIds": [
+              "phenomenon:cool-flame@PSI-39"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "phenomenon:extinction@PSI-23",
+            "rawIds": [
+              "phenomenon:extinction@PSI-23"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "phenomenon:soot@PSI-10",
+            "rawIds": [
+              "phenomenon:soot@PSI-10"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "phenomenon:smoke@PSI-102",
+            "rawIds": [
+              "phenomenon:smoke@PSI-102"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          },
+          {
+            "id": "phenomenon:flame-spread@web:bass",
+            "rawIds": [
+              "phenomenon:flame-spread@web:bass"
+            ],
+            "kind": "graph",
+            "ref": "MENTIONS"
+          }
+        ]
+      },
+      {
+        "component": "DataTable",
+        "data": {
+          "columns": [
+            "trường",
+            "có mặt",
+            "thiếu",
+            "tổng"
+          ],
+          "rows": [
+            [
+              "summary",
+              25,
+              0,
+              25
+            ],
+            [
+              "acronym",
+              25,
+              0,
+              25
+            ],
+            [
+              "blurb",
+              25,
+              0,
+              25
+            ],
+            [
+              "relevance",
+              25,
+              0,
+              25
+            ],
+            [
+              "scores",
+              25,
+              0,
+              25
+            ],
+            [
+              "aliases",
+              25,
+              0,
+              25
+            ],
+            [
+              "doi",
+              24,
+              1,
+              25
+            ],
+            [
+              "sources",
+              24,
+              1,
+              25
+            ],
+            [
+              "runCount",
+              20,
+              5,
+              25
+            ],
+            [
+              "fuels",
+              18,
+              7,
+              25
+            ],
+            [
+              "measurements",
+              11,
+              14,
+              25
+            ],
+            [
+              "sampleForm",
+              11,
+              14,
+              25
+            ],
+            [
+              "oxygenMin",
+              9,
+              16,
+              25
+            ],
+            [
+              "oxygenMax",
+              9,
+              16,
+              25
+            ],
+            [
+              "oxygenNote",
+              2,
+              23,
+              25
+            ],
+            [
+              "oxygen",
+              9,
+              16,
+              25
+            ]
+          ],
+          "warnings": [],
+          "caption": "Số chunk theo nguồn là số đếm thô, không phải điểm mô hình. HeatMap Fuel × Phenomenon là tỉ lệ theo nguồn, không phải số đếm thô. Bảng trường đếm có mặt hay thiếu trên Investigation (summary, acronym, blurb, relevance, scores, aliases, doi, sources, runCount, fuels, measurements, sampleForm, oxygenMin, oxygenMax, oxygenNote), không phải nồng độ oxy."
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Investigation"
+          }
+        ]
+      },
+      {
+        "component": "SourceBadge",
+        "data": {
+          "kind": "field",
+          "ref": "Investigation.oxygenMin"
+        }
+      },
+      {
+        "component": "ExportCSV",
+        "data": {
+          "href": "/api/viz/extract.csv",
+          "filename": "extract.csv"
+        }
+      }
+    ],
+    "followups": [
+      "Xuất bảng dữ liệu",
+      "Ma trận cảm biến",
+      "Liệt kê investigation"
+    ]
+  },
+  "xuất bảng dữ liệu": {
+    "version": "1.0",
+    "intent": "extract",
+    "title": "Trích xuất dataset",
+    "filters": [],
+    "blocks": [
+      {
+        "component": "DataTable",
+        "data": {
+          "columns": [
+            "acronym",
+            "family",
+            "fuels",
+            "oxygenMin",
+            "oxygenMax",
+            "runCount",
+            "sampleForm",
+            "measurements",
+            "documentCount",
+            "chunkCount"
+          ],
+          "rows": [
+            [
+              "ACME/Flame Design",
+              "CIR + ACME, gaseous flames",
+              "C2H4; C3H8; RAMPED; RAMP",
+              "19.8",
+              "85",
+              "327",
+              "",
+              "Tad (K)",
+              "6",
+              "274"
+            ],
+            [
+              "SAFFIRE-III",
+              "Cygnus vehicle after it left the ISS",
+              "SIBAL Fabric",
+              "",
+              "",
+              "2",
+              "flat solid sample",
+              "Camera 1; Camera 2",
+              "6",
+              "6"
+            ],
+            [
+              "SAME-R",
+              "ISS aerosol instrument (SAME and DAFT)",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "2",
+              "85"
+            ],
+            [
+              "SAME",
+              "ISS aerosol instrument (SAME and DAFT)",
+              "Teflon; Kapton; Silicone Rubber; Lampwick; Dibutyl Phthalate",
+              "",
+              "",
+              "8",
+              "flat solid sample",
+              "Weight loss rate (mg/min)",
+              "156",
+              "610"
+            ],
+            [
+              "SLICE",
+              "MSG glovebox, SPICE fan duct",
+              "100% CH4; 40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations; 70% CH4 (balance N2) including 1 pyrometry calibration test; 20% C2H4 (balance N2); 40% CH4 (balance N2); 70% CH4 (balance N2) where the fuel bottle was not emptied (in contrast to most days); 100% C2H6; 70% CH4 (balance N2) including 1 pyrometry calibration test and 2 fan calibrations; 100% C2H4",
+              "",
+              "",
+              "12",
+              "",
+              "",
+              "5",
+              "38"
+            ],
+            [
+              "SPICE",
+              "MSG glovebox, SPICE fan duct",
+              "Ethylene; Propane; 75% Propylene; 75 % Propylene; 50 % Propylene; Propylene; Methane",
+              "",
+              "",
+              "469",
+              "nozzle in a coflow duct",
+              "",
+              "12",
+              "220"
+            ],
+            [
+              "STDCE-1",
+              "USML-1 Spacelab, not a fire test",
+              "",
+              "",
+              "",
+              "38",
+              "",
+              "Power (W); Laser Diameter (cm)",
+              "17",
+              "303"
+            ],
+            [
+              "SAME smoke modeling",
+              "Analysis or model, not a new burn",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "3",
+              "20"
+            ],
+            [
+              "Cool-flame perturbation",
+              "Analysis or model, not a new burn",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "8",
+              "368"
+            ],
+            [
+              "Cool-flame counterflow",
+              "Analysis or model, not a new burn",
+              "",
+              "",
+              "",
+              "8",
+              "",
+              "",
+              "1",
+              "1"
+            ],
+            [
+              "ACME CFI-G",
+              "CIR + ACME, gaseous flames",
+              "ethane; propane; butane; 50% butane; 30% butane; 30% propane; 30% ethane",
+              "12",
+              "85",
+              "333",
+              "",
+              "Tad (K); burn time (sec); Peak burner Temp (C); Peak burner temp (K)",
+              "2",
+              "82"
+            ],
+            [
+              "ACME BRE",
+              "CIR + ACME, gaseous flames",
+              "100% C2H4; 50% C2H4; 100%C2H4; 100% CH4",
+              "21",
+              "40",
+              "18",
+              "circular porous burner",
+              "",
+              "10",
+              "353"
+            ],
+            [
+              "ACME CLD Flame",
+              "CIR + ACME, gaseous flames",
+              "40% CH4; 100% CH4; 100% C2H4; 100% C2H6; 50% C2H4; 50% C2H6; 30% C2H4",
+              "",
+              "",
+              "32",
+              "",
+              "",
+              "9",
+              "43"
+            ],
+            [
+              "ACME E-FIELD Flames",
+              "CIR + ACME, gaseous flames",
+              "100% CH4; 40% CH4; 100% C2H4; 30% C2H4",
+              "",
+              "",
+              "32",
+              "",
+              "",
+              "17",
+              "340"
+            ],
+            [
+              "ACME s-Flame",
+              "CIR + ACME, gaseous flames",
+              "50% C2H4 with N2; 45% CH4 with N2; 100% H2; 44.4% H2 with CH4; 66.7% H2 with CH4; 25% H2, 20% CH4, with He; 20% H2, 25% CH4, with He; 30% H2, 15% CH4, with He; 45% H2 with He; 45% CH4 with He; 20% C2H4 with He; 25% C2H4 with He",
+              "",
+              "",
+              "18",
+              "",
+              "",
+              "9",
+              "287"
+            ],
+            [
+              "BASS-II",
+              "MSG glovebox, SPICE fan duct",
+              "100 micron PMMA film 2 cm wide; 200 micron PMMA film 2 cm wide; 100 micron film 2 cm wide; 300 micron PMMA film 2 cm wide; 200 micron 2 cm wide; 2 cm 0.1 mm PMMA film; 400 micron film 2 cm wide; 2 cm 0.2 mm PMMA film; 1 cm 0.2 mm PMMA film; 300 micron film 2 cm wide; 2 cm 0.4 mm thick film; 1 cm wide 200 micron thick PMMA",
+              "13.6",
+              "22.2",
+              "129",
+              "flat solid sample",
+              "Radiometer gain   (1000   250   50   10)",
+              "7",
+              "132"
+            ],
+            [
+              "BASS",
+              "MSG glovebox, SPICE fan duct",
+              "SIBAL 2 cm; PMMA sphere 2 cm; PMMA sphere 1 cm; SIBAL 1 cm; Nomex blend 2 cm; PMMA 2 cm; PMMA 1 cm; 2 cm sphere; 1 cm sphere; Nomex III Natural; PMMA slab; ultem sheet",
+              "",
+              "",
+              "122",
+              "flat solid sample",
+              "",
+              "12",
+              "81"
+            ],
+            [
+              "CFI",
+              "CIR + MDCA, liquid droplets",
+              "C12H26; [.75]/[.25] C12H26/iso-dodecane; [.60]/[.40] C12H26/iso-dodecane",
+              "17",
+              "21",
+              "87",
+              "",
+              "Pressure",
+              "9",
+              "79"
+            ],
+            [
+              "DAFT / DAFT-2",
+              "ISS aerosol instrument (SAME and DAFT)",
+              "Arizona Road Dust (ARD Fine) in combination with ISS GN2 to create an aerosol for measurement purposes.",
+              "",
+              "",
+              "2",
+              "dust aerosol",
+              "",
+              "15",
+              "110"
+            ],
+            [
+              "SPICE data analysis",
+              "Analysis or model, not a new burn",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "1",
+              "1"
+            ],
+            [
+              "Concurrent flame spread vs BASS",
+              "Analysis or model, not a new burn",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "1",
+              "1"
+            ],
+            [
+              "FLEX-2",
+              "CIR + MDCA, liquid droplets",
+              "IsoOctane (pure); n-Octane (pure); Heptane (pure); Decane (pure); Ethanol (pure); Propanol (95%) Glycerol (5%) (mixture); Heptane (50%) IsoOctane (50%) (mixture); Propanol (80%) Glycerol (20%) (mixture)",
+              "17",
+              "30",
+              "8",
+              "droplet",
+              "Initial Droplet Diameter (mm); Ambient Pressure (atm); Ambient Temperature (C); Flow Velocity (cm/s)",
+              "6",
+              "164"
+            ],
+            [
+              "FLEX",
+              "CIR + MDCA, liquid droplets",
+              "Methanol; Heptane",
+              "12",
+              "34",
+              "274",
+              "droplet",
+              "Ambient pressure; mmHg; Droplet initial diameter; mm; Visible flame extinction diameter; mm; Burning rate; mm; Burn time; s",
+              "37",
+              "196"
+            ],
+            [
+              "SAFFIRE-I",
+              "Cygnus vehicle after it left the ISS",
+              "SIBAL Fabric",
+              "21.5",
+              "21.7",
+              "4",
+              "flat solid sample",
+              "Ignition Power (W); Burn Time (s); Camera 1; Camera 2",
+              "4",
+              "4"
+            ],
+            [
+              "SAFFIRE-II",
+              "Cygnus vehicle after it left the ISS",
+              "Silicone; Cotton-Fiberglass (SIBAL); PMMA & Nomex; PMMA",
+              "21.5",
+              "22.1",
+              "15",
+              "flat solid sample",
+              "Ignition Power (W); Burn Time (s); Camera 1; Camera 2",
+              "5",
+              "5"
+            ]
+          ],
+          "warnings": [
+            "oxygenMin covered 9/25 (<50%)",
+            "oxygenMax covered 9/25 (<50%)",
+            "sampleForm covered 11/25 (<50%)",
+            "measurements covered 11/25 (<50%)"
+          ]
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Investigation"
+          }
+        ]
+      },
+      {
+        "component": "ExportCSV",
+        "data": {
+          "href": "/api/viz/extract.csv",
+          "filename": "extract.csv"
+        }
+      }
+    ],
+    "followups": [
+      "Độ phủ dữ liệu",
+      "Hồ sơ investigation",
+      "Ma trận cảm biến"
+    ]
+  },
+  "cảm biến nào phát hiện khói tốt": {
+    "version": "1.0",
+    "intent": "sensor",
+    "title": "Ma trận cảm biến",
+    "filters": [],
+    "blocks": [
+      {
+        "component": "SensorMatrix",
+        "data": {
+          "sensors": [
+            {
+              "id": "sensor:sensor-dusttrak-psi-47@PSI-47",
+              "label": "dusttrak",
+              "rawIds": [
+                "sensor:sensor-dusttrak-psi-47@PSI-47",
+                "sensor:dusttrak@PSI-102",
+                "sensor:sensor-dusttrak-psi-102@PSI-102",
+                "sensor:dusttrak-psi-47@PSI-47"
+              ]
+            },
+            {
+              "id": "sensor:sensor-p-trak-psi-47@PSI-47",
+              "label": "p trak",
+              "rawIds": [
+                "sensor:sensor-p-trak-psi-47@PSI-47",
+                "sensor:sensor-p-trak-psi-101@PSI-101",
+                "sensor:sensor-p-trak-psi-102@PSI-102",
+                "sensor:p-trak-psi-47@PSI-47",
+                "sensor:p-trak@PSI-102"
+              ]
+            },
+            {
+              "id": "sensor:thermocouple@PSI-10",
+              "label": "thermocouple",
+              "rawIds": [
+                "sensor:thermocouple@PSI-10",
+                "sensor:sensor-thermocouple-psi-20@PSI-20",
+                "sensor:thermocouple@PSI-20",
+                "sensor:sensor-thermocouple-psi-108@PSI-108",
+                "sensor:sensor-thermocouple-psi-10@PSI-10",
+                "sensor:thermocouple-psi-108@PSI-108",
+                "sensor:thermocouple@PSI-108",
+                "sensor:sensor-thermocouple-psi-23@PSI-23",
+                "sensor:thermocouple-psi-20@PSI-20",
+                "sensor:thermocouple-psi-22@PSI-22",
+                "sensor:thermocouple@PSI-22"
+              ]
+            },
+            {
+              "id": "sensor:sensor-radiometer-psi-68@PSI-68",
+              "label": "radiometer",
+              "rawIds": [
+                "sensor:radiometer@PSI-20",
+                "sensor:sensor-radiometer-psi-23@PSI-23",
+                "sensor:sensor-radiometer-psi-26@PSI-26",
+                "sensor:sensor-radiometer-psi-68@PSI-68",
+                "sensor:radiometer@PSI-10",
+                "sensor:sensor-radiometer-psi-25@PSI-25",
+                "sensor:radiometer@PSI-107",
+                "sensor:sensor-radiometer-psi-20@PSI-20",
+                "sensor:radiometer-psi-22@PSI-22",
+                "sensor:radiometer@PSI-25",
+                "sensor:radiometer@PSI-69",
+                "sensor:sensor-radiometer-psi-10@PSI-10"
+              ]
+            },
+            {
+              "id": "sensor:sensor-thermistor-psi-108@PSI-108",
+              "label": "thermistor",
+              "rawIds": [
+                "sensor:sensor-thermistor-psi-108@PSI-108",
+                "sensor:thermistor@PSI-108"
+              ]
+            },
+            {
+              "id": "sensor:sensor-ion-current-psi-22@PSI-22",
+              "label": "ion current",
+              "rawIds": [
+                "sensor:sensor-ion-current-psi-22@PSI-22",
+                "sensor:ion-current-psi-22@PSI-22",
+                "sensor:ion-current@PSI-22"
+              ]
+            },
+            {
+              "id": "sensor:thermocouples@PSI-10",
+              "label": "thermocouples",
+              "rawIds": [
+                "sensor:thermocouples@PSI-10",
+                "sensor:sensor-thermocouples-psi-23@PSI-23",
+                "sensor:thermocouples@PSI-108",
+                "sensor:sensor-thermocouples-psi-10@PSI-10",
+                "sensor:thermocouples@PSI-20",
+                "sensor:thermocouples@PSI-22",
+                "sensor:thermocouples@web:acme"
+              ]
+            },
+            {
+              "id": "sensor:sensor-pmt-psi-22@PSI-22",
+              "label": "pmt",
+              "rawIds": [
+                "sensor:sensor-pmt-psi-22@PSI-22",
+                "sensor:sensor-pmt-psi-159@PSI-159",
+                "sensor:sensor-pmt-psi-23@PSI-23",
+                "sensor:pmt-psi-22@PSI-22",
+                "sensor:pmt@PSI-20",
+                "sensor:pmt@PSI-22",
+                "sensor:sensor-pmt-psi-20@PSI-20"
+              ]
+            },
+            {
+              "id": "sensor:sensor-ptrak-psi-102@PSI-102",
+              "label": "ptrak",
+              "rawIds": [
+                "sensor:sensor-ptrak-psi-102@PSI-102",
+                "sensor:ptrak-psi-102@PSI-102",
+                "sensor:sensor-ptrak-psi-47@PSI-47"
+              ]
+            },
+            {
+              "id": "sensor:csa-cp@PSI-25",
+              "label": "CSA-CP",
+              "rawIds": [
+                "sensor:csa-cp@PSI-25",
+                "sensor:csa-cp@web:bass",
+                "sensor:sensor-csa-cp-psi-25@PSI-25",
+                "sensor:csa-cp-psi-25@PSI-25",
+                "sensor:sensor-csa-cp-psi-26@PSI-26"
+              ]
+            },
+            {
+              "id": "sensor:sensor-cameras-psi-10@PSI-10",
+              "label": "cameras",
+              "rawIds": [
+                "sensor:cameras@PSI-10",
+                "sensor:cameras@PSI-23",
+                "sensor:sensor-cameras-psi-10@PSI-10",
+                "sensor:cameras-psi-23@PSI-23",
+                "sensor:cameras@PSI-159"
+              ]
+            },
+            {
+              "id": "sensor:sensor-datacam-psi-23@PSI-23",
+              "label": "datacam",
+              "rawIds": [
+                "sensor:sensor-datacam-psi-20@PSI-20",
+                "sensor:sensor-datacam-psi-22@PSI-22",
+                "sensor:sensor-datacam-psi-23@PSI-23",
+                "sensor:datacam-psi-10@PSI-10",
+                "sensor:datacam-psi-22@PSI-22"
+              ]
+            },
+            {
+              "id": "sensor:sensor-shs-psi-108@PSI-108",
+              "label": "shs",
+              "rawIds": [
+                "sensor:sensor-shs-psi-108@PSI-108",
+                "sensor:shs@PSI-108"
+              ]
+            },
+            {
+              "id": "sensor:sams@PSI-10",
+              "label": "sams",
+              "rawIds": [
+                "sensor:sams@PSI-10",
+                "sensor:sensor-sams-psi-25@PSI-25",
+                "sensor:sams-psi-39@PSI-39",
+                "sensor:sams@PSI-26",
+                "sensor:sensor-sams-psi-20@PSI-20",
+                "sensor:sensor-sams-psi-23@PSI-23",
+                "sensor:sensor-sams-psi-26@PSI-26"
+              ]
+            },
+            {
+              "id": "sensor:sensor-camera-psi-23@PSI-23",
+              "label": "camera",
+              "rawIds": [
+                "sensor:camera-psi-39@PSI-39",
+                "sensor:sensor-camera-psi-10@PSI-10",
+                "sensor:sensor-camera-psi-23@PSI-23",
+                "sensor:camera@PSI-20",
+                "sensor:sensor-camera-psi-20@PSI-20",
+                "sensor:sensor-camera-psi-21@PSI-21",
+                "sensor:sensor-camera-psi-22@PSI-22",
+                "sensor:sensor-camera-psi-26@PSI-26"
+              ]
+            },
+            {
+              "id": "sensor:sensor-intensified-camera-psi-22@PSI-22",
+              "label": "intensified camera",
+              "rawIds": [
+                "sensor:sensor-intensified-camera-psi-22@PSI-22",
+                "sensor:sensor-intensified-camera-psi-23@PSI-23",
+                "sensor:intensified-camera-psi-22@PSI-22"
+              ]
+            },
+            {
+              "id": "sensor:sensor-tcr-psi-108@PSI-108",
+              "label": "tcr",
+              "rawIds": [
+                "sensor:sensor-tcr-psi-108@PSI-108",
+                "sensor:tcr@PSI-108"
+              ]
+            },
+            {
+              "id": "sensor:sensor-gcip-psi-20@PSI-20",
+              "label": "gcip",
+              "rawIds": [
+                "sensor:sensor-gcip-psi-20@PSI-20",
+                "sensor:gcip-psi-23@PSI-23",
+                "sensor:sensor-gcip-psi-22@PSI-22",
+                "sensor:sensor-gcip-psi-23@PSI-23"
+              ]
+            },
+            {
+              "id": "sensor:sensor-hibms-camera-psi-20@PSI-20",
+              "label": "hibms camera",
+              "rawIds": [
+                "sensor:sensor-hibms-camera-psi-20@PSI-20",
+                "sensor:hibms-camera@PSI-22",
+                "sensor:hibms-camera@PSI-68",
+                "sensor:sensor-hibms-camera-psi-22@PSI-22",
+                "sensor:sensor-hibms-camera-psi-23@PSI-23"
+              ]
+            },
+            {
+              "id": "sensor:sensor-ion-detector-b-psi-102@PSI-102",
+              "label": "ion detector b",
+              "rawIds": [
+                "sensor:sensor-ion-detector-b-psi-102@PSI-102",
+                "sensor:ion-detector-b-psi-102@PSI-102"
+              ]
+            },
+            {
+              "id": "sensor:sensor-radiometers-psi-69@PSI-69",
+              "label": "radiometers",
+              "rawIds": [
+                "sensor:sensor-radiometers-psi-23@PSI-23",
+                "sensor:sensor-radiometers-psi-69@PSI-69",
+                "sensor:radiometers-psi-10@PSI-10",
+                "sensor:radiometers@PSI-10",
+                "sensor:sensor-radiometers-psi-10@PSI-10"
+              ]
+            },
+            {
+              "id": "sensor:heat-flux-gage@PSI-20",
+              "label": "heat-flux-gage",
+              "rawIds": [
+                "sensor:heat-flux-gage@PSI-20",
+                "sensor:heat-flux-gage-psi-20@PSI-20",
+                "sensor:sensor-heat-flux-gage-psi-20@PSI-20"
+              ]
+            },
+            {
+              "id": "sensor:sensor-acme-camera-psi-20@PSI-20",
+              "label": "acme camera",
+              "rawIds": [
+                "sensor:sensor-acme-camera-psi-20@PSI-20",
+                "sensor:sensor-acme-camera-psi-117@PSI-117",
+                "sensor:sensor-acme-camera-psi-10@PSI-10"
+              ]
+            },
+            {
+              "id": "sensor:sensor-acme-datacam-psi-23@PSI-23",
+              "label": "acme datacam",
+              "rawIds": [
+                "sensor:sensor-acme-datacam-psi-23@PSI-23",
+                "sensor:acme-datacam-psi-22@PSI-22",
+                "sensor:sensor-acme-datacam-psi-22@PSI-22"
+              ]
+            }
+          ],
+          "investigations": [
+            "PSI-10",
+            "PSI-20",
+            "PSI-22",
+            "PSI-47",
+            "PSI-108",
+            "PSI-102",
+            "PSI-23",
+            "PSI-25"
+          ],
+          "cells": [
+            {
+              "sensor": "sensor:csa-cp@PSI-25",
+              "investigation": "PSI-25",
+              "value": 8
+            },
+            {
+              "sensor": "sensor:heat-flux-gage@PSI-20",
+              "investigation": "PSI-20",
+              "value": 4
+            },
+            {
+              "sensor": "sensor:sams@PSI-10",
+              "investigation": "PSI-10",
+              "value": 3
+            },
+            {
+              "sensor": "sensor:sams@PSI-10",
+              "investigation": "PSI-20",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:sams@PSI-10",
+              "investigation": "PSI-23",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:sams@PSI-10",
+              "investigation": "PSI-25",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-acme-camera-psi-20@PSI-20",
+              "investigation": "PSI-10",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:sensor-acme-camera-psi-20@PSI-20",
+              "investigation": "PSI-20",
+              "value": 3
+            },
+            {
+              "sensor": "sensor:sensor-acme-datacam-psi-23@PSI-23",
+              "investigation": "PSI-22",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-acme-datacam-psi-23@PSI-23",
+              "investigation": "PSI-23",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-camera-psi-23@PSI-23",
+              "investigation": "PSI-10",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-camera-psi-23@PSI-23",
+              "investigation": "PSI-20",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-camera-psi-23@PSI-23",
+              "investigation": "PSI-22",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:sensor-camera-psi-23@PSI-23",
+              "investigation": "PSI-23",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-cameras-psi-10@PSI-10",
+              "investigation": "PSI-10",
+              "value": 5
+            },
+            {
+              "sensor": "sensor:sensor-cameras-psi-10@PSI-10",
+              "investigation": "PSI-23",
+              "value": 3
+            },
+            {
+              "sensor": "sensor:sensor-datacam-psi-23@PSI-23",
+              "investigation": "PSI-10",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:sensor-datacam-psi-23@PSI-23",
+              "investigation": "PSI-20",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-datacam-psi-23@PSI-23",
+              "investigation": "PSI-22",
+              "value": 3
+            },
+            {
+              "sensor": "sensor:sensor-datacam-psi-23@PSI-23",
+              "investigation": "PSI-23",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-dusttrak-psi-47@PSI-47",
+              "investigation": "PSI-102",
+              "value": 10
+            },
+            {
+              "sensor": "sensor:sensor-dusttrak-psi-47@PSI-47",
+              "investigation": "PSI-47",
+              "value": 31
+            },
+            {
+              "sensor": "sensor:sensor-gcip-psi-20@PSI-20",
+              "investigation": "PSI-20",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-gcip-psi-20@PSI-20",
+              "investigation": "PSI-22",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:sensor-gcip-psi-20@PSI-20",
+              "investigation": "PSI-23",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-hibms-camera-psi-20@PSI-20",
+              "investigation": "PSI-20",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-hibms-camera-psi-20@PSI-20",
+              "investigation": "PSI-22",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-hibms-camera-psi-20@PSI-20",
+              "investigation": "PSI-23",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:sensor-intensified-camera-psi-22@PSI-22",
+              "investigation": "PSI-22",
+              "value": 5
+            },
+            {
+              "sensor": "sensor:sensor-intensified-camera-psi-22@PSI-22",
+              "investigation": "PSI-23",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-ion-current-psi-22@PSI-22",
+              "investigation": "PSI-22",
+              "value": 12
+            },
+            {
+              "sensor": "sensor:sensor-ion-detector-b-psi-102@PSI-102",
+              "investigation": "PSI-102",
+              "value": 5
+            },
+            {
+              "sensor": "sensor:sensor-p-trak-psi-47@PSI-47",
+              "investigation": "PSI-102",
+              "value": 5
+            },
+            {
+              "sensor": "sensor:sensor-p-trak-psi-47@PSI-47",
+              "investigation": "PSI-47",
+              "value": 31
+            },
+            {
+              "sensor": "sensor:sensor-pmt-psi-22@PSI-22",
+              "investigation": "PSI-20",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-pmt-psi-22@PSI-22",
+              "investigation": "PSI-22",
+              "value": 6
+            },
+            {
+              "sensor": "sensor:sensor-pmt-psi-22@PSI-22",
+              "investigation": "PSI-23",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-ptrak-psi-102@PSI-102",
+              "investigation": "PSI-102",
+              "value": 7
+            },
+            {
+              "sensor": "sensor:sensor-ptrak-psi-102@PSI-102",
+              "investigation": "PSI-47",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-radiometer-psi-68@PSI-68",
+              "investigation": "PSI-10",
+              "value": 4
+            },
+            {
+              "sensor": "sensor:sensor-radiometer-psi-68@PSI-68",
+              "investigation": "PSI-20",
+              "value": 7
+            },
+            {
+              "sensor": "sensor:sensor-radiometer-psi-68@PSI-68",
+              "investigation": "PSI-22",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:sensor-radiometer-psi-68@PSI-68",
+              "investigation": "PSI-23",
+              "value": 4
+            },
+            {
+              "sensor": "sensor:sensor-radiometer-psi-68@PSI-68",
+              "investigation": "PSI-25",
+              "value": 4
+            },
+            {
+              "sensor": "sensor:sensor-radiometers-psi-69@PSI-69",
+              "investigation": "PSI-10",
+              "value": 3
+            },
+            {
+              "sensor": "sensor:sensor-radiometers-psi-69@PSI-69",
+              "investigation": "PSI-23",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:sensor-shs-psi-108@PSI-108",
+              "investigation": "PSI-108",
+              "value": 8
+            },
+            {
+              "sensor": "sensor:sensor-tcr-psi-108@PSI-108",
+              "investigation": "PSI-108",
+              "value": 6
+            },
+            {
+              "sensor": "sensor:sensor-thermistor-psi-108@PSI-108",
+              "investigation": "PSI-108",
+              "value": 20
+            },
+            {
+              "sensor": "sensor:thermocouple@PSI-10",
+              "investigation": "PSI-10",
+              "value": 9
+            },
+            {
+              "sensor": "sensor:thermocouple@PSI-10",
+              "investigation": "PSI-108",
+              "value": 7
+            },
+            {
+              "sensor": "sensor:thermocouple@PSI-10",
+              "investigation": "PSI-20",
+              "value": 9
+            },
+            {
+              "sensor": "sensor:thermocouple@PSI-10",
+              "investigation": "PSI-22",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:thermocouple@PSI-10",
+              "investigation": "PSI-23",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:thermocouples@PSI-10",
+              "investigation": "PSI-10",
+              "value": 6
+            },
+            {
+              "sensor": "sensor:thermocouples@PSI-10",
+              "investigation": "PSI-108",
+              "value": 2
+            },
+            {
+              "sensor": "sensor:thermocouples@PSI-10",
+              "investigation": "PSI-20",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:thermocouples@PSI-10",
+              "investigation": "PSI-22",
+              "value": 1
+            },
+            {
+              "sensor": "sensor:thermocouples@PSI-10",
+              "investigation": "PSI-23",
+              "value": 2
+            }
+          ],
+          "note": "Dữ liệu chất dập cháy trong PSI còn mỏng (103 node). Ô ma trận chỉ lấy quan hệ MEASURED_WITH đã có; không suy thêm số lượt. Cột chỉ gồm investigation có cạnh cảm biến, tối đa 8 cột."
+        },
+        "evidence": [
+          {
+            "id": "sensor:sensor-dusttrak-psi-47@PSI-47",
+            "rawIds": [
+              "sensor:sensor-dusttrak-psi-47@PSI-47",
+              "sensor:dusttrak@PSI-102",
+              "sensor:sensor-dusttrak-psi-102@PSI-102",
+              "sensor:dusttrak-psi-47@PSI-47"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-p-trak-psi-47@PSI-47",
+            "rawIds": [
+              "sensor:sensor-p-trak-psi-47@PSI-47",
+              "sensor:sensor-p-trak-psi-101@PSI-101",
+              "sensor:sensor-p-trak-psi-102@PSI-102",
+              "sensor:p-trak-psi-47@PSI-47",
+              "sensor:p-trak@PSI-102"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:thermocouple@PSI-10",
+            "rawIds": [
+              "sensor:thermocouple@PSI-10",
+              "sensor:sensor-thermocouple-psi-20@PSI-20",
+              "sensor:thermocouple@PSI-20",
+              "sensor:sensor-thermocouple-psi-108@PSI-108",
+              "sensor:sensor-thermocouple-psi-10@PSI-10",
+              "sensor:thermocouple-psi-108@PSI-108",
+              "sensor:thermocouple@PSI-108",
+              "sensor:sensor-thermocouple-psi-23@PSI-23",
+              "sensor:thermocouple-psi-20@PSI-20",
+              "sensor:thermocouple-psi-22@PSI-22",
+              "sensor:thermocouple@PSI-22"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-radiometer-psi-68@PSI-68",
+            "rawIds": [
+              "sensor:radiometer@PSI-20",
+              "sensor:sensor-radiometer-psi-23@PSI-23",
+              "sensor:sensor-radiometer-psi-26@PSI-26",
+              "sensor:sensor-radiometer-psi-68@PSI-68",
+              "sensor:radiometer@PSI-10",
+              "sensor:sensor-radiometer-psi-25@PSI-25",
+              "sensor:radiometer@PSI-107",
+              "sensor:sensor-radiometer-psi-20@PSI-20",
+              "sensor:radiometer-psi-22@PSI-22",
+              "sensor:radiometer@PSI-25",
+              "sensor:radiometer@PSI-69",
+              "sensor:sensor-radiometer-psi-10@PSI-10"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-thermistor-psi-108@PSI-108",
+            "rawIds": [
+              "sensor:sensor-thermistor-psi-108@PSI-108",
+              "sensor:thermistor@PSI-108"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-ion-current-psi-22@PSI-22",
+            "rawIds": [
+              "sensor:sensor-ion-current-psi-22@PSI-22",
+              "sensor:ion-current-psi-22@PSI-22",
+              "sensor:ion-current@PSI-22"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:thermocouples@PSI-10",
+            "rawIds": [
+              "sensor:thermocouples@PSI-10",
+              "sensor:sensor-thermocouples-psi-23@PSI-23",
+              "sensor:thermocouples@PSI-108",
+              "sensor:sensor-thermocouples-psi-10@PSI-10",
+              "sensor:thermocouples@PSI-20",
+              "sensor:thermocouples@PSI-22",
+              "sensor:thermocouples@web:acme"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-pmt-psi-22@PSI-22",
+            "rawIds": [
+              "sensor:sensor-pmt-psi-22@PSI-22",
+              "sensor:sensor-pmt-psi-159@PSI-159",
+              "sensor:sensor-pmt-psi-23@PSI-23",
+              "sensor:pmt-psi-22@PSI-22",
+              "sensor:pmt@PSI-20",
+              "sensor:pmt@PSI-22",
+              "sensor:sensor-pmt-psi-20@PSI-20"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-ptrak-psi-102@PSI-102",
+            "rawIds": [
+              "sensor:sensor-ptrak-psi-102@PSI-102",
+              "sensor:ptrak-psi-102@PSI-102",
+              "sensor:sensor-ptrak-psi-47@PSI-47"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:csa-cp@PSI-25",
+            "rawIds": [
+              "sensor:csa-cp@PSI-25",
+              "sensor:csa-cp@web:bass",
+              "sensor:sensor-csa-cp-psi-25@PSI-25",
+              "sensor:csa-cp-psi-25@PSI-25",
+              "sensor:sensor-csa-cp-psi-26@PSI-26"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-cameras-psi-10@PSI-10",
+            "rawIds": [
+              "sensor:cameras@PSI-10",
+              "sensor:cameras@PSI-23",
+              "sensor:sensor-cameras-psi-10@PSI-10",
+              "sensor:cameras-psi-23@PSI-23",
+              "sensor:cameras@PSI-159"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-datacam-psi-23@PSI-23",
+            "rawIds": [
+              "sensor:sensor-datacam-psi-20@PSI-20",
+              "sensor:sensor-datacam-psi-22@PSI-22",
+              "sensor:sensor-datacam-psi-23@PSI-23",
+              "sensor:datacam-psi-10@PSI-10",
+              "sensor:datacam-psi-22@PSI-22"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-shs-psi-108@PSI-108",
+            "rawIds": [
+              "sensor:sensor-shs-psi-108@PSI-108",
+              "sensor:shs@PSI-108"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sams@PSI-10",
+            "rawIds": [
+              "sensor:sams@PSI-10",
+              "sensor:sensor-sams-psi-25@PSI-25",
+              "sensor:sams-psi-39@PSI-39",
+              "sensor:sams@PSI-26",
+              "sensor:sensor-sams-psi-20@PSI-20",
+              "sensor:sensor-sams-psi-23@PSI-23",
+              "sensor:sensor-sams-psi-26@PSI-26"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-camera-psi-23@PSI-23",
+            "rawIds": [
+              "sensor:camera-psi-39@PSI-39",
+              "sensor:sensor-camera-psi-10@PSI-10",
+              "sensor:sensor-camera-psi-23@PSI-23",
+              "sensor:camera@PSI-20",
+              "sensor:sensor-camera-psi-20@PSI-20",
+              "sensor:sensor-camera-psi-21@PSI-21",
+              "sensor:sensor-camera-psi-22@PSI-22",
+              "sensor:sensor-camera-psi-26@PSI-26"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-intensified-camera-psi-22@PSI-22",
+            "rawIds": [
+              "sensor:sensor-intensified-camera-psi-22@PSI-22",
+              "sensor:sensor-intensified-camera-psi-23@PSI-23",
+              "sensor:intensified-camera-psi-22@PSI-22"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-tcr-psi-108@PSI-108",
+            "rawIds": [
+              "sensor:sensor-tcr-psi-108@PSI-108",
+              "sensor:tcr@PSI-108"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-gcip-psi-20@PSI-20",
+            "rawIds": [
+              "sensor:sensor-gcip-psi-20@PSI-20",
+              "sensor:gcip-psi-23@PSI-23",
+              "sensor:sensor-gcip-psi-22@PSI-22",
+              "sensor:sensor-gcip-psi-23@PSI-23"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-hibms-camera-psi-20@PSI-20",
+            "rawIds": [
+              "sensor:sensor-hibms-camera-psi-20@PSI-20",
+              "sensor:hibms-camera@PSI-22",
+              "sensor:hibms-camera@PSI-68",
+              "sensor:sensor-hibms-camera-psi-22@PSI-22",
+              "sensor:sensor-hibms-camera-psi-23@PSI-23"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-ion-detector-b-psi-102@PSI-102",
+            "rawIds": [
+              "sensor:sensor-ion-detector-b-psi-102@PSI-102",
+              "sensor:ion-detector-b-psi-102@PSI-102"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-radiometers-psi-69@PSI-69",
+            "rawIds": [
+              "sensor:sensor-radiometers-psi-23@PSI-23",
+              "sensor:sensor-radiometers-psi-69@PSI-69",
+              "sensor:radiometers-psi-10@PSI-10",
+              "sensor:radiometers@PSI-10",
+              "sensor:sensor-radiometers-psi-10@PSI-10"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:heat-flux-gage@PSI-20",
+            "rawIds": [
+              "sensor:heat-flux-gage@PSI-20",
+              "sensor:heat-flux-gage-psi-20@PSI-20",
+              "sensor:sensor-heat-flux-gage-psi-20@PSI-20"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-acme-camera-psi-20@PSI-20",
+            "rawIds": [
+              "sensor:sensor-acme-camera-psi-20@PSI-20",
+              "sensor:sensor-acme-camera-psi-117@PSI-117",
+              "sensor:sensor-acme-camera-psi-10@PSI-10"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          },
+          {
+            "id": "sensor:sensor-acme-datacam-psi-23@PSI-23",
+            "rawIds": [
+              "sensor:sensor-acme-datacam-psi-23@PSI-23",
+              "sensor:acme-datacam-psi-22@PSI-22",
+              "sensor:sensor-acme-datacam-psi-22@PSI-22"
+            ],
+            "kind": "graph",
+            "ref": "MEASURED_WITH"
+          }
+        ]
+      },
+      {
+        "component": "ChipList",
+        "data": {
+          "title": "Chất dập cháy",
+          "items": [
+            {
+              "label": "CF4"
+            },
+            {
+              "label": "CF5"
+            },
+            {
+              "label": "CO2"
+            },
+            {
+              "label": "CO2"
+            },
+            {
+              "label": "CO2"
+            },
+            {
+              "label": "CO2"
+            },
+            {
+              "label": "CO2"
+            },
+            {
+              "label": "GN2"
+            },
+            {
+              "label": "Halon"
+            },
+            {
+              "label": "He"
+            },
+            {
+              "label": "He"
+            },
+            {
+              "label": "MDCA"
+            },
+            {
+              "label": "N2"
+            },
+            {
+              "label": "N2"
+            },
+            {
+              "label": "N2"
+            },
+            {
+              "label": "N2"
+            },
+            {
+              "label": "N2"
+            },
+            {
+              "label": "Nitrogen"
+            },
+            {
+              "label": "Nitrogen"
+            },
+            {
+              "label": "Nitrogen"
+            },
+            {
+              "label": "anti-spreading agent"
+            },
+            {
+              "label": "argon"
+            },
+            {
+              "label": "argon"
+            },
+            {
+              "label": "argon"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "suppressant:cf4@PSI-108",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:cf5@PSI-108",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:co2@PSI-10",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:co2@PSI-23",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:co2@PSI-117",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:co2@PSI-107",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:co2-psi-69@PSI-69",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:gn2@PSI-25",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:halon@PSI-102",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:he@PSI-23",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:he@PSI-10",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:mdca@PSI-26",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:n2@PSI-23",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:n2@PSI-25",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:n2@PSI-22",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:n2@PSI-101",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:n2@PSI-10",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:nitrogen@PSI-106",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:nitrogen@PSI-20",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:nitrogen@PSI-159",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:anti-spreading-agent@PSI-108",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:argon@PSI-23",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:argon@PSI-10",
+            "kind": "graph",
+            "ref": "Suppressant"
+          },
+          {
+            "id": "suppressant:argon@PSI-117",
+            "kind": "graph",
+            "ref": "Suppressant"
+          }
+        ]
+      },
+      {
+        "component": "ChipList",
+        "data": {
+          "title": "Hiện tượng extinction",
+          "items": [
+            {
+              "label": "Radiative Extinction"
+            },
+            {
+              "label": "Radiative extinction"
+            },
+            {
+              "label": "diffusive extinction"
+            },
+            {
+              "label": "diffusive extinction"
+            },
+            {
+              "label": "diffusive extinction"
+            },
+            {
+              "label": "extinction"
+            },
+            {
+              "label": "extinction"
+            },
+            {
+              "label": "extinction"
+            },
+            {
+              "label": "extinction"
+            },
+            {
+              "label": "extinction"
+            },
+            {
+              "label": "extinction"
+            },
+            {
+              "label": "extinction"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "phenomenon:extinction@PSI-69",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:extinction@ACME_common",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:diffusive-extinction@PSI-69",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:diffusive-extinction@web:flex",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:diffusive-extinction@PSI-117",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:extinction@PSI-20",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:extinction@PSI-21",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:extinction@PSI-26",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:extinction@PSI-68",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:extinction@PSI-10",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:extinction@PSI-39",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          },
+          {
+            "id": "phenomenon:extinction@PSI-102",
+            "kind": "graph",
+            "ref": "Phenomenon"
+          }
+        ]
+      },
+      {
+        "component": "EvidencePanel",
+        "data": {
+          "chunks": [
+            {
+              "id": "web/acme/c002",
+              "text": "**Burning Rate Emulator (BRE)**\n\nUnlike the other current ACME experiments, the Burning Rate Emulator (BRE) experiment is focused on fire prevention, especially in spacecraft. Specifically, BRE’s objective is to improve our fundamental understanding of materials flammability, such as ignition and extinction behavior, and assess the relevance of existing flammability test methods for low and partial-gravity environments. The burning of solid and liquid fuels will be simulated by using a flat porous burner fed with gaseous fuel. The fuel flow rate will be controlled based on the measured heat flux (at the burner) and surface temperature, mimicking the dependence of condensed-phase fuel vaporization on thermal feedback. A small number of gaseous fuels will be used to simulate the burning of fuels such as paper, plastic, and alcohol by matching properties such as the surface temperature and smoke production.\n\n# **Coflow Laminar Diffusion Flame (CLD Flame)**\n\nResearch, especially including that already conducted in microgravity, has revealed that our current predictive ability is significantly lacking for flames at the extremes of fuel dilution, namely for sooty purefuel flames and dilute flames that are near extinction. The general goal of the Coflow Laminar Diffusion Flame (CLD Flame) experiment is to extend the range of flame conditions that can be accurately predicted by developing and experimentally verifying chemical kinetic and soot formation submodels. The dependence of normal coflow flames on injection velocity and fuel dilution will be carefully\n\n[figure: data/crawl/acme/images/img-002.jpg | alt: page 2]",
+              "page": 2,
+              "documentTitle": "data/crawl/acme/index.md",
+              "source": "data/crawl/acme/index.md",
+              "figures": [],
+              "pages_span": [
+                2,
+                2
+              ]
+            },
+            {
+              "id": "web/acme/c005",
+              "text": "premixed flames. Outside reviewers recently concluded that the experiment “… will contribute to our critical understanding to our knowledge of combustion processes in the presence of electric fields.” The experiment will be conducted with a normal coflow flame (as in the CLD Flame experiment) or perhaps with a simple gas-jet flame, where there is no surrounding coflow. An electric field will be generated by creating a high voltage (up to 10 kV) differential between the burner and a flat circular mesh suspended above (i.e., downstream of) the burner. Measurements, as a function of field strength and fuel dilution, will be made of the ion current through the flame and the flame’s response time to electric forcing.\n\n# **Flame Design**\n\nThe primary goal of the Flame Design experiment is to improve our understanding of soot inception and control in order to enable the optimization of oxygen enriched combustion and the “design” of nonpremixed flames that are both robust and soot free. An outside review panel recently declared that Flame Design “… could lead to greatly improved burner designs that are efficient and less polluting than current designs.” Flame Design will investigate the soot inception and extinction limits of spherical microgravity flames, created in the same manner as for the s-Flame experiment. Tests will be conducted with various concentrations of both the injected fuel (i.e., ethylene or methane) and the oxygen enriched atmosphere in order to determine the role of the flame structure on soot inception. The effect of the flow direction on soot formation will be assessed with an inverse spherical flame unless such testing is not approved by the Payload Safety Review Panel (PSRP). If inverse spherical flame testing is not allowed, the plan is to use a coflow burner, conducting both normal and inverse flame tests. In the\n\n[figure: data/crawl/acme/images/img-005.jpg | alt: page 5]",
+              "page": 5,
+              "documentTitle": "data/crawl/acme/index.md",
+              "source": "data/crawl/acme/index.md",
+              "figures": [],
+              "pages_span": [
+                5,
+                5
+              ]
+            },
+            {
+              "id": "web/acme/c008",
+              "text": "- Flicker, which is a buoyancy-driven (i.e., gravity-driven) instability, is eliminated yielding quasisteady flames.\n\n- Length scales are increased in microgravity flames facilitating analysis of the flame structure.\n\n- Momentum-dominated flames, which are important for most practical combustion, can be studied at low velocities to simplify analysis.\n\n- Microgravity flames tend to have a much stronger sensitivity to their atmosphere and exhibit a much broader range of characteristics than normal-gravity flames because of the near absence of buoyant entrainment.\n\n- The long residence times in microgravity flames can lead to strong soot production, but many microgravity flames are soot free.\n\n- Microgravity flames are great for studies of limit and stability behavior where chemical kinetics are important. Soot, extinction, and stability limits are being studied in the ACME experiments.\n\n- Microgravity is of course the appropriate environment for studies related to spacecraft fire safety.\n\n**Why study combustion on the ISS?**\n\n- Microgravity durations in drop facilities, such as the 2.2 Second Drop Tower and 5.18-second Zero Gravity Research Facility, are (1) too short for soot to achieve quasi-steady conditions, and (2) too short to establish a flame and then vary its flow rate, for example, to investigate stability or extinction limits.\n\n- While research aircraft flying in parabolic maneuvers can provide reduced gravity durations of ~20 seconds, low-momentum flames are often dramatically disturbed by the aircraft vibrations. Although the jitter can be avoided if the experiment is floated within the aircraft, that reduces the low-gravity duration to mere seconds.\n\n# **Publications**\n\n_Link to PDF with all publications listed._\n\n# **Downloads**\n\nA collection of downloads/documents related the ACME.\n\n_Need to upload all documents from old site._\n\n# **ACME related Links**\n\n- <u>ACME Image Processing Software (OMA2 and QtOma)</u>\n\n- <u>Combuston Integrated Racki</u> (CIR, facility in which ACME will be conducted)\n\n- <u>ISS Researchers Guide to Combuston Sciencei</u>\n\n- <u>Internatonal Space Stati oni</u> (ISS)",
+              "page": 8,
+              "documentTitle": "data/crawl/acme/index.md",
+              "source": "data/crawl/acme/index.md",
+              "figures": [],
+              "pages_span": [
+                8,
+                8
+              ]
+            },
+            {
+              "id": "web/acme/c014",
+              "text": "- The amount of soot particulate in a flame can be determined via an extinction technique, where the camera and the collimated light source are positioned at opposite windows.\n\n- For ACME, the extinction measurement will be made with a second High-Bit Depth Multispectral (HiBMs) camera, without a filter, in combination with CIR’s illumination package (with its two fiber-coupled laser diodes). The images are recorded at 1024×1024 and 30 frames per second.\n\n- Alternatively, the soot volume fraction can be determined directly from the digital color camera, where an alternate Thin Filament Pyrometry (TFP) fiber array including a platinum wire will be used for inflight characterization for that measurement.\n\n# **Thermal Radiation**\n\n- The ACME chamber insert includes a crew-exchangeable linear array of radiometers of which there are two versions supporting the initial set of experiments. Alternate arrays could be developed for future experiments.\n\n- The radiometer array has a fixed position which is parallel to the chamber and burner axis and is centered (along the chamber length) relative to the chamber windows and thus most of the other instrumentation.\n\n[figure: data/crawl/acme/images/img-015.jpg | alt: page 16]",
+              "page": 16,
+              "documentTitle": "data/crawl/acme/index.md",
+              "source": "data/crawl/acme/index.md",
+              "figures": [],
+              "pages_span": [
+                16,
+                16
+              ]
+            },
+            {
+              "id": "web/acme/c015",
+              "text": "<!-- Start of picture text -->\nACME Radiometer Array Pei<br>60 mm Offset LOCULATSTUCUULAIT SUSTea TST EE = Ter<br>2mm Spot a e<br>30mmOffset LTT TITS aie :<br>2mm Spot wa % —_<br>Center -< a7? = 120 mm FOV.<br>120mm FOV “ay<br>-30 mm Offset penannnnnatll ;<br>2mm Spot as 9<br>-60 mm Offset iaeaaaiseieiaia ce \"<br>2mm Spot =<br>BRE Radiometer Array -<br>Se MA<br>-10 Offset Saas<br>Use knife-edge at the radiometer housing<br>to block the burner from being “seen”<br><!-- End of picture text -->\n\n- An additional wide-view radiometer, that is fixed and not crew exchangeable, is positioned downstream of the burner and flame at 30o from the chamber axis. This detector is primarily intended to support the spherical flame experiments and will have a quicker response than the more sensitive detectors that will used in the linear arrays.\n\n- ACME’s radiometers are more precisely thermopile detectors with a spectral range of nominally 0.2-11 micron and fields of view that are established by appropriately selected apertures (i.e., rather than lenses).\n\n# **Chemiluminescent Emission**\n\n- To detect the quenching of dim flames, the chamber insert will be equipped with a set of three Photomultiplier Tube (PMT) modules.\n\n[figure: data/crawl/acme/images/img-016.jpg | alt: page 17]",
+              "page": 17,
+              "documentTitle": "data/crawl/acme/index.md",
+              "source": "data/crawl/acme/index.md",
+              "figures": [],
+              "pages_span": [
+                17,
+                17
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "kind": "chunk",
+            "ref": "web/acme/c002",
+            "chunkId": "web/acme/c002"
+          },
+          {
+            "kind": "chunk",
+            "ref": "web/acme/c005",
+            "chunkId": "web/acme/c005"
+          },
+          {
+            "kind": "chunk",
+            "ref": "web/acme/c008",
+            "chunkId": "web/acme/c008"
+          },
+          {
+            "kind": "chunk",
+            "ref": "web/acme/c014",
+            "chunkId": "web/acme/c014"
+          },
+          {
+            "kind": "chunk",
+            "ref": "web/acme/c015",
+            "chunkId": "web/acme/c015"
+          }
+        ]
+      }
+    ],
+    "followups": [
+      "Hồ sơ PSI-102",
+      "Đồ thị quanh PSI-102",
+      "Độ phủ dữ liệu"
+    ]
+  },
+  "trang nào nói về oxy?": {
+    "version": "1.0",
+    "intent": "evidence",
+    "title": "Bằng chứng",
+    "filters": [],
+    "blocks": [
+      {
+        "component": "EvidencePanel",
+        "data": {
+          "chunks": [
+            {
+              "id": "PSI-108/stdce-1-data-management-plan/p017",
+              "text": "[ocr: false] \u0000\u0000\u0000\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b \u0007\u0001\u0005 \u0003 \u0006 \u000e\u000f \u0010 \u0000\u0006 \u0006 \u0005 \u0011\u0001 \u0012\u0013 \u0014 \u0005\u0015\u0000\u0004 \b \u0014\u0005 \u0001\u0002\u0003\u0004\u0005\u0016\u0007\u0006\u0016\u0007\u0016\u0012 \u0014\b \u0006 \u000e\u000f \u0017 \u0000\u0000\u0000\u0000\u0001\u0002\u0003\u0004\u0005\u0016\u0007\u0016\u0016\u0007\u0016\u0012 \u0001\u0014 \u0006 \u000e\u000f \u0000\u0016 \u0006 \u0005 \u0011\u0014 \u0005\u0015\u0000\u0004 \u0006\u0005 \u0014\u0005 \u0001\u0002\u0003\u0004\u0005\u0016\u0007\b\b\u0007\u0001\u0003 \u0001\u0016 \u0006 \u000e\u000f \u0018 \u0000\u0000\u0000\u0000\u0001\u0002\u0003\u0004\u0005\b\u0007\u0005\b\u0007\u0001\u0003 \u0006\b \u0006 \u000e\u000f \u0019 \u0000\b \u0006 \u0005 \u0011\u0001 \u0012\u0015\u0000\u0004 \b \u0001\u0005 \u0001\u0002\u0003\u0004\u0005\b\u0007\u0016\u0016\u0007\u0014\u0001 \u0002\u0001 \u0006 \u000e\u000f \u001a \u0000\u0003 \u0006 \u0005 \u0011\u0001 \u0012\u0015\u0000\u0004 \u0006\u0005 \u0001\u0005 \u0001\u0002\u0003\u0004\u0005\b\u0007\b\u0016\u0007\u0016\u0012 \u0001\u0006 \u0006 \u000e\u000f \u001b \u0000 \u0016 !\" #$%! &\u0000( )*+, (\u0000--. \"/01$2!+1(2.*/0$ 34#+%3#.5% \u0000\" $0 136!#$%! +0$, *$ $. \u000f\u0000\u0001 \b \u0005 \u0006\u0005 \u0001\u0002\u0003\u0004\u0005 \u0007\u0005\u0001\u0007\b\u0003 \u0016\u0012 \u000f\u0016 \u000e\u000f 7 \u0000\u0000\u0000\u0000\u0001\u0002\u0003\u0004\u0005 \u0007\u0001\u0001\u0007\b\u0003 \u0006\u0002 \u000f\u0016 \u000e\u000f 8…",
+              "page": 17,
+              "documentTitle": "\u0013\u0014\u0015\u0017$\u0018\u0017\u0019\u001a\u001b",
+              "source": "data/psi/PSI-108_STDCE-1/Science Documents/STDCE-1 Data Management Plan.pdf",
+              "figures": [],
+              "pages_span": [
+                17,
+                17
+              ]
+            },
+            {
+              "id": "PSI-10/science-documents-srd-acmeflamedesign/p007",
+              "text": "[ocr: false] 7 produced. This will ensure the most rapid radical production and the strongest flame for a given flame temperature. On the other hand, if production of soot is of concern, as is the case for gas turbines where the formation of soot can have a deleterious effect on turbine lifetimes, the maximum temperature should be far from the region of fuel pyrolysis, but near the region of soot/precursor…",
+              "page": 7,
+              "documentTitle": "PSI 10 Science Documents SRD ACMEFlameDesign",
+              "source": "data/psi/PSI-10_ACME-Flame-Design/Science Documents/PSI-10_Science Documents_SRD_ACMEFlameDesign.pdf",
+              "figures": [],
+              "pages_span": [
+                7,
+                7
+              ]
+            },
+            {
+              "id": "ACME_common/acme-integrated-science-requirements-definition-/p019-020",
+              "text": "[ocr: false] National Aeronautics and Space Administration Gas Supply (1.8) pp y ( ) • For required testing – fuels 100% H2, 100% CH4, 100% C2H4 H2/CH4 mixes*: 55 6/44 4 44 4/55 6 66 7/33 3 H2/CH4 mixes : 55.6/44.4, 44.4/55.6, 66.7/33.3 – oxidizers** O2/N2 mixes*: 85/15, 50/50, 30/70, 21/79 40/60 O2/He – inerts 100% N2 (available from ISS), 100% He • For desired testing – fuels none – oxidizers** O2/CO2 mixes*:…",
+              "page": 19,
+              "documentTitle": "ACME Integrated Science Requirements Definition Review 20100505",
+              "source": "data/psi/ACME_common/Science Documents/ACME Integrated Science Requirements Definition Review 20100505.pdf",
+              "figures": [],
+              "pages_span": [
+                19,
+                20
+              ]
+            },
+            {
+              "id": "PSI-10/reports-taskbookrpts/p035",
+              "text": "[ocr: false] multi-step chemistry resulting in exothermic heat release that is displaced from the location of O2 depletion and (2) the relative location of the heat release region with respect to the fuel and oxidizer boundaries in mixture fraction space. A method of superposition involving a variation of the flame sheet approximation with two heat sources is shown to be sufficient in explaining this phenomenon.…",
+              "page": 35,
+              "documentTitle": "PSI 10 Reports TaskbookRpts",
+              "source": "data/psi/PSI-10_ACME-Flame-Design/Reports/PSI-10_Reports_TaskbookRpts.pdf",
+              "figures": [],
+              "pages_span": [
+                35,
+                35
+              ]
+            },
+            {
+              "id": "PSI-22/e-field-flames-srd-20100402/p016",
+              "text": "[ocr: false] 16 mesh is positively charged, and the flame saturates at the same applied electric field strength regardless of flow conditions. For all coflow burner tests, the flames are slightly lifted above the burner surface. Regardless of polarity, electric fields stabilize and draw a lifted flame to the burner. Positive field stability results from the movement of low mobility ions and the corresponding ion…",
+              "page": 16,
+              "documentTitle": "E FIELD Flames SRD 20100402",
+              "source": "data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_SRD_20100402.pdf",
+              "figures": [],
+              "pages_span": [
+                16,
+                16
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "kind": "chunk",
+            "ref": "PSI-108/stdce-1-data-management-plan/p017",
+            "chunkId": "PSI-108/stdce-1-data-management-plan/p017"
+          },
+          {
+            "kind": "chunk",
+            "ref": "PSI-10/science-documents-srd-acmeflamedesign/p007",
+            "chunkId": "PSI-10/science-documents-srd-acmeflamedesign/p007"
+          },
+          {
+            "kind": "chunk",
+            "ref": "ACME_common/acme-integrated-science-requirements-definition-/p019-020",
+            "chunkId": "ACME_common/acme-integrated-science-requirements-definition-/p019-020"
+          },
+          {
+            "kind": "chunk",
+            "ref": "PSI-10/reports-taskbookrpts/p035",
+            "chunkId": "PSI-10/reports-taskbookrpts/p035"
+          },
+          {
+            "kind": "chunk",
+            "ref": "PSI-22/e-field-flames-srd-20100402/p016",
+            "chunkId": "PSI-22/e-field-flames-srd-20100402/p016"
+          }
+        ]
+      }
+    ],
+    "followups": [
+      "Hồ sơ investigation",
+      "Đồ thị quan hệ"
+    ]
+  },
+  "nếu là trên lunar gateway thì sao": {
+    "version": "1.0",
+    "intent": "scenario",
+    "title": "Lunar habitat (≥30% O2, ≤10.2 psi)",
+    "filters": [
+      {
+        "kind": "scenario",
+        "id": "moon",
+        "label": "Lunar habitat (≥30% O2, ≤10.2 psi)"
+      }
+    ],
+    "blocks": [
+      {
+        "component": "ScenarioBriefing",
+        "data": {
+          "id": "moon",
+          "label": "Lunar habitat (≥30% O2, ≤10.2 psi)",
+          "caveat": "PSI has no partial-gravity combustion data. E-FIELD Flames is the stand-in: an electric field pulls on ions in the flame and mimics a body force. Microgravity and normal gravity bound lunar gravity. LUCI and FM2 are the flight experiments expected to add real partial-g burns.",
+          "investigations": [
+            {
+              "id": "PSI-159",
+              "name": "ACME CFI-G",
+              "relevance": 98,
+              "reason": "A lunar habitat is expected at 30 percent oxygen or more, at 10.2 psi or less. CFI-G is the only PSI series that reaches well above that, up to about 85 percent.",
+              "evidence": [
+                {
+                  "kind": "graph",
+                  "ref": "RELEVANT_TO",
+                  "id": "PSI-159"
+                }
+              ]
+            },
+            {
+              "id": "PSI-25",
+              "name": "BASS-II",
+              "relevance": 92,
+              "reason": "Solid fuels (films, fabrics) plus a measured oxygen level are what a lunar habitat material screen needs.",
+              "evidence": [
+                {
+                  "kind": "graph",
+                  "ref": "RELEVANT_TO",
+                  "id": "PSI-25"
+                }
+              ]
+            },
+            {
+              "id": "PSI-20",
+              "name": "ACME Burning Rate Emulator",
+              "relevance": 90,
+              "reason": "Oxygen was varied from about 21 percent up through the mid-30s and 40 percent, the range expected in a lunar habitat.",
+              "evidence": [
+                {
+                  "kind": "graph",
+                  "ref": "RELEVANT_TO",
+                  "id": "PSI-20"
+                }
+              ]
+            },
+            {
+              "id": "PSI-26",
+              "name": "BASS",
+              "relevance": 90,
+              "reason": "Thicker, realistic solids in a forced flow. Habitat oxygen will be higher than these early runs, so read them as the low-oxygen bound.",
+              "evidence": [
+                {
+                  "kind": "graph",
+                  "ref": "RELEVANT_TO",
+                  "id": "PSI-26"
+                }
+              ]
+            },
+            {
+              "id": "PSI-98",
+              "name": "Saffire-I",
+              "relevance": 86,
+              "reason": "Scale is right for a habitat. Oxygen in Saffire-I is still the station value, so it is the low-oxygen large-fire bound.",
+              "evidence": [
+                {
+                  "kind": "graph",
+                  "ref": "RELEVANT_TO",
+                  "id": "PSI-98"
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "label": "Apollo 1",
+              "summary": "In 1967 a fire in a pure-oxygen cabin during a pre-launch test killed the Apollo 1 crew.",
+              "url": "https://sma.nasa.gov/sma-disciplines/accllp/apollo-1"
+            },
+            {
+              "label": "Apollo 13",
+              "summary": "An oxygen-tank explosion on the way to the Moon disabled the service module.",
+              "url": "https://sma.nasa.gov/sma-disciplines/accllp/apollo-13"
+            },
+            {
+              "label": "Mir oxygen-generator fire",
+              "summary": "In 1997 an oxygen-generator failure started a fire aboard Mir during joint operations.",
+              "url": "https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/"
+            }
+          ],
+          "risks": [
+            {
+              "id": "phenomenon:soot@PSI-69",
+              "label": "soot"
+            },
+            {
+              "id": "phenomenon:laminar-diffusion-flame@PSI-21",
+              "label": "Laminar Diffusion Flame"
+            },
+            {
+              "id": "phenomenon:laminar-diffusion-flame@PSI-10",
+              "label": "Laminar Diffusion Flame"
+            },
+            {
+              "id": "phenomenon:cool-flame@PSI-10",
+              "label": "cool flame"
+            },
+            {
+              "id": "phenomenon:cool-flame@PSI-23",
+              "label": "cool flame@cfi"
+            },
+            {
+              "id": "phenomenon:extinction@PSI-106",
+              "label": "extinction"
+            },
+            {
+              "id": "phenomenon:extinction@web:acme",
+              "label": "extinction"
+            },
+            {
+              "id": "phenomenon:extinction@web:program",
+              "label": "extinction"
+            }
+          ],
+          "sensors": [
+            {
+              "id": "sensor:radiometer@PSI-69",
+              "label": "Radiometer"
+            },
+            {
+              "id": "sensor:hibms@PSI-69",
+              "label": "HiBMs"
+            },
+            {
+              "id": "sensor:sams@PSI-26",
+              "label": "SAMS"
+            },
+            {
+              "id": "sensor:0-010-w26rh-psi-102@PSI-102",
+              "label": "0.010 W26Rh@PSI-102"
+            },
+            {
+              "id": "sensor:0-010-w5rh-psi-102@PSI-102",
+              "label": "0.010 W5Rh@PSI-102"
+            },
+            {
+              "id": "sensor:35-mm-still-camera@web:bass",
+              "label": "35-mm Still Camera"
+            },
+            {
+              "id": "sensor:acme-camera-package@PSI-10",
+              "label": "ACME Camera Package"
+            },
+            {
+              "id": "sensor:acme-pressure-sensitive-switch@PSI-10",
+              "label": "ACME Pressure Sensitive Switch"
+            }
+          ]
+        }
+      },
+      {
+        "component": "SourceBadge",
+        "data": {
+          "kind": "field",
+          "ref": "RELEVANT_TO"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-159",
+          "name": "ACME CFI-G",
+          "acronym": "ACME CFI-G",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": 98,
+          "fuels": [
+            "ethane",
+            "propane",
+            "butane",
+            "50% butane",
+            "30% butane",
+            "30% propane",
+            "30% ethane"
+          ],
+          "runCount": 333,
+          "doi": "10.60555/cyt1-kh64"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-25",
+          "name": "BASS-II",
+          "acronym": "BASS-II",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": 92,
+          "fuels": [
+            "100 micron PMMA film 2 cm wide",
+            "200 micron PMMA film 2 cm wide",
+            "100 micron film 2 cm wide",
+            "300 micron PMMA film 2 cm wide",
+            "200 micron 2 cm wide",
+            "2 cm 0.1 mm PMMA film",
+            "400 micron film 2 cm wide",
+            "2 cm 0.2 mm PMMA film",
+            "1 cm 0.2 mm PMMA film",
+            "300 micron film 2 cm wide",
+            "2 cm 0.4 mm thick film",
+            "1 cm wide 200 micron thick PMMA"
+          ],
+          "runCount": 129,
+          "doi": "10.60555/4qc4-de67"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-20",
+          "name": "ACME Burning Rate Emulator",
+          "acronym": "ACME BRE",
+          "family": "CIR + ACME, gaseous flames",
+          "relevance": 90,
+          "fuels": [
+            "100% C2H4",
+            "50% C2H4",
+            "100%C2H4",
+            "100% CH4"
+          ],
+          "runCount": 18,
+          "doi": "10.60555/vb93-3y72"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-26",
+          "name": "BASS",
+          "acronym": "BASS",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": 90,
+          "fuels": [
+            "SIBAL 2 cm",
+            "PMMA sphere 2 cm",
+            "PMMA sphere 1 cm",
+            "SIBAL 1 cm",
+            "Nomex blend 2 cm",
+            "PMMA 2 cm",
+            "PMMA 1 cm",
+            "2 cm sphere",
+            "1 cm sphere",
+            "Nomex III Natural",
+            "PMMA slab",
+            "ultem sheet"
+          ],
+          "runCount": 122,
+          "doi": "10.60555/58h4-dy80"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-98",
+          "name": "Saffire-I",
+          "acronym": "SAFFIRE-I",
+          "family": "Cygnus vehicle after it left the ISS",
+          "relevance": 86,
+          "fuels": [
+            "SIBAL Fabric"
+          ],
+          "runCount": 4,
+          "doi": "10.60555/0t15-1z43"
+        }
+      }
+    ],
+    "followups": [
+      "Hồ sơ PSI đứng đầu",
+      "Đồ thị quanh PSI đứng đầu",
+      "Liệt kê investigation"
+    ]
+  },
+  "thí nghiệm nào liên quan nhất cho trạm iss?": {
+    "version": "1.0",
+    "intent": "scenario",
+    "title": "ISS cabin (21% O2, 14.7 psi)",
+    "filters": [
+      {
+        "kind": "scenario",
+        "id": "iss",
+        "label": "ISS cabin (21% O2, 14.7 psi)"
+      }
+    ],
+    "blocks": [
+      {
+        "component": "ScenarioBriefing",
+        "data": {
+          "id": "iss",
+          "label": "ISS cabin (21% O2, 14.7 psi)",
+          "caveat": "Station air is the Earth mix. Artemis II showed how fast a smoke alarm gets a crew's attention: the commander said it does, even 80,000 miles from home.",
+          "investigations": [
+            {
+              "id": "PSI-102",
+              "name": "SAME",
+              "relevance": 96,
+              "reason": "Primary detection dataset. Smoke in microgravity does not rise, so particle size and the forced flow set the alarm.",
+              "evidence": [
+                {
+                  "kind": "graph",
+                  "ref": "RELEVANT_TO",
+                  "id": "PSI-102"
+                }
+              ]
+            },
+            {
+              "id": "PSI-69",
+              "name": "FLEX",
+              "relevance": 92,
+              "reason": "The suppression dataset: carbon dioxide and helium dilution, with oxygen mole fraction and droplet size for hundreds of burns.",
+              "evidence": [
+                {
+                  "kind": "graph",
+                  "ref": "RELEVANT_TO",
+                  "id": "PSI-69"
+                }
+              ]
+            },
+            {
+              "id": "PSI-101",
+              "name": "SAME-R",
+              "relevance": 90,
+              "reason": "The detector design input: droplet size and how fast smoke moves when there is no buoyant plume.",
+              "evidence": [
+                {
+                  "kind": "graph",
+                  "ref": "RELEVANT_TO",
+                  "id": "PSI-101"
+                }
+              ]
+            },
+            {
+              "id": "PSI-26",
+              "name": "BASS",
+              "relevance": 88,
+              "reason": "SIBAL fabric and PMMA in the glovebox duct, plus a nitrogen-style extinguisher already used on station.",
+              "evidence": [
+                {
+                  "kind": "graph",
+                  "ref": "RELEVANT_TO",
+                  "id": "PSI-26"
+                }
+              ]
+            },
+            {
+              "id": "PSI-25",
+              "name": "BASS-II",
+              "relevance": 86,
+              "reason": "Directly the materials and the low-speed ventilation a crew cabin actually has.",
+              "evidence": [
+                {
+                  "kind": "graph",
+                  "ref": "RELEVANT_TO",
+                  "id": "PSI-25"
+                }
+              ]
+            }
+          ],
+          "context": [
+            {
+              "label": "Apollo 13",
+              "summary": "An oxygen-tank explosion on the way to the Moon disabled the service module.",
+              "url": "https://sma.nasa.gov/sma-disciplines/accllp/apollo-13"
+            },
+            {
+              "label": "Mir oxygen-generator fire",
+              "summary": "In 1997 an oxygen-generator failure started a fire aboard Mir during joint operations.",
+              "url": "https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/"
+            },
+            {
+              "label": "Shuttle smoke detector",
+              "summary": "A shuttle detector that separates smoke from dust, later used where dust causes nuisance alarms, including mines.",
+              "url": "https://spinoff.nasa.gov/node/9407"
+            }
+          ],
+          "risks": [
+            {
+              "id": "phenomenon:soot@PSI-69",
+              "label": "soot"
+            },
+            {
+              "id": "phenomenon:laminar-diffusion-flame@PSI-21",
+              "label": "Laminar Diffusion Flame"
+            },
+            {
+              "id": "phenomenon:laminar-diffusion-flame@PSI-10",
+              "label": "Laminar Diffusion Flame"
+            },
+            {
+              "id": "phenomenon:cool-flame@PSI-10",
+              "label": "cool flame"
+            },
+            {
+              "id": "phenomenon:cool-flame@PSI-23",
+              "label": "cool flame@cfi"
+            },
+            {
+              "id": "phenomenon:extinction@PSI-106",
+              "label": "extinction"
+            },
+            {
+              "id": "phenomenon:extinction@web:acme",
+              "label": "extinction"
+            },
+            {
+              "id": "phenomenon:extinction@web:program",
+              "label": "extinction"
+            }
+          ],
+          "sensors": [
+            {
+              "id": "sensor:radiometer@PSI-69",
+              "label": "Radiometer"
+            },
+            {
+              "id": "sensor:hibms@PSI-69",
+              "label": "HiBMs"
+            },
+            {
+              "id": "sensor:sams@PSI-26",
+              "label": "SAMS"
+            },
+            {
+              "id": "sensor:0-010-w26rh-psi-102@PSI-102",
+              "label": "0.010 W26Rh@PSI-102"
+            },
+            {
+              "id": "sensor:0-010-w5rh-psi-102@PSI-102",
+              "label": "0.010 W5Rh@PSI-102"
+            },
+            {
+              "id": "sensor:35-mm-still-camera@web:bass",
+              "label": "35-mm Still Camera"
+            },
+            {
+              "id": "sensor:acme-camera-package@PSI-10",
+              "label": "ACME Camera Package"
+            },
+            {
+              "id": "sensor:acme-pressure-sensitive-switch@PSI-10",
+              "label": "ACME Pressure Sensitive Switch"
+            }
+          ]
+        }
+      },
+      {
+        "component": "SourceBadge",
+        "data": {
+          "kind": "field",
+          "ref": "RELEVANT_TO"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-102",
+          "name": "SAME",
+          "acronym": "SAME",
+          "family": "ISS aerosol instrument (SAME and DAFT)",
+          "relevance": 96,
+          "fuels": [
+            "Teflon",
+            "Kapton",
+            "Silicone Rubber",
+            "Lampwick",
+            "Dibutyl Phthalate"
+          ],
+          "runCount": 8,
+          "doi": "10.60555/gd4k-8h62"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-69",
+          "name": "FLEX",
+          "acronym": "FLEX",
+          "family": "CIR + MDCA, liquid droplets",
+          "relevance": 92,
+          "fuels": [
+            "Methanol",
+            "Heptane"
+          ],
+          "runCount": 274,
+          "doi": "10.60555/mbq8-0451"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-101",
+          "name": "SAME-R",
+          "acronym": "SAME-R",
+          "family": "ISS aerosol instrument (SAME and DAFT)",
+          "relevance": 90,
+          "fuels": [],
+          "runCount": null,
+          "doi": null
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-26",
+          "name": "BASS",
+          "acronym": "BASS",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": 88,
+          "fuels": [
+            "SIBAL 2 cm",
+            "PMMA sphere 2 cm",
+            "PMMA sphere 1 cm",
+            "SIBAL 1 cm",
+            "Nomex blend 2 cm",
+            "PMMA 2 cm",
+            "PMMA 1 cm",
+            "2 cm sphere",
+            "1 cm sphere",
+            "Nomex III Natural",
+            "PMMA slab",
+            "ultem sheet"
+          ],
+          "runCount": 122,
+          "doi": "10.60555/58h4-dy80"
+        }
+      },
+      {
+        "component": "InvestigationCard",
+        "data": {
+          "id": "PSI-25",
+          "name": "BASS-II",
+          "acronym": "BASS-II",
+          "family": "MSG glovebox, SPICE fan duct",
+          "relevance": 86,
+          "fuels": [
+            "100 micron PMMA film 2 cm wide",
+            "200 micron PMMA film 2 cm wide",
+            "100 micron film 2 cm wide",
+            "300 micron PMMA film 2 cm wide",
+            "200 micron 2 cm wide",
+            "2 cm 0.1 mm PMMA film",
+            "400 micron film 2 cm wide",
+            "2 cm 0.2 mm PMMA film",
+            "1 cm 0.2 mm PMMA film",
+            "300 micron film 2 cm wide",
+            "2 cm 0.4 mm thick film",
+            "1 cm wide 200 micron thick PMMA"
+          ],
+          "runCount": 129,
+          "doi": "10.60555/4qc4-de67"
+        }
+      }
+    ],
+    "followups": [
+      "Hồ sơ PSI đứng đầu",
+      "Đồ thị quanh PSI đứng đầu",
+      "Liệt kê investigation"
+    ]
+  },
+  "hồ sơ psi-102": {
+    "version": "1.0",
+    "intent": "profile",
+    "title": "Hồ sơ thí nghiệm — SAME (PSI-102)",
+    "filters": [
+      {
+        "kind": "investigation",
+        "id": "PSI-102",
+        "label": "SAME"
+      }
+    ],
+    "blocks": [
+      {
+        "component": "ProfileHeader",
+        "data": {
+          "id": "PSI-102",
+          "name": "SAME",
+          "acronym": "SAME",
+          "summary": "One of the major goals of this investigation was to quantify the sizes that the liquid smoke particulate achieves in low gravity and to relate the droplet size distribution to the smoke generation and smoke transport conditions in the experiment. A numerical code was to be developed to predict the smoke droplet growth as a function of the fuel pyrolysis rate, the thermodynamic properties of the pyrolysis vapor, and the flow environment.",
+          "family": "ISS aerosol instrument (SAME and DAFT)",
+          "doi": "10.60555/gd4k-8h62",
+          "sources": [
+            "data/psi/PSI-102_SAME/Experiment Table/PSI-102_Experimental table_SAME.csv",
+            "data/psi/PSI-102_SAME/metadata/i_Investigation.txt"
+          ]
+        }
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "Số lần chạy",
+          "value": 8
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Investigation.runCount"
+          }
+        ]
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "Số tài liệu",
+          "value": 156
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "IN_DOCUMENT"
+          }
+        ]
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "Số chunk",
+          "value": 610
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Chunk"
+          }
+        ]
+      },
+      {
+        "component": "StatCard",
+        "data": {
+          "label": "DOI",
+          "value": "10.60555/gd4k-8h62"
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Investigation.doi"
+          }
+        ]
+      },
+      {
+        "component": "MissingData",
+        "data": {
+          "field": "oxygen",
+          "action": "search_chunks"
+        }
+      },
+      {
+        "component": "ChipList",
+        "data": {
+          "title": "Nhiên liệu / vật liệu",
+          "items": [
+            {
+              "label": "Teflon"
+            },
+            {
+              "label": "Kapton"
+            },
+            {
+              "label": "Silicone Rubber"
+            },
+            {
+              "label": "Lampwick"
+            },
+            {
+              "label": "Dibutyl Phthalate"
+            }
+          ]
+        }
+      },
+      {
+        "component": "FlowSteps",
+        "data": {
+          "steps": [
+            {
+              "title": "Dòng khí",
+              "text": "5–10 cm/s"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "kind": "field",
+            "ref": "Investigation.flow"
+          }
+        ]
+      },
+      {
+        "component": "ChipList",
+        "data": {
+          "title": "Thiết bị",
+          "items": [
+            {
+              "label": "Comparitive Soot Diagnostic Hardware"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "hw:comparitive-soot-diagnostic-hardware",
+            "kind": "graph",
+            "ref": "USED_HARDWARE"
+          }
+        ]
+      },
+      {
+        "component": "ChipList",
+        "data": {
+          "title": "Hiện tượng",
+          "items": [
+            {
+              "label": "Particle size distribution@PSI-102"
+            },
+            {
+              "label": "Phenomenon:ash@PSI-102"
+            },
+            {
+              "label": "Phenomenon:fire@PSI-102"
+            },
+            {
+              "label": "Phenomenon:pyrolysis-products@PSI-102"
+            },
+            {
+              "label": "Phenomenon:radiant-emission@PSI-102"
+            },
+            {
+              "label": "Phenomenon:solid-particulate@PSI-102"
+            },
+            {
+              "label": "Phenomenon:unburned-fuel-particles@PSI-102"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "phenomenon:particle-size-distribution-psi-102@PSI-102",
+            "kind": "graph",
+            "ref": "STUDIED"
+          },
+          {
+            "id": "phenomenon:phenomenon-ash-psi-102@PSI-102",
+            "kind": "graph",
+            "ref": "STUDIED"
+          },
+          {
+            "id": "phenomenon:phenomenon-fire-psi-102@PSI-102",
+            "kind": "graph",
+            "ref": "STUDIED"
+          },
+          {
+            "id": "phenomenon:phenomenon-pyrolysis-products-psi-102@PSI-102",
+            "kind": "graph",
+            "ref": "STUDIED"
+          },
+          {
+            "id": "phenomenon:phenomenon-radiant-emission-psi-102@PSI-102",
+            "kind": "graph",
+            "ref": "STUDIED"
+          },
+          {
+            "id": "phenomenon:phenomenon-solid-particulate-psi-102@PSI-102",
+            "kind": "graph",
+            "ref": "STUDIED"
+          },
+          {
+            "id": "phenomenon:phenomenon-unburned-fuel-particles-psi-102@PSI-102",
+            "kind": "graph",
+            "ref": "STUDIED"
+          }
+        ]
+      },
+      {
+        "component": "EvidencePanel",
+        "data": {
+          "chunks": [
+            {
+              "id": "PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p024",
+              "text": "[ocr: false] SAME Experiment Status 11-16-2007 24 National Aeronautics and Space Administration www.nasa.gov Zeroth Moment: TSI PTrak™ First Moment: First Alert™ Smoke Detector Third Moment: TSI Dust Trak™ SAME Experimental Diagnostics Measurements [figure: 1 | page: 24 | file: data/images/PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p24-f01.png] [figure: 2 | page: 24 | file:…",
+              "page": 24,
+              "documentTitle": "Same progress report to HQ 11 16 07   11 15 07  updated",
+              "source": "data/psi/PSI-102_SAME/Presentations/Same progress report to HQ 11-16-07   11 15 07  updated.ppt",
+              "figures": [],
+              "pages_span": [
+                24,
+                24
+              ]
+            },
+            {
+              "id": "PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p035",
+              "text": "[ocr: false] SAME Experiment Status 11-16-2007 35 National Aeronautics and Space Administration www.nasa.gov SAME Particle Capture Handle for quick installation and removal X-valve solenoid bank Vacuum Connection Cover Electrical Connection Hot-wire Leads Stereolithography manifold Heater (Kanthal wire with Copper Leads) Flow Grid [figure: 1 | page: 35 | file:…",
+              "page": 35,
+              "documentTitle": "Same progress report to HQ 11 16 07   11 15 07  updated",
+              "source": "data/psi/PSI-102_SAME/Presentations/Same progress report to HQ 11-16-07   11 15 07  updated.ppt",
+              "figures": [],
+              "pages_span": [
+                35,
+                35
+              ]
+            },
+            {
+              "id": "PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p037",
+              "text": "[ocr: false] SAME Experiment Status 11-16-2007 37 National Aeronautics and Space Administration www.nasa.gov SAME Setup [figure: 1 | page: 37 | file: data/images/PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p37-f01.png] [figure: 2 | page: 37 | file: data/images/PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p37-f02.png] [figure: 3 | page: 37 | file:…",
+              "page": 37,
+              "documentTitle": "Same progress report to HQ 11 16 07   11 15 07  updated",
+              "source": "data/psi/PSI-102_SAME/Presentations/Same progress report to HQ 11-16-07   11 15 07  updated.ppt",
+              "figures": [],
+              "pages_span": [
+                37,
+                37
+              ]
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "kind": "chunk",
+            "ref": "PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p024",
+            "chunkId": "PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p024"
+          },
+          {
+            "kind": "chunk",
+            "ref": "PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p035",
+            "chunkId": "PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p035"
+          },
+          {
+            "kind": "chunk",
+            "ref": "PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p037",
+            "chunkId": "PSI-102/same-progress-report-to-hq-11-16-07-11-15-07-upd/p037"
+          }
+        ]
+      }
+    ],
+    "followups": [
+      "Đồ thị quan hệ của PSI-102",
+      "So sánh với FLEX (PSI-69)",
+      "Trang nào nói về oxy?"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+#!/bin/sh
+# post-commit: LOG every commit (hash, author, files, diffstat) to
+# /var/log/agent-platform/code-changes.jsonl via tools/code_log.py.
+# Installed via core.hooksPath=hooks (tracked) + copy in .git/hooks.
+REPO=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0
+if [ -f "$REPO/tools/code_log.py" ]; then
+    python3 "$REPO/tools/code_log.py" commit >/dev/null 2>&1 || true
+elif [ -f /workspace/tools/code_log.py ]; then
+    python3 /workspace/tools/code_log.py commit >/dev/null 2>&1 || true
+fi
+exit 0

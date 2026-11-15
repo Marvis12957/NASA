@@ -1,0 +1,226 @@
+{
+  "id": "flame-in-freefall-concept-schema",
+  "version": "1.0.0",
+  "description": "Constrained GraphRAG ontology for NASA PSI combustion-safety reports. Extracted concepts are investigation-scoped; catalog Investigation/Scenario/Role stay global.",
+  "identity": {
+    "extracted": "{type}:{slug(name)}@{psi}",
+    "catalog_global": "{prefix}:{id}",
+    "examples": [
+      "fuel:pmma@PSI-25",
+      "fuel:pmma@PSI-99",
+      "sensor:cir@PSI-69",
+      "hardware:cir@PSI-69",
+      "inv:PSI-69"
+    ]
+  },
+  "node_types": [
+    {
+      "id": "investigation",
+      "extract_label": "Investigation",
+      "prefix": "inv",
+      "neo4j": "Investigation",
+      "scope": "global",
+      "aliases": ["investigation", "experiment", "psi", "study", "campaign", "flight experiment"],
+      "required_properties": ["id", "label", "type"],
+      "canonical": false
+    },
+    {
+      "id": "fuel",
+      "extract_label": "Material/Fuel",
+      "prefix": "fuel",
+      "neo4j": "Fuel",
+      "scope": "investigation",
+      "aliases": [
+        "material/fuel",
+        "material",
+        "fuel",
+        "sample",
+        "polymer",
+        "plastic",
+        "propellant",
+        "droplet fuel"
+      ],
+      "required_properties": ["id", "label", "type", "psi", "aliases", "source_chunks"],
+      "canonical": "optional catalog fuel id when gazetteer matches"
+    },
+    {
+      "id": "hardware",
+      "extract_label": "Hardware",
+      "prefix": "hardware",
+      "neo4j": "Hardware",
+      "scope": "investigation",
+      "aliases": [
+        "hardware",
+        "apparatus",
+        "rack",
+        "chamber",
+        "igniter",
+        "facility hardware",
+        "rig",
+        "model",
+        "code",
+        "software"
+      ],
+      "required_properties": ["id", "label", "type", "psi", "aliases", "source_chunks"],
+      "canonical": false
+    },
+    {
+      "id": "sensor",
+      "extract_label": "Sensor",
+      "prefix": "sensor",
+      "neo4j": "Sensor",
+      "scope": "investigation",
+      "aliases": [
+        "sensor",
+        "diagnostic",
+        "instrument",
+        "camera",
+        "spectrometer",
+        "thermocouple",
+        "imager"
+      ],
+      "required_properties": ["id", "label", "type", "psi", "aliases", "source_chunks"],
+      "canonical": false
+    },
+    {
+      "id": "phenomenon",
+      "extract_label": "Phenomenon",
+      "prefix": "phenomenon",
+      "neo4j": "Phenomenon",
+      "scope": "investigation",
+      "aliases": [
+        "phenomenon",
+        "process",
+        "behavior",
+        "regime",
+        "flame behavior",
+        "combustion phenomenon"
+      ],
+      "required_properties": ["id", "label", "type", "psi", "aliases", "source_chunks"],
+      "canonical": false
+    },
+    {
+      "id": "suppressant",
+      "extract_label": "Suppressant",
+      "prefix": "suppressant",
+      "neo4j": "Suppressant",
+      "scope": "investigation",
+      "aliases": ["suppressant", "diluent", "inert", "extinguisher", "inerting agent", "suppressing agent"],
+      "required_properties": ["id", "label", "type", "psi", "aliases", "source_chunks"],
+      "canonical": false
+    },
+    {
+      "id": "location",
+      "extract_label": "Location",
+      "prefix": "location",
+      "neo4j": "Location",
+      "scope": "investigation",
+      "aliases": [
+        "location",
+        "location/scenario",
+        "facility",
+        "vehicle",
+        "spacecraft",
+        "habitat",
+        "module",
+        "platform",
+        "scenario",
+        "scenario mention"
+      ],
+      "required_properties": ["id", "label", "type", "psi", "aliases", "source_chunks"],
+      "canonical": false
+    },
+    {
+      "id": "scenario",
+      "extract_label": "Scenario",
+      "prefix": "scenario",
+      "neo4j": "Scenario",
+      "scope": "global",
+      "aliases": ["catalog scenario"],
+      "required_properties": ["id", "label", "type"],
+      "canonical": false
+    },
+    {
+      "id": "role",
+      "extract_label": "Role",
+      "prefix": "role",
+      "neo4j": "Role",
+      "scope": "global",
+      "aliases": ["role"],
+      "required_properties": ["id", "label", "type"],
+      "canonical": false
+    }
+  ],
+  "relation_types": [
+    {
+      "id": "STUDIED",
+      "aliases": ["STUDIED", "STUDIES", "INVESTIGATES", "OBSERVED", "EXAMINED"],
+      "meaning": "Investigation or hardware studying a fuel or phenomenon."
+    },
+    {
+      "id": "MEASURED_WITH",
+      "aliases": ["MEASURED_WITH", "MEASURED_BY", "MEASURED", "DETECTED_BY", "IMAGED_BY", "SENSED_BY"],
+      "meaning": "Phenomenon or investigation measured by a sensor."
+    },
+    {
+      "id": "USED_IN",
+      "aliases": ["USED_IN", "USES", "OPERATED_IN", "INSTALLED_IN", "TESTED_IN", "FLOWN_ON", "OCCURS_IN"],
+      "meaning": "Hardware, fuel, or suppressant used in an investigation or location."
+    },
+    {
+      "id": "RELATED_TO",
+      "aliases": ["RELATED_TO", "ASSOCIATED_WITH", "CAUSES", "PRODUCES", "LEADS_TO", "SIMILAR_TO", "OCCURS_WITH"],
+      "meaning": "Fallback when no more specific allowed relation applies."
+    }
+  ],
+  "phenomena": [
+    "radiative extinction",
+    "diffusive extinction",
+    "flame spread",
+    "cool flame",
+    "cool-flame",
+    "soot",
+    "smoke",
+    "extinction"
+  ],
+  "name_type_overrides": {
+    "nitrogen": "Suppressant",
+    "n2": "Suppressant",
+    "helium": "Suppressant",
+    "he": "Suppressant",
+    "carbon dioxide": "Suppressant",
+    "co2": "Suppressant",
+    "argon": "Suppressant",
+    "ar": "Suppressant",
+    "sf6": "Suppressant",
+    "sulfur hexafluoride": "Suppressant",
+    "water mist": "Suppressant",
+    "nitrogen dilution": "Suppressant"
+  },
+  "forbidden_types": [
+    "oxygen",
+    "condition",
+    "test condition",
+    "parameter",
+    "flow",
+    "mole fraction",
+    "pressure",
+    "numeric",
+    "person",
+    "author",
+    "organization",
+    "institution",
+    "paper",
+    "document",
+    "chunk",
+    "page"
+  ],
+  "disambiguation": [
+    "Same surface name and different type are different nodes (sensor:cir@PSI-69 vs hardware:cir@PSI-69).",
+    "Same surface name, same type, different PSI are different nodes (fuel:pmma@PSI-25 vs fuel:pmma@PSI-99).",
+    "Never drop @psi on investigation-scoped extracted nodes.",
+    "Catalog Investigation/Scenario/Role ids stay global (inv:PSI-69).",
+    "Optional canonical on scoped fuels points at the catalog fuel id.",
+    "Oxygen mole fraction, XO2, flow (mg/s), and CO2 used as a numeric condition are Investigation catalog properties, never extracted entities."
+  ]
+}

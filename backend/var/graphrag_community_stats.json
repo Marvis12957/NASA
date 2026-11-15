@@ -1,0 +1,12 @@
+{
+  "community_count": 590,
+  "levels": {
+    "0": 227,
+    "1": 183,
+    "2": 180
+  },
+  "summaries_written": 590,
+  "api": "anthropic/claude-opus-5-5",
+  "llm_summaries": true,
+  "hierarchical": true
+}

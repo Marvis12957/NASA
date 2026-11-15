@@ -1,0 +1,8 @@
+neo4j>=5.26,<6
+sentence-transformers>=3.0
+fastapi>=0.115
+uvicorn[standard]>=0.32
+pydantic>=2.0
+pytest>=8.0
+langgraph>=0.2
+networkx>=3.0

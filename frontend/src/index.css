@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ——— Flame design tokens (từ bản thiết kế flame_lab_muse_rich_chat) ——— */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 27% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 27% 12%;
+    --primary: 217 93% 42%; /* #0754ce */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 55% 97%;
+    --secondary-foreground: 222 27% 20%;
+    --muted: 220 16% 96%;
+    --muted-foreground: 218 13% 45%;
+    --accent: 220 55% 96%;
+    --accent-foreground: 217 93% 38%;
+    --border: 220 18% 90%;
+    --input: 220 20% 85%;
+    --ring: 217 93% 42%;
+    --radius: 0.625rem;
+  }
+  .dark {
+    --background: 228 84% 9%; /* #050d2a */
+    --foreground: 224 100% 97%; /* #f4f7ff */
+    --card: 228 76% 13%;
+    --card-foreground: 224 100% 97%;
+    --primary: 217 90% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 228 60% 16%;
+    --secondary-foreground: 224 100% 94%;
+    --muted: 228 55% 15%;
+    --muted-foreground: 222 45% 76%; /* #aabade */
+    --accent: 228 60% 18%;
+    --accent-foreground: 224 100% 94%;
+    --border: 221 100% 87% / 0.18;
+    --input: 221 100% 87% / 0.25;
+    --ring: 64 96% 58%; /* lime focus */
+  }
+  * { @apply border-border; }
+  html, body, #root { height: 100%; }
+  body { @apply bg-background text-foreground font-sans antialiased; }
+  * { scrollbar-width: thin; scrollbar-color: hsl(var(--border)) transparent; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 8px; }
+}
+
+/* ——— OpenUI renderer: nắn bề mặt cho khớp thiết kế ——— */
+.openui-surface { font-family: 'Fira Sans', system-ui, sans-serif; }
+.openui-surface a { color: #0754ce; text-decoration: underline; text-underline-offset: 2px; }
+.dark .openui-surface a { color: #9db9ff; }
+
+/* ——— Chi tiết nhỏ ——— */
+.eyebrow { @apply font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground; }
+.panel { @apply rounded-2xl border bg-card text-card-foreground; }
+.panel-head { @apply flex items-center justify-between gap-3 border-b px-4 py-3; }
+.chip-preset { @apply inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors hover:bg-secondary; }
+.chip-preset[data-active="true"] { @apply border-zinc-900 bg-zinc-900 text-white dark:border-lime dark:bg-lime dark:text-zinc-950; }
