@@ -1,0 +1,68 @@
+[16:43:19] 3 sources -> /workspace/data/crawl  (ocr=on, vision=False)
+[16:43:19] crawl ntrs-mdca-flex: https://ntrs.nasa.gov/api/citations/20090014812/downloads/20090014812.pdf
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+[16:43:22]    ok: kind=pdf, pages=4, image_only_pages=0, images=1
+[16:43:22] crawl ntrs-cir-mdca: https://ntrs.nasa.gov/api/citations/20030032248/downloads/20030032248.pdf
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+[16:43:50]    ok: kind=pdf, pages=10, image_only_pages=0, images=10
+[16:43:50] crawl ntrs-multiuser-hw: https://ntrs.nasa.gov/api/citations/20020024455/downloads/20020024455.pdf
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+[16:43:59]    ok: kind=pdf, pages=6, image_only_pages=0, images=6
+[16:43:59] done: 3 processed, 0 failed; manifest /workspace/data/crawl/manifest.json

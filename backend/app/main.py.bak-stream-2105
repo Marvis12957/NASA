@@ -1,0 +1,219 @@
+"""Flame in Freefall API: graph ranking + MiniLM chunk search over Neo4j Aura."""
+
+from __future__ import annotations
+
+import uuid
+from contextlib import asynccontextmanager
+
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import Response
+from pydantic import BaseModel, Field
+
+from app.agents import roster_public
+from app.graph import GraphStore, open_store
+from app.knowledge import resolve_psi_id
+from app.memory import load_turns, save_turn
+from app.neo4j_config import neo4j_settings
+from app.orchestrator import compiled_graph, format_ask, initial_state
+from app.tools import SPECS
+from app.viz import (
+    compose,
+    compose_coverage,
+    compose_graph,
+    compose_profile,
+    compose_topic,
+    extract_csv,
+    missing,
+)
+
+
+class AskBody(BaseModel):
+    question: str = Field(..., min_length=0)
+    sessionId: str | None = None
+
+
+class VizBody(BaseModel):
+    question: str = ""
+    state: dict | None = None
+
+
+def get_store() -> GraphStore:
+    store = open_store()
+    if store is None:
+        raise HTTPException(status_code=503, detail="Neo4j Aura is not configured")
+    return store
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    store = open_store()
+    app.state.store = store
+    yield
+    if store is not None:
+        store.close()
+        open_store.cache_clear()
+
+
+app = FastAPI(title="Flame in Freefall", lifespan=lifespan)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/health")
+def health() -> dict:
+    uri, user, _password, database = neo4j_settings()
+    store = open_store()
+    reachable = bool(store and store.ping())
+    return {
+        "ok": reachable,
+        "neo4j": reachable,
+        "uri": uri or None,
+        "username": user if uri else None,
+        "database": database if uri else None,
+    }
+
+
+@app.get("/api/scenarios")
+def scenarios() -> dict:
+    return {"scenarios": get_store().list_scenarios()}
+
+
+@app.get("/api/investigations")
+def investigations() -> dict:
+    return {"investigations": get_store().list_investigations()}
+
+
+@app.get("/api/investigations/{psi_id}")
+def investigation(psi_id: str) -> dict:
+    store = get_store()
+    resolved = resolve_psi_id(psi_id, store.investigation_names()) or psi_id.upper()
+    card = store.get_investigation(resolved)
+    if not card:
+        raise HTTPException(status_code=404, detail=f"No investigation {psi_id}")
+    return card
+
+
+@app.get("/api/agents")
+def agents() -> dict:
+    return {"agents": roster_public(), "tools": SPECS}
+
+
+@app.post("/api/ask")
+def ask(body: AskBody) -> dict:
+    store = get_store()
+    session_id = (body.sessionId or "").strip() or str(uuid.uuid4())
+    prior, _memory_backend = load_turns(store, session_id)
+    result = compiled_graph(store).invoke(initial_state(store, body.question, prior))
+    answer = format_ask(result)
+    ranked_ids = [row.get("id") for row in (answer.get("ranked") or []) if row.get("id")]
+    focus = answer.get("focusId") or (ranked_ids[0] if ranked_ids else None)
+    scenario = result.get("scenario")
+    memory_backend = save_turn(
+        store,
+        session_id,
+        {
+            "question": answer["question"],
+            "scenario": scenario,
+            "focusId": focus,
+            "rankedIds": ranked_ids[:5],
+            "mode": answer["mode"],
+        },
+    )
+    return {
+        "answer": answer["text"],
+        "ranked": answer["ranked"],
+        "chunks": answer.get("chunks") or [],
+        "communities": answer.get("communities") or [],
+        "trace": answer["trace"],
+        "mode": answer["mode"],
+        "focusId": answer["focusId"],
+        "question": answer["question"],
+        "sessionId": session_id,
+        "memory": memory_backend,
+    }
+
+
+@app.post("/api/viz")
+def viz(body: VizBody) -> dict:
+    """UISpec for OpenUI. Graph failures stay HTTP 200 with a MissingData block."""
+    store = get_store()
+    return compose(store, body.question, body.state)
+
+
+@app.get("/api/viz/profile/{psi_id}")
+def viz_profile(psi_id: str) -> dict:
+    def build(store: GraphStore) -> dict:
+        resolved = resolve_psi_id(psi_id, store.investigation_names()) or psi_id.upper()
+        return compose_profile(store, resolved)
+
+    return _viz_or_missing("profile", "Không đọc được hồ sơ", build)
+
+
+@app.get("/api/viz/graph/{node_id}")
+def viz_graph(node_id: str, depth: int = 1) -> dict:
+    bounded = max(1, min(depth, 2))
+
+    def build(store: GraphStore) -> dict:
+        resolved = resolve_psi_id(node_id, store.investigation_names()) or node_id
+        return compose_graph(store, resolved, depth=bounded)
+
+    return _viz_or_missing("graph", "Không đọc được đồ thị", build)
+
+
+def _viz_or_missing(intent: str, title: str, builder) -> dict:
+    """Neo4j faults stay HTTP 200 with MissingData. A missing store stays 503."""
+    try:
+        store = get_store()
+    except HTTPException:
+        raise
+    try:
+        return builder(store)
+    except Exception:  # noqa: BLE001
+        return {
+            "version": "1.0",
+            "intent": intent,
+            "title": title,
+            "filters": [],
+            "blocks": [missing(intent)],
+            "followups": [],
+        }
+
+
+@app.get("/api/viz/coverage")
+def viz_coverage() -> dict:
+    return _viz_or_missing("coverage", "Không đọc được độ phủ", compose_coverage)
+
+
+@app.get("/api/viz/topic")
+def viz_topic(community: str | None = None, question: str = "") -> dict:
+    state = {"filters": [{"kind": "community", "id": community}]} if community else None
+
+    def build(store):
+        return compose_topic(store, question, state)
+
+    return _viz_or_missing("topic", "Không đọc được chủ đề", build)
+
+
+@app.get("/api/viz/extract.csv")
+def viz_extract_csv() -> Response:
+    try:
+        store = get_store()
+    except HTTPException:
+        raise
+    try:
+        body = extract_csv(store)
+    except Exception:  # noqa: BLE001
+        body = (
+            "# warning: graph unavailable\n"
+            "acronym,family,fuels,oxygenMin,oxygenMax,runCount,sampleForm,measurements,documentCount,chunkCount\n"
+        )
+    return Response(
+        content=body,
+        media_type="text/csv; charset=utf-8",
+        headers={"Content-Disposition": 'attachment; filename="extract.csv"'},
+    )

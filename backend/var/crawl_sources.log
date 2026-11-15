@@ -1,0 +1,42 @@
+[07:22:53] 21 sources -> /workspace/data/crawl  (ocr=on, vision=False)
+[07:22:53] skip combustion-science (exists; use --force)
+[07:22:53] skip fm2 (exists; use --force)
+[07:22:53] skip sofie (exists; use --force)
+[07:22:53] skip flare (exists; use --force)
+[07:22:53] skip acme (exists; use --force)
+[07:22:53] skip bass (exists; use --force)
+[07:22:53] skip daft (exists; use --force)
+[07:22:53] skip flex (exists; use --force)
+[07:22:53] skip saffire (exists; use --force)
+[07:22:53] skip same (exists; use --force)
+[07:22:53] skip slice (exists; use --force)
+[07:22:53] skip spice (exists; use --force)
+[07:22:53] skip cir (exists; use --force)
+[07:22:53] crawl mdca: https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-sc
+[07:23:00]    ERROR: GET https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/multi-user-droplet-combustion-apparatus-mdca/ failed: 404 Client Error: Not Found for url: https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/multi-user-droplet-combustion-apparatus-mdca/
+[07:23:00] crawl sofie-mission: https://science.nasa.gov/mission/sofie/
+[07:23:15]    ok: kind=html, images=10, chars=2951
+[07:23:15] crawl sofie-stories: https://science.nasa.gov/mission/sofie/stories/
+[07:23:16]    ok: kind=html, images=0, chars=57
+[07:23:16] crawl combustion-focus: https://science.nasa.gov/biological-physical/focus-areas/combustion-science/
+[07:23:25]    ok: kind=html, images=5, chars=7068
+[07:23:25] crawl gipoc: https://gipoc.grc.nasa.gov/
+[07:23:47]    image failed https://gipoc.grc.nasa.gov/wp/wp-content/uploads/2017/01/issjpg-56453d6eb63b9a28: GET https://gipoc.grc.nasa.gov/wp/wp-content/uploads/2017/01/issjpg-56453d6eb63b9a28-300x225.jpg failed: 404 Client Error: Not Found for url: https://gipoc.grc.nasa.gov/wp/wp-content/uploads/2017/01/issjpg-56453d6eb63b9a28-300x225.jpg
+[07:24:00]    ok: kind=html, images=18, chars=6800
+[07:24:00] crawl news-combustion-arrives: https://www.nasa.gov/news-release/nasa-glenn-combustion-experiment-arrives-at-space-station/
+[07:24:01]    ok: kind=html, images=0, chars=2261
+[07:24:01] crawl news-lab-demolition: https://www.nasa.gov/news-release/nasa-glenn-holds-public-meeting-on-combustion-research-lab-demolit
+[07:24:04]    ok: kind=html, images=1, chars=2229
+[07:24:04] crawl mdca-image: https://www.nasa.gov/image-article/astronaut-luca-parmitano-works-multi-user-droplet-combustion-appa
+[07:24:06]    ok: kind=html, images=1, chars=676
+[07:24:06] crawl gipoc--wp: https://gipoc.grc.nasa.gov/wp/
+[07:24:27]    image failed https://gipoc.grc.nasa.gov/wp/wp-content/uploads/2017/01/issjpg-56453d6eb63b9a28: GET https://gipoc.grc.nasa.gov/wp/wp-content/uploads/2017/01/issjpg-56453d6eb63b9a28-300x225.jpg failed: 404 Client Error: Not Found for url: https://gipoc.grc.nasa.gov/wp/wp-content/uploads/2017/01/issjpg-56453d6eb63b9a28-300x225.jpg
+[07:24:40]    ok: kind=html, images=18, chars=6800
+[07:24:40] crawl gipoc--payload-portals: https://gipoc.grc.nasa.gov/wp/payload-portals/
+[07:24:41]    ok: kind=html, images=0, chars=5099
+[07:24:41] crawl gipoc--whats-happening-gipoc: https://gipoc.grc.nasa.gov/wp/whats-happening-gipoc/
+[07:25:02]    image failed https://gipoc.grc.nasa.gov/wp/wp-content/uploads/2017/01/issjpg-56453d6eb63b9a28: GET https://gipoc.grc.nasa.gov/wp/wp-content/uploads/2017/01/issjpg-56453d6eb63b9a28-300x225.jpg failed: 404 Client Error: Not Found for url: https://gipoc.grc.nasa.gov/wp/wp-content/uploads/2017/01/issjpg-56453d6eb63b9a28-300x225.jpg
+[07:25:15]    ok: kind=html, images=18, chars=6800
+[07:25:15] crawl news-combustion-arrives--francis-t-jennings-nasa-gov: https://www.nasa.gov/news-release/nasa-glenn-combustion-experiment-arrives-at-space-station/francis.
+[07:25:22]    ERROR: GET https://www.nasa.gov/news-release/nasa-glenn-combustion-experiment-arrives-at-space-station/francis.t.jennings@nasa.gov/ failed: 404 Client Error: Not Found for url: https://www.nasa.gov/news-release/nasa-glenn-combustion-experiment-arrives-at-space-station/francis.t.jennings@nasa.gov/
+[07:25:22] done: 25 processed, 2 failed; manifest /workspace/data/crawl/manifest.json

@@ -1,0 +1,405 @@
+children 1006 eligible 612 skipped 394
+API used: anthropic/claude-opus-5-5
+ontology 1.0.0
+connecting neo4j+s://7b7a6f41.databases.neo4j.io database=7b7a6f41
+todo 612 already 0
+extracted 2 new_nodes 11 rels 15 sample hardware:cir@web:acme
+batch failed (Expecting ',' delimiter: line 1 column 1136 (char 1135)); retrying one chunk at a time
+extracted 4 new_nodes 21 rels 18 sample fuel:methane@web:acme
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+chunk web/acme/c006 failed (Expecting ',' delimiter: line 1 column 385 (char 384)); skipping
+extracted 5 new_nodes 28 rels 26 sample phenomenon:soot@web:acme
+extracted 7 new_nodes 37 rels 33 sample phenomenon:cool-flame@web:acme
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+extracted 9 new_nodes 60 rels 61 sample hardware:cir@web:acme
+extracted 11 new_nodes 79 rels 61 sample hardware:cir@web:acme
+batch failed (Expecting ',' delimiter: line 6 column 68 (char 143)); retrying one chunk at a time
+extracted 13 new_nodes 96 rels 76 sample hardware:cir@web:acme
+batch failed (Expecting ',' delimiter: line 6 column 62 (char 137)); retrying one chunk at a time
+extracted 15 new_nodes 114 rels 100 sample sensor:radiometer@web:acme
+extracted 17 new_nodes 122 rels 102 sample hardware:acme-radiometer-array@web:acme
+batch failed (Expecting ',' delimiter: line 52 column 95 (char 3009)); retrying one chunk at a time
+extracted 19 new_nodes 136 rels 102 sample phenomenon:phenomenon-fire-psi-apollo-1@web:incidents
+batch failed (Expecting ',' delimiter: line 37 column 65 (char 2159)); retrying one chunk at a time
+extracted 21 new_nodes 146 rels 103 sample hardware:command-module@web:incidents
+extracted 23 new_nodes 155 rels 103 sample phenomenon:fire@web:incidents
+extracted 25 new_nodes 169 rels 106 sample location:launch-complex-34-memorial@web:incidents
+batch failed (Expecting ',' delimiter: line 27 column 76 (char 1332)); retrying one chunk at a time
+extracted 27 new_nodes 181 rels 112 sample phenomenon:oxygen-tank-explosion@web:incidents
+extracted 29 new_nodes 193 rels 113 sample hardware:saturn-v@web:incidents
+extracted 31 new_nodes 199 rels 114 sample hardware:service-module-oxygen-storage-system@web:incidents
+extracted 33 new_nodes 199 rels 114 sample -
+batch failed (Expecting ',' delimiter: line 50 column 6 (char 3056)); retrying one chunk at a time
+chunk web/bass/c002 failed (Expecting value: line 1 column 1 (char 0)); skipping
+extracted 34 new_nodes 207 rels 114 sample hardware:spice@web:bass
+batch failed (Expecting ',' delimiter: line 8 column 66 (char 277)); retrying one chunk at a time
+extracted 36 new_nodes 224 rels 130 sample hardware:bass-hardware@web:bass
+batch failed (Expecting ',' delimiter: line 33 column 70 (char 1719)); retrying one chunk at a time
+chunk web/bass/c005 failed (Expecting ',' delimiter: line 10 column 59 (char 367)); skipping
+extracted 37 new_nodes 227 rels 133 sample fuel:pmma@web:bass
+batch failed (Expecting ',' delimiter: line 56 column 76 (char 2740)); retrying one chunk at a time
+extracted 39 new_nodes 244 rels 144 sample location:msg@web:bass
+extracted 41 new_nodes 255 rels 144 sample location:msg@web:bass
+batch failed (Expecting ',' delimiter: line 49 column 6 (char 2177)); retrying one chunk at a time
+extracted 43 new_nodes 270 rels 154 sample hardware:hardware-cir@web:cir
+extracted 45 new_nodes 286 rels 170 sample hardware:fluids-integrated-rack-fir@web:cir
+batch failed (Expecting ',' delimiter: line 1 column 1068 (char 1067)); retrying one chunk at a time
+extracted 47 new_nodes 298 rels 175 sample location:international-space-station@web:program
+extracted 49 new_nodes 303 rels 179 sample fuel:pmma@web:program
+extracted 51 new_nodes 312 rels 179 sample location:iss@web:program
+batch failed (Expecting ',' delimiter: line 35 column 44 (char 1468)); retrying one chunk at a time
+extracted 53 new_nodes 325 rels 192 sample sensor:p-trak@web:program
+extracted 55 new_nodes 325 rels 192 sample -
+batch failed (Expecting ',' delimiter: line 7 column 50 (char 176)); retrying one chunk at a time
+extracted 57 new_nodes 342 rels 204 sample hardware:daft-1@web:daft
+batch failed (Expecting ',' delimiter: line 19 column 80 (char 886)); retrying one chunk at a time
+extracted 59 new_nodes 353 rels 211 sample phenomenon:extinction@web:flex
+extracted 61 new_nodes 366 rels 220 sample phenomenon:droplet-combustion@web:flex
+batch failed (Expecting ',' delimiter: line 8 column 55 (char 233)); retrying one chunk at a time
+extracted 63 new_nodes 381 rels 220 sample hardware:hardware-cir-flex-ice-ga@web:flex
+batch failed (Expecting ',' delimiter: line 16 column 64 (char 597)); retrying one chunk at a time
+extracted 65 new_nodes 389 rels 223 sample hardware:fm2@web:fm2
+extracted 67 new_nodes 405 rels 237 sample location:gipoc@web:program
+extracted 69 new_nodes 409 rels 241 sample location:iss@web:program
+extracted 71 new_nodes 409 rels 241 sample -
+extracted 73 new_nodes 420 rels 248 sample hardware:hardware-mdca-mdca-image@web:mdca
+batch failed (Expecting ',' delimiter: line 46 column 76 (char 2529)); retrying one chunk at a time
+extracted 75 new_nodes 437 rels 263 sample hardware:elektron-oxygen-generator@web:incidents
+batch failed (Expecting ',' delimiter: line 39 column 58 (char 1989)); retrying one chunk at a time
+extracted 77 new_nodes 447 rels 267 sample fuel:fuel-gaseous-fuels@web:acme
+batch failed (Expecting ',' delimiter: line 36 column 70 (char 1950)); retrying one chunk at a time
+chunk web/ntrs-acme-poster/img-001 failed (Expecting ',' delimiter: line 46 column 89 (char 2609)); skipping
+extracted 78 new_nodes 447 rels 267 sample -
+extracted 80 new_nodes 447 rels 267 sample -
+extracted 82 new_nodes 447 rels 267 sample -
+extracted 84 new_nodes 458 rels 281 sample location:msg@web:bass
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+chunk web/ntrs-bass2-summary/c008 failed (Expecting ',' delimiter: line 1 column 428 (char 427)); skipping
+extracted 85 new_nodes 458 rels 281 sample -
+batch failed (Expecting ',' delimiter: line 20 column 63 (char 1043)); retrying one chunk at a time
+chunk web/ntrs-bass2-summary/c010 failed (Expecting value: line 1 column 1 (char 0)); skipping
+extracted 86 new_nodes 458 rels 281 sample -
+batch failed (Expecting ',' delimiter: line 12 column 57 (char 459)); retrying one chunk at a time
+extracted 88 new_nodes 468 rels 281 sample fuel:methylmethacrylate@web:bass
+batch failed (Expecting ',' delimiter: line 30 column 81 (char 1663)); retrying one chunk at a time
+extracted 90 new_nodes 481 rels 293 sample location:msg@web:bass
+extracted 92 new_nodes 487 rels 293 sample fuel:cellulose@web:bass
+batch failed (Expecting ',' delimiter: line 27 column 53 (char 1075)); retrying one chunk at a time
+extracted 94 new_nodes 493 rels 303 sample fuel:pmma-bass-ii@web:bass
+extracted 96 new_nodes 493 rels 303 sample -
+batch failed (Expecting ',' delimiter: line 1 column 1645 (char 1644)); retrying one chunk at a time
+extracted 98 new_nodes 495 rels 304 sample phenomenon:flame-spread@web:bass
+extracted 100 new_nodes 499 rels 304 sample phenomenon:flame-spread@web:bass
+batch failed (Expecting ',' delimiter: line 26 column 87 (char 1499)); retrying one chunk at a time
+extracted 102 new_nodes 510 rels 317 sample hardware:bass-ii@web:bass
+extracted 104 new_nodes 510 rels 317 sample -
+extracted 106 new_nodes 510 rels 317 sample -
+batch failed (Expecting ',' delimiter: line 23 column 97 (char 814)); retrying one chunk at a time
+extracted 108 new_nodes 514 rels 322 sample phenomenon:flame-spread@web:bass
+extracted 110 new_nodes 514 rels 322 sample -
+extracted 112 new_nodes 514 rels 322 sample -
+extracted 114 new_nodes 517 rels 324 sample phenomenon:flame-spread@web:bass
+extracted 116 new_nodes 517 rels 324 sample -
+extracted 118 new_nodes 518 rels 324 sample phenomenon:flame-spread@web:bass
+extracted 120 new_nodes 525 rels 330 sample fuel:pmma@web:bass
+extracted 122 new_nodes 525 rels 330 sample -
+batch failed (Expecting ',' delimiter: line 1 column 1244 (char 1243)); retrying one chunk at a time
+extracted 124 new_nodes 525 rels 330 sample -
+extracted 126 new_nodes 525 rels 330 sample -
+extracted 128 new_nodes 525 rels 330 sample -
+extracted 130 new_nodes 525 rels 330 sample -
+extracted 132 new_nodes 529 rels 332 sample fuel:fuel-pmma-bass2@web:bass
+extracted 134 new_nodes 532 rels 332 sample fuel:pmma-nasa-tm-20210011385@web:bass
+extracted 136 new_nodes 538 rels 337 sample fuel:pmma@web:bass
+batch failed (Expecting ',' delimiter: line 38 column 67 (char 1883)); retrying one chunk at a time
+extracted 138 new_nodes 546 rels 341 sample fuel:fuel-pmma-bass-ii@web:bass
+extracted 140 new_nodes 546 rels 341 sample -
+extracted 142 new_nodes 546 rels 341 sample -
+extracted 144 new_nodes 554 rels 341 sample fuel:fuel-pmma-bass-ii@web:bass
+extracted 146 new_nodes 556 rels 341 sample phenomenon:flame-spread@web:bass
+batch failed (Expecting ',' delimiter: line 35 column 128 (char 2508)); retrying one chunk at a time
+chunk web/ntrs-bass2-summary/c075 failed (Expecting value: line 1 column 1 (char 0)); skipping
+extracted 147 new_nodes 559 rels 343 sample fuel:pmma@web:bass
+batch failed (Expecting ',' delimiter: line 24 column 103 (char 1247)); retrying one chunk at a time
+extracted 149 new_nodes 564 rels 347 sample hardware:variable-speed-fan@web:bass
+batch failed (Expecting ',' delimiter: line 9 column 69 (char 306)); retrying one chunk at a time
+chunk web/ntrs-bass2-summary/c079 failed (Expecting ',' delimiter: line 39 column 88 (char 2450)); skipping
+extracted 150 new_nodes 564 rels 347 sample -
+extracted 152 new_nodes 572 rels 347 sample phenomenon:flame-spread@web:bass
+extracted 154 new_nodes 572 rels 347 sample -
+extracted 156 new_nodes 581 rels 353 sample phenomenon:flame-oscillations@web:bass
+extracted 158 new_nodes 581 rels 353 sample -
+extracted 160 new_nodes 581 rels 353 sample -
+extracted 162 new_nodes 587 rels 355 sample phenomenon:extinction@web:bass
+extracted 164 new_nodes 593 rels 358 sample fuel:pmma@web:bass
+extracted 166 new_nodes 598 rels 358 sample phenomenon:extinction@web:bass
+extracted 168 new_nodes 601 rels 358 sample phenomenon:extinction@web:bass
+extracted 170 new_nodes 601 rels 358 sample -
+extracted 172 new_nodes 603 rels 358 sample fuel:pmma@web:bass
+batch failed (Expecting ',' delimiter: line 1 column 998 (char 997)); retrying one chunk at a time
+extracted 174 new_nodes 603 rels 358 sample -
+batch failed (Expecting ',' delimiter: line 24 column 53 (char 1170)); retrying one chunk at a time
+extracted 176 new_nodes 603 rels 358 sample -
+extracted 178 new_nodes 617 rels 367 sample location:msg@web:bass
+batch failed (Expecting ',' delimiter: line 12 column 73 (char 563)); retrying one chunk at a time
+chunk web/ntrs-bass2-summary/c110 failed (Expecting ',' delimiter: line 35 column 87 (char 2733)); skipping
+extracted 179 new_nodes 625 rels 368 sample fuel:fuel-sibal-bass-ii@web:bass
+extracted 181 new_nodes 632 rels 379 sample fuel:fabric-psi-bass-ii@web:bass
+extracted 183 new_nodes 638 rels 386 sample fuel:sibal@web:bass
+extracted 185 new_nodes 642 rels 389 sample hardware:bass2-bass2@web:bass
+extracted 187 new_nodes 642 rels 389 sample -
+extracted 189 new_nodes 642 rels 389 sample -
+extracted 191 new_nodes 652 rels 392 sample fuel:nomex-natural-nomex-iii@web:bass
+extracted 193 new_nodes 660 rels 392 sample fuel:black-rod@web:bass
+extracted 195 new_nodes 660 rels 392 sample -
+extracted 197 new_nodes 669 rels 405 sample fuel:pmma@web:bass
+extracted 199 new_nodes 669 rels 405 sample -
+extracted 201 new_nodes 669 rels 405 sample -
+extracted 203 new_nodes 669 rels 405 sample -
+batch failed (Expecting ',' delimiter: line 1 column 866 (char 865)); retrying one chunk at a time
+extracted 205 new_nodes 677 rels 405 sample fuel:pmma@web:bass
+extracted 207 new_nodes 677 rels 405 sample -
+extracted 209 new_nodes 688 rels 405 sample fuel:pmma@web:bass
+extracted 211 new_nodes 692 rels 411 sample fuel:pmma@web:bass
+extracted 213 new_nodes 692 rels 411 sample -
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+extracted 215 new_nodes 692 rels 411 sample -
+extracted 217 new_nodes 695 rels 413 sample phenomenon:flame-spread@web:bass
+batch failed (Expecting ',' delimiter: line 1 column 404 (char 403)); retrying one chunk at a time
+extracted 219 new_nodes 698 rels 413 sample phenomenon:flame@web:bass
+extracted 221 new_nodes 703 rels 421 sample phenomenon:flame-oscillation-bass-ii@web:bass
+extracted 223 new_nodes 710 rels 426 sample location:iss@web:bass
+extracted 225 new_nodes 712 rels 427 sample hardware:cir@web:mdca
+batch failed (Expecting ',' delimiter: line 48 column 108 (char 2627)); retrying one chunk at a time
+chunk web/ntrs-cir-mdca/c003 failed (Expecting ',' delimiter: line 1 column 1023 (char 1022)); skipping
+extracted 226 new_nodes 719 rels 433 sample hardware:fluids-and-combustion-facility@web:mdca
+batch failed (Expecting ',' delimiter: line 1 column 1824 (char 1823)); retrying one chunk at a time
+extracted 228 new_nodes 744 rels 455 sample hardware:cir-combustion-chamber@web:mdca
+extracted 230 new_nodes 753 rels 464 sample hardware:cir@web:mdca
+extracted 232 new_nodes 765 rels 471 sample hardware:mdca@web:mdca
+extracted 234 new_nodes 765 rels 471 sample -
+batch failed (Expecting ',' delimiter: line 22 column 67 (char 976)); retrying one chunk at a time
+extracted 236 new_nodes 776 rels 478 sample hardware:fcf@web:mdca
+batch failed (Expecting ',' delimiter: line 33 column 63 (char 1669)); retrying one chunk at a time
+chunk web/ntrs-cir-mdca/img-004 failed (Expecting value: line 1 column 1 (char 0)); skipping
+extracted 237 new_nodes 795 rels 497 sample hardware:cir@web:mdca
+batch failed (Expecting ',' delimiter: line 62 column 79 (char 3408)); retrying one chunk at a time
+extracted 239 new_nodes 814 rels 505 sample hardware:foma@web:mdca
+extracted 241 new_nodes 821 rels 516 sample hardware:cir@web:mdca
+batch failed (Expecting ',' delimiter: line 23 column 121 (char 1379)); retrying one chunk at a time
+chunk web/ntrs-cir-mdca/img-010 failed (Expecting ',' delimiter: line 52 column 78 (char 3284)); skipping
+extracted 242 new_nodes 834 rels 516 sample hardware:fcf@web:mdca
+extracted 244 new_nodes 835 rels 516 sample phenomenon:extinction@web:flex
+extracted 246 new_nodes 838 rels 517 sample phenomenon:extinction@web:flex
+batch failed (Expecting ',' delimiter: line 1 column 2691 (char 2690)); retrying one chunk at a time
+extracted 248 new_nodes 860 rels 517 sample phenomenon:droplet-combustion@web:flex
+extracted 250 new_nodes 860 rels 517 sample -
+batch failed (Expecting ',' delimiter: line 52 column 6 (char 2422)); retrying one chunk at a time
+extracted 252 new_nodes 886 rels 549 sample location:cir-ntrs-flex-tp2015@web:flex
+batch failed (Expecting ',' delimiter: line 27 column 88 (char 1172)); retrying one chunk at a time
+extracted 254 new_nodes 906 rels 562 sample hardware:paris@web:flex
+batch failed (Expecting ',' delimiter: line 21 column 100 (char 1050)); retrying one chunk at a time
+extracted 256 new_nodes 913 rels 562 sample fuel:heptane@web:flex
+extracted 258 new_nodes 920 rels 571 sample phenomenon:flame@web:flex
+extracted 260 new_nodes 920 rels 571 sample -
+extracted 262 new_nodes 920 rels 571 sample -
+extracted 264 new_nodes 926 rels 579 sample fuel:heptane@web:flex
+extracted 266 new_nodes 932 rels 593 sample fuel:heptane@web:flex
+batch failed (Expecting ',' delimiter: line 28 column 86 (char 1447)); retrying one chunk at a time
+chunk web/ntrs-flex-tp2015/c026 failed (Expecting ',' delimiter: line 23 column 110 (char 1134)); skipping
+extracted 267 new_nodes 942 rels 593 sample fuel:liquid-fuel@web:flex
+batch failed (Expecting ',' delimiter: line 1 column 1648 (char 1647)); retrying one chunk at a time
+extracted 269 new_nodes 955 rels 593 sample fuel:fuel-methanol-psi-088@web:flex
+extracted 271 new_nodes 958 rels 593 sample fuel:methanol@web:flex
+batch failed (Expecting ',' delimiter: line 25 column 89 (char 1461)); retrying one chunk at a time
+extracted 273 new_nodes 967 rels 596 sample fuel:fuel-methanol-flex-001@web:flex
+extracted 275 new_nodes 975 rels 596 sample fuel:methanol@web:flex
+extracted 277 new_nodes 981 rels 598 sample fuel:methanol@web:flex
+extracted 279 new_nodes 991 rels 599 sample fuel:fuel-heptane-flex-007@web:flex
+extracted 281 new_nodes 997 rels 602 sample fuel:methanol@web:flex
+extracted 283 new_nodes 1007 rels 602 sample fuel:heptane@web:flex
+extracted 285 new_nodes 1017 rels 606 sample fuel:fuel-methanol-flex-014@web:flex
+extracted 287 new_nodes 1035 rels 606 sample fuel:methanol-flex-016@web:flex
+batch failed (Expecting ',' delimiter: line 18 column 67 (char 915)); retrying one chunk at a time
+extracted 289 new_nodes 1048 rels 612 sample fuel:methanol-flex-021@web:flex
+batch failed (Expecting ',' delimiter: line 1 column 2159 (char 2158)); retrying one chunk at a time
+extracted 291 new_nodes 1066 rels 616 sample fuel:fuel-heptane-flex-023@web:flex
+batch failed (Expecting ',' delimiter: line 1 column 2142 (char 2141)); retrying one chunk at a time
+extracted 293 new_nodes 1075 rels 621 sample fuel:heptane-flex-027@web:flex
+batch failed (Expecting ',' delimiter: line 60 column 120 (char 4411)); retrying one chunk at a time
+extracted 295 new_nodes 1082 rels 623 sample fuel:methanol@web:flex
+extracted 297 new_nodes 1082 rels 623 sample -
+batch failed (Expecting ',' delimiter: line 1 column 1432 (char 1431)); retrying one chunk at a time
+extracted 299 new_nodes 1094 rels 629 sample fuel:heptane-tp-2015-216046@web:flex
+extracted 301 new_nodes 1101 rels 631 sample fuel:methanol@web:flex
+extracted 303 new_nodes 1101 rels 631 sample -
+extracted 305 new_nodes 1108 rels 631 sample fuel:methanol@web:flex
+batch failed (Expecting ',' delimiter: line 55 column 94 (char 3216)); retrying one chunk at a time
+extracted 307 new_nodes 1126 rels 634 sample fuel:heptane@web:flex
+extracted 309 new_nodes 1126 rels 634 sample -
+extracted 311 new_nodes 1126 rels 634 sample -
+extracted 313 new_nodes 1126 rels 634 sample -
+extracted 315 new_nodes 1126 rels 634 sample -
+extracted 317 new_nodes 1133 rels 634 sample fuel:heptane@web:flex
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+chunk web/ntrs-flex-tp2015/c078 failed (Expecting ',' delimiter: line 1 column 1177 (char 1176)); skipping
+extracted 318 new_nodes 1144 rels 637 sample fuel:fuel-methanol-flex-060@web:flex
+extracted 320 new_nodes 1151 rels 637 sample fuel:heptane@web:flex
+extracted 322 new_nodes 1160 rels 637 sample fuel:heptane@web:flex
+extracted 324 new_nodes 1165 rels 637 sample fuel:methanol@web:flex
+batch failed (Expecting ',' delimiter: line 49 column 90 (char 2709)); retrying one chunk at a time
+extracted 326 new_nodes 1177 rels 637 sample fuel:fuel-heptane-flex-069@web:flex
+extracted 328 new_nodes 1191 rels 643 sample fuel:fuel-heptane-flex-072@web:flex
+extracted 330 new_nodes 1209 rels 651 sample fuel:heptane-flex-074@web:flex
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+extracted 332 new_nodes 1218 rels 651 sample fuel:methanol-flex-078@web:flex
+extracted 334 new_nodes 1230 rels 651 sample fuel:fuel-methanol-flex-082@web:flex
+batch failed (Expecting ',' delimiter: line 15 column 90 (char 670)); retrying one chunk at a time
+extracted 336 new_nodes 1238 rels 657 sample fuel:methanol@web:flex
+batch failed (Expecting ',' delimiter: line 52 column 83 (char 2930)); retrying one chunk at a time
+extracted 338 new_nodes 1256 rels 659 sample fuel:methanol@web:flex
+batch failed (Expecting ',' delimiter: line 60 column 98 (char 4047)); retrying one chunk at a time
+extracted 340 new_nodes 1270 rels 672 sample fuel:methanol@web:flex
+batch failed (Expecting ',' delimiter: line 47 column 59 (char 2940)); retrying one chunk at a time
+extracted 342 new_nodes 1281 rels 674 sample fuel:heptane@web:flex
+extracted 344 new_nodes 1281 rels 674 sample -
+extracted 346 new_nodes 1287 rels 674 sample fuel:methanol@web:flex
+extracted 348 new_nodes 1298 rels 676 sample fuel:fuel-heptane-flex-100@web:flex
+extracted 350 new_nodes 1306 rels 676 sample fuel:heptane@web:flex
+extracted 352 new_nodes 1306 rels 676 sample -
+batch failed (Expecting ',' delimiter: line 25 column 111 (char 1426)); retrying one chunk at a time
+chunk web/ntrs-flex-tp2015/c114 failed (Expecting ',' delimiter: line 1 column 673 (char 672)); skipping
+chunk web/ntrs-flex-tp2015/c115 failed (Extra data: line 33 column 1 (char 1752)); skipping
+batch failed (Expecting ',' delimiter: line 53 column 59 (char 3458)); retrying one chunk at a time
+extracted 354 new_nodes 1318 rels 676 sample fuel:methanol@web:flex
+extracted 356 new_nodes 1330 rels 680 sample fuel:fuel-methanol-psi-116@web:flex
+extracted 358 new_nodes 1345 rels 687 sample fuel:fuel-heptane-flex-119@web:flex
+batch failed (Expecting ',' delimiter: line 15 column 46 (char 594)); retrying one chunk at a time
+extracted 360 new_nodes 1358 rels 689 sample fuel:fuel-methanol-flex-122@web:flex
+batch failed (Expecting ',' delimiter: line 12 column 68 (char 524)); retrying one chunk at a time
+extracted 362 new_nodes 1370 rels 689 sample fuel:methanol@web:flex
+batch failed (Expecting ',' delimiter: line 14 column 67 (char 679)); retrying one chunk at a time
+LLM HTTP 429 quota; sleeping 32656s until reset
+extracted 364 new_nodes 1382 rels 694 sample fuel:fuel-heptane-flex-130@web:flex
+extracted 366 new_nodes 1396 rels 706 sample fuel:fuel-heptane-flex-133@web:flex
+extracted 368 new_nodes 1408 rels 713 sample fuel:fuel-heptane-flex-135@web:flex
+extracted 370 new_nodes 1442 rels 713 sample fuel:fuel-heptane-flex-137@web:flex
+extracted 372 new_nodes 1456 rels 723 sample fuel:fuel-methanol-flex-141@web:flex
+extracted 374 new_nodes 1473 rels 732 sample fuel:fuel-methanol-flex-144@web:flex
+extracted 376 new_nodes 1485 rels 738 sample fuel:fuel-methanol-flex-147@web:flex
+extracted 378 new_nodes 1500 rels 748 sample fuel:fuel-heptane-flex-149@web:flex
+extracted 380 new_nodes 1511 rels 756 sample fuel:fuel-methanol-flex-152@web:flex
+batch failed (Expecting ',' delimiter: line 49 column 93 (char 3296)); retrying one chunk at a time
+extracted 382 new_nodes 1521 rels 756 sample fuel:heptane@web:flex
+extracted 384 new_nodes 1533 rels 758 sample fuel:fuel-heptane-flex-157@web:flex
+extracted 386 new_nodes 1550 rels 758 sample fuel:fuel-methanol-flex-160@web:flex
+batch failed (Expecting ',' delimiter: line 28 column 72 (char 1362)); retrying one chunk at a time
+chunk web/ntrs-flex-tp2015/c150 failed (Expecting ',' delimiter: line 1 column 712 (char 711)); skipping
+extracted 387 new_nodes 1556 rels 760 sample fuel:fuel-methanol-flex-164@web:flex
+batch failed (Expecting ',' delimiter: line 8 column 73 (char 288)); retrying one chunk at a time
+extracted 389 new_nodes 1570 rels 763 sample fuel:fuel-methanol-psi-70@web:flex
+extracted 391 new_nodes 1575 rels 763 sample fuel:fuel-methanol-flex@web:flex
+batch failed (Expecting ',' delimiter: line 40 column 51 (char 2081)); retrying one chunk at a time
+extracted 393 new_nodes 1588 rels 767 sample fuel:heptane-flex-172@web:flex
+extracted 395 new_nodes 1615 rels 775 sample fuel:fuel-heptane-flex-175@web:flex
+extracted 397 new_nodes 1632 rels 775 sample fuel:fuel-heptane-flex-179@web:flex
+extracted 399 new_nodes 1642 rels 782 sample fuel:fuel-heptane-flex-183@web:flex
+extracted 401 new_nodes 1659 rels 794 sample fuel:fuel-methanol-flex-186@web:flex
+extracted 403 new_nodes 1670 rels 799 sample fuel:fuel-methanol-flex-190@web:flex
+extracted 405 new_nodes 1684 rels 804 sample fuel:fuel-methanol-flex-193@web:flex
+extracted 407 new_nodes 1697 rels 814 sample fuel:fuel-heptane-flex-196@web:flex
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+chunk web/ntrs-flex-tp2015/c173 failed (Expecting ',' delimiter: line 1 column 1405 (char 1404)); skipping
+extracted 408 new_nodes 1708 rels 820 sample fuel:fuel-heptane-flex-198@web:flex
+batch failed (Expecting ',' delimiter: line 49 column 66 (char 3025)); retrying one chunk at a time
+extracted 410 new_nodes 1716 rels 820 sample fuel:methanol@web:flex
+batch failed (Expecting ',' delimiter: line 45 column 60 (char 2782)); retrying one chunk at a time
+extracted 412 new_nodes 1737 rels 823 sample fuel:fuel-heptane-psi-tp2015@web:flex
+extracted 414 new_nodes 1737 rels 823 sample -
+batch failed (Expecting ',' delimiter: line 1 column 4403 (char 4402)); retrying one chunk at a time
+chunk web/ntrs-flex-tp2015/c180 failed (Expecting ',' delimiter: line 45 column 122 (char 3326)); skipping
+extracted 415 new_nodes 1746 rels 823 sample fuel:fuel-heptane-flex-215@web:flex
+extracted 417 new_nodes 1754 rels 826 sample fuel:fuel-heptane-flex-217@web:flex
+extracted 419 new_nodes 1769 rels 832 sample fuel:methanol-flex-219@web:flex
+extracted 421 new_nodes 1785 rels 844 sample fuel:fuel-methanol-flex-222@web:flex
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+extracted 423 new_nodes 1797 rels 844 sample fuel:methanol@web:flex
+extracted 425 new_nodes 1818 rels 859 sample fuel:fuel-heptane-flex-229@web:flex
+extracted 427 new_nodes 1830 rels 865 sample fuel:fuel-methanol-flex-233@web:flex
+extracted 429 new_nodes 1845 rels 874 sample fuel:fuel-heptane-flex-235@web:flex
+batch failed (Expecting ',' delimiter: line 19 column 60 (char 951)); retrying one chunk at a time
+chunk web/ntrs-flex-tp2015/c196 failed (Expecting ',' delimiter: line 21 column 83 (char 1129)); skipping
+extracted 430 new_nodes 1852 rels 880 sample fuel:fuel-heptane-flex-239@web:flex
+extracted 432 new_nodes 1869 rels 888 sample fuel:fuel-heptane-flex-240@web:flex
+extracted 434 new_nodes 1869 rels 888 sample -
+extracted 436 new_nodes 1869 rels 888 sample -
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+extracted 438 new_nodes 1885 rels 891 sample fuel:fuel-methanol-flex-250@web:flex
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+extracted 440 new_nodes 1898 rels 896 sample fuel:fuel-methanol-flex-254@web:flex
+extracted 442 new_nodes 1917 rels 908 sample fuel:fuel-methanol-flex-257@web:flex
+extracted 444 new_nodes 1931 rels 910 sample fuel:fuel-methanol-flex-261@web:flex
+extracted 446 new_nodes 1941 rels 910 sample fuel:fuel-heptane-flex-265@web:flex
+extracted 448 new_nodes 1951 rels 910 sample fuel:fuel-methanol-flex-269@web:flex
+batch failed (Expecting ',' delimiter: line 20 column 95 (char 918)); retrying one chunk at a time
+extracted 450 new_nodes 1956 rels 910 sample fuel:heptane@web:flex
+batch failed (Expecting ',' delimiter: line 1 column 3349 (char 3348)); retrying one chunk at a time
+chunk web/ntrs-flex-tp2015/c218 failed (Expecting ',' delimiter: line 36 column 80 (char 2124)); skipping
+extracted 451 new_nodes 1968 rels 910 sample fuel:fuel-methanol-flex-277@web:flex
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+[#A288]  _: <CONNECTION> error: Failed to read from defunct connection IPv4Address(('p-mt-819cf3afaca3-1-0211.production-orch-0064.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.64.110', 7687))): TimeoutError('The read operation timed out')
+Traceback (most recent call last):
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 54, in _buffer_one_chunk
+    receive_into_buffer(self._socket, self._buffer, 2)
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 354, in receive_into_buffer
+    n = sock.recv_into(
+        ^^^^^^^^^^^^^^^
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_async_compat/network/_bolt_socket.py", line 438, in recv_into
+    return self._wait_for_io(self._socket.recv_into, buffer, nbytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_async_compat/network/_bolt_socket.py", line 415, in _wait_for_io
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/data/post_crawl_extract.py", line 33, in <module>
+    sys.exit(ex.main())
+             ^^^^^^^^^
+  File "/workspace/backend/scripts/extract_graphrag.py", line 503, in main
+    with driver.session(database=database) as session:
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/backend/scripts/extract_graphrag.py", line 327, in merge_graph
+    )
+      
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/work/session.py", line 332, in run
+    self._auto_result._run(
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 236, in _run
+    self._attach()
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 430, in _attach
+    self._connection.fetch_message()
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 855, in fetch_message
+    tag, fields = self.inbox.pop(
+                  ^^^^^^^^^^^^^^^
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 77, in pop
+    self._buffer_one_chunk()
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 73, in _buffer_one_chunk
+    Util.callback(self.on_error, error)
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_async_compat/util.py", line 117, in callback
+    return cb(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 883, in _set_defunct_read
+    self._set_defunct(message, error=error, silent=silent)
+  File "/home/coder/venvs/nasa-api/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 962, in _set_defunct
+    raise SessionExpired(message) from error
+neo4j.exceptions.SessionExpired: Failed to read from defunct connection IPv4Address(('p-mt-819cf3afaca3-1-0211.production-orch-0064.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.64.110', 7687)))

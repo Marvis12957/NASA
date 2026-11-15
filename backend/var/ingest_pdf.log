@@ -1,4 +1,312 @@
 investigations 24
-pdfs ok 1 fail 0
-markdown 255 images 8577
-SKIP data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Electric-Field Effects on Flames in Microgravity.pdf: unreadable fake PDF: magic not %PDF, pymupdf page_count=0, metadata format=PDF 1.7 creator=Microsoft PowerPoint 2013 title='Slide 1'; truncated (startxref beyond EOF); LibreOffice soffice failed to load as ppt/pptx/doc; no usable NTRS/repo copy; deleted empty markdown+json stub
+pdfs ok 245 fail 1
+markdown 785 images 14805
+data/psi/ACME_common/Engineering Documents/Short Nozzle MFA10771.pdf page 1: tesseract not installed; skipped OCR
+data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf page 1: tesseract not installed; skipped OCR
+data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf page 2: tesseract not installed; skipped OCR
+data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf page 3: tesseract not installed; skipped OCR
+data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf page 4: tesseract not installed; skipped OCR
+data/psi/ACME_common/Engineering Documents/s1101mfa0100_C.pdf page 5: tesseract not installed; skipped OCR
+data/psi/ACME_common/Engineering Documents/s1101mfa1800_B.pdf page 1: tesseract not installed; skipped OCR
+data/psi/ACME_common/Presentations/PS-01374 ACME posterFinal.pdf page 1: tesseract not installed; skipped OCR
+data/psi/ACME_common/Reports/ISS Researchers Guide - Combustion In Reduced Gravity.pdf page 4: tesseract not installed; skipped OCR
+data/psi/ACME_common/Reports/PS-03403_ACME_on_the_ISS.pdf page 1: tesseract not installed; skipped OCR
+data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 1: tesseract not installed; skipped OCR
+data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 2: tesseract not installed; skipped OCR
+data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 3: tesseract not installed; skipped OCR
+data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 4: tesseract not installed; skipped OCR
+data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 5: tesseract not installed; skipped OCR
+data/psi/ACME_common/Science Documents/ACME Radiometer Layouts from ProE.pdf page 6: tesseract not installed; skipped OCR
+data/psi/ACME_common/Science Documents/ACME-DOC-010_D Software Interface Design Description.pdf page 95: tesseract not installed; skipped OCR
+data/psi/ACME_common/Science Documents/ACME-DOC-010_D.pdf page 95: tesseract not installed; skipped OCR
+data/psi/ACME_common/Science Documents/ACME_Integrated_Science_Requirements_RevB.pdf page 3: tesseract not installed; skipped OCR
+data/psi/PSI-101_SAME-R/Reports/SAMER_Final 0602 2014.pdf page 50: tesseract not installed; skipped OCR
+data/psi/PSI-101_SAME-R/Reports/SAMER_Final 0602 2014.pdf page 85: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA150-B Aging Chamber Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA151-B Same Aging Chamber.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA151_B.PDF page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA410-A Teflon Sample Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA411 Teflon Ignitor Wire Coil Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA414-A Lampwick Sample Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA415 Ignitor Wire Coil Assembly (for 0 .250 OD samples).pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA416-A Silicone Sample Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA417-B Kapton Sample Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA419 Silicone Ignitor Wire Coil Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHA432-A Kapton Ignitor Wire Coil Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHD126-B Smoke Generation Tube.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHD413 Teflon Sample Part.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHD509 P-Trak Condenser Tube Modification.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHP000-C SAME Fluids System Schematic.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/60089MFHP0001-C Same Fluids System Schematic.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/80089MFHP000-E SAME Fluids System Schematic.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/80089MFHP000-E SAME Fluids System Schematic.pdf page 2: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Engineering Documents/S1171MFHA401 Pyrell Sample Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 2: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 6: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 10: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 32: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 34: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 42: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 50: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME Final Science report  03 18 10 with papers attached.pdf page 68: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 4: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 5: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 28: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 29: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 30: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 32: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Reports/SAME_Wire_Report.pdf page 33: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Science Documents/SAME_Baseline Concept Description Document_001 Rev A.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Science Documents/SAME_Operations Manual_007.pdf page 22: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Science Documents/SAME_Operations Manual_007.pdf page 24: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Science Documents/SAME_Operations Manual_007.pdf page 29: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Science Documents/SAME_Operations Manual_007.pdf page 30: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Science Documents/SAME_Software Description Document_003 Rev A.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-102_SAME/Science Documents/SAME_Software Requirement Document_004 Rev D.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-106_SLICE/Presentations/SLICE IP-C crew training 2010.pdf page 18: tesseract not installed; skipped OCR
+data/psi/PSI-106_SLICE/Presentations/SLICE IP-D crew training 2011.pdf page 18: tesseract not installed; skipped OCR
+data/psi/PSI-106_SLICE/Science Documents/SLICE IP-A SRDR.pdf page 3: tesseract not installed; skipped OCR
+data/psi/PSI-106_SLICE/Science Documents/SLICE IP-A SRDR.pdf page 6: tesseract not installed; skipped OCR
+data/psi/PSI-107_SPICE/Engineering Documents/60054MAFH000-C SPICE Experiment Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-107_SPICE/Engineering Documents/60054MAFH000-C SPICE Experiment Assembly.pdf page 2: tesseract not installed; skipped OCR
+data/psi/PSI-107_SPICE/Engineering Documents/SPICE-front-window.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-107_SPICE/Reports/Dotson Smoke Point Normal Gravity Coflow Flames.pdf page 3: tesseract not installed; skipped OCR
+data/psi/PSI-107_SPICE/Reports/SPICE AIAA 1-6 2010 0106.pdf page 9: tesseract not installed; skipped OCR
+data/psi/PSI-107_SPICE/Reports/SPICE AIAA 1-6 2010 0106.pdf page 10: tesseract not installed; skipped OCR
+data/psi/PSI-107_SPICE/Reports/SPICE Final Report 12_2_2012.pdf page 27: tesseract not installed; skipped OCR
+data/psi/PSI-107_SPICE/Reports/SPICE Final Report 12_2_2012.pdf page 28: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 1 Details.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 2 Details.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 3 Details.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Analyzed Data/STDCE-1 Run 4 and 5 Details.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 - The Solid Surface Combustion Experiment Aboard USML-1 Mission.pdf page 20: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 - The Solid Surface Combustion Experiment Aboard USML-1 Mission.pdf page 33: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 - The Solid Surface Combustion Experiment Aboard USML-1 Mission.pdf page 46: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 7: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 49: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 50: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 51: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 66: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 67: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 71: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 73: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 80: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 81: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 86: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 92: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 97: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 103: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 109: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 115: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 121: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 127: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 133: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 139: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 141: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 142: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 143: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 147: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 152: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 157: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 162: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 167: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 172: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 174: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 175: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 180: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 186: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 192: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 198: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 204: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 210: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 216: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 222: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 224: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 225: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 227: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 228: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 229: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 233: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 238: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 243: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 248: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 253: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 258: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 262: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 263: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 268: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 272: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 273: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 278: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1 NASA Contractor Report Jun 1996.pdf page 283: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Reports/STDCE-1_NASA TM 104482 - Particle Image Velocimetry for the Sufrace Tension Driven Convection Experiment Using a Particle Displacement Tracking Technique.pdf page 2: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Science Documents/SRD_STDCE.pdf page 85: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Science Documents/STDCE-1_SO.pdf page 5: tesseract not installed; skipped OCR
+data/psi/PSI-108_STDCE-1/Science Documents/STDCE-1_SO.pdf page 7: tesseract not installed; skipped OCR
+data/psi/PSI-10_ACME-Flame-Design/Science Documents/PSI-10_Science Documents_ACME_ISRD.pdf page 3: tesseract not installed; skipped OCR
+data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf page 25: tesseract not installed; skipped OCR
+data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf page 33: tesseract not installed; skipped OCR
+data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf page 34: tesseract not installed; skipped OCR
+data/psi/PSI-117_Cool-Flame-Perturbation/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf page 36: tesseract not installed; skipped OCR
+data/psi/PSI-117_Cool-Flame-Perturbation/Reports/Dissertation-PD-revised_.pdf page 4: tesseract not installed; skipped OCR
+data/psi/PSI-117_Cool-Flame-Perturbation/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf page 22: tesseract not installed; skipped OCR
+data/psi/PSI-117_Cool-Flame-Perturbation/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf page 218: tesseract not installed; skipped OCR
+data/psi/PSI-117_Cool-Flame-Perturbation/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf page 225: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFA1000_A.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFA1020.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFA1065.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1021_A.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1022.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1026_A.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/S1183MFD1041.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1085-Spherical sample final.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1090-Cylindrical Samples.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1110-flat.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfa1111-flat.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1086_REV-.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Engineering Documents/s1183mfd1091_REV-.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 10: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 13: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 14: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 20: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 21: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 27: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 31: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 32: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 34: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 47: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 52: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 53: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 61: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 67: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 70: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_RDR_201306.pdf page 73: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 3: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 16: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 22: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 27: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 48: tesseract not installed; skipped OCR
+data/psi/PSI-20_ACME-BRE/Science Documents/BRE_science_concept_SCR_201208.pdf page 56: tesseract not installed; skipped OCR
+data/psi/PSI-21_ACME-CLD-Flame/Engineering Documents/ACME CLD burner hot wire anemometry measurements.pdf page 12: tesseract not installed; skipped OCR
+data/psi/PSI-21_ACME-CLD-Flame/Reports/Karnani et al 2009 Exploring the effects of gravity on a coflow diffusion flame.pdf page 15: tesseract not installed; skipped OCR
+data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2018 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf page 12: tesseract not installed; skipped OCR
+data/psi/PSI-21_ACME-CLD-Flame/Reports/Lopez-Camara et al 2019 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf page 16: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 8: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 9: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 10: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 11: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 12: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 13: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 14: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf page 22: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 10: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 11: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 12: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 13: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 14: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 15: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 16: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 17: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf page 23: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 15: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 16: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 18: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 19: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 20: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 25: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf page 26: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Reports/Tinajero et al 2016 characterizing i-v curves for non-premixed methane flames.pdf page 17: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf page 13: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf page 16: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf page 26: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf page 34: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD Flames SCR 200802.pdf page 35: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 9: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 19: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 37: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 44: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 46: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 47: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_RDR_201005.pdf page 48: tesseract not installed; skipped OCR
+data/psi/PSI-22_ACME-E-FIELD-Flames/Science Documents/E-FIELD_Flames_SRD_20100402.pdf page 5: tesseract not installed; skipped OCR
+data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 4: tesseract not installed; skipped OCR
+data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 29: tesseract not installed; skipped OCR
+data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 38: tesseract not installed; skipped OCR
+data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 55: tesseract not installed; skipped OCR
+data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 74: tesseract not installed; skipped OCR
+data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 76: tesseract not installed; skipped OCR
+data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 80: tesseract not installed; skipped OCR
+data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 83: tesseract not installed; skipped OCR
+data/psi/PSI-23_ACME-S-Flames/Science Documents/s-Flame SCR 200802.pdf page 96: tesseract not installed; skipped OCR
+data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 8: tesseract not installed; skipped OCR
+data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 110: tesseract not installed; skipped OCR
+data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 122: tesseract not installed; skipped OCR
+data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 126: tesseract not installed; skipped OCR
+data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 142: tesseract not installed; skipped OCR
+data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 143: tesseract not installed; skipped OCR
+data/psi/PSI-25_BASS-II/Reports/BASS-II Summary Report.pdf page 144: tesseract not installed; skipped OCR
+data/psi/PSI-25_BASS-II/Science Documents/SRD_BASS-II.pdf page 7: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 6: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 12: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 13: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 14: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 19: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 24: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 28: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 36: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ASGSR BASS SIBAL talk Final.pdf page 39: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 6: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 12: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 13: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 14: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 19: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 25: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/CI US National Meeting-BASS SIBAL talk.pdf page 29: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 5: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 13: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 14: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 15: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 27: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 29: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 33: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 35: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 52: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 53: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 55: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Presentations/ISS Denver 2013-BASS.pdf page 58: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 7: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 8: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 11: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 17: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 35: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 36: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 40: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-04 SLICE_BASS_SAR-1_FINAL.pdf page 47: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 7: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 8: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 11: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 13: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 26: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SLICE ED-05 SLICE BASS SAR-2_FINAL.pdf page 28: tesseract not installed; skipped OCR
+data/psi/PSI-26_BASS/Science Documents/SRD_BASS.pdf page 2: tesseract not installed; skipped OCR
+data/psi/PSI-39_CFI/Reports/Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf page 7: tesseract not installed; skipped OCR
+data/psi/PSI-39_CFI/Reports/Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf page 20: tesseract not installed; skipped OCR
+data/psi/PSI-39_CFI/Science Documents/Pres_SCR_CFI.pdf page 2: tesseract not installed; skipped OCR
+data/psi/PSI-47_DAFT/Engineering Documents/60054MAFH000_C.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-47_DAFT/Engineering Documents/60054MAFH000_C.pdf page 2: tesseract not installed; skipped OCR
+data/psi/PSI-47_DAFT/Engineering Documents/60054mdfh001.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-47_DAFT/Engineering Documents/60054mdfh002.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-68_FLEX-2/Engineering Documents/67212MFAN11000-4 FLEX-2 Package Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFAC13500 FLEX-2 Fuel Reservoir Sub-Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFAC17143-2 FLEX-2 Fiber Arm Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFAC17146 FLEX-2 Replaceable Fiber Arm Assembly.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-68_FLEX-2/Engineering Documents/67235MFDC17150 FLEX-2 Fiber Cover.pdf page 1: tesseract not installed; skipped OCR
+data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 24: tesseract not installed; skipped OCR
+data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 25: tesseract not installed; skipped OCR
+data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 26: tesseract not installed; skipped OCR
+data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 27: tesseract not installed; skipped OCR
+data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 37: tesseract not installed; skipped OCR
+data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 40: tesseract not installed; skipped OCR
+data/psi/PSI-69_FLEX/Reports/FLEX A Decisive Step Forward in NASAs Combustion Research Program.pdf page 44: tesseract not installed; skipped OCR
+data/psi/PSI-99_SAFFIRE-II/Engineering Documents/PMMA sheet MFD1066.pdf page 1: tesseract not installed; skipped OCR
+FAIL data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1248_Summary.pdf: Failed to open file '/Users/Marvis/Projects/NASA/data/psi/PSI-69_FLEX/Analyzed Data/FLEX-1248_Summary.pdf' as type pdf.

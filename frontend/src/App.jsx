@@ -15,6 +15,7 @@ import ReportPane from "@/components/ReportPane";
 import { api, DB_STATS, CHUNK_SOURCES } from "@/lib/api";
 import { AuthArea, AuthGate, AuthSync, clerkEnabled } from "@/lib/auth";
 import { LanguagePicker } from "@/lib/language";
+import { getLanguage } from "@/lib/langState";
 
 const PROMPTS = [
   { label: "Thí nghiệm quan trọng nhất", text: "Thí nghiệm nào quan trọng nhất cho an toàn cháy trên ISS?" },
@@ -42,56 +43,96 @@ function detectInvestigation(q) {
   return null;
 }
 
+/** Nhãn của các khối OpenUI đi kèm đáp án: theo đúng ngôn ngữ trả lời —
+ * ngôn ngữ của câu hỏi thắng trước, rồi tới cài đặt của người dùng
+ * (chỉ có hai bộ nhãn Việt/Anh; ngôn ngữ khác dùng bộ Anh). */
+const ENRICH_TEXT = {
+  vi: {
+    chartTitle: "Chunk văn bản theo nguồn nghiên cứu",
+    chartCaption: "Số liệu kiểm kê trực tiếp từ Neo4j Aura, 15/11/2026. Phân bố lệch về ACME/SAME — cần chuẩn hoá theo nguồn khi dùng cho mô hình.",
+    statsLabels: null,
+    chunkSource0: "ACME chung",
+    libTitle: "Thư viện NASA PSI", libSub: "Mở artifact bên phải mà không rời chat",
+    cmpTitle: (a, b) => `So sánh nhanh ${a} ↔ ${b}`,
+    name: "Tên", familyShort: "Họ", oxy: "Oxy", fuels: "Nhiên liệu", runs: "Lần chạy",
+    cmpArtTitle: "So sánh nghiên cứu", cmpArtSub: "Mở bảng so sánh đầy đủ bên phải",
+    notExtracted: "Chưa trích xuất",
+    id: "Mã hồ sơ", oxySub: "khoảng đo", flow: "Luồng khí",
+    factsTitle: "Chi tiết hồ sơ", family: "Họ thí nghiệm", peers: "Cùng dòng",
+    reportTitle: "Báo cáo nghiên cứu",
+  },
+  en: {
+    chartTitle: "Text chunks by research source",
+    chartCaption: "Inventory counted directly from Neo4j Aura, 2026-11-15. Distribution skews toward ACME/SAME — normalize by source before using it for modeling.",
+    statsLabels: { "Node tri thức": "Knowledge nodes", "Quan hệ": "Relationships", "Chunk văn bản": "Text chunks", "Tài liệu PSI": "PSI documents" },
+    chunkSource0: "ACME shared",
+    libTitle: "NASA PSI Library", libSub: "Open the side artifact without leaving chat",
+    cmpTitle: (a, b) => `Quick comparison ${a} ↔ ${b}`,
+    name: "Name", familyShort: "Family", oxy: "Oxygen", fuels: "Fuels", runs: "Runs",
+    cmpArtTitle: "Compare investigations", cmpArtSub: "Open the full comparison table on the right",
+    notExtracted: "Not extracted",
+    id: "Investigation", oxySub: "measured range", flow: "Airflow",
+    factsTitle: "Investigation details", family: "Experiment family", peers: "Same family",
+    reportTitle: "Research report",
+  },
+};
+
+function enrichLang(q) {
+  if (/[àáâãèéêìíòóôõùúýăđơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹ]/i.test(q)) return "vi";
+  return getLanguage() === "vi" ? "vi" : "en";
+}
+
 async function buildEnrichment(q) {
   const lower = q.toLowerCase();
   const out = { blocks: [], artifact: null };
+  const T = ENRICH_TEXT[enrichLang(q)];
   try {
     if (/(biểu đồ|dữ liệu|database|bao phủ|thống kê|chunk)/i.test(lower)) {
       out.blocks.push(
-        { type: "stats", items: DB_STATS.map((d) => ({ label: d.label, value: d.value })) },
-        { type: "barchart", title: "Chunk văn bản theo nguồn nghiên cứu", labels: CHUNK_SOURCES.labels, values: CHUNK_SOURCES.values, caption: "Số liệu kiểm kê trực tiếp từ Neo4j Aura, 15/11/2026. Phân bố lệch về ACME/SAME — cần chuẩn hoá theo nguồn khi dùng cho mô hình." },
+        { type: "stats", items: DB_STATS.map((d) => ({ label: T.statsLabels?.[d.label] || d.label, value: d.value })) },
+        { type: "barchart", title: T.chartTitle, labels: CHUNK_SOURCES.labels.map((l, i) => (i === 0 ? T.chunkSource0 : l)), values: CHUNK_SOURCES.values, caption: T.chartCaption },
       );
-      if (!out.artifact) out.artifact = { tab: "data", title: "Thư viện NASA PSI", sub: "Mở artifact bên phải mà không rời chat" };
+      if (!out.artifact) out.artifact = { tab: "data", title: T.libTitle, sub: T.libSub };
     }
     const ids = [...q.matchAll(/PSI[-\s]?(\d+)/gi)].map((m) => `PSI-${m[1]}`);
     if (ids.length >= 2 && /(so sánh|khác|compare)/i.test(lower)) {
       const [a, b] = await Promise.all([api.investigation(ids[0]), api.investigation(ids[1])]);
       const o2 = (d) => d.oxygen || (d.oxygenMin != null ? `${d.oxygenMin}–${d.oxygenMax}%` : "—");
       out.blocks.push({
-        type: "facts", title: `So sánh nhanh ${a.id} ↔ ${b.id}`,
+        type: "facts", title: T.cmpTitle(a.id, b.id),
         rows: [
-          { k: "Tên", v: `${a.name} ↔ ${b.name}` },
-          { k: "Họ", v: `${a.family} ↔ ${b.family}` },
-          { k: "Oxy", v: `${o2(a)} ↔ ${o2(b)}` },
-          { k: "Nhiên liệu", v: `${(a.fuels || []).join(", ")} ↔ ${(b.fuels || []).join(", ")}` },
-          { k: "Lần chạy", v: `${a.runCount ?? "—"} ↔ ${b.runCount ?? "—"}` },
+          { k: T.name, v: `${a.name} ↔ ${b.name}` },
+          { k: T.familyShort, v: `${a.family} ↔ ${b.family}` },
+          { k: T.oxy, v: `${o2(a)} ↔ ${o2(b)}` },
+          { k: T.fuels, v: `${(a.fuels || []).join(", ")} ↔ ${(b.fuels || []).join(", ")}` },
+          { k: T.runs, v: `${a.runCount ?? "—"} ↔ ${b.runCount ?? "—"}` },
         ],
       });
-      out.artifact = { tab: "compare", title: "So sánh nghiên cứu", sub: "Mở bảng so sánh đầy đủ bên phải" };
+      out.artifact = { tab: "compare", title: T.cmpArtTitle, sub: T.cmpArtSub };
     } else {
       const invId = detectInvestigation(q);
       if (invId) {
         const d = await api.investigation(invId);
-        const o2 = d.oxygen || (d.oxygenMin != null ? `${d.oxygenMin}–${d.oxygenMax}%` : "Chưa trích xuất");
+        const o2 = d.oxygen || (d.oxygenMin != null ? `${d.oxygenMin}–${d.oxygenMax}%` : T.notExtracted);
         out.blocks.push(
           { type: "stats", items: [
-            { label: "Mã hồ sơ", value: d.id },
-            { label: "Oxy", value: o2.replace(" oxygen", ""), sub: "khoảng đo" },
-            { label: "Lần chạy", value: d.runCount != null ? String(d.runCount) : "—" },
-            { label: "Luồng khí", value: d.flow || "—" },
+            { label: T.id, value: d.id },
+            { label: T.oxy, value: o2.replace(" oxygen", ""), sub: T.oxySub },
+            { label: T.runs, value: d.runCount != null ? String(d.runCount) : "—" },
+            { label: T.flow, value: d.flow || "—" },
           ]},
           { type: "invcard", psiId: d.id, name: d.name, family: d.family, blurb: d.blurb || d.reason || "", fuels: d.fuels || [] },
-          { type: "facts", title: "Chi tiết hồ sơ", rows: [
-            { k: "Họ thí nghiệm", v: d.family },
+          { type: "facts", title: T.factsTitle, rows: [
+            { k: T.family, v: d.family },
             { k: "DOI", v: d.doi || "—" },
-            { k: "Cùng dòng", v: (d.peers || []).map((p) => `${p.name} (${p.id})`).join(" · ") || "—" },
+            { k: T.peers, v: (d.peers || []).map((p) => `${p.name} (${p.id})`).join(" · ") || "—" },
           ]},
         );
-        if (!out.artifact) out.artifact = { tab: "data", title: "Thư viện NASA PSI", sub: "Mở artifact bên phải mà không rời chat" };
+        if (!out.artifact) out.artifact = { tab: "data", title: T.libTitle, sub: T.libSub };
       }
     }
     if (/(báo cáo|kịch bản|brief)/i.test(lower) && !out.artifact) {
-      out.artifact = { tab: "report", title: "Báo cáo nghiên cứu", sub: "Mở artifact bên phải mà không rời chat" };
+      out.artifact = { tab: "report", title: T.reportTitle, sub: T.libSub };
     }
   } catch { /* làm giàu thất bại không được làm hỏng câu trả lời chính */ }
   return out;

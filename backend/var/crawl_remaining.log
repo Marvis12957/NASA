@@ -1,0 +1,2168 @@
+[16:35:53] 14 sources -> /workspace/data/crawl  (ocr=on, vision=False)
+[16:35:53] crawl mdca: https://gipoc.grc.nasa.gov/wp/fcf-cir/mdca/
+[16:35:56]    ok: kind=html, images=1, chars=218
+[16:35:56] crawl ntrs-bass2-summary: https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=0/1.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=0/1.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=2/3.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=2/3.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=14/15.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=15/16.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=16/17.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=17/18.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=17/18.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=21/22.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=22/23.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=22/23.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=28/29.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=29/30.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=30/31.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=31/32.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=32/33.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=33/34.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=34/35.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=34/35.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=41/42.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=41/42.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=44/45.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=45/46.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=45/46.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=47/48.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=48/49.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=49/50.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=50/51.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=50/51.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=53/54.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=53/54.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=56/57.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=57/58.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=58/59.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=58/59.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=63/64.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=64/65.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=65/66.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=65/66.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=67/68.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=68/69.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=69/70.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=69/70.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=76/77.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=76/77.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=78/79.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=79/80.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=79/80.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=82/83.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=83/84.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=84/85.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=85/86.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=86/87.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=87/88.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=87/88.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=89/90.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=90/91.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=90/91.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=93/94.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=94/95.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=95/96.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=95/96.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=101/102.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=101/102.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=104/105.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=105/106.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=105/106.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=107/108.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=107/108.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=123/124.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=124/125.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=124/125.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=129/130.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=130/131.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=131/132.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=132/133.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=132/133.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=134/135.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=135/136.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=135/136.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+[16:37:20]    ok: kind=pdf, pages=144, image_only_pages=7, images=87
+[16:37:20] crawl ntrs-luci: https://ntrs.nasa.gov/api/citations/20250010653/downloads/ASGSR%202025-LUCI-Ferkul-Presentation-v2-2
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=0/1.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=0/1.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=2/3.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=3/4.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=4/5.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=5/6.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=6/7.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=7/8.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=8/9.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=9/10.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=10/11.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=10/11.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=13/14.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=14/15.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=14/15.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=18/19.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=19/20.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=20/21.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=21/22.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=21/22.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=23/24.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=24/25.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=25/26.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=26/27.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=27/28.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=28/29.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=29/30.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=30/31.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=30/31.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=32/33.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=33/34.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=33/34.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=35/36.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=35/36.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=38/39.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=39/40.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=40/41.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=41/42.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=42/43.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=43/44.
+[16:37:45]    ok: kind=pdf, pages=44, image_only_pages=3, images=54
+[16:37:45] crawl ntrs-flex-tp2015: https://ntrs.nasa.gov/api/citations/20150023456/downloads/20150023456.pdf
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=43/44.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=11/12.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=11/12.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=34/35.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=35/36.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=36/37.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=37/38.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=38/39.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=39/40.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=40/41.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=41/42.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=42/43.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=43/44.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=44/45.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=45/46.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=46/47.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=47/48.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=48/49.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=49/50.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=50/51.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=51/52.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=52/53.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=53/54.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=54/55.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=55/56.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=56/57.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=57/58.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=58/59.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=59/60.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=60/61.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=61/62.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=62/63.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=63/64.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=64/65.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=65/66.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=66/67.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=67/68.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=68/69.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=69/70.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=70/71.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=71/72.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=72/73.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=73/74.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=74/75.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=75/76.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=76/77.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=77/78.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=78/79.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=79/80.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=80/81.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=81/82.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=82/83.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=83/84.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=84/85.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=85/86.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=86/87.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=87/88.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=88/89.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=89/90.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=90/91.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=91/92.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=92/93.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=93/94.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=94/95.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=95/96.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=96/97.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=97/98.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=98/99.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=99/100.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=100/101.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=101/102.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=102/103.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=103/104.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=104/105.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=105/106.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=106/107.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=107/108.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=108/109.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=109/110.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=110/111.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=111/112.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=112/113.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=113/114.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=114/115.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=115/116.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=116/117.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=117/118.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=118/119.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=119/120.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=120/121.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=121/122.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=122/123.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=123/124.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=124/125.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=125/126.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=126/127.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=127/128.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=128/129.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=129/130.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=130/131.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=131/132.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=132/133.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=133/134.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=134/135.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=135/136.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=136/137.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=137/138.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=138/139.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=139/140.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=140/141.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=141/142.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=142/143.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=143/144.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=144/145.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=145/146.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=146/147.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=147/148.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=148/149.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=149/150.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=150/151.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=151/152.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=152/153.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=153/154.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=154/155.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=155/156.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=156/157.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=157/158.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=158/159.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=159/160.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=160/161.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=161/162.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=162/163.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=163/164.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=164/165.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=165/166.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=166/167.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=167/168.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=168/169.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=169/170.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=170/171.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=171/172.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=172/173.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=173/174.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=174/175.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=175/176.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=176/177.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=177/178.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=178/179.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=179/180.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=180/181.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=181/182.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=182/183.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=183/184.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=184/185.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=185/186.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=186/187.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=187/188.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=188/189.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=189/190.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=190/191.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=191/192.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=192/193.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=193/194.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=194/195.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=195/196.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=196/197.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=197/198.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=198/199.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=199/200.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=200/201.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=201/202.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=202/203.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=203/204.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=204/205.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=205/206.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=206/207.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=207/208.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=208/209.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=209/210.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=210/211.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=211/212.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=212/213.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=213/214.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=214/215.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=215/216.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=216/217.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=217/218.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=218/219.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=219/220.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=220/221.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=221/222.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=222/223.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=223/224.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=224/225.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=225/226.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=226/227.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=227/228.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=228/229.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=229/230.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=230/231.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=231/232.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=232/233.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=233/234.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=234/235.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=235/236.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=236/237.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=237/238.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=238/239.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=239/240.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=240/241.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=241/242.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=242/243.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=243/244.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=244/245.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=245/246.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=246/247.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=247/248.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=248/249.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=249/250.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=250/251.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=251/252.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=252/253.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=253/254.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=254/255.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=255/256.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=256/257.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=257/258.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=258/259.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=259/260.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=260/261.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=261/262.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=262/263.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=263/264.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=264/265.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=265/266.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=266/267.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=267/268.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=268/269.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=269/270.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=270/271.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=271/272.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=272/273.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=273/274.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=274/275.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=275/276.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=276/277.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=277/278.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=278/279.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=279/280.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=280/281.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=281/282.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=282/283.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=283/284.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=284/285.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=285/286.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=286/287.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=287/288.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=288/289.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=289/290.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=290/291.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=291/292.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=292/293.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=293/294.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=294/295.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=295/296.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=296/297.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=297/298.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=298/299.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=299/300.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=300/301.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=301/302.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=302/303.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=303/304.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=304/305.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=305/306.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=306/307.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=307/308.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=308/309.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=309/310.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=309/310.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+[16:40:22]    ok: kind=pdf, pages=314, image_only_pages=5, images=282
+[16:40:22] crawl ntrs-acme-poster: https://ntrs.nasa.gov/api/citations/20220015583/downloads/PS-03790%20ACME%20poster%2013thUSNCM%20202
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=0/1.
+[16:40:32]    ok: kind=pdf, pages=1, image_only_pages=0, images=1
+[16:40:32] crawl researchers-guide: https://www.nasa.gov/missions/station/a-researchers-guide-to-combustion-science/
+[16:40:35]    ok: kind=html, images=1, chars=1797
+[16:40:35] crawl researchers-guide-pdf: https://www.nasa.gov/wp-content/uploads/2016/05/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=0/1.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=0/1.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=4/5.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=4/5.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=8/9.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=8/9.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=11/12.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=11/12.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=13/14.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=13/14.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=17/18.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=18/19.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=18/19.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=26/27.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=27/28.
+Image too small to scale!! (2x36 vs min width of 3)
+Line cannot be recognized!!
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=28/29.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=28/29.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=37/38.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=37/38.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=54/55.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=54/55.
+[16:40:51]    ok: kind=pdf, pages=56, image_only_pages=1, images=35
+[16:40:51] crawl psi-database-guide: https://assets.science.nasa.gov/content/dam/science/bps/bps-general/bps-data_osdr_psi/PSI%20Database
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=0/1.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=1/2.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=2/3.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=3/4.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=4/5.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=5/6.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=6/7.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=7/8.
+=== Document parser messages ===
+Warning: RapidOCR is missing. Install for much improved OCR results.
+Using Tesseract for OCR processing.
+OCR on page.number=7/8.
+[16:41:02]    ok: kind=pdf, pages=9, image_only_pages=1, images=10
+[16:41:02] crawl apollo-1: https://sma.nasa.gov/sma-disciplines/accllp/apollo-1
+[16:41:04]    ok: kind=html, images=0, chars=0
+[16:41:04] crawl apollo-13: https://sma.nasa.gov/sma-disciplines/accllp/apollo-13
+[16:41:05]    ok: kind=html, images=0, chars=0
+[16:41:05] crawl mir-fire-1997: https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/
+[16:41:24]    ok: kind=html, images=10, chars=7074
+[16:41:24] crawl spinoff-9582: https://spinoff.nasa.gov/node/9582
+[16:41:58]    ok: kind=html, images=11, chars=3058
+[16:41:58] crawl spinoff-9407: https://spinoff.nasa.gov/node/9407
+[16:42:32]    ok: kind=html, images=11, chars=3080
+[16:42:32] crawl spinoff-9918: https://spinoff.nasa.gov/node/9918
+[16:43:06]    ok: kind=html, images=11, chars=3748
+[16:43:06] done: 14 processed, 0 failed; manifest /workspace/data/crawl/manifest.json

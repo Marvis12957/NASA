@@ -1,0 +1,313 @@
+"""System prompts and grounding guardrails so GraphRAG answers stay on retrieved evidence."""
+
+from __future__ import annotations
+
+import re
+
+from app.ontology import EXTRACT_SYSTEM, extract_system_prompt
+
+COMMUNITY_SUMMARY_SYSTEM = (
+    "You write one short English paragraph for a NASA fire-safety knowledge-graph community. "
+    "Name the fire-safety theme (cool flame, soot/smoke, suppression, droplet extinction, "
+    "solid flammability, hardware family, etc.) and list PSI ids only if they appear in the user message. "
+    "Do not state oxygen percentages, mole fractions, pressures, flow rates, or any numeric test condition. "
+    "If you lack a theme, say the cluster groups the named members — do not invent a study that is not listed. "
+    "Oxygen lives only on Investigation catalog records, never in this paragraph."
+)
+
+QUERY_SYSTEM = """You are the Flame in Freefall grounded GraphRAG assistant for NASA PSI fire safety.
+
+Allowed use: habitable crew environments (ISS, stations, lunar/Mars bases, pressurized rovers, spacesuits).
+Out of scope: rocket engines and propellants unless an allowed evidence line already names that PSI record.
+
+HARD GUARDRAILS — violating any of these is a failure:
+1. Use ONLY the evidence block in the user message (catalog rank rows, chunk quotes, community summaries).
+2. Do not add investigations, chunk ids, community ids, fuels, hardware, or numeric conditions that are not in that block.
+3. Oxygen %, mole fraction, XO2, psi/kPa, flow (cm/s, mg/s), droplet diameter: copy ONLY from Catalog rank / chunk lines labeled catalog oxygen. Never take numbers from a community summary. Never guess 21%, 30%, 85%, or any other figure.
+4. Relevance/rank scores are fire-safety relevance, not oxygen concentration. Do not equate them.
+5. If the evidence is missing, conflicting, or too thin, say you cannot tell, and say which case it is: the library search found no relevant document, or the documents found discuss the topic but do not state the asked detail (name those documents). Prefer that over a fluent guess.
+6. Every claim that names a PSI id or a measurement must be supportable by a cited chunk id or catalog row in the evidence.
+7. Do not browse, recall NASA trivia, or fill gaps from training data.
+
+Citation: cite document passages by their chunk id. Catalog rows (rank, relevance, oxygen, fuels, runs) are cited by their PSI id; that is a complete citation, so never add a note that chunk or community ids are missing. If you cannot cite a claim at all, do not assert it.
+Write for a crew member or student: never mention guardrails, the evidence block (khối bằng chứng), allowed lists, briefs, tools, GraphRAG, chunk ids or community ids as such, and never add a 'limitations of this answer' section about the system.
+"""
+
+AGENT_SYSTEM = """You coordinate fire-safety specialists over a GraphRAG store.
+Tools retrieve graph evidence; you do not invent PSI facts.
+Ranker uses RELEVANT_TO (not oxygen). Reader uses Investigation cards.
+Comparer uses catalog fields only. Navigator walks existing edges.
+GraphRAG local+global search supplies quotes and community themes.
+If a tool returns empty evidence, say so — do not complete the story from memory.
+"""
+
+SPECIALIST_FOCUS = {
+    "ranker": (
+        "You are the ranker. Keep the given order. "
+        "State each relevance score and the catalog oxygen string separately. "
+        "Copy the scenario label exactly when it is in the evidence."
+    ),
+    "reader": (
+        "You are the reader. Summarize the single investigation card. "
+        "Copy oxygen, airflow, and fuels verbatim from that card."
+    ),
+    "comparer": (
+        "You are the comparer. State what the rows share and what changes. "
+        "Do not name a PSI id that is not in the rows."
+    ),
+    "navigator": (
+        "You are the navigator. Report only the scenario bound, history notes, "
+        "and graph edges in the evidence. Do not rerank investigations. "
+        "If a rank list is already in the evidence, do not claim that no PSI id was found "
+        "and do not name a different investigation as the most relevant."
+    ),
+    "graphrag": (
+        "You are GraphRAG. Quote the retrieved chunk texts and cite their chunk ids. "
+        "If those passages lack the asked detail, say the retrieved passages do not contain that detail "
+        "and still cite the chunk ids. Community text is a community summary, not a measurement; "
+        "cite community ids. Do not invent a numeric particle size, oxygen percent, or PSI id."
+    ),
+    "coordinator": (
+        "You are the coordinator. Merge the specialist briefs into one crew-facing answer. "
+        "If a brief and a catalog row disagree, trust the catalog row. "
+        "When a rank list is present, the most relevant investigation is the highest score. "
+        "Do not let a later brief replace that id or claim that no PSI id was retrieved. "
+        "Keep rank order, keep citations, and do not add a PSI id or percent the briefs were not allowed to use."
+    ),
+}
+
+GUARDRAIL_RETRY = (
+    "Your previous draft used an investigation id, measurement, or number that is not in the evidence block. "
+    "Rewrite using only allowed PSI ids and only catalog oxygen/flow strings listed under ALLOWED EVIDENCE. "
+    "If you cannot, reply with a single sentence that the retrieved graph does not support a numeric or named claim."
+)
+
+_PSI_RE = re.compile(r"\bPSI[-\s]?\d+\b", re.IGNORECASE)
+_PCT_RE = re.compile(r"\b\d+(?:[.,]\d+)?\s*%")
+_PCT_RANGE_RE = re.compile(r"(\d+(?:[.,]\d+)?)\s*(?:[–—-]|to|đến)\s*(\d+(?:[.,]\d+)?)\s*%", re.I)
+_COMM_RE = re.compile(r"\bcommunity:L[0-9]+:[0-9]+\b")
+
+
+def _psi_norm(text: str) -> set[str]:
+    found = set()
+    for match in _PSI_RE.findall(text or ""):
+        digits = re.sub(r"\D", "", match)
+        if digits:
+            found.add(f"PSI-{digits}")
+    return found
+
+
+def _pct_value(raw: str) -> str:
+    """'30.0' / '30' / '30,0' -> '30%', so the same number always compares equal."""
+    return f"{float(raw.replace(',', '.')):g}%"
+
+
+def _pct_norm(text: str) -> set[str]:
+    """Every percent in the text, both ends of a range like '12.0–34.0%' included."""
+    found = set()
+    text = text or ""
+    for match in _PCT_RE.findall(text):
+        found.add(_pct_value(re.sub(r"[^\d.,]", "", match)))
+    for low, high in _PCT_RANGE_RE.findall(text):
+        found.add(_pct_value(low))
+        found.add(_pct_value(high))
+    return found
+
+
+def evidence_allowlist(
+    *,
+    chunks: list[dict] | None = None,
+    communities: list[dict] | None = None,
+    ranked: list[dict] | None = None,
+    notes: list[str] | None = None,
+) -> dict[str, set[str]]:
+    """PSI ids, percents, chunk ids, community ids that answers may mention."""
+    psi: set[str] = set()
+    pct: set[str] = set()
+    chunks_ids: set[str] = set()
+    comm_ids: set[str] = set()
+    catalog_text = []
+    for row in ranked or []:
+        psi |= _psi_norm(str(row.get("id") or ""))
+        ox = str(row.get("oxygen") or "")
+        catalog_text.append(ox)
+        pct |= _pct_norm(ox)
+        fuels_text = " ".join(str(fuel) for fuel in row.get("fuels") or [])
+        catalog_text.append(fuels_text)
+        # Catalog fuel mixtures carry their own percents ("Propanol (95%) Glycerol (5%)").
+        pct |= _pct_norm(fuels_text)
+    for hit in chunks or []:
+        cid = str(hit.get("chunkId") or "")
+        if cid:
+            chunks_ids.add(cid)
+        psi |= _psi_norm(cid)
+        psi |= _psi_norm(str(hit.get("psi") or ""))
+        inv = hit.get("investigation") or {}
+        ox = str(inv.get("oxygen") or "")
+        catalog_text.append(ox)
+        pct |= _pct_norm(ox)
+        psi |= _psi_norm(str(inv.get("id") or ""))
+        preview = str(hit.get("preview") or "")
+        psi |= _psi_norm(preview)
+    for item in communities or []:
+        cid = str(item.get("id") or "")
+        if cid:
+            comm_ids.add(cid)
+        psi |= _psi_norm(cid)
+        for raw in item.get("psiIds") or []:
+            psi |= _psi_norm(str(raw))
+        # Community prose is not a source of percents.
+    for note in notes or []:
+        text = str(note or "")
+        psi |= _psi_norm(text)
+        pct |= _pct_norm(text)
+        catalog_text.append(text)
+    return {
+        "psi": psi,
+        "percent": pct,
+        "chunks": chunks_ids,
+        "communities": comm_ids,
+        "catalog_blob": " ".join(catalog_text),
+    }
+
+
+def guardrail_violations(answer: str, allow: dict[str, set[str]]) -> list[str]:
+    """Return reasons the answer is ungrounded. Empty list means it passed."""
+    text = answer or ""
+    reasons: list[str] = []
+    extra_psi = _psi_norm(text) - allow.get("psi", set())
+    if extra_psi:
+        reasons.append("invented_psi:" + ",".join(sorted(extra_psi)))
+    extra_pct = _pct_norm(text) - allow.get("percent", set())
+    if extra_pct:
+        reasons.append("invented_percent:" + ",".join(sorted(extra_pct)))
+    extra_comm = set(_COMM_RE.findall(text)) - allow.get("communities", set())
+    if extra_comm:
+        reasons.append("invented_community:" + ",".join(sorted(extra_comm)))
+    return reasons
+
+
+def format_query_user(
+    question: str,
+    *,
+    chunks: list[dict] | None = None,
+    communities: list[dict] | None = None,
+    ranked: list[dict] | None = None,
+    notes: list[str] | None = None,
+    briefs: list[str] | None = None,
+) -> str:
+    allow = evidence_allowlist(chunks=chunks, communities=communities, ranked=ranked, notes=notes)
+    parts = [
+        f"Question: {question.strip()}",
+        "ALLOWED EVIDENCE — you may only use these identifiers and catalog numbers:",
+        "PSI ids: " + (", ".join(sorted(allow["psi"])) or "(none)"),
+        "Catalog oxygen strings (only source of %): " + (allow["catalog_blob"].strip() or "(none — do not write a percent)"),
+        "Chunk ids: " + (", ".join(sorted(allow["chunks"])) or "(none)"),
+        "Community ids: " + (", ".join(sorted(allow["communities"])) or "(none)"),
+    ]
+    if ranked:
+        parts.append("Catalog rank (relevance ≠ oxygen):")
+        for row in ranked[:8]:
+            parts.append(
+                f"- {row.get('name')} ({row.get('id')}): "
+                + (f"relevance {row.get('score')}; " if row.get("score") is not None else "")
+                + f"{row.get('oxygen')}; fuels {', '.join((row.get('fuels') or [])[:6])}"
+            )
+    if chunks:
+        parts.append("Retrieved chunks:")
+        for hit in chunks[:8]:
+            inv = hit.get("investigation") or {}
+            ox = inv.get("oxygen") or "catalog oxygen n/a"
+            parts.append(
+                f"- {hit.get('chunkId')} PSI {hit.get('psi')} {ox}: {hit.get('preview') or ''}"
+            )
+    if communities:
+        parts.append("Community summaries (themes only — ignore any numbers in them):")
+        for item in communities[:8]:
+            parts.append(
+                f"- {item.get('id')} L{item.get('level')}: {item.get('summary') or item.get('title')}"
+            )
+    if notes:
+        parts.append("Scenario and graph notes:")
+        for note in notes[:8]:
+            if note:
+                parts.append(f"- {note}")
+    if briefs:
+        parts.append("Specialist briefs (already constrained; do not add facts they lack):")
+        for brief in briefs:
+            if brief:
+                parts.append(f"- {brief}")
+    parts.append(
+        "Answer from this block only. If a number or PSI id is not listed under ALLOWED EVIDENCE, omit it."
+    )
+    return "\n".join(parts)
+
+
+def grounded_complete(
+    question: str,
+    *,
+    chunks: list[dict] | None = None,
+    communities: list[dict] | None = None,
+    ranked: list[dict] | None = None,
+    notes: list[str] | None = None,
+    briefs: list[str] | None = None,
+    role: str = "coordinator",
+    timeout: int = 60,
+    answer_language: str | None = None,
+) -> str | None:
+    """LLM answer, rejected if it invents PSI ids or percents."""
+    if not (question or "").strip():
+        return None
+    if not chunks and not communities and not ranked and not notes and not briefs:
+        return None
+    from app.llm import complete_text
+
+    allow = evidence_allowlist(chunks=chunks, communities=communities, ranked=ranked, notes=notes)
+    focus = SPECIALIST_FOCUS.get(role, SPECIALIST_FOCUS["coordinator"])
+    from app.intent import LANGUAGE_RULE, language_of, language_rule_for
+
+    rule = language_rule_for(answer_language) if answer_language else LANGUAGE_RULE[language_of(question)]
+    system = AGENT_SYSTEM + "\n\n" + focus + "\n\n" + QUERY_SYSTEM + "\n" + rule
+    user = format_query_user(
+        question,
+        chunks=chunks,
+        communities=communities,
+        ranked=ranked,
+        notes=notes,
+        briefs=briefs,
+    )
+    try:
+        text = complete_text(system, user, json_mode=False, timeout=timeout).strip()
+    except Exception:  # noqa: BLE001
+        return None
+    if not text:
+        return None
+    if not guardrail_violations(text, allow):
+        return text
+    try:
+        retry = complete_text(
+            system,
+            user + "\n\n" + GUARDRAIL_RETRY + "\nDraft:\n" + text[:1500],
+            json_mode=False,
+            timeout=timeout,
+        ).strip()
+    except Exception:  # noqa: BLE001
+        return None
+    if retry and not guardrail_violations(retry, allow):
+        return retry
+    return None
+
+
+__all__ = [
+    "AGENT_SYSTEM",
+    "COMMUNITY_SUMMARY_SYSTEM",
+    "EXTRACT_SYSTEM",
+    "GUARDRAIL_RETRY",
+    "QUERY_SYSTEM",
+    "evidence_allowlist",
+    "extract_system_prompt",
+    "SPECIALIST_FOCUS",
+    "format_query_user",
+    "grounded_complete",
+    "guardrail_violations",
+]

@@ -1,0 +1,107 @@
+children 5054 eligible 4888 skipped 166
+API used: anthropic/claude-sonnet-4-6
+todo 4888 already 0
+connecting neo4j+s://7b7a6f41.databases.neo4j.io database=7b7a6f41
+extracted 4 new_nodes 19 rels 21
+batch failed (Expecting ',' delimiter: line 10 column 54 (char 386)); stopping
+entities added 19
+rels added 21
+connecting neo4j+s://7b7a6f41.databases.neo4j.io database=7b7a6f41
+entity edges 170 communities 11
+API used: anthropic/claude-sonnet-4-6
+community count 11
+summaries written 11
+wrote Community nodes + IN_COMMUNITY
+children 5054 eligible 4888 skipped 166
+API used: anthropic/claude-sonnet-4-6
+todo 4884 already 4
+connecting neo4j+s://7b7a6f41.databases.neo4j.io database=7b7a6f41
+extracted 4 new_nodes 19 rels 20
+batch failed (Expecting ',' delimiter: line 67 column 51 (char 3656)); retrying one chunk at a time
+chunk ACME_common/2g11-070he-0310/p001 failed (Expecting ',' delimiter: line 1 column 1580 (char 1579)); skipping
+children 5054 eligible 4888 skipped 166
+API used: anthropic/claude-opus-4-6
+todo 4880 already 8
+connecting neo4j+s://7b7a6f41.databases.neo4j.io database=7b7a6f41
+extracted 4 new_nodes 12 rels 19
+batch failed (Expecting ',' delimiter: line 81 column 61 (char 4153)); retrying one chunk at a time
+children 5054 eligible 4888 skipped 166
+API used: anthropic/claude-sonnet-4-6
+todo 4876 already 12
+connecting neo4j+s://7b7a6f41.databases.neo4j.io database=7b7a6f41
+children 5054 eligible 4888 skipped 166
+API used: anthropic/claude-opus-5-5
+todo 4876 already 12
+connecting neo4j+s://7b7a6f41.databases.neo4j.io database=7b7a6f41
+batch failed (Expecting ',' delimiter: line 1 column 1382 (char 1381)); retrying one chunk at a time
+extracted 4 new_nodes 25 rels 36
+extracted 8 new_nodes 32 rels 49
+batch failed (Expecting ',' delimiter: line 39 column 6 (char 2047)); retrying one chunk at a time
+extracted 12 new_nodes 42 rels 68
+batch failed (Expecting ',' delimiter: line 106 column 79 (char 5790)); retrying one chunk at a time
+chunk ACME_common/acme-asgsr-20121127/p010 failed (Expecting ',' delimiter: line 1 column 1861 (char 1860)); skipping
+extracted 15 new_nodes 55 rels 75
+batch failed (Expecting ',' delimiter: line 1 column 3558 (char 3557)); retrying one chunk at a time
+extracted 19 new_nodes 61 rels 82
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+extracted 23 new_nodes 61 rels 82
+extracted 27 new_nodes 80 rels 86
+batch failed (Expecting ',' delimiter: line 94 column 57 (char 4869)); retrying one chunk at a time
+children 5054 eligible 4888 skipped 166
+API used: anthropic/claude-opus-5-5
+todo 4849 already 39
+connecting neo4j+s://7b7a6f41.databases.neo4j.io database=7b7a6f41
+children 5054 eligible 4888 skipped 166
+API used: anthropic/claude-opus-5-5
+todo 4849 already 39
+connecting neo4j+s://7b7a6f41.databases.neo4j.io database=7b7a6f41
+batch failed (Expecting ',' delimiter: line 88 column 62 (char 4433)); retrying one chunk at a time
+extracted 4 new_nodes 37 rels 47
+batch failed (Expecting ',' delimiter: line 20 column 74 (char 835)); retrying one chunk at a time
+extracted 8 new_nodes 57 rels 65
+extracted 12 new_nodes 66 rels 86
+batch failed (Expecting ',' delimiter: line 1 column 2817 (char 2816)); retrying one chunk at a time
+extracted 16 new_nodes 84 rels 90
+batch failed (Expecting ',' delimiter: line 28 column 71 (char 1564)); retrying one chunk at a time
+extracted 20 new_nodes 103 rels 106
+batch failed (Expecting ',' delimiter: line 82 column 97 (char 4096)); retrying one chunk at a time
+extracted 24 new_nodes 117 rels 121
+extracted 28 new_nodes 123 rels 130
+extracted 32 new_nodes 126 rels 136
+extracted 36 new_nodes 135 rels 152
+extracted 40 new_nodes 151 rels 169
+extracted 44 new_nodes 151 rels 169
+extracted 48 new_nodes 166 rels 189
+extracted 52 new_nodes 178 rels 197
+extracted 56 new_nodes 198 rels 217
+extracted 60 new_nodes 216 rels 231
+extracted 64 new_nodes 241 rels 260
+extracted 68 new_nodes 271 rels 281
+extracted 72 new_nodes 289 rels 301
+extracted 76 new_nodes 295 rels 306
+extracted 80 new_nodes 304 rels 321
+extracted 84 new_nodes 317 rels 337
+extracted 88 new_nodes 317 rels 337
+extracted 92 new_nodes 327 rels 340
+extracted 96 new_nodes 327 rels 340
+batch failed (Expecting ',' delimiter: line 38 column 59 (char 2069)); retrying one chunk at a time
+extracted 100 new_nodes 342 rels 350
+batch failed (Expecting ',' delimiter: line 1 column 5008 (char 5007)); retrying one chunk at a time
+extracted 104 new_nodes 370 rels 378
+extracted 108 new_nodes 396 rels 406
+extracted 112 new_nodes 412 rels 436
+extracted 116 new_nodes 414 rels 455
+extracted 120 new_nodes 427 rels 472
+batch failed (Expecting value: line 1 column 1 (char 0)); retrying one chunk at a time
+extracted 124 new_nodes 427 rels 472
+extracted 128 new_nodes 444 rels 495
+extracted 132 new_nodes 451 rels 504
+extracted 136 new_nodes 468 rels 522
+extracted 140 new_nodes 486 rels 530
+extracted 144 new_nodes 495 rels 540
+children 5054 eligible 4888 skipped 166
+API used: anthropic/claude-opus-5-5
+connecting neo4j+s://7b7a6f41.databases.neo4j.io database=7b7a6f41
+todo 4705 already 183
+extracted 4 new_nodes 17 rels 4 sample phenomenon:adiabatic-combustion@ACME_common
+batch failed (Expecting ',' delimiter: line 64 column 64 (char 2813)); retrying one chunk at a time
